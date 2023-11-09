@@ -36,8 +36,7 @@
 ## 🚀 Languages 
 
    <p align="left"> 
-      <img src="https://c0.klipartz.com/pngpicture/235/1019/gratis-png-desarrollo-web-diseno-web-adaptable-hojas-de-estilo-en-cascada-html-diseno-web.png">
-      <img src="https://1000logos.net/wp-content/uploads/2020/09/JavaScript-Logo.png">
+      <img src="https://www.freepnglogos.com/uploads/html5-logo-png/html5-logo-devextreme-multi-purpose-controls-html-javascript-3.png" width="48px">
    </p>
 
 ## 🎬 Demo of the project 
