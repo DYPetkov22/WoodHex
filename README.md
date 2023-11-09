@@ -21,7 +21,6 @@
 <br>
 
 ## 🔨 Tools
-<details>
 <p align="left"> 
     <a href="https://code.visualstudio.com/"><img src="https://img.icons8.com/color/51/null/visual-studio-code-2019.png"/></a>
     <a href="https://www.figma.com/"><img src="https://img.icons8.com/fluency/48/null/figma.png"/></a>
@@ -32,7 +31,6 @@
     <a href="https://git-scm.com/"><img src="https://avatars.githubusercontent.com/u/18133?s=200&v=4" alt="Git logo" width=48px></a>
     <a href="https://github.com/"><img src="https://developer.sas.com/github-resources/_jcr_content/par/styledcontainer_480618029/par/image.img.png/1558449533927.png" alt="GitHub logo" width=48px></a>
   </p> 
-</details>
 <br>
 
 ## 🚀 Languages 
