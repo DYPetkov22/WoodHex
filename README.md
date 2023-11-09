@@ -43,6 +43,7 @@
 ## 📚 Libraries
    <p align="left"> 
       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Leaflet_logo.svg/1200px-Leaflet_logo.svg.png" width=144px>
+      &nbsp
       <img src="https://raw.githubusercontent.com/d3/d3-logo/master/d3.png" width=48px>
    </p>
 <br>
