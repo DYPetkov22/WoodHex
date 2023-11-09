@@ -26,7 +26,7 @@
     <a href="https://www.figma.com/"><img src="https://img.icons8.com/fluency/48/null/figma.png"/></a>
    <a href="https://www.microsoft.com/en-ww/microsoft-365/word"><img src="https://img.icons8.com/fluency/48/000000/microsoft-word-2019.png" alt="MS Word logo" width=48px /></a>
     <a href="https://www.microsoft.com/en-us/microsoft-365/powerpoint"><img src="https://img.icons8.com/fluency/48/000000/microsoft-powerpoint-2019.png" alt="MS PowerPoint logo" width=48px />
-    <a href="https://discord.com/company"><img src="https://logos-world.net/wp-content/uploads/2020/12/Discord-Logo.png" alt="Discord logo"></a>
+    <a href="https://discord.com/company"><img src="https://logos-world.net/wp-content/uploads/2020/12/Discord-Logo.png" alt="Discord logo" width=48px></a>
     <a href="https://www.adobe.com/products/photoshop.html"><img src="https://logolook.net/wp-content/uploads/2023/10/Photoshop-Logo-2015.png" alt="Abode Photoshop logo" width=48px></a>
     <a href="https://git-scm.com/"><img src="https://avatars.githubusercontent.com/u/18133?s=200&v=4" alt="Git logo" width=48px></a>
     <a href="https://github.com/"><img src="https://lthub.ubc.ca/files/2021/06/GitHub-Logo.png" alt="GitHub logo" width=48px></a>
