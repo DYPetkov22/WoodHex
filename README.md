@@ -36,7 +36,7 @@
 ## 🚀 Languages 
 
    <p align="left"> 
-      <img src="https://www.freepnglogos.com/uploads/html5-logo-png/html5-logo-devextreme-multi-purpose-controls-html-javascript-3.png" width="48px">
+      <img src="https://www.freepnglogos.com/uploads/html5-logo-png/html5-logo-devextreme-multi-purpose-controls-html-javascript-3.png" width="144px">
    </p>
 
 ## 🎬 Demo of the project 
