@@ -26,7 +26,7 @@
     <a href="https://www.figma.com/"><img src="https://img.icons8.com/fluency/48/null/figma.png"/></a>
    <a href="https://www.microsoft.com/en-ww/microsoft-365/word"><img src="https://img.icons8.com/fluency/48/000000/microsoft-word-2019.png" alt="MS Word logo" width=48px /></a>
     <a href="https://www.microsoft.com/en-us/microsoft-365/powerpoint"><img src="https://img.icons8.com/fluency/48/000000/microsoft-powerpoint-2019.png" alt="MS PowerPoint logo" width=48px />
-    <a href="https://discord.com/company"><img src="https://seeklogo.com/images/D/discord-logo-B02E5FBA04-seeklogo.com.png" alt="Discord logo" width=48px></a>
+    <a href="https://discord.com/company"><img src="https://seeklogo.com/images/D/discord-logo-B02E5FBA04-seeklogo.com.png" alt="Discord logo" width=60px></a>
     <a href="https://www.adobe.com/products/photoshop.html"><img src="https://logolook.net/wp-content/uploads/2023/10/Photoshop-Logo-2015.png" alt="Abode Photoshop logo" width=80px></a>
     <a href="https://git-scm.com/"><img src="https://avatars.githubusercontent.com/u/18133?s=200&v=4" alt="Git logo" width=48px></a>
     <a href="https://github.com/"><img src="https://developer.sas.com/github-resources/_jcr_content/par/styledcontainer_480618029/par/image.img.png/1558449533927.png" alt="GitHub logo" width=48px></a>
