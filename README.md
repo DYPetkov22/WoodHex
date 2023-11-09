@@ -13,7 +13,7 @@
 > 2. **LRRashkov22** - **Developer Frontend**	
    - ***GitHub profile***: [***LRRashkov22***](https://github.com/LRRashkov22)	
 
-> 3. **ATKabakov22** - **Developer Frontend**	
+> 3. **ATKabakov22** - **Developer Frontend and Backend**	
    - ***GitHub profile***: [***ATKabakov22***](https://github.com/ATKabakov22)
 
 > 4. **RVParvanov22** - **Designer**	
@@ -37,6 +37,13 @@
 
    <p align="left"> 
       <img src="https://www.freepnglogos.com/uploads/html5-logo-png/html5-logo-devextreme-multi-purpose-controls-html-javascript-3.png" width="144px">
+   </p>
+<br>
+
+## 📚 Libraries
+   <p align="left"> 
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Leaflet_logo.svg/1200px-Leaflet_logo.svg.png" width=144px>
+      <img src="https://raw.githubusercontent.com/d3/d3-logo/master/d3.png" width=48px>
    </p>
 
 ## 🎬 Demo of the project 
