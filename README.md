@@ -31,6 +31,14 @@
     <a href="https://git-scm.com/"><img src="https://avatars.githubusercontent.com/u/18133?s=200&v=4" alt="Git logo" width=48px></a>
     <a href="https://github.com/"><img src="https://developer.sas.com/github-resources/_jcr_content/par/styledcontainer_480618029/par/image.img.png/1558449533927.png" alt="GitHub logo" width=48px></a>
   </p> 
+<br>
+
+## 🚀 Languages 
+
+   <p align="left"> 
+      <img src="https://c0.klipartz.com/pngpicture/235/1019/gratis-png-desarrollo-web-diseno-web-adaptable-hojas-de-estilo-en-cascada-html-diseno-web.png">
+      <img src="https://1000logos.net/wp-content/uploads/2020/09/JavaScript-Logo.png">
+   </p>
 
 ## 🎬 Demo of the project 
   
