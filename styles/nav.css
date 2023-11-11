@@ -8,12 +8,29 @@ nav > ul > ul,
 nav > ul {
   list-style-type: none;
 }
+.logo{
+  color: rgb(0, 0, 0);
+  font-size: 38px;
+  line-height: 74px;
+  font-weight: bold;
+  position: absolute;
+  left: 5%;
+  top: 3%;
+}
+.logo-nav{
+  position: absolute;
+  left: -0.5%;
+  max-width: 95px;
+}
 .nav-bar {
-  width: 82vw;
+  width: 100vw;
   height: 10vh;
-  margin-left: 18%;
   position: relative;
+  display: flex;
   z-index: 2;
+  flex-direction: row-reverse;
+  align-items: center;
+  overflow-x: hidden;
 }
 
 .nav-list {

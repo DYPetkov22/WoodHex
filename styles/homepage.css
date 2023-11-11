@@ -6,6 +6,16 @@
    overflow-x: hidden;
  
 }
+.logo{
+  color: rgb(0, 0, 0);
+  font-size: 35px;
+  line-height: 74px;
+  /* padding: 0 31px; */
+  font-weight: bold;
+  position: absolute;
+  left: 5%;
+  top: -8%;
+}
 .ph-styling{
   display: flex;
   justify-content: center;
@@ -17,9 +27,18 @@
 
  
 }
- #br{
+ #land{
   position: relative;
   z-index: 0;
   width: 65rem;
   height: auto;
 } 
+.head-text{
+  color: #163920;
+font-family: Comfortaa;
+font-size: 128px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: -1.28px;
+}
