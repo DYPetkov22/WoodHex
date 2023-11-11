@@ -1,0 +1,102 @@
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    display: inline-block;
+  }
+  
+  nav > ul > ul,
+  nav > ul {
+    list-style-type: none;
+  }
+
+  .nav-list {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    gap: 4%;
+    margin-top: 1%;
+    margin-left: -2%;
+    align-items: center;
+    position: fixed;
+    justify-content: flex-end;
+  }
+  
+  .nav-link {
+    color: rgba(255, 255, 255, 0.703);
+    font-size: 1.5rem; /* Adjust as needed */
+    position: relative;
+    transition: all 0.4s;
+  }
+  
+  .nav-link:hover,
+  .nav-link:focus {
+    color: white;
+  }
+  
+  .nav-link::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    opacity: 0;
+    transition: all 0.2s;
+    pointer-events: none;
+  }
+  
+  .nav-link:hover::after,
+  .nav-link:focus::after {
+    opacity: 1;
+  }
+  
+  #apply-for-group-button {
+    width: 15rem; /* Adjust as needed */
+    display: flex;
+    height: 2rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 49px;
+    border: 0px solid #FFF;
+    background: #FFF;
+    box-shadow: 10px 16px 57.4px -4px rgba(0, 0, 0, 0.25);
+  }
+
+  .change-lung{
+    background-image: url(../photos/globus.svg);
+    width: 3%;
+    height: 8vh;
+    background-repeat: no-repeat;
+    position: absolute;
+    background-position: center;
+    right: 1%;
+    top: -21%;
+    background-size: 50%;
+  }
+  @media (max-width: 768px) {
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-link {
+        font-size: 20px;
+        margin-bottom: 1vh;
+    }
+
+    #apply-for-group-button {
+        width: 50vw;
+        margin-top: 2vh;
+        background: none;
+        border: none;
+        border-radius: none;
+        box-shadow: none;
+    }
+
+    .change-lung {
+        display: none; /* Hide the lung icon on smaller screens */
+    }
+}
