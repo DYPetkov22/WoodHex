@@ -1,8 +1,25 @@
-body {
+.body {
    background-image: url(../photos/Vector\ 286.svg);
    background-size: 79rem; /* or contain, based on your preference */
    background-position: right top;
    background-repeat: no-repeat;
    overflow-x: hidden;
-   position: fixed;
+ 
 }
+.ph-styling{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 29%;
+  margin-top: -7%;
+  width: 62vw;
+  height: 78vh;
+
+ 
+}
+ #br{
+  position: relative;
+  z-index: 0;
+  width: 65rem;
+  height: auto;
+} 
