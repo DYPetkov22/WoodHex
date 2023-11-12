@@ -6,16 +6,16 @@
    overflow-x: hidden;
  
 }
-.logo{
+/* .logo{
   color: rgb(0, 0, 0);
   font-size: 35px;
   line-height: 74px;
-  /* padding: 0 31px; */
+   padding: 0 31px; 
   font-weight: bold;
   position: absolute;
   left: 5%;
   top: -8%;
-}
+} */
 .ph-styling{
   display: flex;
   justify-content: center;

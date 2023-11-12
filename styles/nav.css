@@ -1,68 +1,49 @@
-a {
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer;
-  display: inline-block;
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+/* .k {
+  background: url(./logo\ 1.png) no-repeat center center;
+  background-size: cover;
+  width: 152px;
+} */
+
+.navbar-item:hover {
+  background-color: transparent !important;
 }
-nav > ul > ul,
-nav > ul {
-  list-style-type: none;
-}
-.logo{
-  color: rgb(0, 0, 0);
-  font-size: 38px;
-  line-height: 74px;
-  font-weight: bold;
-  position: absolute;
-  left: 5%;
-  top: 3%;
-}
-.logo-nav{
-  position: absolute;
-  left: -0.5%;
-  max-width: 95px;
-}
-.nav-bar {
-  width: 100vw;
-  height: 10vh;
-  position: relative;
-  display: flex;
-  z-index: 2;
-  flex-direction: row-reverse;
-  align-items: center;
-  overflow-x: hidden;
+.p{
+  background-color: transparent !important;
+  color:#FFF;
+  border-color: #FFF;
 }
 
-.nav-list {
-  width: 81%;
-  height: 40px;
-  display: flex;
-  gap: 9%;
-  margin-top: 1%;
-  align-items: center;
-  position: fixed;
-  justify-content: flex-end;
+.navbar{
+  background-color: transparent !important;
 }
 
 .nav-link {
   color: rgba(255, 255, 255, 0.703);
-  /* font-size: 1.5rem; Adjust as needed */
-  position: relative;
   transition: all 0.4s;
+  position: relative;
 }
 
 .nav-link:hover,
 .nav-link:focus {
-  color: white;
+  color: white !important;
+}
+
+.custom {
+  width: 240px !important;
+  border-radius: 49px !important;
+  border: 0px solid #FFF !important;
+  background: #FFF !important;
+  box-shadow: 10px 16px 57.4px -4px rgba(0, 0, 0, 0.25) !important;
 }
 
 .nav-link::after {
   content: "";
-  height: 2px;
+  height: 1px;
   width: 100%;
   background: rgb(255, 255, 255);
   position: absolute;
-  bottom: -5px;
+  bottom: 6px;
   left: 0;
   opacity: 0;
   transition: all 0.2s;
@@ -74,51 +55,25 @@ nav > ul {
   opacity: 1;
 }
 
-#apply-for-group-button {
-  width: 15rem; /* Adjust as needed */
-  display: flex;
-  height: 2rem;
-  justify-content: center;
-  align-items: center;
-  border-radius: 49px;
-  border: 0px solid #fff;
-  background: #fff;
-  box-shadow: 10px 16px 57.4px -4px rgba(0, 0, 0, 0.25);
-}
-
-.change-lung {
-  background-image: url(../photos/globus.svg);
-  width: 3%;
-  height: 8vh;
-  background-repeat: no-repeat;
+/* Additional styles for logo and navbar items */
+.navbar-item img {
+  max-height: 5rem !important;
   position: absolute;
-  background-position: center;
-  right: 1%;
-  top: -21%;
-  background-size: 50%;
+  left: -3%;
+  top: -16%;
+  width: auto;
 }
-@media (max-width: 768px) {
-  .nav-list {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
 
-  .nav-link {
-    font-size: 20px;
-    margin-bottom: 1vh;
-  }
+.navbar-brand {
+  padding: 0rem; /* Adjust the padding as needed */
+}
 
-  #apply-for-group-button {
-    width: 50vw;
-    margin-top: 2vh;
-    background: none;
-    border: none;
-    border-radius: none;
-    box-shadow: none;
-  }
+.logo {
+  margin-left: 68px;
+  font-size: 33px;
+}
 
-  .change-lung {
-    display: none; /* Hide the lung icon on smaller screens */
-  }
+.space-nav:not(:last-child) {
+  margin-right: 65px; /* Adjust the margin between items on the right side */
+    color: rgba(255, 255, 255, 0.551);
 }

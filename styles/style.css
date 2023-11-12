@@ -1,8 +1,9 @@
 @import url(homepage.css);
 @import url(nav.css);
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Comfortaa; /* Global styling for all elements with Comfortaa font */
+    font-family: Comfortaa !important; /* Global styling for all elements with Comfortaa font */
   }
