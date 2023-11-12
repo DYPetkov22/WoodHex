@@ -1,9 +1,4 @@
 @import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
-/* .k {
-  background: url(./logo\ 1.png) no-repeat center center;
-  background-size: cover;
-  width: 152px;
-} */
 
 .navbar-item:hover {
   background-color: transparent !important;
@@ -74,6 +69,6 @@
 }
 
 .space-nav:not(:last-child) {
-  margin-right: 65px; /* Adjust the margin between items on the right side */
+  margin-right: 10%; /* Adjust the margin between items on the right side */
     color: rgba(0, 0, 0, 0.551)
 }
