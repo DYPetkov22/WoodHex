@@ -1,21 +1,12 @@
 .body {
-   background-image: url(../photos/Vector\ 286.svg);
-   background-size: 79rem; /* or contain, based on your preference */
+   background-image: url(../photos/main-background-vector.svg);
+   background-size: 90%; 
    background-position: right top;
    background-repeat: no-repeat;
    overflow-x: hidden;
  
 }
-/* .logo{
-  color: rgb(0, 0, 0);
-  font-size: 35px;
-  line-height: 74px;
-   padding: 0 31px; 
-  font-weight: bold;
-  position: absolute;
-  left: 5%;
-  top: -8%;
-} */
+
 .ph-styling{
   display: flex;
   justify-content: center;

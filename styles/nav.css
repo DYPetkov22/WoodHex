@@ -19,14 +19,14 @@
 }
 
 .nav-link {
-  color: rgba(255, 255, 255, 0.703);
+  color: rgba(0, 0, 0, 0.703);
   transition: all 0.4s;
   position: relative;
 }
 
 .nav-link:hover,
 .nav-link:focus {
-  color: white !important;
+  color: rgb(0, 0, 0) !important;
 }
 
 .custom {
@@ -75,5 +75,5 @@
 
 .space-nav:not(:last-child) {
   margin-right: 65px; /* Adjust the margin between items on the right side */
-    color: rgba(255, 255, 255, 0.551);
+    color: rgba(0, 0, 0, 0.551)
 }

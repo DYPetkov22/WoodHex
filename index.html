@@ -9,6 +9,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.10.5/css/bulma.min.css">
+    <script src="./main.js"></script>
     
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
   </head>
@@ -17,11 +18,20 @@
       <div class="navbar-brand">
         <a class="navbar-item py-0" href="#">
           <img src="./photos/logo 1.png">
-        <span class="logo ">WoodHex</span>  
-        </a>
-      </div>
+          <span class="logo ">WoodHex</span>  
+        </a>   
+
+        <div role="button" class="navbar-burger" id="burger"  aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" onclick="toggle()">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </div>
     
-      <div id="navbarBasicExample" class="navbar-menu space-nav">
+      </div>
+
+
+   
+      <div id="navbarBasicExample"   class="navbar-menu  is-active space-nav">
         <div class="navbar-end space-nav">
           <a href="./pages/map.html" class="navbar-item space-nav nav-link py-0">MAP</a>
           <a href="./pages/aboutus.html" class="navbar-item space-nav nav-link py-0">ABOUT US</a>
@@ -34,7 +44,12 @@
             </div>
           </div>
           <div class="navbar-item">
-            <button class="button p">BG</button>
+            <div class="select">
+              <select>
+                <option>BG</option>
+                <option>EN</option>
+              </select>
+            </div>
           </div>
         </div>
       </div>
@@ -53,6 +68,10 @@
         Revolution
       </p>
     </div>
+    <div class="field">
+      <input id="switchRoundedDefault" type="checkbox" name="switchRoundedDefault" class="switch is-rounded" checked="checked">
+      <label for="switchRoundedDefault">Switch rounded default</label>
+    </div>
     <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
@@ -61,3 +80,5 @@
       </script>
   </body>
 </html>
+
+
