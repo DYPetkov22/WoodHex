@@ -1,76 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="https://fonts.google.com/specimen/Comfortaa"/>
+    <link rel="stylesheet" href="styles/homepage.css">
+    <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap"
+        rel="stylesheet"
+    />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.10.5/css/bulma.min.css">
+    <link
+        href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+        rel="stylesheet"
+    />
     <script src="./main.js"></script>
+</head>
 
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
-  </head>
-  <body >
+<body>
     <div class="background">
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-      <div class="navbar-brand">
-        <a class="navbar-item py-0" href="#">
-          <img src="./photos/logo 1.png">
-          <span class="logo ">WoodHex</span>
-        </a>
-
-        <div role="button" class="navbar-burger" id="burger"  aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" onclick="toggle()">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </div>
-
-      </div>
-      <div id="navbarBasicExample"   class="navbar-menu  is-active space-nav">
-        <div class="navbar-end space-nav">
-          <a href="./pages/map.html" class="navbar-item space-nav nav-link py-0">MAP</a>
-          <a href="./pages/aboutus.html" class="navbar-item space-nav nav-link py-0">ABOUT US</a>
-          <a href="./pages/signal.html" class="navbar-item space-nav nav-link py-0">SIGNAL</a>
-          <a href="./pages/donate.html" class="navbar-item space-nav nav-link py-0">DONATE</a>
-          <a href="./pages/other.html" class="navbar-item space-nav nav-link py-0">OTHER</a>
-          <div class="navbar-item">
-            <div id="apply-for-group-button" class="button custom">
-              <a href="./pages/ApplyForGroup.html" id="algign-text" class="has-text-black">APPLY FOR GROUP</a>
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item py-0" href="#">
+                    <img src="./photos/logo 1.png" alt="WoodHex Logo">
+                    <span class="logo ">WoodHex</span>
+                </a>
+                <div role="button" class="navbar-burger" id="burger" aria-label="menu" aria-expanded="false"
+                    data-target="navbarBasicExample" onclick="toggle()">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </div>
             </div>
-            <div class="select navbar-item">
-              <select>
-                <option>bg</option>
-                <option>Wws</option>
-              </select>
+            <div id="navbarBasicExample" class="navbar-menu is-active space-nav">
+                <div class="navbar-end space-nav">
+                    <a href="./pages/map.html" class="navbar-item space-nav nav-link py-0">MAP</a>
+                    <a href="./pages/aboutus.html" class="navbar-item space-nav nav-link py-0">ABOUT US</a>
+                    <a href="./pages/signal.html" class="navbar-item space-nav nav-link py-0">SIGNAL</a>
+                    <a href="./pages/donate.html" class="navbar-item space-nav nav-link py-0">DONATE</a>
+                    <a href="./pages/other.html" class="navbar-item space-nav nav-link py-0">OTHER</a>
+                    <div class="navbar-item">
+                        <div id="apply-for-group-button" class="button custom">
+                            <a href="./pages/ApplyForGroup.html" id="align-text" class="has-text-black">APPLY FOR
+                                GROUP</a>
+                        </div>
+                        <div class="select navbar-item">
+                            <select>
+                                <option>bg</option>
+                                <option>Wws</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </nav>
-    <div class="ph-styling">
-      <img
-        id="land"
-        src="../WoodHex/photos//23.png"
-        data-aos="fade-up"/>
+        </nav>
+        <div class="back"></div>
+        <!-- <div class="ph-styling">
+            <img id="land" src="../WoodHex/photos//23.png" data-aos="fade-up" />
+        </div> -->
     </div>
-  </div>
     <div class="phlk">
-      <p class="phhh">
-        The World's<br>
-        Biggest Company<br>
-        for Green<br>
-        Revolution<br>
-      </p>
-      <button class="buttonn">
-        <a href="./pages/ApplyForGroup.html" id="algign-text" class="has-text-white">APPLY FOR GROUP</a>
-      </button>
+        <p class="phhh">
+            The World's<br> Biggest Company<br> for Green<br> Revolution<br>
+        </p>
+        <button class="buttonn">
+            <a href="./pages/ApplyForGroup.html" id="align-text" class="has-text-white">APPLY FOR GROUP</a>
+        </button>
     </div>
 
     <script>
         AOS.init();
-      </script>
-  </body>
+    </script>
+</body>
+
 </html>
