@@ -73,19 +73,18 @@ letter-spacing: -1.28px;
 }
 .buttonnsas
 {
-  width: 266px !important;
+  width: 58% !important;
   border-radius: 49px !important;
   border: 1px solid #FFF !important;
   box-shadow: 10px 16px 57.4px -4px rgba(0, 0, 0, 0.314) !important;
   background: linear-gradient(90deg, #347B2A 0.2%, rgba(5, 200, 48, 0.67) 101.51%, #131614 179.57%) !important;
-  margin-top: 3vw;
-  padding: 24px !important;
+  padding: 5% !important;
 }
 
 .text__size
 {
   text-align: center !important;
-  font-size: 20px !important;
+  font-size: 106% !important;
   font-weight: 400 !important;
   line-height: 119.5% !important;
   letter-spacing: 1px !important;
@@ -103,7 +102,7 @@ letter-spacing: -1.28px;
     background-size: 27rem;
     background-position: top;
     background-repeat: no-repeat;
-    height: 50vh;
+    height: 80vh;
   }
 }
 
@@ -117,6 +116,31 @@ letter-spacing: -1.28px;
     background-size: 27rem;
     background-position: top;
     background-repeat: no-repeat;
-    height: 50vh;
+    height: 80vh;
   }
+}
+
+@media (max-width: 1500px)
+{
+  .back {
+    display: none;
+}
+.background
+{
+  background-image: url(../photos/23.png);
+  background-size: 27rem;
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 80vh;
+}
+.qazxsw
+{
+  display: none !important;
+}
+
+.phlk
+{
+  justify-content: center;
+  text-align: center;
+}
 }
