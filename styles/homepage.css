@@ -58,30 +58,54 @@ letter-spacing: -1.28px;
 .phlk
 {
   position: absolute;
-  top: 50%;
-  left: 4%;
+  top: 53%;
+  left: 2%;
 }
 .phhh
 {
   color: #163920;
   font-family: Comfortaa;
-  font-size: 40px;
+  font-size: 52px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: -1.28px;
 }
-.buttonn
+.buttonnsas
 {
-  border-radius: 49px;
-  background: linear-gradient(90deg, #347B2A 0.2%, #00FF38 101.51%);
-  box-shadow: 10px 16px 37.1px -4px rgba(0, 0, 0, 0.25);
-  width: 44%;
-  height: 2vw;
-  flex-shrink: 0;
+  width: 266px !important;
+  border-radius: 49px !important;
+  border: 1px solid #FFF !important;
+  box-shadow: 10px 16px 57.4px -4px rgba(0, 0, 0, 0.314) !important;
+  background: linear-gradient(90deg, #347B2A 0.2%, rgba(5, 200, 48, 0.67) 101.51%, #131614 179.57%) !important;
+  margin-top: 3vw;
+  padding: 24px !important;
+}
+
+.text__size
+{
+  text-align: center !important;
+  font-size: 20px !important;
+  font-weight: 400 !important;
+  line-height: 119.5% !important;
+  letter-spacing: 1px !important;
 }
 
 
+
+@media (max-width: 600px) {
+  .back {
+      display: none;
+  }
+  .background
+  {
+    background-image: url(../photos/23.png);
+    background-size: 27rem;
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 50vh;
+  }
+}
 
 @media (max-width: 1000px) {
   .back {
