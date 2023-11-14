@@ -16,18 +16,6 @@
 
 
 }
-
-
-/* .logo{
-  color: rgb(0, 0, 0);
-  font-size: 35px;
-  line-height: 74px;
-   padding: 0 31px; 
-  font-weight: bold;
-  position: absolute;
-  left: 5%;
-  top: -8%;
-} */
 .head-text{
   color: #163920;
 font-family: Comfortaa;
@@ -42,11 +30,11 @@ letter-spacing: -1.28px;
 {
   position: absolute;
   top: 0%;
-  left: 2%;
+  left: 0%;
   width: 100%;
 }
 .margin-top-text{
-  margin-top: -21%;
+  margin-top: -15%;
   margin-left: 2%;
 }
 .phhh
@@ -80,29 +68,33 @@ letter-spacing: -1.28px;
 }
 
 .a{
-  margin-top: 79px;
-  height: 200px;
-  width: 300px;
+  margin-top: 5%;
+  padding-bottom: 11%;
+  width: 20%;
   font-size: 39px;
   position: relative;
-  left: 9%;
+  left: 4%;
   top: 0%;
+  font-weight: 700;
 }
 .b{
-  height: 200px;
+  height: 10rem;
   font-size: 39px;
-  width: 282px;
+  width: 18%;
   position: relative;
   left: 79%;
   bottom: 0%;
+  font-weight: 700;
 }
 .c{
-  height: 200px;
-  width: 200px;
+  margin-bottom: 20%;
+  margin-top: 10%;
+  width: 20%;
   font-size: 39px;
   position: relative;
-  left: 43%;
+  left: 45%;
   bottom: 0%;
+  font-weight: 700;
 }
 
 .wsxcde
@@ -117,31 +109,92 @@ letter-spacing: -1.28px;
 
 
 
-@media (max-width: 1500px) {
+ @media (max-width: 1500px) {
   .back {
       display: none;
 
   }
   .qazxsw
-{
-  display: none !important;
-}
+  {
+    display: none !important;
+  }
   .phlk
   {
     background-image: url(../photos/23.png);
-    background-size: 27rem;
+    background-size: 51rem ;
     background-position: top;
     background-repeat: no-repeat;
-    height: 80vh;
+    height: 104vh ;
   }
-  
+  .phhh
+{
+    color: #163920;
+    font-family: Comfortaa;
+    font-size: 70px !important;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -1.28px;
 
+}
   .margin-top-text
   {
-    margin-top: 70%;
+    margin-top: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 19%;
+  }
+  .buttonnsas
+  {
+    width: 57% !important;
+  }
+  .a{
+    width: 30%;
+  }
+} 
+
+@media (max-width: 600px) {
+  .back {
+      display: none;
+
+  }
+  .qazxsw
+  {
+    display: none !important;
+  }
+  .phlk
+  {
+    background-image: url(../photos/23.png);
+    background-size: 27rem ;
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 80vh ;
+  }
+  .phhh
+{
+  color: #163920;
+  font-family: Comfortaa;
+  font-size: 48px !important;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -1.28px;
+  padding-bottom: 6%;
+}
+  .margin-top-text
+  {
+    margin-top: 90%;
     display: flex;
     text-align: center;
     flex-wrap: wrap;
     justify-content: center;
+  }
+  .buttonnsas
+  {
+    width: 57% !important;
   }
 }

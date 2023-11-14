@@ -71,13 +71,13 @@
   margin-right: 10%; /* Adjust the margin between items on the right side */
     color: rgba(0, 0, 0, 0.551)
 }
- 
-.qazxsw
+@media (max-width: 1500px) { 
+.hambur-menu-text
 {
-  margin-left: -13%;
+    color: #0000 !important;
 }
-
+}
 .wsxzaq
 {
-  margin-left: 8%;
+  
 }
