@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
     <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet"/>
+    <script src="../main.js"></script>
 </head>
-<body>
+<body class="body">
     <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
             <a class="navbar-item py-0" href="#">
                 <img src="../photos/logo 1.png" alt="WoodHex Logo">
-                <span class="logo ">WoodHex</span>
+                <span class="logo navbar-bg-color-map">WoodHex</span>
             </a>
             <div role="button" class="navbar-burger has-text-black" id="burger" aria-label="menu" aria-expanded="false"
                 data-target="navbarBasicExample" onclick="toggle()">
@@ -23,22 +24,29 @@
             </div>
         </div>
         <div id="navbarBasicExample" class="navbar-menu is-active space-nav">
-            <div class="navbar-end space-nav">
+            <div class="navbar-end space-nav" >
                 <a href="../index.html" class="navbar-item space-nav nav-link py-0 has-text-white hambur-menu-text">HOME</a>
                 <a href="./pages/aboutus.html" class="navbar-item space-nav nav-link py-0 has-text-white hambur-menu-text">ABOUT US</a>
                 <a href="./pages/signal.html" class="navbar-item space-nav nav-link py-0 has-text-white hambur-menu-text">SIGNAL</a>
                 <a href="./pages/donate.html" class="navbar-item space-nav nav-link py-0 has-text-white hambur-menu-text">DONATE</a>
                 <a href="./pages/other.html" class="navbar-item space-nav nav-link py-0 has-text-white hambur-menu-text">OTHER</a>
                 <div class="navbar-item">
-                    <div class="select navbar-item wsxzaq">
+                    <div class="select navbar-item">
                         <select>
-                            <option>bg</option>
-                            <option>Wws</option>
+                            <option>BG</option>
+                            <option>EN</option>
                         </select>
                     </div>
                 </div>
             </div>
         </div>
     </nav>
+
+    <div>
+    <img class="backpic1" src="../photos/Group 105.png">
+    </div>
+    <div class="front-text" class="topDiv">VIEW TREE MAP</div>
+    <img class="frontpic1" src="../photos/Vector.png">
+</div>
 </body>
 </html>
