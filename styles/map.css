@@ -6,3 +6,39 @@
 .navbar-bg-color-map{
     color: aliceblue !important;
 }
+  
+.backpic1
+{
+  max-width: 55%;
+  max-height: 70vh;
+  width:55%;
+  height: 70vh;  
+  top:50%;
+  left:50%;
+  transform: translate(44%, 10%);
+  border-radius: 100px;
+  border: 8px solid #343030;
+  filter: blur(10.350000381469727px);
+}
+.text {
+  color: #00FF38;
+  font-family: Comfortaa;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 100;
+  position: absolute;
+  bottom: 60%; 
+  right: 50%; 
+  cursor: pointer;
+  transform: translateX(50%);
+}
+.frontpic1 {
+    max-width: 10%;
+    max-height: 10vh;
+    height: auto;  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
