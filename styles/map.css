@@ -20,7 +20,7 @@
   border: 8px solid #343030;
   filter: blur(10.350000381469727px);
 }
-.text {
+.front-text {
   color: #00FF38;
   font-family: Comfortaa;
   font-size: 50px;
@@ -41,4 +41,5 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
+
   
