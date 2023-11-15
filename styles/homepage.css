@@ -1,4 +1,6 @@
 @import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+
+
 .back {
 
   background-image: url(../photos/1234.png);
@@ -68,8 +70,16 @@ letter-spacing: -1.28px;
   letter-spacing: 1px !important;
 }
 
+.arrow-down
+{
+  margin-left: 31%;
+  width: 4%;
+}
+#qwedc
+{
+  padding-top: 3%;
+}
 .a{
-  margin-top: 5%;
   padding-bottom: 11%;
   width: 20%;
   font-size: 39px;
@@ -83,9 +93,9 @@ letter-spacing: -1.28px;
   font-size: 39px;
   width: 18%;
   position: relative;
-  left: 79%;
   bottom: 0%;
   font-weight: 700;
+  margin-left: 85%;
 }
 .c{
   margin-bottom: 20%;
@@ -93,9 +103,10 @@ letter-spacing: -1.28px;
   width: 20%;
   font-size: 39px;
   position: relative;
-  left: 45%;
   bottom: 0%;
   font-weight: 700;
+  margin-left: 45%;
+
 }
 
 .wsxcde
@@ -106,6 +117,167 @@ letter-spacing: -1.28px;
   margin-top: 200px;
 
 }
+
+.sliding-block
+{
+  width: 100%;
+  height: 40vh;
+  margin-bottom: 5%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: flex-end;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+.photo11
+{
+  width: 5%;
+  height: 15%;
+}
+
+#what-believe-text
+{
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 4%;
+  font-family: Comfortaa;
+  color: #14C93C;
+}
+
+#text-for-what-believe1
+{
+  margin-top: 8%;
+  margin-left: 9%;
+  width: 40%;
+  color: black;
+  font-family: Comfortaa;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+#text-for-what-believe2
+{
+  margin-top: 13%;
+  float: right;
+  margin-right: 4%;
+  width: 33%;
+  color: black;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-align: end;
+}
+
+#text-for-what-believe3
+{
+  margin-top: 26%;
+  margin-left: 8.5%;
+  width: 45%;
+  color: black;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-bottom: 5%;
+}
+#important-things-about-Earth {
+  margin-top: 10%;
+  display: flex;
+  margin-left: 5%;
+  width: 100%;
+  justify-content: space-around;
+}
+
+#clean-air-div
+{
+  padding-left: 5%;
+  align-items: end;
+}
+
+#clean-air-text
+{
+  margin-left: 25%;
+  color: #000;
+  font-size: 20px;
+  font-family: Comfortaa;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+#clean-earth-div
+{
+  padding-left: 6%;
+}
+
+#clean-earth-text
+{
+  margin-left: 20%;
+  color: #000;
+  font-size: 20px;
+  font-family: Comfortaa;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+#easier-recycling-div
+{
+  padding-right: 9%;
+}
+
+#easier-recycling-text
+{
+  margin-left: 21%;
+  color: #000;
+  font-size: 20px;
+  font-family: Comfortaa;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: -5%;
+}
+
+
+#clean-air-photo,
+#clean-earth-photo,
+#easier-recycling-photo {
+  width: 80%;
+  height: auto; 
+}
+
+#join-revolution
+{
+  border-radius: 128px;
+  background: linear-gradient(173deg, #39A239 38.15%, #24FF00 90.37%);
+  box-shadow: 1px 8px 12px 14px rgba(0, 0, 0, 0.17);
+  margin-top: 3%;
+  margin-left: 39%;
+  width: 21%;
+  height: 4.5rem;
+}
+
+#join-revolution-text
+{
+  color: #FFF;
+  font-family: Comfortaa;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+
+
+
+
 
 
 
@@ -138,6 +310,7 @@ letter-spacing: -1.28px;
     letter-spacing: -1.28px;
 
 }
+  
   .margin-top-text
   {
     margin-top: 100%;
@@ -153,9 +326,35 @@ letter-spacing: -1.28px;
   {
     width: 57% !important;
   }
+  .arrow-down
+{
+  margin-left: 31%;
+  width: 4%;
+}
   .a{
-    width: 30%;
+    padding-bottom: 45%;
+    width: 60%;
   }
+  .b
+  {
+    height: 10rem;
+    font-size: 39px;
+    width: 18%;
+    position: relative;
+    bottom: 0%;
+    font-weight: 700;
+    margin-left: 71%;
+  }
+  .c{
+    position: relative;
+    margin-left: 38%;
+  
+  }
+  .photo11
+{
+  width: 5%;
+  height: 15%;
+}
 } 
 
 @media (max-width: 600px) {
@@ -198,4 +397,29 @@ letter-spacing: -1.28px;
   {
     width: 57% !important;
   }
+  .arrow-down
+  {
+    margin-top: 5%;
+    margin-left: -2%;
+    width: 34%;
+  }
+    .a{
+      padding-bottom: 45%;
+      width: 60%;
+    }
+    .b
+    {
+      height: 10rem;
+      font-size: 39px;
+      width: 18%;
+      position: relative;
+      bottom: 0%;
+      font-weight: 700;
+      margin-left: 58%;
+    }
+    .c{
+      position: relative;
+      margin-left: 35%;
+    
+    }
 }

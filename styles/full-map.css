@@ -1,0 +1,10 @@
+body
+{
+    margin: 0;
+}
+
+#leaflet-map 
+{
+    width: 100vw;
+    height: 50vw
+}

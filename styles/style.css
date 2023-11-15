@@ -8,3 +8,8 @@
     box-sizing: border-box;
     font-family: Comfortaa !important; /* Global styling for all elements with Comfortaa font */
   }
+
+  html
+  {
+    scroll-behavior: smooth;
+  }
