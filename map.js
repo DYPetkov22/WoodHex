@@ -125,3 +125,260 @@ function update() {
 
     drawHexagons();
 }
+
+function drawHexagons() {
+    g.selectAll("g").remove();
+
+    const mapCenter = map.latLngToLayerPoint(centerCoordinates);
+    const gridWidth = cols * hexagonWidth + (cols - 1) * (hexagonWidth / 2);
+    const gridHeight = rows * (hexagonHeight * 0.75);
+
+    const startX = mapCenter.x - gridWidth / 2;
+    const startY = mapCenter.y - gridHeight / 2;
+
+    for (let row = 0; row < rows; row++) {
+        for (let col = 0; col < cols; col++) {
+            let x = startX + col * hexagonWidth + (row % 2 === 1 ? hexagonWidth / 2 : 0);
+            let y = startY + row * (hexagonHeight * 0.75);
+
+            let hexagonGroup = g.append("g")
+                .attr("transform", "translate(" + x + "," + y + ")");
+
+                if(row === 0)
+                {
+                    if(col<24)
+                    {
+                        createHexagon(hexagonGroup, true);
+                    }
+                    else
+                    {
+                        hexagonSea(hexagonGroup);
+                    }
+                }
+                else if (row === 1) 
+                {
+                    if (col === 5) 
+                    {
+                        createHexagon(hexagonGroup, false);
+                    } 
+                    else if (col>16&&col<20)
+                    {
+                         createHexagon(hexagonGroup, false);
+                    }
+                    else if (col>22)
+                    {
+                        hexagonSea(hexagonGroup);
+                    }
+                    else {
+                        createHexagon(hexagonGroup, true);
+                    }
+                } 
+                else if(row===2)
+                {
+                    if(col===5||col===6)
+                    {
+                        createHexagon(hexagonGroup, false);
+                    }
+                    else if(col>15&&col<21)
+                    {
+                        createHexagon(hexagonGroup, false);
+                    }
+                    else if (col>21)
+                    {
+                        hexagonSea(hexagonGroup);
+                    }
+                    else
+                    {
+                        createHexagon(hexagonGroup, true);  
+                    }
+                }
+                else if(row===3)
+                {
+                    if(col>4&&col<22)
+                    {
+                        createHexagon(hexagonGroup, false);
+                    }
+                    else if (col>21)
+                    {
+                        hexagonSea(hexagonGroup);
+                    }
+                    else
+                    {
+                        createHexagon(hexagonGroup, true);  
+                    }
+                }
+                else if(row===4)
+                {
+                    if(col>5&&col<22)
+                    {
+                        createHexagon(hexagonGroup, false);
+                    }
+                    else if (col>20)
+                    {
+                        hexagonSea(hexagonGroup);
+                    }
+                    else
+                    {
+                        createHexagon(hexagonGroup, true);  
+                    }
+                }
+                else if(row===5)
+                {
+                    if(col>5&&col<21)
+                    {
+                        createHexagon(hexagonGroup, false);
+                    }
+                    else if (col>20)
+                    {
+                        hexagonSea(hexagonGroup);
+                    }
+                    else
+                    {
+                        createHexagon(hexagonGroup, true);  
+                    }
+                }
+                else if(row===6)
+                {
+                    if(col>5&&col<20)
+                    {
+                        createHexagon(hexagonGroup, false);
+                    }
+                    else if (col>19)
+                    {
+                        hexagonSea(hexagonGroup);
+                    }
+                    else
+                    {
+                        createHexagon(hexagonGroup, true);  
+                    }
+                }
+                else if(row===7)
+                {
+                    if(col>5&&col<20)
+                    {
+                        createHexagon(hexagonGroup, false);
+                    }
+                    else if (col>19)
+                    {
+                        hexagonSea(hexagonGroup);
+                    }
+                    else
+                    {
+                        createHexagon(hexagonGroup, true);  
+                    }
+                }
+                else if(row===8)
+                {
+                    if(col>5&&col<20)
+                    {
+                        createHexagon(hexagonGroup, false);
+                    }
+                    else if (col>18)
+                    {
+                        hexagonSea(hexagonGroup);
+                    }
+                    else
+                    {
+                        createHexagon(hexagonGroup, true);  
+                    }
+                }
+                else if(row===9)
+                {
+                    if(col>4&&col<20)
+                    {
+                        createHexagon(hexagonGroup, false);
+                    }
+                    else if (col>19)
+                    {
+                        hexagonSea(hexagonGroup);
+                    }
+                    else
+                    {
+                        createHexagon(hexagonGroup, true);  
+                    }
+                }
+                else if(row===10)
+                {
+                    if(col>4&&col<21)
+                    {
+                        createHexagon(hexagonGroup, false);
+                    }
+                    else if (col>19)
+                    {
+                        hexagonSea(hexagonGroup);
+                    }
+                    else
+                    {
+                        createHexagon(hexagonGroup, true);  
+                    }
+                }
+                else if(row===11)
+                {
+                    if(col>4&&col<21)
+                    {
+                        createHexagon(hexagonGroup, false);
+                    }
+                    else if (col>20)
+                    {
+                        hexagonSea(hexagonGroup);
+                    }
+                    else
+                    {
+                        createHexagon(hexagonGroup, true);  
+                    }
+                }
+                else if(row===12)
+                {
+                    if(col>5&&col<17)
+                    {
+                        createHexagon(hexagonGroup, false);
+                    }
+                    else if(col<21&&col>18)
+                    {
+                        createHexagon(hexagonGroup, false);
+                    }
+                    else if (col>20)
+                    {
+                        hexagonSea(hexagonGroup);
+                    }
+                    else
+                    {
+                        createHexagon(hexagonGroup, true);  
+                    }
+                }
+                else if(row===13)
+                {
+                    if(col>5&&col<10)
+                    {
+                        createHexagon(hexagonGroup, false);
+                    }
+                    else if(col>11&&col<15)
+                    {
+                        createHexagon(hexagonGroup, false);
+                    }
+                    else if (col>20)
+                    {
+                        hexagonSea(hexagonGroup);
+                    }
+                    else
+                    {
+                        createHexagon(hexagonGroup, true);  
+                    }
+                }
+                else if(row===14)
+                {
+                    if (col>20)
+                    {
+                        hexagonSea(hexagonGroup);
+                    }
+                    else
+                    {
+                        createHexagon(hexagonGroup, true); 
+                    }
+                }
+        }
+    }
+}
+
+update();
+map.on("moveend", update);
