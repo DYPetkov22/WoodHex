@@ -149,27 +149,27 @@ letter-spacing: -1.28px;
 
 #text-for-what-believe1
 {
-  margin-top: 8%;
+  margin-top: 6%;
   margin-left: 9%;
   width: 40%;
   color: black;
   font-family: Comfortaa;
   font-size: 20px;
   font-style: normal;
-  font-weight: 300;
+  font-weight:600;
   line-height: normal;
 }
 
 #text-for-what-believe2
 {
-  margin-top: 13%;
+  margin-top: 9%;
   float: right;
-  margin-right: 4%;
+  margin-right: 9%;
   width: 33%;
   color: black;
   font-size: 20px;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 600;
   line-height: normal;
   text-align: end;
 }
@@ -182,9 +182,9 @@ letter-spacing: -1.28px;
   color: black;
   font-size: 20px;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 600;
   line-height: normal;
-  margin-bottom: 5%;
+  margin-bottom: 8%;
 }
 #important-things-about-Earth {
   margin-top: 10%;
@@ -255,12 +255,13 @@ letter-spacing: -1.28px;
 #join-revolution
 {
   border-radius: 128px;
-  background: linear-gradient(173deg, #39A239 38.15%, #24FF00 90.37%);
+  background: linear-gradient(260deg, #15cc3d 17.47%, rgb(60 159 83 / 79%) 105.57%);
   box-shadow: 1px 8px 12px 14px rgba(0, 0, 0, 0.17);
   margin-top: 3%;
   margin-left: 39%;
   width: 21%;
   height: 4.5rem;
+  margin-bottom: 5%;
 }
 
 #join-revolution-text
@@ -272,6 +273,93 @@ letter-spacing: -1.28px;
   font-weight: 700;
   line-height: normal;
 }
+
+#air_energy
+{
+  color: #00FF38;
+  font-family: Comfortaa;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 9.5px;
+  margin-top: 15%;
+  margin-bottom: 1%;
+  margin-left: 5%;
+
+}
+
+#production-text
+{
+  position: relative;
+  color: #00FF38;
+  font-family: Comfortaa;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 6.1px;
+  margin-left: 5%;
+}
+
+#production-text::after
+{
+  content: '';
+  height: 0.125rem;
+  width: 4%;
+  background: #099327;
+  position: absolute;
+  left: 1%;
+  bottom: -215%;
+
+}
+
+#air_energy-text
+{
+  color: #000;
+  margin-top: 7%;
+  margin-left: 5%;
+  font-size: 20px;
+  width: 30%;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 4.28px;
+
+}
+
+#windmills
+{
+  width: 50%;
+  height: auto;
+  float: right;
+  margin-top: -40%;
+}
+
+#line1
+{
+  margin-top: -9%;
+  width: 30%;
+  height: auto;
+  z-index: 100;
+  margin-left: 35%;
+}
+
+
+#solar_panels
+{
+  width: 50%;
+  height: auto;
+  margin-top: -9%;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -350,10 +438,19 @@ letter-spacing: -1.28px;
   
   }
   .photo11
-{
-  width: 5%;
-  height: 15%;
-}
+  {
+    width: 5%;
+    height: 15%;
+  } 
+  #clean-air-text
+  {
+    margin-left: 7%;
+  }
+  #join-revolution
+  {
+    margin-left: 26%;
+    width: 53%;
+  }
 } 
 
 @media (max-width: 600px) {
