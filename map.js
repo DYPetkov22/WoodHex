@@ -1,6 +1,6 @@
 let southWest = L.latLng(42.5, 25),northEast = L.latLng(43, 26);
 let bounds = L.latLngBounds(southWest, northEast);
-let centerCoordinates = [42.65, 27.6];
+let centerCoordinates = [42.65, 28.2];
 let map = L.map('leaflet-map', 
 {
     center: centerCoordinates,
@@ -21,7 +21,7 @@ const g = svg.append("g").attr("class", "leaflet-zoom-hide");
 const rows = 15;
 const cols = 26;
 
-let hexagonRadius = 35;
+let hexagonRadius = 45;
 let hexagonWidth = hexagonRadius * Math.sqrt(3);
 let hexagonHeight = hexagonRadius * 2;
 let hoveredColor = "";
