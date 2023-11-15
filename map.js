@@ -14,8 +14,8 @@ L.tileLayer('https://api.maptiler.com/maps/basic-v2-dark/256/{z}/{x}/{y}.png?key
     maxZoom: 8,
 }).addTo(map);
 
-const randomImagePaths = ["green.svg", "red.svg"];
-const alternativeImagePaths = ["green-glow.svg", "red-glow.svg"];
+const randomImagePaths = ["../photos/map/green.svg", "../photos/map/red.svg"];
+const alternativeImagePaths = ["../photos/map/green-glow.svg", "../photos/map/red-glow.svg"];
 const svg = d3.select(map.getPanes().overlayPane).append("svg");
 const g = svg.append("g").attr("class", "leaflet-zoom-hide");
 const rows = 15;
@@ -43,7 +43,7 @@ function createHexagon(hexagonGroup, isBlack)
         .attr("points", hexagonPoints(hexagonRadius, 0, 0).join(" "));
 
     let hexagonImage = hexagonGroup.append("image")
-        .attr("xlink:href", "graund-poligon.svg")  
+        .attr("xlink:href", "../photos/map/graund-poligon.svg")  
         .attr("x", -hexagonRadius)
         .attr("y", -hexagonRadius)
         .attr("width", hexagonRadius * 2)
@@ -74,7 +74,7 @@ function createHexagon(hexagonGroup, isBlack)
             hoveredColor = hoveredImagePath.includes("green") ? "green" : "red";
 
             var tooltipText = hoveredColor === "red" ? Math.floor(Math.random() * 100) : 100 + '+';
-            var alternativeImagePath = hoveredColor === "red" ? "red-glow.svg" : "green-glow.svg";
+            var alternativeImagePath = hoveredColor === "red" ? "../photos/map/red-glow.svg" : "../photos/map/green-glow.svg";
             d3.select(this).select("image").attr("xlink:href", alternativeImagePath);
 
             svg.append("text")
@@ -87,7 +87,7 @@ function createHexagon(hexagonGroup, isBlack)
             .on("mouseout", function () {
                 svg.select("#tooltip").remove();
 
-                var alternativeImagePath = hoveredColor === "red" ? "red.svg" : "green.svg";
+                var alternativeImagePath = hoveredColor === "red" ? "../photos/map/red.svg" : "../photos/map/green.svg";
                 d3.select(this).select("image").attr("xlink:href", alternativeImagePath);
                 d3.select(this).select("polygon").attr("transform", "scale(1)");
             });
@@ -102,7 +102,7 @@ function hexagonSea(hexagonGroup)
         .attr("points", hexagonPoints(hexagonRadius, 0, 0).join(" "));
 
     let hexagonImage = hexagonGroup.append("image")
-        .attr("xlink:href", "sea-poligon.svg")  
+        .attr("xlink:href", "../photos/map/sea-poligon.svg")  
         .attr("x", -hexagonRadius)
         .attr("y", -hexagonRadius)
         .attr("width", hexagonRadius * 2)
