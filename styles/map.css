@@ -18,7 +18,7 @@
   border: 2px solid #343030;
   margin-top: 10vh;
   margin-left: 10%;
-  object-fit: cover; /* Запазва пропорциите на изображението */
+  object-fit: cover;
 
 }
 
@@ -44,34 +44,24 @@
   }
   
   .container {
-  position: relative;
-  overflow: visible; /* Променете overflow на visible за да видите цялото съдържание */
-  width: 80vh; /* Променете размерите според нуждите си */
-  height: 80%; /* Променете размерите според нуждите си */
+  width: 80vh;
+  height: 80%;
   }
   
-  .backpic1,
-  .frontpic1 {
+  .backpic1 {
     transition: transform 0.3s ease;
   }
   
-  .front-text {
+  .inner-content {
     transition: font-size 0.3s ease;
   }
   
-  .container:hover .backpic1,
-  .container:hover .frontpic1 {
+  .container:hover .backpic1 {
     transform: scale(1.1);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8);
   }
-  .frontpic1 {
-    transition: transform 0.3s ease;
+ 
+  .container:hover  .inner-content {
+    transform: translateZ(2px); 
   }
-  
-  .container:hover .frontpic1 {
-    transform: scale(1.1);
-  }
-  
-  .container:hover .front-text {
-    font-size: 60px; 
-  }
+
