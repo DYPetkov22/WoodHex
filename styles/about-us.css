@@ -1,0 +1,160 @@
+.bg-img-about-us{
+    background-image: url(../photos/about-us-1.png);
+    background-size: 72rem;
+    background-position: right top;
+    background-repeat: no-repeat;
+    height: 24vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    margin-top: -5%;
+}
+.space-nav-about-us:not(:last-child){
+    margin-right: 20%;
+}
+
+.side_nav_about_us{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    height: unset;
+    width: 100px;
+    margin-left: 2%;
+    position: absolute;
+    top: 17%;
+    z-index: 2;
+}
+
+.first_stage,  .second_stage,
+.third_stage, .fourth_stage {
+    width: 25%;
+    height: 10vh;
+}   
+
+.first_stage > a, .second_stage > a,
+.third_stage > a, .fourth_stage > a {
+    font-size: 25px;
+    color: black !important;
+
+} 
+
+ .first_stage::after ,  .second_stage::after ,
+.third_stage::after , .fourth_stage::after {
+    content: "";
+    display: block;
+    width: 80%;
+    height: 3px;
+    background-color: green;
+    /* position: absolute; */
+    bottom: 0%;
+    left: 0%;
+
+}     
+
+.first-section-about-us{
+   background-image: url(../photos/about-us-section-1.svg);
+   background-size: 100% 83vh;
+   /* background-position: 23%; */
+   background-repeat: no-repeat;
+   width: 100%;
+   height: 90vh;
+   margin-top: 7%;
+   position: relative;
+   z-index: 0;
+}
+.probi-about-us-1{
+    width: 29%;
+    height: 85vh;
+    margin-left: 18%;
+    position: relative;
+    left: 2%;
+    top: -7%;
+}
+.section-about-us-info-1{
+    border: 3px solid rgba(163, 154, 154, 0.214);
+    background: #EEE9E9;
+    box-shadow: 8px 29px 22.5px 0px rgba(0, 0, 0, 0.236);
+    width: 28%;
+    height: 62vh;
+    position: relative;
+    left: 47%;
+    bottom: 93%;
+    z-index: 1;
+
+}
+#head-section-1{
+    color: #2D9844;
+    font-weight: bold;
+
+}
+#sub-head-section-1{
+    color: #034A13;
+
+}
+
+
+.second-section-about-us{
+    background-image: url(../photos/about-us-body-2.png);
+    background-size: 100% 83vh;
+    /* background-position: 23%; */
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 90vh;
+    margin-top: 5%;
+ }
+ .probi-about-us-2{
+    width: 29%;
+    height: 85vh;
+    margin-left: 18%;
+    position: relative;
+    left: 30%;
+    top: -7%;
+ }
+ .section-about-us-info-2{
+    border: 3px solid rgba(163, 154, 154, 0.214);
+    background: #EEE9E9;
+    box-shadow: 8px 29px 22.5px 0px rgba(0, 0, 0, 0.236);
+    width: 28%;
+    height: 62vh;
+    position: relative;
+    left: 21%;
+    bottom: 90%;
+    z-index: 1;
+ 
+ }
+ #head-section-2{
+     color: #2D9844;
+     font-weight: bold;
+ 
+ }
+ #sub-head-section-2{
+     color: #034A13;
+ 
+ }
+
+ .third-section-about-us{
+    background-image: url(../photos/about-us-body-3.png);
+    background-size: 100% 83vh;
+    /* background-position: 23%; */
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 90vh;
+    margin-top: 6%;
+ }
+ .fourth-section-about-us{
+    background-image: url(../photos/about-us-body-4.png);
+    background-size: 100% 83vh;
+    /* background-position: 23%; */
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 90vh;
+    margin-top: 5%;
+ }
+
+@media (max-width: 1300px){
+    .bg-img-about-us{
+        display: none;
+    }
+}
