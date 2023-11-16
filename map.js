@@ -39,14 +39,16 @@ function hexagonPoints(radius, centerX, centerY) {
 const overlayDiv = d3.select("#leaflet-map").append("div")
     .attr("id", "overlay-div")
     .style("position", "fixed")
-    .style("top", "10px")   // Adjusted top position
-    .style("left", "10px")  
-    .style("width", "100px")
-    .style("height", "50px")
+    .style('z-index', 1000)
+
+    .style("width", "15vw")
+    .style("height", "20vw")
+
+    .style("top", "3vw")  
+    .style("left", "2vw")  
+
     .style("background-color", "rgba(255, 255, 255, 0.8)")
-    .style("border", "1px solid #000")
-    .style("padding", "10px")
-    .style('z-index', 100000000000);
+;
 
 function createHexagon(hexagonGroup, isBlack) 
 {
@@ -97,16 +99,13 @@ function createHexagon(hexagonGroup, isBlack)
             });
             hexagonGroup.on("click", function () 
             {
-                var hexagonX = parseFloat(d3.select(this).attr("transform").split("(")[1].split(",")[0]);
-                var hexagonY = parseFloat(d3.select(this).attr("transform").split(",")[1].split(")")[0]);
-    
                 var hoveredImagePath = d3.select(this).select("image").attr("xlink:href");
                 hoveredColor = hoveredImagePath.includes("green") ? "green" : "red";
     
                 var tooltipText = hoveredColor === "red" ? Math.floor(Math.random() * 100) : 100 + '+';
                 var alternativeImagePath = hoveredColor === "red" ? "../photos/map/red-glow.svg" : "../photos/map/green-glow.svg";
                 d3.select(this).select("image").attr("xlink:href", alternativeImagePath);
-    
+                
                 svg.append("text")
                     .attr("id", "tooltip")
                     .attr("x", hexagonX + hexagonRadius)
@@ -147,9 +146,12 @@ function update() {
     drawHexagons();
 }
 
+overlayDiv.append("p")
+.text("Overlay Content");
+
+
 function drawHexagons() {
     g.selectAll("g").remove();
-    g.selectAll("p").remove();
 
     const mapCenter = map.latLngToLayerPoint(centerCoordinates);
     const gridWidth = cols * hexagonWidth + (cols - 1) * (hexagonWidth / 2);
@@ -400,8 +402,7 @@ function drawHexagons() {
                 }
         }
     }
-    overlayDiv.append("p")
-.text("Overlay Content");
+    
 
 }
 
