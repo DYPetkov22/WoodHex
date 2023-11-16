@@ -190,7 +190,6 @@ letter-spacing: -1.28px;
 #important-things-about-Earth {
   margin-top: 10%;
   display: flex;
-  margin-left: 5%;
   width: 100%;
   justify-content: space-around;
 }
@@ -228,21 +227,17 @@ letter-spacing: -1.28px;
   line-height: normal;
 }
 
-#easier-recycling-div
-{
-  padding-right: 9%;
-}
-
 #easier-recycling-text
 {
-  margin-left: 21%;
   color: #000;
-  font-size: 20px;
-  font-family: Comfortaa;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  margin-top: -5%;
+    font-size: 20px;
+    font-family: Comfortaa;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: -5%;
+    margin-left: 22%;
+    overflow-x: hidden;
 }
 
 
@@ -590,9 +585,28 @@ letter-spacing: -1.28px;
   }
   .photo11
   {
-    width: 5%;
-    height: 15%;
-  } 
+    width: 10%;
+    height: 10%;
+
+  }
+  #clean-earth-text {
+    margin-left: 0%;
+    color: #000;
+    font-size: 20px;
+    font-family: Comfortaa;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+} 
+#easier-recycling-text {
+    color: #000;
+    font-size: 20px;
+    font-family: Comfortaa;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: -5%;
+}
   #clean-air-text
   {
     margin-left: 7%;
@@ -602,7 +616,209 @@ letter-spacing: -1.28px;
     margin-left: 26%;
     width: 53%;
   }
-} 
+  #air_energy
+  {
+    color: #00FF38;
+    font-family: Comfortaa;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 9.5px;
+    margin-top: 60%;
+    margin-bottom: 1%;
+    text-align: center;
+  }
+
+#production-text
+{
+  position: relative;
+  color: #00FF38;
+  font-family: Comfortaa;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 6.1px;
+  text-align: center;
+}
+
+#air_energy-text
+{
+  color: #000;
+  margin-top: 7%;
+  margin-left: 12%;
+  text-align: center;
+  font-size: 20px;
+  width: 83%;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 4.28px;
+
+}
+
+#windmills
+{ 
+    width: 50%;
+    height: auto;
+    margin-top: -86%;
+    margin-right: 25%;
+    
+}
+
+#line1
+{
+  display: none;
+}
+
+
+#solar_panels
+{
+  width: 50%;
+  height: auto;
+  margin-top: 10%;
+  margin-left: 25%;
+}
+
+#div_sum_energy
+{
+  text-align: center;
+  width: 100%;
+  margin-top: 0%;
+}
+
+#sun_energy
+{
+  color: #00FF38;
+    font-family: Comfortaa;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 9.5px;
+    margin-bottom: 1%;
+    width: 100%;
+    padding-left: 0%;
+}
+
+
+#production-text-sun
+{
+  position: relative;
+  color: #00FF38;
+  font-family: Comfortaa;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 6.1px;
+  width: 100%;
+  padding-left: 0%;
+
+}
+#production-text-sun::after
+{
+  display: none;
+}
+
+#production-text::after
+{
+  display: none;
+
+}
+
+#sun_energy-text
+{
+  color: #000;
+  margin-top: 6%;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 4.28px;
+  margin-left: 3%;
+  padding-left: 0 !important;
+}
+
+
+#line2
+{
+  display: none;
+}
+
+#park_img
+{
+  width: 50%;
+    height: auto;
+    margin-top: 10%;
+    position: relative;
+    margin-right: 25%;
+    z-index: 2;
+}
+
+#benefit
+{
+  color: #00FF38;
+  font-family: Comfortaa;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 9.5px;
+  margin-top: 45%;
+  margin-bottom: 1%;
+  margin-left: 5%;
+
+}
+
+#local-communities
+{
+  position: relative;
+  color: #00FF38;
+  font-family: Comfortaa;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 6.1px;
+  margin-left: 5%;
+}
+
+#local-communities::after
+{
+  display: none;
+
+}
+
+#benefit-text
+{
+  color: #000;
+  margin-top: 7%;
+  margin-left: 0%;
+  font-size: 20px;
+  width: 100%;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 4.28px;
+
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 600px) {
   .back {
