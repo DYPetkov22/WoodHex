@@ -485,23 +485,35 @@ letter-spacing: -1.28px;
 
 }
 
-/* #background-of-table
-{
-  background-image: url(../photos/background-of-table.svg);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100rem;
-  width: 100%;
-  margin-top: 0%;
-
+#background-of-table {
+  background-image: url(../photos/home\ page/background-of-table.svg);
+    background-size: 95rem;
+    background-position: right top;
+    background-repeat: no-repeat;
+    height: 150vh;
+    width: 100%;
+    margin-top: -16%;
 }
 
 #table
 {
   width: 40%;
   height: auto;
-} */
+  margin-top: 10%;
+  margin-left: 12%;
+  position: relative;
+  z-index: 1;
+}  
+
+#stats
+{
+  width: 30%;
+  height: auto;
+  position: relative;
+  top: 10%;
+  left: 50%;
+  z-index: 2;
+}
 
 
 
