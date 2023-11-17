@@ -36,6 +36,20 @@ function hexagonPoints(radius, centerX, centerY) {
 }
 
 
+const overlayDiv = d3.select("#leaflet-map").append("div")
+    .attr("id", "overlay-div")
+    .style("position", "fixed")
+    .style('z-index', 1000)
+
+    .style("width", "15vw")
+    .style("height", "20vw")
+
+    .style("top", "3vw")  
+    .style("left", "2vw")  
+
+    .style("background-color", "rgba(255, 255, 255, 0.8)")
+;
+
 function createHexagon(hexagonGroup, isBlack) 
 {
     if (isBlack) {
@@ -76,22 +90,28 @@ function createHexagon(hexagonGroup, isBlack)
             var tooltipText = hoveredColor === "red" ? Math.floor(Math.random() * 100) : 100 + '+';
             var alternativeImagePath = hoveredColor === "red" ? "../photos/map/red-glow.svg" : "../photos/map/green-glow.svg";
             d3.select(this).select("image").attr("xlink:href", alternativeImagePath);
-
-            svg.append("text")
-                .attr("id", "tooltip")
-                .attr("x", hexagonX + hexagonRadius)
-                .attr("y", hexagonY + hexagonRadius)
-                .text(tooltipText);
         })
 
             .on("mouseout", function () {
-                svg.select("#tooltip").remove();
-
                 var alternativeImagePath = hoveredColor === "red" ? "../photos/map/red.svg" : "../photos/map/green.svg";
                 d3.select(this).select("image").attr("xlink:href", alternativeImagePath);
                 d3.select(this).select("polygon").attr("transform", "scale(1)");
             });
-
+            hexagonGroup.on("click", function () 
+            {
+                var hoveredImagePath = d3.select(this).select("image").attr("xlink:href");
+                hoveredColor = hoveredImagePath.includes("green") ? "green" : "red";
+    
+                var tooltipText = hoveredColor === "red" ? Math.floor(Math.random() * 100) : 100 + '+';
+                var alternativeImagePath = hoveredColor === "red" ? "../photos/map/red-glow.svg" : "../photos/map/green-glow.svg";
+                d3.select(this).select("image").attr("xlink:href", alternativeImagePath);
+                
+                svg.append("text")
+                    .attr("id", "tooltip")
+                    .attr("x", hexagonX + hexagonRadius)
+                    .attr("y", hexagonY + hexagonRadius)
+                    .text(tooltipText);    
+            })
         return hexagon;
     }
 }
@@ -125,6 +145,10 @@ function update() {
 
     drawHexagons();
 }
+
+overlayDiv.append("p")
+.text("Overlay Content");
+
 
 function drawHexagons() {
     g.selectAll("g").remove();
@@ -378,6 +402,8 @@ function drawHexagons() {
                 }
         }
     }
+    
+
 }
 
 update();

@@ -1,3 +1,4 @@
+
 .body {
   background-color: #504B4B;
   width: 100%;
@@ -7,6 +8,7 @@
 .navbar-bg-color-map {
   color: aliceblue !important;
 }
+
 
 .container-map {
   background-image: url(../photos/map/bg-image-map-1.svg);
