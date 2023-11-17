@@ -490,7 +490,7 @@ letter-spacing: -1.28px;
     background-size: 95rem;
     background-position: right top;
     background-repeat: no-repeat;
-    height: 150vh;
+    height: 155vh;
     width: 100%;
     margin-top: -16%;
 }
@@ -501,23 +501,410 @@ letter-spacing: -1.28px;
   height: auto;
   margin-top: 10%;
   margin-left: 12%;
-  position: relative;
   z-index: 1;
 }  
 
 #stats
 {
   width: 30%;
+    height: auto;
+    position: relative;
+    top: -18%;
+    left: -34%;
+    z-index: 2;
+}
+
+#information_of_the_table
+{
+  width: 38.2%;
+    height: auto;
+    position: relative;
+    top: -15%;
+    left: 12.6%;
+    z-index: 2;
+}
+
+#planted-trees
+{
+  margin-top: -40%;
+  margin-right: 5%;
+  width: 31%;
+  float: right;
+  color: #FFF;
+  text-align: end;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 5.6px;
+  margin-bottom: 5%;
+}
+
+#why-need-you
+{
+  color: #D4F173;
+  text-align: right;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 5.83px;
+  margin-top: -40%;
+  margin-right: 5%;
+}
+
+#why-need-you::after
+{
+  content: '';
+    height: 0.125rem;
+    width: 4%;
+    background: #D4F173F2;
+    position: absolute;
+    margin-top: 5%;
+    margin-left: -5%;
+}
+
+#planted-trees-text
+{
+  color: #535953;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: 5.6px;
+  float: right;
+  width: 42%;
+  margin-top: -23%;
+  margin-right: 5%;
+  text-align: end;
+}
+
+#background-of-the-groups-waiting
+{
+  background-image: url(../photos/home\ page/background-of-goups-waiting.svg);
+  background-size: 95rem;
+  background-position: right top;
+  background-repeat: no-repeat;
+  height: 150vh;
+  width: 100%;
+  margin-top: -6%;
+}
+
+#table-of-groups-waiting
+{
+  width: 50%;
   height: auto;
+  margin-top: 25%;
+  margin-left: 25%;
+}
+
+#groups_waiting
+{
   position: relative;
-  top: 10%;
-  left: 50%;
+  top: -38%;
+  left: -15%;
+  z-index: 2;
+  color: #00FF38;
+  text-align: center;
+  font-family: Comfortaa;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 3.65px;
+}
+
+.table_text
+{
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  position: relative;
+  top: -37.5%;
+  left: 31%;
   z-index: 2;
 }
 
+.img
+{
+  width: 2%;
+  height: auto;
+  position: relative;
+  top: -39%;
+  left: 31%;
+  z-index: 2;
+}
 
+.posted_by
+{
+  position: relative;
+  color: #000;
+  font-family: Comfortaa;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 5.2px;
+  top: -42%;
+  left: 34%;
+}
 
+.join-now
+{
+  position: relative;
+  border-radius: 49px !important;
+  border: 2px solid #00FF38 !important;
+  box-shadow: 10px 16px 57.4px -4px rgba(0, 0, 0, 0.25) !important;
+  top: -44%;
+  left: 65%;
+  z-index: 2;
+  color: #00FF38;
+  font-family: Comfortaa;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.32px;
+  padding: 0.25%;
+}
 
+#join-now-second-child
+{
+  top: -38.5%;
+  left: 58.5%;
+}
+
+#join-now-thirth-child
+{
+  top: -33%;
+  left: 52%;
+}
+
+#join-now-fourth-child
+{
+  top: -27.5%;
+  left: 45.5%;
+}
+
+#dirty_lake
+{
+  top: -43.5%;
+  left: 31%;
+}
+#img2
+{
+  top: -45%;
+  left: 31%;
+}
+.peoples_waiting
+{
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  position: relative;
+  top: -45%;
+  left: 67%;
+  z-index: 2;
+}
+
+#dirty_lake-posted-by
+{
+  top: -47.5%;
+  left: 34%;
+}
+
+#polluted_nature-Izgrev
+{
+  top: -46.5%;
+}
+
+#peoples_waiting-second-child
+{
+  top: -48.5%;
+}
+
+#img3
+{
+  top: -48.4%;
+  left: 31%;
+}
+
+#polluted_nature-Izgrev-posted-by
+{
+  top: -51%;
+  left: 34%;
+}
+
+#peoples_waiting-thirth-child
+{
+  top: -39%;
+  left: 67%;
+}
+
+#peoples_waiting-fourth-child
+{
+  top: -52%;
+}
+
+#clean_ocean-Nessebar
+{
+  top: -50%;
+}
+
+#img4
+{
+  top: -51.5%;
+}
+
+#clean_ocean-Nessebar-posted-by
+{
+   top: -54%;
+}
+
+#footer-background
+{
+  background-image: url(../photos/home\ page/footer-background.svg);
+  background-size: 95rem;
+  background-position: right top;
+  background-repeat: no-repeat;
+  height: 104vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: hidden;
+}
+
+#about_us
+{
+  padding-left: 5%;
+  color: #FFF;
+  font-family: Comfortaa;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-top: 5%;
+}
+
+#project
+{
+  padding-left: 5%;
+  color: #FFF;
+  font-family: Comfortaa;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-top: 5%;
+}
+
+#how_we_work
+{
+  padding-left: 5%;
+  color: #FFF;
+  font-family: Comfortaa;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-top: 5%;
+  padding-bottom: 8%;
+}
+
+#footer_logo
+{
+  padding-left: 3%;
+  width: 20%;
+  height: auto;
+}
+
+#infortmation
+{
+  margin-left: 40%;
+  margin-top: -33%;
+}
+
+#contact_us
+{
+  color: #FFF;
+  font-family: Comfortaa;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#email
+{
+  color: #FFF;
+  margin-top: 1%;
+  margin-left: 2%;
+  font-family: Comfortaa;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal
+}
+
+#number
+{
+  color: #FFF;
+  margin-top: 1%;
+  margin-left: 2%;
+  font-family: Comfortaa;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal
+}
+
+#support
+{
+  color: #FFF;
+  margin-top: 7%;
+  font-family: Comfortaa;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#support-hours
+{
+  color: #FFF;
+  margin-top: 1%;
+  margin-left: 2%;
+  font-family: Comfortaa;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal
+}
+
+#social_medias
+{
+  margin-left: 70%;
+}
+
+#connected
+{
+  color: #FFF;
+  margin-top: 1%;
+  margin-left: 2%;
+  font-family: Comfortaa;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 5%;
+}
+
+#button_for_staying_conected
+{
+  margin-bottom: 10%;
+}
 
 
 
