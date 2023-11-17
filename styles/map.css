@@ -1,77 +1,81 @@
-.body{
-    background-color: #504B4B;
-    width: 100%;
-    height: 100vh;
-}
-.navbar-bg-color-map{
-    color: aliceblue !important;
-}
-  
-.backpic1 {
-  max-width: 80%;
-  max-height: 95vh;
-  width: 80%;
-  height: 65vh;
-  top: 50%;
-  left: 10%;
-  border-radius: 100px;
-  border: 2px solid #343030;
-  margin-top: 10vh;
-  margin-left: 10%;
-  object-fit: cover; /* Запазва пропорциите на изображението */
-
+.body {
+  background-color: #504B4B;
+  width: 100%;
+  height: 100vh;
 }
 
-.front-text {
-  color: #00FF38;
-  font-size: 50px;
-  font-style: normal;
-  font-weight: 100;
-  position: absolute;
-  bottom: 60%; 
-  right: 50%; 
-  cursor: pointer;
-  transform: translateX(50%);
+.navbar-bg-color-map {
+  color: aliceblue !important;
 }
-.frontpic1 {
-    max-width: 80vh;
-    max-height: 10vh;
-    height: auto;  
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-  .container {
+
+.container-map {
+  background-image: url(../photos/map/bg-image-map-1.svg);
+  background-size: 68rem;
+  background-repeat: no-repeat;
+  top: 7%;
+  left: 12%;
+  width: 72%;
+  height: 75vh;
   position: relative;
-  overflow: visible; /* Променете overflow на visible за да видите цялото съдържание */
-  width: 80vh; /* Променете размерите според нуждите си */
-  height: 80%; /* Променете размерите според нуждите си */
-  }
-  
-  .backpic1,
-  .frontpic1 {
-    transition: transform 0.3s ease;
-  }
-  
-  .front-text {
-    transition: font-size 0.3s ease;
-  }
-  
-  .container:hover .backpic1,
-  .container:hover .frontpic1 {
-    transform: scale(1.1);
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8);
-  }
-  .frontpic1 {
-    transition: transform 0.3s ease;
-  }
-  
-  .container:hover .frontpic1 {
-    transform: scale(1.1);
-  }
-  
-  .container:hover .front-text {
-    font-size: 60px; 
-  }
+  border-radius: 20px;
+  overflow: visible;
+  border-radius: 40px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+
+}
+
+.container-map:hover {
+  -webkit-transform: scale(1.04);
+  -ms-transform: scale(1.04);
+  transform: scale(1.04);
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  box-shadow: 0px 98px 54px -46px rgba(0, 0, 0, 0.5);
+}
+
+.container-map:hover .text-and-logo-map {
+  -webkit-transform: scale(1.04);
+  -ms-transform: scale(1.04);
+  transform: scale(1.04);
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.text-and-logo-map {
+  position: absolute;
+  width: 324px;
+  top: 34%;
+  left: 34%;
+}
+
+.text-and-logo-map:hover {
+  -webkit-transform: scale(1.04);
+  -ms-transform: scale(1.04);
+  transform: scale(1.04);
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.on-back-map {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  margin-bottom: -100px;
+}
+
+.on-back-map:hover {
+  -webkit-transform: scale(1.04);
+  -ms-transform: scale(1.04);
+  transform: scale(1.04);
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
