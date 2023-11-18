@@ -1,10 +1,14 @@
 @import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
 
+body
+{
+  background-color: #121931;
+}
 
 .back {
 
-  background-image: url(../photos/home\ page/1234.png);
-  background-size: 79rem; 
+  background-image: url(../photos/home\ page/1234.svg);
+  background-size: 75rem; 
   background-position: right top; 
   background-repeat: no-repeat;
   height: 100vh;
@@ -15,11 +19,12 @@
   overflow-x: hidden;
   overflow-y: hidden;
   margin-top: -5%;
+  color: #44A960;;
 
 
 }
 .head-text{
-  color: #163920;
+  color: #44A960;;
 font-family: Comfortaa;
 font-size: 128px;
 font-style: normal;
@@ -41,7 +46,7 @@ letter-spacing: -1.28px;
 }
 .phhh
 {
-  color: #163920;
+  color: #44A960;;
   font-family: Comfortaa;
   font-size: 48px;
   font-style: normal;
@@ -55,7 +60,7 @@ letter-spacing: -1.28px;
 {
   width: 17% !important;
   border-radius: 49px !important;
-  border: 1px solid #FFF !important;
+  border: none !important;
   box-shadow: 10px 16px 57.4px -4px rgba(0, 0, 0, 0.314) !important;
   background: linear-gradient(90deg, #347B2A 0.2%, rgba(5, 200, 48, 0.67) 101.51%, #131614 179.57%) !important;
   padding: 1% !important;
@@ -87,6 +92,7 @@ letter-spacing: -1.28px;
   left: 4%;
   top: 0%;
   font-weight: 700;
+  color: #44A960;
 }
 .b{
   height: 10rem;
@@ -95,6 +101,7 @@ letter-spacing: -1.28px;
   position: relative;
   bottom: 0%;
   font-weight: 700;
+  color: #44A960;
   margin-left: 85%;
 }
 .c{
@@ -106,6 +113,7 @@ letter-spacing: -1.28px;
   bottom: 0%;
   font-weight: 700;
   margin-left: 45%;
+  color: #44A960;
 
 }
 
@@ -141,11 +149,11 @@ letter-spacing: -1.28px;
 {
   font-size: 36px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   line-height: normal;
   margin-left: 4%;
   font-family: Comfortaa;
-  color: #14C93C;
+  color: #44A960;
 }
 
 #text-for-what-believe1
@@ -153,11 +161,11 @@ letter-spacing: -1.28px;
   margin-top: 6%;
   margin-left: 9%;
   width: 40%;
-  color: black;
+  color: #B8B2B2;
   font-family: Comfortaa;
   font-size: 20px;
   font-style: normal;
-  font-weight:600;
+  font-weight:500;
   line-height: normal;
 }
 
@@ -167,10 +175,10 @@ letter-spacing: -1.28px;
   float: right;
   margin-right: 9%;
   width: 33%;
-  color: black;
+  color: white;
   font-size: 20px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   line-height: normal;
   text-align: end;
 }
@@ -180,10 +188,10 @@ letter-spacing: -1.28px;
   margin-top: 26%;
   margin-left: 8.5%;
   width: 45%;
-  color: black;
+  color: #B8B2B2;
   font-size: 20px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   line-height: normal;
   margin-bottom: 8%;
 }
@@ -203,7 +211,7 @@ letter-spacing: -1.28px;
 #clean-air-text
 {
   margin-left: 25%;
-  color: #000;
+  color: #B8B2B2;
   font-size: 20px;
   font-family: Comfortaa;
   font-style: normal;
@@ -219,7 +227,7 @@ letter-spacing: -1.28px;
 #clean-earth-text
 {
   margin-left: 20%;
-  color: #000;
+  color: #B8B2B2;
   font-size: 20px;
   font-family: Comfortaa;
   font-style: normal;
@@ -229,7 +237,7 @@ letter-spacing: -1.28px;
 
 #easier-recycling-text
 {
-  color: #000;
+  color: #B8B2B2;
     font-size: 20px;
     font-family: Comfortaa;
     font-style: normal;
@@ -262,12 +270,13 @@ letter-spacing: -1.28px;
 
 #join-revolution-text
 {
-  color: #FFF;
+  color: #B8B2B2;
   font-family: Comfortaa;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  border: none !important;
 }
 
 #air_energy
@@ -312,7 +321,7 @@ letter-spacing: -1.28px;
 
 #air_energy-text
 {
-  color: #000;
+  color: #B8B2B2;
   margin-top: 7%;
   margin-left: 5%;
   font-size: 20px;
@@ -400,7 +409,7 @@ letter-spacing: -1.28px;
 
 #sun_energy-text
 {
-  color: #000;
+  color: #B8B2B2;
   margin-top: 7%;
   font-size: 20px;
   width: 94%;
@@ -473,7 +482,7 @@ letter-spacing: -1.28px;
 
 #benefit-text
 {
-  color: #000;
+  color: #B8B2B2;
   margin-top: 7%;
   margin-left: 5%;
   font-size: 20px;
@@ -519,7 +528,7 @@ letter-spacing: -1.28px;
   width: 38.2%;
     height: auto;
     position: relative;
-    top: -15%;
+    top: -14.5%;
     left: 12.6%;
     z-index: 2;
 }
@@ -530,7 +539,7 @@ letter-spacing: -1.28px;
   margin-right: 5%;
   width: 31%;
   float: right;
-  color: #FFF;
+  color: #B8B2B2;
   text-align: end;
   font-size: 40px;
   font-style: normal;
@@ -566,7 +575,7 @@ letter-spacing: -1.28px;
 
 #planted-trees-text
 {
-  color: #535953;
+  color: #B8B2B2;
   font-size: 20px;
   font-style: normal;
   font-weight: 300;
@@ -604,7 +613,7 @@ letter-spacing: -1.28px;
   top: -38%;
   left: -15%;
   z-index: 2;
-  color: #00FF38;
+  color: #555454;
   text-align: center;
   font-family: Comfortaa;
   font-size: 16px;
@@ -659,7 +668,7 @@ letter-spacing: -1.28px;
   top: -44%;
   left: 65%;
   z-index: 2;
-  color: #00FF38;
+  color: #555454;
   font-family: Comfortaa;
   font-size: 16px;
   font-style: normal;
@@ -667,6 +676,7 @@ letter-spacing: -1.28px;
   line-height: normal;
   letter-spacing: 0.32px;
   padding: 0.25%;
+  background-color: transparent;
 }
 
 #join-now-second-child
@@ -762,6 +772,25 @@ letter-spacing: -1.28px;
 {
    top: -54%;
 }
+#repport_place
+{
+  position: relative;
+  border-radius: 483px;
+  background: linear-gradient(90deg, #15A635 17.47%, rgba(6, 103, 28, 0.79) 105.57%);
+  box-shadow: 3px 3px 6.6px 6px rgba(0, 0, 0, 0.25);
+  top: -50%;
+  left: 40%;
+  z-index: 2;
+  color: #555454;
+  font-family: Comfortaa;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.32px;
+  width: 20%;
+  height: 5%;
+}
 
 #footer-background
 {
@@ -769,11 +798,10 @@ letter-spacing: -1.28px;
   background-size: 95rem;
   background-position: right top;
   background-repeat: no-repeat;
-  height: 104vh;
+  height: 90vh;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  overflow-y: hidden;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
 
 #about_us
@@ -815,15 +843,16 @@ letter-spacing: -1.28px;
 
 #footer_logo
 {
-  padding-left: 3%;
-  width: 20%;
+  margin-left: 3%;
+  margin-top: -5%;
+  width: 15%;
   height: auto;
 }
 
 #infortmation
 {
   margin-left: 40%;
-  margin-top: -33%;
+  margin-top: -25%;
 }
 
 #contact_us
@@ -886,15 +915,16 @@ letter-spacing: -1.28px;
 #social_medias
 {
   margin-left: 70%;
+  margin-top: -24%;
+
 }
 
 #connected
 {
   color: #FFF;
-  margin-top: 1%;
-  margin-left: 2%;
+  margin-top: 7%;
   font-family: Comfortaa;
-  font-size: 25px;
+  font-size: 30px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -904,7 +934,53 @@ letter-spacing: -1.28px;
 #button_for_staying_conected
 {
   margin-bottom: 10%;
+  width: 40% !important;
+  margin-left: 5%
+
 }
+
+#follow_us
+{
+  color: #FFF;
+  margin-top: 1%;
+  margin-left: 2%;
+  font-family: Comfortaa;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 2%;
+}
+
+#insta_and_facebook
+{
+  width: 30%;
+  margin-bottom: 10%;
+}
+
+#gmail
+{
+  width: 13%;
+  margin-left: 1%;
+}
+
+#service
+{
+  margin-top: 20%;
+  font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
