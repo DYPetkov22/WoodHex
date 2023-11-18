@@ -135,6 +135,7 @@ function createHexagon(hexagonGroup, isBlack)
             d3.select(this).select("image").attr("xlink:href", alternativeImagePath);
             
             let plantedTrees = hoveredColor === "red" ? Math.floor(Math.random() * 100) : 100 + Math.floor(Math.random() * 100);
+            let plantedTreesMax = hoveredColor === "red" ? Math.floor(Math.random() * 100) + 100 :plantedTrees ;            
 
             let peopleWait = Math.floor(Math.random() * 100);
             let peopleWaitMax =getRandomMax(peopleWait,100);
@@ -143,9 +144,9 @@ function createHexagon(hexagonGroup, isBlack)
 
             overlayDiv.html
             (
-                "people on weiting  " + peopleWait + " / " + peopleWaitMax +
+                "people on waiting  " + peopleWait + " / " + peopleWaitMax +
                 "<br>" + 
-                "trees needed   " + plantedTrees + " / " + plantedTrees +
+                "trees needed   " + plantedTrees + " / " + plantedTreesMax +
                 "<br>" + 
                 "kind of tree " + randomTree +
                 "<br>" + "<br>" +
@@ -165,6 +166,7 @@ function createHexagon(hexagonGroup, isBlack)
             d3.select(this).select("image").attr("xlink:href", alternativeImagePath);
             d3.select(this).select("polygon").attr("transform", "scale(1)");
         });
+
         return hexagon;
     }
 }
@@ -172,14 +174,16 @@ function createHexagon(hexagonGroup, isBlack)
 function hexagonSea(hexagonGroup)
 {
     let hexagon = hexagonGroup.append("polygon")
-        .attr("points", hexagonPoints(hexagonRadius, 0, 0).join(" "));
+        .attr("points", hexagonPoints(hexagonRadius, 0, 0).join(" "))
+    ;
 
     let hexagonImage = hexagonGroup.append("image")
         .attr("xlink:href", "../photos/map/sea-poligon.svg")  
         .attr("x", -hexagonRadius)
         .attr("y", -hexagonRadius)
         .attr("width", hexagonRadius * 2)
-        .attr("height", hexagonRadius * 2.1);
+        .attr("height", hexagonRadius * 2.1)
+    ;
 
     return hexagon;
 }
