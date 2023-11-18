@@ -135,7 +135,6 @@ function createHexagon(hexagonGroup, isBlack)
             d3.select(this).select("image").attr("xlink:href", alternativeImagePath);
             
             let plantedTrees = hoveredColor === "red" ? Math.floor(Math.random() * 100) : 100 + Math.floor(Math.random() * 100);
-            let plantedTreesMax = getRandomMax(plantedTrees,200);
 
             let peopleWait = Math.floor(Math.random() * 100);
             let peopleWaitMax =getRandomMax(peopleWait,100);
@@ -146,7 +145,7 @@ function createHexagon(hexagonGroup, isBlack)
             (
                 "people on weiting  " + peopleWait + " / " + peopleWaitMax +
                 "<br>" + 
-                "trees needed   " + plantedTrees + " / " + plantedTreesMax +
+                "trees needed   " + plantedTrees + " / " + plantedTrees +
                 "<br>" + 
                 "kind of tree " + randomTree +
                 "<br>" + "<br>" +
