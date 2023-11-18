@@ -12,16 +12,16 @@
 
 .container-map {
   background-image: url(../photos/map/bg-image-map-1.svg);
-  background-size: 68rem;
+  background-size: 78vw;
   background-repeat: no-repeat;
   top: 7%;
   left: 12%;
   width: 72%;
   height: 75vh;
   position: relative;
-  border-radius: 20px;
+  border-radius: 10px;
   overflow: visible;
-  border-radius: 40px;
+  border-radius: 10vh;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.8);
@@ -49,9 +49,16 @@
 }
 .text-and-logo-map {
   position: absolute;
-  width: 324px;
-  top: 34%;
-  left: 34%;
+  top: 50%;
+  left: 50%;
+  width: 750px;
+  height: 225px;
+  line-height: 120px;
+  margin-left: -350px;
+  margin-top: -90px;
+  text-align: center;
+  display:flex;
+  justify-content:center;
 }
 
 .text-and-logo-map:hover {
