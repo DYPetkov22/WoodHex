@@ -12,6 +12,16 @@
 .navbar{
   background-color: transparent !important;
 }
+.wsxzaq{
+  background-color: transparent !important;
+  border: transparent !important;
+  color: white !important;
+  outline: none !important;
+}
+.option-custom{
+  color: black;
+}
+
 
 .nav-link {
   color: rgba(0, 0, 0, 0.703);
@@ -21,7 +31,7 @@
 
 .nav-link:hover,
 .nav-link:focus {
-  color: rgb(0, 0, 0) !important;
+  color: rgb(255, 255, 255) !important;
 }
 
 .custom {
@@ -65,15 +75,25 @@
 .logo {
   margin-left: 68px;
   font-size: 33px;
+  color: #B8B2B2;
+}
+.logo:hover{
+ color: #B8B2B2 !important;
 }
 
 .space-nav:not(:last-child) {
   margin-right: 10%; /* Adjust the margin between items on the right side */
-    color: rgba(0, 0, 0, 0.551)
+    color: rgba(255, 255, 255, 0.56)
 }
-@media (max-width: 1500px) { 
+@media (max-width:  1500px) { 
 .hambur-menu-text
 {
-    color: #0000 !important;
+    color: #000000 !important;
+}
+.wsxzaq
+{
+margin-left: -4% !important;
+  border: solid 1px black !important;
+    color: #000000 !important;
 }
 }
