@@ -14,28 +14,19 @@ L.tileLayer('https://api.maptiler.com/maps/basic-v2-dark/256/{z}/{x}/{y}.png?key
     maxZoom: 8,
 }).addTo(map);
 
-const randomImagePaths = ["../photos/map/green.svg", "../photos/map/red.svg"];
-const alternativeImagePaths = ["../photos/map/green-glow.svg", "../photos/map/red-glow.svg"];
-const svg = d3.select(map.getPanes().overlayPane).append("svg");
-const g = svg.append("g").attr("class", "leaflet-zoom-hide");
-const rows = 15;
-const cols = 26;
-
 let hexagonRadius = 45;
 let hexagonWidth = hexagonRadius * Math.sqrt(3);
 let hexagonHeight = hexagonRadius * 2;
 let hoveredColor = "";
 
-function hexagonPoints(radius, centerX, centerY) {
-    return Array.from({ length: 6 }, (_, i) => {
-        const angle = (2 * Math.PI / 6) * i;
-        let x = centerX + radius * Math.sin(angle);
-        let y = centerY + radius * Math.cos(angle);
-        return [x, y];
-    });
-}
+const randomImagePaths = ["../photos/map/green.svg", "../photos/map/red.svg"];
+const alternativeImagePaths = ["../photos/map/green-glow.svg", "../photos/map/red-glow.svg"];
+const randomTrees =["Cherry plum" , "Norway maple" , "European beech" , "Common lilac"];
 
-
+const svg = d3.select(map.getPanes().overlayPane).append("svg");
+const g = svg.append("g").attr("class", "leaflet-zoom-hide");
+const rows = 15;
+const cols = 26;
 const overlayDiv = d3.select("#leaflet-map").append("div")
     .attr("id", "overlay-div")
     .style("position", "fixed")
@@ -47,8 +38,35 @@ const overlayDiv = d3.select("#leaflet-map").append("div")
     .style("top", "3vw")  
     .style("left", "2vw")  
 
-    .style("background-color", "rgba(255, 255, 255, 0.8)")
+    .style("background-color", "rgba(26, 25, 25, 0.67)")
 ;
+
+overlayDiv.html
+(
+    "people on weiting  " + "--" + " / " + "--" +
+    "<br>" + "<br>" +
+    "trees needed   " + "--" + " / " + "--" +
+    "<br>" + "<br>" +
+    "kind of tree " + "--" +
+    "<br>" + "<br>" +
+    "<button>APPLY FOR GROUP</button>"
+);
+
+
+function hexagonPoints(radius, centerX, centerY) {
+    return Array.from({ length: 6 }, (_, i) => {
+        const angle = (2 * Math.PI / 6) * i;
+        let x = centerX + radius * Math.sin(angle);
+        let y = centerY + radius * Math.cos(angle);
+        return [x, y];
+    });
+}
+
+function getRandomMax(min , max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
 
 function createHexagon(hexagonGroup, isBlack) 
 {
@@ -81,37 +99,54 @@ function createHexagon(hexagonGroup, isBlack)
 
         hexagonGroup.on("mouseover", function () 
         {
-            var hexagonX = parseFloat(d3.select(this).attr("transform").split("(")[1].split(",")[0]);
-            var hexagonY = parseFloat(d3.select(this).attr("transform").split(",")[1].split(")")[0]);
+            let hexagonX = parseFloat(d3.select(this).attr("transform").split("(")[1].split(",")[0]);
+            let hexagonY = parseFloat(d3.select(this).attr("transform").split(",")[1].split(")")[0]);
 
-            var hoveredImagePath = d3.select(this).select("image").attr("xlink:href");
+            let hoveredImagePath = d3.select(this).select("image").attr("xlink:href");
             hoveredColor = hoveredImagePath.includes("green") ? "green" : "red";
 
-            var tooltipText = hoveredColor === "red" ? Math.floor(Math.random() * 100) : 100 + '+';
-            var alternativeImagePath = hoveredColor === "red" ? "../photos/map/red-glow.svg" : "../photos/map/green-glow.svg";
+            let alternativeImagePath = hoveredColor === "red" ? "../photos/map/red-glow.svg" : "../photos/map/green-glow.svg";
             d3.select(this).select("image").attr("xlink:href", alternativeImagePath);
         })
 
-            .on("mouseout", function () {
-                var alternativeImagePath = hoveredColor === "red" ? "../photos/map/red.svg" : "../photos/map/green.svg";
-                d3.select(this).select("image").attr("xlink:href", alternativeImagePath);
-                d3.select(this).select("polygon").attr("transform", "scale(1)");
-            });
-            hexagonGroup.on("click", function () 
-            {
-                var hoveredImagePath = d3.select(this).select("image").attr("xlink:href");
-                hoveredColor = hoveredImagePath.includes("green") ? "green" : "red";
-    
-                var tooltipText = hoveredColor === "red" ? Math.floor(Math.random() * 100) : 100 + '+';
-                var alternativeImagePath = hoveredColor === "red" ? "../photos/map/red-glow.svg" : "../photos/map/green-glow.svg";
-                d3.select(this).select("image").attr("xlink:href", alternativeImagePath);
-                
-                svg.append("text")
-                    .attr("id", "tooltip")
-                    .attr("x", hexagonX + hexagonRadius)
-                    .attr("y", hexagonY + hexagonRadius)
-                    .text(tooltipText);    
-            })
+        hexagonGroup.on("click", function () 
+        {
+            hexagonX = parseFloat(d3.select(this).attr("transform").split("(")[1].split(",")[0]);
+            hexagonY = parseFloat(d3.select(this).attr("transform").split(",")[1].split(")")[0]);
+
+            let hoveredImagePath = d3.select(this).select("image").attr("xlink:href");
+            hoveredColor = hoveredImagePath.includes("green") ? "green" : "red";
+            
+            let alternativeImagePath = hoveredColor === "red" ? "../photos/map/red-glow.svg" : "../photos/map/green-glow.svg";
+            d3.select(this).select("image").attr("xlink:href", alternativeImagePath);
+            
+            let plantedTrees = hoveredColor === "red" ? Math.floor(Math.random() * 100) : 100 + Math.floor(Math.random() * 100);
+            let plantedTreesMax = getRandomMax(plantedTrees,200);
+
+            let peopleWait = Math.floor(Math.random() * 100);
+            let peopleWaitMax =getRandomMax(peopleWait,100);
+        
+            let randomTree = randomTrees[Math.floor(Math.random() * randomTrees.length)];
+
+            overlayDiv.html
+            (
+                "people on weiting  " + peopleWait + " / " + peopleWaitMax +
+                "<br>" + "<br>" +
+                "trees needed   " + plantedTrees + " / " + plantedTreesMax +
+                "<br>" + "<br>" +
+                "kind of tree " + randomTree +
+                "<br>" + "<br>" +
+                "<button>APPLY FOR GROUP</button>"
+            );
+
+        })
+
+        .on("mouseout", function () 
+        {
+            let alternativeImagePath = hoveredColor === "red" ? "../photos/map/red.svg" : "../photos/map/green.svg";
+            d3.select(this).select("image").attr("xlink:href", alternativeImagePath);
+            d3.select(this).select("polygon").attr("transform", "scale(1)");
+        });
         return hexagon;
     }
 }
@@ -146,20 +181,18 @@ function update() {
     drawHexagons();
 }
 
-overlayDiv.append("p")
-.text("Overlay Content");
 
-
-function drawHexagons() {
+function drawHexagons() 
+{
     g.selectAll("g").remove();
-
+    
     const mapCenter = map.latLngToLayerPoint(centerCoordinates);
     const gridWidth = cols * hexagonWidth + (cols - 1) * (hexagonWidth / 2);
     const gridHeight = rows * (hexagonHeight * 0.75);
-
+    
     const startX = mapCenter.x - gridWidth / 2;
     const startY = mapCenter.y - gridHeight / 2;
-
+    
     for (let row = 0; row < rows; row++) {
         for (let col = 0; col < cols; col++) {
             let x = startX + col * hexagonWidth + (row % 2 === 1 ? hexagonWidth / 2 : 0);
@@ -402,8 +435,6 @@ function drawHexagons() {
                 }
         }
     }
-    
-
 }
 
 update();
