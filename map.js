@@ -9,7 +9,8 @@ let map = L.map('leaflet-map',
     maxBoundsViscosity: 0.8
 });
 
-L.tileLayer('https://api.maptiler.com/maps/basic-v2-dark/256/{z}/{x}/{y}.png?key=EPAuysxGm2QU5DiW3b6r', {
+L.tileLayer('https://api.maptiler.com/maps/basic-v2-dark/256/{z}/{x}/{y}.png?key=EPAuysxGm2QU5DiW3b6r', 
+{
     minZoom: 8,
     maxZoom: 8,
 }).addTo(map);
@@ -21,40 +22,51 @@ let hoveredColor = "";
 
 const randomImagePaths = ["../photos/map/green.svg", "../photos/map/red.svg"];
 const alternativeImagePaths = ["../photos/map/green-glow.svg", "../photos/map/red-glow.svg"];
-const randomTrees =["Cherry plum" , "Norway maple" , "European beech" , "Common lilac"];
+const randomTrees =["Cherry plum" , "Norway maple" , "Horse Chestnut" , "Common lilac"];
 
 const svg = d3.select(map.getPanes().overlayPane).append("svg");
 const g = svg.append("g").attr("class", "leaflet-zoom-hide");
 const rows = 15;
 const cols = 26;
+
 const overlayDiv = d3.select("#leaflet-map").append("div")
     .attr("id", "overlay-div")
     .style("position", "fixed")
     .style('z-index', 1000)
 
-    .style("width", "15vw")
-    .style("height", "20vw")
+    .style("width", "16vw")
+    .style("height", "15vw")
 
-    .style("top", "3vw")  
-    .style("left", "2vw")  
-
+    .style("top", "25%")  
+    .style("left", "2%")  
+    
+    .style("padding-left","1%")
+    
+    .style("font-size", "1.3vw")
     .style("background-color", "rgba(26, 25, 25, 0.67)")
+    .style("color", "white")
+
+    .style("display", "flex")
+    .style("justify-content","space-evenly")
+    .style("flex-direction","column")
 ;
 
 overlayDiv.html
 (
-    "people on weiting  " + "--" + " / " + "--" +
-    "<br>" + "<br>" +
+    "people on weiting" + "--" + " / " + "--" +
+    "<br>" +
     "trees needed   " + "--" + " / " + "--" +
-    "<br>" + "<br>" +
+    "<br>" +
     "kind of tree " + "--" +
-    "<br>" + "<br>" +
-    "<button>APPLY FOR GROUP</button>"
+    "<br>" +
+    "<button id='applyButton'>APPLY FOR GROUP</button>"
 );
 
 
-function hexagonPoints(radius, centerX, centerY) {
-    return Array.from({ length: 6 }, (_, i) => {
+function hexagonPoints(radius, centerX, centerY) 
+{
+    return Array.from({ length: 6 }, (_, i) => 
+    {
         const angle = (2 * Math.PI / 6) * i;
         let x = centerX + radius * Math.sin(angle);
         let y = centerY + radius * Math.cos(angle);
@@ -62,7 +74,8 @@ function hexagonPoints(radius, centerX, centerY) {
     });
 }
 
-function getRandomMax(min , max) {
+function getRandomMax(min , max) 
+{
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -70,7 +83,8 @@ function getRandomMax(min , max) {
 
 function createHexagon(hexagonGroup, isBlack) 
 {
-    if (isBlack) {
+    if (isBlack) 
+    {
         let hexagon = hexagonGroup.append("polygon")
         .attr("points", hexagonPoints(hexagonRadius, 0, 0).join(" "));
 
@@ -131,14 +145,19 @@ function createHexagon(hexagonGroup, isBlack)
             overlayDiv.html
             (
                 "people on weiting  " + peopleWait + " / " + peopleWaitMax +
-                "<br>" + "<br>" +
+                "<br>" + 
                 "trees needed   " + plantedTrees + " / " + plantedTreesMax +
-                "<br>" + "<br>" +
+                "<br>" + 
                 "kind of tree " + randomTree +
                 "<br>" + "<br>" +
-                "<button>APPLY FOR GROUP</button>"
+                "<button id='applyButton'>APPLY FOR GROUP</button>"
             );
 
+            document.getElementById('applyButton').addEventListener('click', function() 
+            {
+                window.location.href = 'pages/ApplyForGroup.html';
+            })
+            
         })
 
         .on("mouseout", function () 
@@ -166,7 +185,8 @@ function hexagonSea(hexagonGroup)
     return hexagon;
 }
 
-function update() {
+function update() 
+{
     const bounds = map.getBounds();
     const topLeft = map.latLngToLayerPoint(bounds.getNorthWest());
     const bottomRight = map.latLngToLayerPoint(bounds.getSouthEast());
@@ -193,8 +213,10 @@ function drawHexagons()
     const startX = mapCenter.x - gridWidth / 2;
     const startY = mapCenter.y - gridHeight / 2;
     
-    for (let row = 0; row < rows; row++) {
-        for (let col = 0; col < cols; col++) {
+    for (let row = 0; row < rows; row++) 
+    {
+        for (let col = 0; col < cols; col++) 
+        {
             let x = startX + col * hexagonWidth + (row % 2 === 1 ? hexagonWidth / 2 : 0);
             let y = startY + row * (hexagonHeight * 0.75);
 

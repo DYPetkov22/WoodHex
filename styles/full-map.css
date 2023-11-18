@@ -1,10 +1,23 @@
-body
-{
-    margin: 0;
-}
+@import url(../styles/style.css);
 
 #leaflet-map 
 {
     width: 100vw;
     height: 50vw
+}
+
+#applyButton 
+{
+    position: relative;
+    bottom: 0;
+    left: 13%;
+
+    width: 8vw;
+    height: 2vw;
+
+    font-size: 0.8vw;
+
+    border-radius: 1vw;
+    border: 0px solid rgba(243, 242, 242, 0.53);
+    background: rgba(243, 242, 242, 0.53);  
 }
