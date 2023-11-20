@@ -53,11 +53,11 @@ const overlayDiv = d3.select("#leaflet-map").append("div")
 
 overlayDiv.html
 (
-    "people on weiting" + "--" + " / " + "--" +
+    "people on weiting" + "0" + " / " + "0" +
     "<br>" +
-    "trees needed   " + "--" + " / " + "--" +
+    "trees needed   " + "0" + " / " + "0" +
     "<br>" +
-    "kind of tree " + "--" +
+    "kind of tree " + "none" +
     "<br>" +
     "<button id='applyButton'>APPLY FOR GROUP</button>"
 );
@@ -79,7 +79,7 @@ function getRandomMax(min , max)
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min + 1)) + min;
-  }
+}
 
 function createHexagon(hexagonGroup, isBlack) 
 {
@@ -134,28 +134,46 @@ function createHexagon(hexagonGroup, isBlack)
             let alternativeImagePath = hoveredColor === "red" ? "../photos/map/red-glow.svg" : "../photos/map/green-glow.svg";
             d3.select(this).select("image").attr("xlink:href", alternativeImagePath);
             
-            let plantedTrees = hoveredColor === "red" ? Math.floor(Math.random() * 100) : 100 + Math.floor(Math.random() * 100);
-
-            let peopleWait = Math.floor(Math.random() * 100);
-            let peopleWaitMax =getRandomMax(peopleWait,100);
-        
-            let randomTree = randomTrees[Math.floor(Math.random() * randomTrees.length)];
-
-            overlayDiv.html
-            (
-                "people on weiting  " + peopleWait + " / " + peopleWaitMax +
-                "<br>" + 
-                "trees needed   " + plantedTrees + " / " + plantedTrees +
-                "<br>" + 
-                "kind of tree " + randomTree +
-                "<br>" + "<br>" +
-                "<button id='applyButton'>APPLY FOR GROUP</button>"
-            );
-
-            document.getElementById('applyButton').addEventListener('click', function() 
+            if(hoveredColor === "red")
             {
-                window.location.href = 'pages/ApplyForGroup.html';
-            })
+                let plantedTrees = Math.floor(Math.random() * 100);
+                let plantedTreesMax = Math.floor(Math.random() * 100) + 100;      
+
+                let peopleWait = Math.floor(Math.random() * 100);
+                let peopleWaitMax =getRandomMax(peopleWait,100);
+
+                let randomTree = randomTrees[Math.floor(Math.random() * randomTrees.length)];
+
+                overlayDiv.html
+                (
+                    "people on waiting  " + peopleWait + " / " + peopleWaitMax +
+                    "<br>" + 
+                    "trees needed   " + plantedTrees + " / " + plantedTreesMax + 
+                    "<br>" +
+                    "kind of tree " + randomTree +
+                    "<button id='applyButton'>APPLY FOR GROUP</button>"
+                );
+                    
+                document.getElementById('applyButton').addEventListener('click', function() 
+                {
+                    window.location.href = 'pages/ApplyForGroup.html';
+                })
+            }
+            else
+            {
+                let plantedTrees = 100 + Math.floor(Math.random() * 100);
+
+                overlayDiv.html
+                (
+                    "people on waiting  0 / 0 " +
+                    "<br>" + 
+                    "trees needed   " + plantedTrees + " / " + plantedTrees +
+                    "<br>" + 
+                    "kind of tree none" +
+                    "<br>" + "<br>" +
+                     "<button id='applyButton'>APPLY FOR GROUP</button>"
+                );
+            }
             
         })
 
@@ -165,6 +183,7 @@ function createHexagon(hexagonGroup, isBlack)
             d3.select(this).select("image").attr("xlink:href", alternativeImagePath);
             d3.select(this).select("polygon").attr("transform", "scale(1)");
         });
+
         return hexagon;
     }
 }
@@ -172,14 +191,16 @@ function createHexagon(hexagonGroup, isBlack)
 function hexagonSea(hexagonGroup)
 {
     let hexagon = hexagonGroup.append("polygon")
-        .attr("points", hexagonPoints(hexagonRadius, 0, 0).join(" "));
+        .attr("points", hexagonPoints(hexagonRadius, 0, 0).join(" "))
+    ;
 
     let hexagonImage = hexagonGroup.append("image")
         .attr("xlink:href", "../photos/map/sea-poligon.svg")  
         .attr("x", -hexagonRadius)
         .attr("y", -hexagonRadius)
         .attr("width", hexagonRadius * 2)
-        .attr("height", hexagonRadius * 2.1);
+        .attr("height", hexagonRadius * 2.1)
+    ;
 
     return hexagon;
 }
