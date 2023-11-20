@@ -2,7 +2,12 @@
 
 body
 {
-  background-color: #121931;
+  background-color: #1B222C;
+}
+
+#img_for_smaller_screens
+{
+  display: none;
 }
 
 .back {
@@ -12,20 +17,13 @@ body
   background-position: right top; 
   background-repeat: no-repeat;
   height: 100vh;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 0;
-  overflow-x: hidden;
-  overflow-y: hidden;
-  margin-top: -5%;
+  height: 92vh;
   color: #44A960;;
-
 
 }
 .head-text{
   color: #44A960;;
-font-family: Comfortaa;
+
 font-size: 128px;
 font-style: normal;
 font-weight: 700;
@@ -47,7 +45,6 @@ letter-spacing: -1.28px;
 .phhh
 {
   color: #44A960;;
-  font-family: Comfortaa;
   font-size: 48px;
   font-style: normal;
   font-weight: 700;
@@ -58,7 +55,7 @@ letter-spacing: -1.28px;
 }
 .buttonnsas
 {
-  width: 17% !important;
+  width: 14% !important;
   border-radius: 49px !important;
   border: none !important;
   box-shadow: 10px 16px 57.4px -4px rgba(0, 0, 0, 0.314) !important;
@@ -152,7 +149,6 @@ letter-spacing: -1.28px;
   font-weight: 700;
   line-height: normal;
   margin-left: 4%;
-  font-family: Comfortaa;
   color: #44A960;
 }
 
@@ -162,7 +158,6 @@ letter-spacing: -1.28px;
   margin-left: 9%;
   width: 40%;
   color: #B8B2B2;
-  font-family: Comfortaa;
   font-size: 20px;
   font-style: normal;
   font-weight:500;
@@ -175,7 +170,7 @@ letter-spacing: -1.28px;
   float: right;
   margin-right: 9%;
   width: 33%;
-  color: white;
+  color: #B8B2B2;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
@@ -213,7 +208,6 @@ letter-spacing: -1.28px;
   margin-left: 25%;
   color: #B8B2B2;
   font-size: 20px;
-  font-family: Comfortaa;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -229,7 +223,6 @@ letter-spacing: -1.28px;
   margin-left: 20%;
   color: #B8B2B2;
   font-size: 20px;
-  font-family: Comfortaa;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -239,7 +232,6 @@ letter-spacing: -1.28px;
 {
   color: #B8B2B2;
     font-size: 20px;
-    font-family: Comfortaa;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -259,30 +251,29 @@ letter-spacing: -1.28px;
 #join-revolution
 {
   border-radius: 128px;
-  background: linear-gradient(260deg, #15cc3d 17.47%, rgb(60 159 83 / 79%) 105.57%);
+  background: #03711B;
   box-shadow: 1px 8px 12px 14px rgba(0, 0, 0, 0.17);
   margin-top: 3%;
   margin-left: 39%;
   width: 21%;
   height: 4.5rem;
   margin-bottom: 5%;
+  border: none !important;
 }
 
 #join-revolution-text
 {
   color: #B8B2B2;
-  font-family: Comfortaa;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  border: none !important;
+
 }
 
 #air_energy
 {
   color: #00FF38;
-  font-family: Comfortaa;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
@@ -298,7 +289,6 @@ letter-spacing: -1.28px;
 {
   position: relative;
   color: #00FF38;
-  font-family: Comfortaa;
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
@@ -368,7 +358,6 @@ letter-spacing: -1.28px;
 #sun_energy
 {
   color: #00FF38;
-  font-family: Comfortaa;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
@@ -384,7 +373,6 @@ letter-spacing: -1.28px;
 {
   position: relative;
   color: #00FF38;
-  font-family: Comfortaa;
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
@@ -443,7 +431,6 @@ letter-spacing: -1.28px;
 #benefit
 {
   color: #00FF38;
-  font-family: Comfortaa;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
@@ -459,7 +446,6 @@ letter-spacing: -1.28px;
 {
   position: relative;
   color: #00FF38;
-  font-family: Comfortaa;
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
@@ -513,29 +499,9 @@ letter-spacing: -1.28px;
   z-index: 1;
 }  
 
-#stats
-{
-  width: 30%;
-    height: auto;
-    position: relative;
-    top: -18%;
-    left: -34%;
-    z-index: 2;
-}
-
-#information_of_the_table
-{
-  width: 38.2%;
-    height: auto;
-    position: relative;
-    top: -14.5%;
-    left: 12.6%;
-    z-index: 2;
-}
-
 #planted-trees
 {
-  margin-top: -40%;
+  margin-top: 10%;
   margin-right: 5%;
   width: 31%;
   float: right;
@@ -546,7 +512,6 @@ letter-spacing: -1.28px;
   font-weight: 300;
   line-height: normal;
   letter-spacing: 5.6px;
-  margin-bottom: 5%;
 }
 
 #why-need-you
@@ -558,7 +523,7 @@ letter-spacing: -1.28px;
   font-weight: 300;
   line-height: normal;
   letter-spacing: 5.83px;
-  margin-top: -40%;
+  margin-top: -28%;
   margin-right: 5%;
 }
 
@@ -569,8 +534,8 @@ letter-spacing: -1.28px;
     width: 4%;
     background: #D4F173F2;
     position: absolute;
-    margin-top: 5%;
-    margin-left: -5%;
+    margin-top: 3%;
+    margin-left: -3%;
 }
 
 #planted-trees-text
@@ -583,8 +548,8 @@ letter-spacing: -1.28px;
   letter-spacing: 5.6px;
   float: right;
   width: 42%;
-  margin-top: -23%;
-  margin-right: 5%;
+  margin-top: 5%;
+  margin-right: 3%;
   text-align: end;
 }
 
@@ -597,200 +562,153 @@ letter-spacing: -1.28px;
   height: 150vh;
   width: 100%;
   margin-top: -6%;
+  display: flex;
+  justify-content:center;
+  align-items: center;
 }
 
 #table-of-groups-waiting
 {
-  width: 50%;
-  height: auto;
-  margin-top: 25%;
-  margin-left: 25%;
+  width: 60%;
+  height: 45%;
+  border-radius: 49px;
+  background-color: #C8CFD7;
+  box-shadow: drop-shadow(4px 9px 18.200000762939453px rgba(0, 0, 0, 0.25));
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
-#groups_waiting
+.inside-table-of-groups-waiting
 {
-  position: relative;
-  top: -38%;
-  left: -15%;
+
+  padding: 3.7%;
   z-index: 2;
-  color: #555454;
+
+}
+
+#first-child-of-table
+{
+  padding-top: 1%;
+  display: flex;
+  padding-bottom: 0%;
+  color: #0AAA0A;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 4.5px;
+  padding-left: 5.5%;
+}
+
+#second-child-of-table
+{
+  display: flex;
+  flex-direction: row;
+  padding: 1.7%;
+  padding-bottom: 0.2%;
+  width: 95%;
+  border-bottom: 1px solid #000;
+}
+.child_of_second_child
+{
+  margin-top: 1%;
+  margin-left: 3%;
+}
+
+#size_of_img
+{
+  width: 40%;
+  height: auto;
+}
+
+#second-child-of-second-child
+{
+  display: flex;
+  flex-direction: column;
+}
+
+#vitosha_poluted_nature
+{
+  margin-left: 3.5%;
+}
+
+.childs-second-child-of-second-child
+{
+  
+  width: 120%;
+}
+
+#post-by
+{
+  display: flex;
+  flex-direction: row;
+}
+
+#image
+{
+ width: 10%;
+  height: auto;
+  margin-top: 1%;
+  
+}
+#text
+{
+  margin-top: 2%;
+  
+}
+
+#apply-for-group
+{
+  display: flex;
+  flex-direction: column;
+  margin-left: 40%;
+  align-items: center;
   text-align: center;
-  font-family: Comfortaa;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 3.65px;
 }
 
-.table_text
+#people-waiting
 {
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
-  position: relative;
-  top: -37.5%;
-  left: 31%;
-  z-index: 2;
+  margin-left: 35%;
 }
 
-.img
-{
-  width: 2%;
-  height: auto;
-  position: relative;
-  top: -39%;
-  left: 31%;
-  z-index: 2;
-}
-
-.posted_by
+#join-group
 {
   position: relative;
-  color: #000;
-  font-family: Comfortaa;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 5.2px;
-  top: -42%;
-  left: 34%;
+    border-radius: 49px !important;
+    border: 2px solid #00FF38 !important;
+    box-shadow: 10px 16px 57.4px -4px rgba(0, 0, 0, 0.25) !important;
+    color: #555454;
+    font-family: Comfortaa;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.32px;
+    width: 134%;
+    background-color: transparent;
+}
+#div-for-button
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 0%;
 }
 
-.join-now
+#report
 {
   position: relative;
-  border-radius: 49px !important;
-  border: 2px solid #00FF38 !important;
-  box-shadow: 10px 16px 57.4px -4px rgba(0, 0, 0, 0.25) !important;
-  top: -44%;
-  left: 65%;
-  z-index: 2;
-  color: #555454;
-  font-family: Comfortaa;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.32px;
-  padding: 0.25%;
-  background-color: transparent;
+    border-radius: 483px;
+    background: linear-gradient(90deg, #15A635 17.47%, rgba(6, 103, 28, 0.79) 105.57%);
+    box-shadow: 3px 3px 6.6px 6px rgba(0, 0, 0, 0.25);
+    z-index: 2;
+    color: #555454;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.32px;
+    width: 35%;
+    height: 110%;
 }
 
-#join-now-second-child
-{
-  top: -38.5%;
-  left: 58.5%;
-}
-
-#join-now-thirth-child
-{
-  top: -33%;
-  left: 52%;
-}
-
-#join-now-fourth-child
-{
-  top: -27.5%;
-  left: 45.5%;
-}
-
-#dirty_lake
-{
-  top: -43.5%;
-  left: 31%;
-}
-#img2
-{
-  top: -45%;
-  left: 31%;
-}
-.peoples_waiting
-{
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
-  position: relative;
-  top: -45%;
-  left: 67%;
-  z-index: 2;
-}
-
-#dirty_lake-posted-by
-{
-  top: -47.5%;
-  left: 34%;
-}
-
-#polluted_nature-Izgrev
-{
-  top: -46.5%;
-}
-
-#peoples_waiting-second-child
-{
-  top: -48.5%;
-}
-
-#img3
-{
-  top: -48.4%;
-  left: 31%;
-}
-
-#polluted_nature-Izgrev-posted-by
-{
-  top: -51%;
-  left: 34%;
-}
-
-#peoples_waiting-thirth-child
-{
-  top: -39%;
-  left: 67%;
-}
-
-#peoples_waiting-fourth-child
-{
-  top: -52%;
-}
-
-#clean_ocean-Nessebar
-{
-  top: -50%;
-}
-
-#img4
-{
-  top: -51.5%;
-}
-
-#clean_ocean-Nessebar-posted-by
-{
-   top: -54%;
-}
-#repport_place
-{
-  position: relative;
-  border-radius: 483px;
-  background: linear-gradient(90deg, #15A635 17.47%, rgba(6, 103, 28, 0.79) 105.57%);
-  box-shadow: 3px 3px 6.6px 6px rgba(0, 0, 0, 0.25);
-  top: -50%;
-  left: 40%;
-  z-index: 2;
-  color: #555454;
-  font-family: Comfortaa;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.32px;
-  width: 20%;
-  height: 5%;
-}
 
 #footer-background
 {
@@ -798,7 +716,7 @@ letter-spacing: -1.28px;
   background-size: 95rem;
   background-position: right top;
   background-repeat: no-repeat;
-  height: 90vh;
+  height: 100vh;
   width: 100%;
   margin-left: 0 !important;
   margin-right: 0 !important;
@@ -808,7 +726,6 @@ letter-spacing: -1.28px;
 {
   padding-left: 5%;
   color: #FFF;
-  font-family: Comfortaa;
   font-size: 30px;
   font-style: normal;
   font-weight: 400;
@@ -820,7 +737,6 @@ letter-spacing: -1.28px;
 {
   padding-left: 5%;
   color: #FFF;
-  font-family: Comfortaa;
   font-size: 30px;
   font-style: normal;
   font-weight: 400;
@@ -832,7 +748,6 @@ letter-spacing: -1.28px;
 {
   padding-left: 5%;
   color: #FFF;
-  font-family: Comfortaa;
   font-size: 30px;
   font-style: normal;
   font-weight: 400;
@@ -858,7 +773,6 @@ letter-spacing: -1.28px;
 #contact_us
 {
   color: #FFF;
-  font-family: Comfortaa;
   font-size: 30px;
   font-style: normal;
   font-weight: 400;
@@ -870,7 +784,6 @@ letter-spacing: -1.28px;
   color: #FFF;
   margin-top: 1%;
   margin-left: 2%;
-  font-family: Comfortaa;
   font-size: 25px;
   font-style: normal;
   font-weight: 400;
@@ -882,7 +795,6 @@ letter-spacing: -1.28px;
   color: #FFF;
   margin-top: 1%;
   margin-left: 2%;
-  font-family: Comfortaa;
   font-size: 25px;
   font-style: normal;
   font-weight: 400;
@@ -893,7 +805,6 @@ letter-spacing: -1.28px;
 {
   color: #FFF;
   margin-top: 7%;
-  font-family: Comfortaa;
   font-size: 30px;
   font-style: normal;
   font-weight: 400;
@@ -905,7 +816,6 @@ letter-spacing: -1.28px;
   color: #FFF;
   margin-top: 1%;
   margin-left: 2%;
-  font-family: Comfortaa;
   font-size: 25px;
   font-style: normal;
   font-weight: 400;
@@ -923,7 +833,6 @@ letter-spacing: -1.28px;
 {
   color: #FFF;
   margin-top: 7%;
-  font-family: Comfortaa;
   font-size: 30px;
   font-style: normal;
   font-weight: 400;
@@ -944,7 +853,6 @@ letter-spacing: -1.28px;
   color: #FFF;
   margin-top: 1%;
   margin-left: 2%;
-  font-family: Comfortaa;
   font-size: 25px;
   font-style: normal;
   font-weight: 400;
@@ -991,27 +899,39 @@ letter-spacing: -1.28px;
 
 
  @media (max-width: 1500px) {
+  body {
+    background-color: #1B222C;
+    overflow-x: hidden;
+  }
   .back {
       display: none;
+      background-color: #1B222C;
 
   }
+
   .qazxsw
   {
     display: none !important;
   }
   .phlk
-  {
-    background-image: url(../photos/home\ page/23.png);
+  { 
+    background-image: none !important;
     background-size: 51rem ;
     background-position: top;
     background-repeat: no-repeat;
-    height: 104vh ;
+    background-color: transparent;
+    overflow-y: hidden;
   }
+  #img_for_smaller_screens
+  {
+    margin-top: 10%;
+    display: unset;
+  }
+
   .phhh
 {
-    color: #163920;
-    font-family: Comfortaa;
-    font-size: 70px !important;
+    color: #44A960;
+    font-size: 6vh !important;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -1021,7 +941,7 @@ letter-spacing: -1.28px;
   
   .margin-top-text
   {
-    margin-top: 100%;
+    margin-top: 20%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1040,7 +960,6 @@ letter-spacing: -1.28px;
   width: 4%;
 }
   .a{
-    padding-bottom: 45%;
     width: 60%;
   }
   .b
@@ -1058,25 +977,27 @@ letter-spacing: -1.28px;
     margin-left: 38%;
   
   }
+
+  .sliding-block {
+    height: 15vh;
+}
+
   .photo11
   {
     width: 10%;
     height: 10%;
+    height: 25%;
 
   }
   #clean-earth-text {
     margin-left: 0%;
-    color: #000;
     font-size: 20px;
-    font-family: Comfortaa;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
 } 
 #easier-recycling-text {
-    color: #000;
     font-size: 20px;
-    font-family: Comfortaa;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -1094,7 +1015,6 @@ letter-spacing: -1.28px;
   #air_energy
   {
     color: #00FF38;
-    font-family: Comfortaa;
     font-size: 30px;
     font-style: normal;
     font-weight: 700;
@@ -1109,7 +1029,6 @@ letter-spacing: -1.28px;
 {
   position: relative;
   color: #00FF38;
-  font-family: Comfortaa;
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
@@ -1120,7 +1039,6 @@ letter-spacing: -1.28px;
 
 #air_energy-text
 {
-  color: #000;
   margin-top: 7%;
   margin-left: 12%;
   text-align: center;
@@ -1166,7 +1084,6 @@ letter-spacing: -1.28px;
 #sun_energy
 {
   color: #00FF38;
-    font-family: Comfortaa;
     font-size: 30px;
     font-style: normal;
     font-weight: 700;
@@ -1182,7 +1099,6 @@ letter-spacing: -1.28px;
 {
   position: relative;
   color: #00FF38;
-  font-family: Comfortaa;
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
@@ -1205,7 +1121,6 @@ letter-spacing: -1.28px;
 
 #sun_energy-text
 {
-  color: #000;
   margin-top: 6%;
   font-size: 20px;
   font-style: normal;
@@ -1235,7 +1150,6 @@ letter-spacing: -1.28px;
 #benefit
 {
   color: #00FF38;
-  font-family: Comfortaa;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
@@ -1251,7 +1165,6 @@ letter-spacing: -1.28px;
 {
   position: relative;
   color: #00FF38;
-  font-family: Comfortaa;
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
@@ -1268,7 +1181,6 @@ letter-spacing: -1.28px;
 
 #benefit-text
 {
-  color: #000;
   margin-top: 7%;
   margin-left: 0%;
   font-size: 20px;
@@ -1279,11 +1191,60 @@ letter-spacing: -1.28px;
   letter-spacing: 4.28px;
 
 }
+
+#background-of-table {
+  background-image: none;
+  margin-top: 20%;
+  margin-left: 3%;
+}
+#table
+{
+  width: 70%;
+}
+
+#planted-trees
+{
+  width: 80%;
+  text-align: center;
+  margin-right: 14%;
+}
+
+#why-need-you
+{
+  margin-top: 0%;
+  text-align: center;
+}
+
+#why-need-you::after
+{
+  display: none;
+}
+
+#planted-trees-text
+{
+  width: 70%;
+  text-align: center;
+  margin-top: 5%;
+  margin-right: 16%;
+}
+#table-of-groups-waiting {
+  width: 70%;
+  height: auto;
+  margin-top: -170%;
+  margin-left: 0;
+
 }
 
 
 
 
+ }
+
+
+ @media (max-width: 1200px)
+ {
+
+ }
 
 
 
@@ -1311,12 +1272,11 @@ letter-spacing: -1.28px;
     background-position: top;
     background-repeat: no-repeat;
     height: 80vh ;
+    overflow-y: hidden;
   }
   .phhh
 {
   color: #163920;
-  font-family: Comfortaa;
-  font-size: 48px !important;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -1325,7 +1285,7 @@ letter-spacing: -1.28px;
 }
   .margin-top-text
   {
-    margin-top: 90%;
+    margin-top: 10%;
     display: flex;
     text-align: center;
     flex-wrap: wrap;
@@ -1342,7 +1302,7 @@ letter-spacing: -1.28px;
     width: 34%;
   }
     .a{
-      padding-bottom: 45%;
+      padding-bottom: 15%;
       width: 60%;
     }
     .b
@@ -1354,10 +1314,12 @@ letter-spacing: -1.28px;
       bottom: 0%;
       font-weight: 700;
       margin-left: 58%;
+
     }
     .c{
       position: relative;
       margin-left: 35%;
+      margin-top: 0%;
     
     }
 }

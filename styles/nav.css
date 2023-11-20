@@ -3,41 +3,44 @@
 .navbar-item:hover {
   background-color: transparent !important;
 }
-.p{
+
+.p {
   background-color: transparent !important;
-  color:#FFF;
+  color: #FFF;
   border-color: #FFF;
 }
 
-.navbar{
+.navbar {
   background-color: transparent !important;
 }
-.wsxzaq{
+
+.wsxzaq {
   background-color: transparent !important;
   border: transparent !important;
   color: white !important;
   outline: none !important;
 }
-.option-custom{
-  color: black;
+
+.option-custom {
+  color: white; /* Change to match your preferred color */
 }
 
-
 .nav-link {
-  color: rgba(0, 0, 0, 0.703);
+  color: rgba(255, 255, 255, 0.703); /* Adjust color to match your design */
   transition: all 0.4s;
   position: relative;
 }
 
 .nav-link:hover,
 .nav-link:focus {
-  color: rgb(255, 255, 255) !important;
+  color: white !important;
 }
 
 .custom {
   width: 240px !important;
   border-radius: 49px !important;
-  border: 0px solid #FFF !important;
+  border: none !important;
+  background: #4C5F7A !important;
   box-shadow: 10px 16px 57.4px -4px rgba(0, 0, 0, 0.25) !important;
 }
 
@@ -45,7 +48,7 @@
   content: "";
   height: 1px;
   width: 100%;
-  background: rgb(255, 255, 255);
+  background: white; /* Adjust color to match your design */
   position: absolute;
   bottom: 6px;
   left: 0;
@@ -69,7 +72,7 @@
 }
 
 .navbar-brand {
-  padding: 0rem; /* Adjust the padding as needed */
+  padding: 0rem;
 }
 
 .logo {
@@ -77,23 +80,37 @@
   font-size: 33px;
   color: #B8B2B2;
 }
-.logo:hover{
- color: #B8B2B2 !important;
+
+.logo:hover {
+  color: #B8B2B2 !important;
 }
 
 .space-nav:not(:last-child) {
-  margin-right: 10%; /* Adjust the margin between items on the right side */
-    color: rgba(255, 255, 255, 0.56)
+  margin-right: 10%;
+  color: rgba(255, 255, 255, 0.56);
 }
-@media (max-width:  1500px) { 
-.hambur-menu-text
-{
+
+@media (max-width: 1500px) {
+  .hambur-menu-text {
     color: #000000 !important;
-}
-.wsxzaq
-{
-margin-left: -4% !important;
-  border: solid 1px black !important;
+  }
+
+  .navbar {
+    background-color: #FFF !important;
+  }
+
+  #logo_img {
+    height: 136%;
+    width: auto;
+  }
+
+  .logo {
+    color: black;
+  }
+
+  .wsxzaq {
+    margin-left: -4% !important;
+    border: solid 1px black !important;
     color: #000000 !important;
-}
+  }
 }

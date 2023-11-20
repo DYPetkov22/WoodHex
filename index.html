@@ -16,11 +16,10 @@
     
         
     <div class="phlk">
-            <div class="qwert">
             <nav class="navbar" role="navigation" aria-label="main navigation">
                 <div class="navbar-brand">
                     <a class="navbar-item py-0" href="#">
-                        <img src="./photos/logo 1.png" alt="WoodHex Logo">
+                        <img id="logo_img" src="./photos/logo 1.png" alt="WoodHex Logo">
                         <span class="logo ">WoodHex</span>
                     </a>
                     <div role="button" class="navbar-burger" id="burger" aria-label="menu" aria-expanded="false"
@@ -39,7 +38,7 @@
                         <a href="./pages/other.html" class="navbar-item space-nav nav-link py-0  hambur-menu-text">OTHER</a>
                         <div class="navbar-item">
                             <div id="apply-for-group-button" class="button custom qazxsw">
-                                <a href="./pages/ApplyForGroup.html" id="align-text" class="has-text-black">APPLY FOR
+                                <a href="./pages/ApplyForGroup.html" id="align-text" class="has-text-white">APPLY FOR
                                     GROUP</a>
                             </div>
                             <div class="select navbar-item">
@@ -53,8 +52,9 @@
                 </div>
             </nav>
             </div>
-            </div>
+            <img id="img_for_smaller_screens" src="./photos/home page/23.svg">
            <div class="back"></div>
+           <div id="yhnmju"></div>
     <div class="margin-top-text">
         <p class="phhh">
             The World's<br> Biggest Company<br> for Green<br> Revolution<br>
@@ -99,10 +99,12 @@
         </button>
 
         <div>
-            <p id="air_energy">Air Energy</p>
-            <p id="production-text">Production</p>
-            <p id="air_energy-text">WoodHex sponsors wind vanes to champion green energy. Our focus is on backing sustainable solutions for a cleaner planet. By partnering with wind vane companies, we actively contribute to harnessing wind power, enjoying the advantages of a greener and more sustainable future.</p>
-            <img data-aos="fade-up" id="windmills" src="./photos/home page/windmills.png">
+            <div>
+                <p id="air_energy">Air Energy</p>
+                <p id="production-text">Production</p>
+                <p id="air_energy-text">WoodHex sponsors wind vanes to champion green energy. Our focus is on backing sustainable solutions for a cleaner planet. By partnering with wind vane companies, we actively contribute to harnessing wind power, enjoying the advantages of a greener and more sustainable future.</p>
+                <img data-aos="fade-up" id="windmills" src="./photos/home page/windmills.png">
+            </div>
             <img data-aos="fade-up" id="line1" src="./photos/home page/line1.png">
             <img data-aos="fade-up" id="solar_panels" src="./photos/home page/solar_panels.png">
             <div id="div_sum_energy">
@@ -118,41 +120,84 @@
         </div> 
         <div id="background-of-table">
             <img id="table" src="./photos/home page/table.svg">
-            <img id="stats" src="./photos/home page/stats.svg">
-            <img id="information_of_the_table" src="./photos/home page/information_of_the_table.svg">
             <p id="planted-trees">PLANTED TREES AND RESULTS </p>
             <p id="why-need-you">WHY WE NEED YOU</p>
             <p id="planted-trees-text">The chart illustrates our company's commendable environmental commitment, showcasing the successful planting of over 160,000 trees in the last three years. This significant effort reflects our strong dedication to sustainability, contributing positively to global reforestation and reinforcing our commitment to a greener future.</p>
         </div>
         
         <div id="background-of-the-groups-waiting">
-            <img id="table-of-groups-waiting" src="./photos/home page/table-of-groups-waiting.svg">
-            <p id="groups_waiting">GROUPS ON WAITING</p>
-            <p class="table_text">Polluted nature around the Vitosha.</p> <p class="peoples_waiting" id="peoples_waiting-thirth-child">64/80</p>
-            <img class="img" src="./photos/home page/img.png">
-            <p class="posted_by">by Daniel Iordanov</p>
-            <button class="join-now">JOIN NOW</button>
-            <button class="join-now" id="join-now-second-child">JOIN NOW</button>
-            <button class="join-now" id="join-now-thirth-child">JOIN NOW</button>
-            <button class="join-now" id="join-now-fourth-child">JOIN NOW</button>
-            <p id="dirty_lake" class="table_text">Dirty lake around the Plovdiv.</p> <p class="peoples_waiting">12/35</p>
-            <img class="img" id="img2" src="./photos/home page/img.png">
-            <p class="posted_by" id="dirty_lake-posted-by">by Maria Varbanova</p>
-            <p id="polluted_nature-Izgrev" class="table_text">Polluted nature in Izgrev, Burgas.</p> <p class="peoples_waiting" id="peoples_waiting-second-child">56/70</p>
-            <img class="img" id="img3" src="./photos/home page/img.png">
-            <p class="posted_by" id="polluted_nature-Izgrev-posted-by">by Daniela Bogomilova</p>
-            <p id="clean_ocean-Nessebar" class="table_text">Clean the ocean near Nessebar.</p> <p class="peoples_waiting" id="peoples_waiting-fourth-child">29/30</p>
-            <img class="img" id="img4" src="./photos/home page/img.png">
-            <p class="posted_by" id="clean_ocean-Nessebar-posted-by">by Daniela Bogomilova</p>
-            <button id="repport_place">OR GIVE A SIGNAL FOR A DIRTY PLACE</button>
+            <div id="table-of-groups-waiting">
+                <div class="inside-table-of-groups-waiting" id="first-child-of-table">GROUPS ON WAITING</div>
+                <div class="inside-table-of-groups-waiting" id="second-child-of-table">
+                    <div class="child_of_second_child" ><img id="size_of_img" src="./photos/home page/first_number_of_table.svg" alt="Number of groups waiting"></div>
+                    <div id="vitosha_poluted_nature">
+                        <div class="childs-second-child-of-second-child">Polluted nature around the Vitosha. in Vitosha Nature Park.</div>
+                        <div id="post-by">
+                            <img id="image" src="./photos/home page/img.png">
+                            <p id="text">by Daniel Iordanov</p>
+                        </div>
+                    </div>
+                    <div id="apply-for-group">
+                        <div id="people-waiting">64/80</div>
+                        <div><button id="join-group">JOIN NOW</button></div>
+                    </div>
+                </div>
+                <div class="inside-table-of-groups-waiting" id="second-child-of-table">
+                    <div class="child_of_second_child"><img id="size_of_img" src="./photos/home page/second_number_of_table.svg" alt="Number of groups waiting"></div>
+                    <div id="second-child-of-second-child">
+                        <div class="childs-second-child-of-second-child">Polluted nature around the Vitosha. in Vitosha Nature Park.</div>
+                        <div id="post-by">
+                            <img id="image" src="./photos/home page/img.png">
+                            <p id="text">by Daniel Iordanov</p>
+                        </div>
+                    </div>
+                    <div id="apply-for-group">
+                        <div id="people-waiting">64/80</div>
+                        <div><button id="join-group">JOIN NOW</button></div>
+                    </div>
+                </div>
+                <div class="inside-table-of-groups-waiting" id="second-child-of-table">
+                    <div class="child_of_second_child"><img id="size_of_img" src="./photos/home page/thirth_number_of_table.svg" alt="Number of groups waiting"></div>
+                    <div id="second-child-of-second-child">
+                        <div class="first-child-second-child-of-second-child">Polluted nature around the Vitosha. in Vitosha Nature Park.</div>
+                        <div id="post-by">
+                            <img id="image" src="./photos/home page/img.png">
+                            <p id="text">by Daniel Iordanov</p>
+                        </div>
+                    </div>
+                    <div id="apply-for-group">
+                        <div id="people-waiting">64/80</div>
+                        <div><button id="join-group">JOIN NOW</button></div>
+                    </div>
+                </div>
+                <div class="inside-table-of-groups-waiting" id="second-child-of-table">
+                    <div class="child_of_second_child"><img id="size_of_img" src="./photos/home page/fourth_number_of_table.svg" alt="Number of groups waiting"></div>
+                    <div id="second-child-of-second-child">
+                        <div class="first-child-second-child-of-second-child">Polluted nature around the Vitosha. in Vitosha Nature Park.</div>
+                        <div id="post-by">
+                            <img id="image" src="./photos/home page/img.png">
+                            <p id="text">by Daniel Iordanov</p>
+                        </div>
+                    </div>
+                    <div id="apply-for-group">
+                        <div id="people-waiting">64/80</div>
+                        <div><button id="join-group">JOIN NOW</button></div>
+                    </div>
+                </div>
+                <div class="inside-table-of-groups-waiting" id="div-for-button">
+                    <button id="report">OR GIVE SIGNAL FOR A DIRTY PLACE</button>
+                </div>
+            </div>
         </div>
 
         <footer id="footer-background">
-            
-            <a><p id="about_us">ABOUT US</p></a>
-            <a><p id="project">Project:<br>"GREEN REVOLUTION"</p></a>
-            <a><p id="how_we_work">How we work</p></a>
-            <img id="footer_logo" src="./photos/home page/logo_footer.svg" alt="logo">
+            <div id="about_us">
+                <a><p id="about_us">ABOUT US</p></a>
+                <a><p id="project">Project:<br>"GREEN 
+                    <br>REVOLUTION"</p></a>
+                <a><p id="how_we_work">How we work</p></a>
+                <img id="footer_logo" src="./photos/home page/logo_footer.svg" alt="logo">
+            </div>
             
             <div id="infortmation">
                 <p id="contact_us">CONTACT US</p>
