@@ -1,12 +1,13 @@
-let southWest = L.latLng(42.5, 25),northEast = L.latLng(43, 26);
+let southWest = L.latLng(41.24, 22.36);
+let northEast = L.latLng(44.21, 28.56);
 let bounds = L.latLngBounds(southWest, northEast);
-let centerCoordinates = [42.65, 27.7];
+let centerCoordinates = [42.64, 27.85];
 let map = L.map('leaflet-map', 
 {
     center: centerCoordinates,
-    zoom: 5,
-    maxBounds: bounds,
-    maxBoundsViscosity: 0.8
+    zoom: 8,
+    maxBounds: bounds,             
+    maxBoundsViscosity: 0.8          
 });
 
 L.tileLayer('https://api.maptiler.com/maps/basic-v2-dark/256/{z}/{x}/{y}.png?key=EPAuysxGm2QU5DiW3b6r', 
@@ -14,11 +15,6 @@ L.tileLayer('https://api.maptiler.com/maps/basic-v2-dark/256/{z}/{x}/{y}.png?key
     minZoom: 8,
     maxZoom: 8,
 }).addTo(map);
-
-let hexagonRadius = 35;
-let hexagonWidth = hexagonRadius * Math.sqrt(3);
-let hexagonHeight = hexagonRadius * 2;
-let hoveredColor = "";
 
 const randomImagePaths = ["../photos/map/green.svg", "../photos/map/red.svg"];
 const alternativeImagePaths = ["../photos/map/green-glow.svg", "../photos/map/red-glow.svg"];
@@ -29,38 +25,12 @@ const g = svg.append("g").attr("class", "leaflet-zoom-hide");
 const rows = 15;
 const cols = 26;
 
-const overlayDiv = d3.select("#leaflet-map").append("div")
-    .attr("id", "overlay-div")
-    .style("position", "fixed")
-    .style('z-index', 1000)
-
-    .style("width", "16vw")
-    .style("height", "15vw")
-
-    .style("top", "25%")  
-    .style("left", "2%")  
-    
-    .style("padding-left","1%")
-    
-    .style("font-size", "1.3vw")
-    .style("background-color", "rgba(26, 25, 25, 0.67)")
-    .style("color", "white")
-
-    .style("display", "flex")
-    .style("justify-content","space-evenly")
-    .style("flex-direction","column")
-;
-
-overlayDiv.html
-(
-    "people on weiting" + "0" + " / " + "0" +
-    "<br>" +
-    "trees needed   " + "0" + " / " + "0" +
-    "<br>" +
-    "kind of tree " + "none" +
-    "<br>" +
-    "<button id='applyButton'>APPLY FOR GROUP</button>"
-);
+let windowWidth = window.innerWidth / (cols + 1);
+let windowHeight = window.innerHeight / (rows + 1);
+let hexagonRadius = Math.sqrt(Math.pow(windowWidth / 2, 2) + Math.pow(windowHeight / 2, 2));
+let hexagonWidth = hexagonRadius * Math.sqrt(3);
+let hexagonHeight = hexagonRadius * 2;
+let hoveredColor = "";
 
 
 function hexagonPoints(radius, centerX, centerY) 
@@ -122,9 +92,33 @@ function createHexagon(hexagonGroup, isBlack)
             let alternativeImagePath = hoveredColor === "red" ? "../photos/map/red-glow.svg" : "../photos/map/green-glow.svg";
             d3.select(this).select("image").attr("xlink:href", alternativeImagePath);
         })
-
+        
         hexagonGroup.on("click", function () 
         {
+            d3.select("#overlay-div").remove();
+            const overlayDiv = d3.select("#leaflet-map").append("div")
+            .attr("id", "overlay-div")
+            .style("position", "fixed")
+            .style('z-index', 1000)
+            
+            .style("width", "16vw")
+            .style("height", "15vw")
+            
+            .style("top", "25%")  
+            .style("left", "2%")  
+
+            .style("padding-left","1%")
+
+            .style("font-size", "1.3vw")
+            .style("background-color", "rgba(26, 25, 25, 0.67)")
+            .style("color", "white")
+
+            .style("display", "flex")
+            .style("justify-content","space-evenly")
+            .style("flex-direction","column")
+        ;
+
+            
             hexagonX = parseFloat(d3.select(this).attr("transform").split("(")[1].split(",")[0]);
             hexagonY = parseFloat(d3.select(this).attr("transform").split(",")[1].split(")")[0]);
 
@@ -136,6 +130,7 @@ function createHexagon(hexagonGroup, isBlack)
             
             if(hoveredColor === "red")
             {
+               
                 let plantedTrees = Math.floor(Math.random() * 100);
                 let plantedTreesMax = Math.floor(Math.random() * 100) + 100;      
 
@@ -480,4 +475,3 @@ function drawHexagons()
 }
 
 update();
-map.on("moveend", update);
