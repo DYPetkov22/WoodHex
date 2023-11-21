@@ -77,7 +77,22 @@ letter-spacing: -1.28px;
   margin-left: 31%;
   width: 4%;
 }
-#qwedc
+
+
+.we_need_you_right
+{
+  height: 20vh; 
+  width: 100vw;
+  background-color: white !important; 
+}
+
+#now
+{
+  height: 60vh; 
+  width: 100vw;
+  background-color: white !important;
+}
+/* #qwedc
 {
   padding-top: 3%;
 }
@@ -112,7 +127,7 @@ letter-spacing: -1.28px;
   margin-left: 45%;
   color: #44A960;
 
-}
+} */
 
 .wsxcde
 {
