@@ -12,12 +12,12 @@
 
 .container-map {
   background-image: url(../photos/map/bg-image-map-1.svg);
-  background-size: 78vw;
+  background-size: 80vw;
   background-repeat: no-repeat;
-  top: 7%;
-  left: 12%;
   width: 72%;
   height: 75vh;
+  margin-left: 12%;
+  margin-top: 4%;
   position: relative;
   border-radius: 10px;
   overflow: visible;
@@ -26,7 +26,9 @@
   transition: all 0.2s ease;
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.8);
   cursor: pointer;
-
+  justify-content: center;
+  display: flex;
+  align-items: center;
 }
 
 .container-map:hover {
@@ -48,13 +50,11 @@
   transition: all 0.2s ease;
 }
 .text-and-logo-map {
+  width: 40%;
+  height: auto;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 750px;
-  height: 225px;
   line-height: 120px;
-  margin-left: -350px;
+  margin-left: -200px;
   margin-top: -90px;
   text-align: center;
   display:flex;
@@ -87,4 +87,31 @@
   cursor: pointer;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
+}
+
+@media only screen and (max-width: 480px) {
+  .container-map {
+    width: 75%; 
+    height: 15vh;
+    margin-top: 50%;
+    margin-left: 7%;
+    
+  }
+
+  .text-and-logo-map {
+    width: 35%; 
+    height: auto;
+    margin-top: 10%;
+    margin-left: -50px;
+    margin-top: -30px;
+   
+  }
+  .container-map:hover,
+  .container-map:hover .text-and-logo-map,
+  .on-back-map:hover {
+    transform: none;
+    transition: none;
+    box-shadow: none; /* Ако има сянка, можете да я премахнете */
+  
+}
 }
