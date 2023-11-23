@@ -3,12 +3,13 @@
 @import url(../styles/map.css);
 @import url(../styles/about-us.css);
 @import url(../styles/full-map.css);
+@import url(https://fonts.google.com/specimen/Comfortaa); 
 @import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Comfortaa !important; /* Global styling for all elements with Comfortaa font */
+     font-family: Comfortaa;
   }
   html
   {

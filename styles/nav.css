@@ -4,26 +4,26 @@
   background-color: transparent !important;
 }
 
-.p {
-  background-color: transparent !important;
-  color: #FFF;
-  border-color: #FFF;
-}
 
 .navbar {
-  background-color: transparent !important;
+  border-bottom: 1px solid #343E4D !important;
+background: rgba(27, 34, 44, 0.51) !important;
+backdrop-filter: blur(52.54999923706055px) !important;
+height: 11vh;
 }
 
-.wsxzaq {
+.chnage-lung-button-navbar {
   background-color: transparent !important;
   border: transparent !important;
   color: white !important;
   outline: none !important;
 }
-
-.option-custom {
-  color: white; /* Change to match your preferred color */
+.option-custom{
+  background-color: rgba(215, 219, 224, 0.684)!important;
+  color: rgb(73, 68, 68) !important;
 }
+
+
 
 .nav-link {
   color: rgba(255, 255, 255, 0.703); /* Adjust color to match your design */
@@ -44,13 +44,14 @@
   box-shadow: 10px 16px 57.4px -4px rgba(0, 0, 0, 0.25) !important;
 }
 
+
 .nav-link::after {
   content: "";
   height: 1px;
   width: 100%;
   background: white; /* Adjust color to match your design */
   position: absolute;
-  bottom: 6px;
+  bottom: 20%;
   left: 0;
   opacity: 0;
   transition: all 0.2s;
@@ -65,9 +66,7 @@
 /* Additional styles for logo and navbar items */
 .navbar-item img {
   max-height: 5rem !important;
-  position: absolute;
-  left: -3%;
-  top: -16%;
+margin-left: 3vw;
   width: auto;
 }
 
@@ -76,7 +75,6 @@
 }
 
 .logo {
-  margin-left: 68px;
   font-size: 33px;
   color: #B8B2B2;
 }
@@ -87,7 +85,7 @@
 
 .space-nav:not(:last-child) {
   margin-right: 10%;
-  color: rgba(255, 255, 255, 0.56);
+  color: rgba(255, 255, 255, 0.699);
 }
 
 @media (max-width: 1500px) {
@@ -95,9 +93,7 @@
     color: #000000 !important;
   }
 
-  .navbar {
-    background-color: #FFF !important;
-  }
+
 
   #logo_img {
     height: 136%;
