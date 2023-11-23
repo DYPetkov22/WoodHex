@@ -76,10 +76,9 @@ function createHexagon(hexagonGroup, isBlack)
         {
             d3.select("#overlay-div").remove();
             
-            const overlayDiv = d3.select("#leaflet-map").append("div")
+            const overlayDiv = d3.select("body").append("div")
             .attr("id", "overlay-div")
             .style("position", "fixed")
-            .style('z-index', 1000)
             
             .style("width", "16vw")
             .style("height", "15vw")
