@@ -515,6 +515,9 @@ box-shadow: 4.70769px 7.53231px 17.46554px -1.88308px rgba(0, 0, 0, 0.25) !impor
   .custom-margin-on-text-hm-1{
     margin-top: 15vh;  
   } 
+  .custom-margin-on-button-hm-1{
+    width: auto;
+  }
 
 
   #img_for_smaller_screens
@@ -524,6 +527,7 @@ box-shadow: 4.70769px 7.53231px 17.46554px -1.88308px rgba(0, 0, 0, 0.25) !impor
   }
   .arrow-down
 {
+
   margin-left: 31%;
   width: 4%;
 }
@@ -746,3 +750,8 @@ box-shadow: 4.70769px 7.53231px 17.46554px -1.88308px rgba(0, 0, 0, 0.25) !impor
   height: 215vh;
 }
 } 
+/* @media (max-width: 1180px) {
+  .custom-margin-on-button-hm-1{
+    margin-left: 10vw;
+  }
+} */
