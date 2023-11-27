@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap");
+
+body
+{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+}
+
+#card1
+{
+}
+
+#card2
+{
+}   
+
+#card3
+{
+}
+
+.card
+{
+    width: 10vw;
+    height: 20vh;
+    margin: 0 2.5vw;
+}
+
+.my-button
+{
+    border: 0;
+    background-color: rgb(255, 255, 255);
+}
