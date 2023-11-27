@@ -21,3 +21,12 @@
     border: 0px solid rgba(243, 242, 242, 0.53);
     background: rgba(243, 242, 242, 0.53);  
 }
+
+#hide
+{
+    width: 1vw;
+    margin-left: 240px;
+
+    background-color: transparent;
+    border: none;
+}
