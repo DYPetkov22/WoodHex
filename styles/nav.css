@@ -7,9 +7,10 @@
 
 .navbar {
   border-bottom: 1px solid #343E4D !important;
-background: rgba(27, 34, 44, 0.51) !important;
+  background: rgba(27, 34, 44, 0.51) !important;
 backdrop-filter: blur(52.54999923706055px) !important;
 height: 11vh;
+overflow: hidden;
 }
 
 .chnage-lung-button-navbar {
