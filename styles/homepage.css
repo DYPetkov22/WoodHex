@@ -4,6 +4,7 @@
 body
 {
   background-color: #1B222C;
+  overflow-x: hidden;
 }
 
  #img_for_smaller_screens

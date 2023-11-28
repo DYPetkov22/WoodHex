@@ -31,13 +31,6 @@
 ::-webkit-scrollbar {
   width: 10px; 
 }
-
-
-body {
-  overflow: overlay; 
-}
-
-
 ::-webkit-scrollbar-thumb {
   background-color: #5e6c7e;
   border-radius: 45px;
