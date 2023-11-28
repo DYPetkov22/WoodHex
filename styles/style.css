@@ -3,6 +3,7 @@
 @import url(../styles/map.css);
 @import url(../styles/about-us.css);
 @import url(../styles/full-map.css);
+@import url(../styles/signal.css);
 @import url(https://fonts.google.com/specimen/Comfortaa); 
 @import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
 * {
@@ -15,3 +16,31 @@
   {
     scroll-behavior: smooth;
   }
+::-webkit-scrollbar{
+  width: 15px;
+
+}
+
+::-webkit-scrollbar-track{
+  background: rgb(44, 42, 42);
+}
+
+::-webkit-scrollbar {
+  width: 10px; 
+}
+
+
+body {
+  overflow: overlay; 
+}
+
+
+::-webkit-scrollbar-thumb {
+  background-color: #5e6c7e;
+  border-radius: 45px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #2d3950;
+}

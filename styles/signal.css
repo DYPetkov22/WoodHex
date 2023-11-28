@@ -1,0 +1,16 @@
+.op-ces{
+    position: absolute;
+    height: 92vh;
+    width: 91vw;
+    background-size: 100%;
+    right: -20%;
+    z-index: 0;
+}
+.cl_of_body_signal{
+    background: #1B222C  !important;
+    width: 100vw;
+    height: 100vh;
+}
+.huistartazagora{
+    overflow: hidden !important;
+}
