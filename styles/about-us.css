@@ -1,23 +1,35 @@
 .body{
     background-color: black;
 }
-.bg-img-about-us{
-    background-image: url(../photos/about-us-1.png);
-    background-size: 72rem;
-    background-position: right top;
-    background-repeat: no-repeat;
-    height: 24vh;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 0;
-    margin-top: -5%;
+.size_of_section{
+    width: 100vw;
+    height: 100vh;
 }
+.bg-img-abput-us-1{
+    background-image: url('../photos/1.svg'); 
+    background-repeat: no-repeat;
+     background-size: 100% 100%;
+}
+
 .space-nav-about-us:not(:last-child){
     margin-right: 20%;
 }
-
-.side_nav_about_us{
+.bg-img-abput-us-2{
+    background-image: url('../photos/2.svg'); 
+    background-repeat: no-repeat;
+     background-size: 100% 100%;
+}
+.bg-img-abput-us-3{
+    background-image: url('../photos/3.svg'); 
+    background-repeat: no-repeat;
+     background-size: 100% 100%;
+}
+.bg-img-abput-us-4{
+    background-image: url('../photos/4.svg'); 
+    background-repeat: no-repeat;
+     background-size: 100% 100%;
+}
+.side_nav_about_us4{
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -29,11 +41,15 @@
     top: 17%;
     z-index: 2;
 }
-@media (max-width: 768px) {
+@media (max-width: 1500px) {
+
+    .bg-img-abput-us-1{
+        background-image: none;
+    }
     .qwvert {
         margin-left: 24%;
-    
-        
+
+
     }
     .box
     {
@@ -41,18 +57,41 @@
         text-align: center;
         display: flex;
         justify-content: center;
-       
+
     }
-    
+
 }
 
-@media (max-width: 769px) {
-    .vtori .columns {
-        display: flex;
-        flex-direction: column-reverse;
+@media (min-width: 780px) {
+     .box{
+        margin-left: -26%;
     }
-    .content1 {
-        margin-top: 90% !important;
+  
+    .box1{
+            margin-left: 17%;
     }
+    
+    
 }
- 
+@media (max-width: 780px) {
+.pleven, .plovdiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.plovdiv{
+flex-direction: column-reverse;
+}
+
+.burgas{
+
+    width: 125% ;
+    margin-left: 22% ;
+
+}
+.box
+{
+ margin-top: -40%;
+}
+}

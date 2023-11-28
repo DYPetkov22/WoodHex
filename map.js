@@ -4,10 +4,10 @@ const randomTrees =["Cherry plum" , "Norway maple" , "Horse Chestnut" , "Common 
 
 const svg = d3.select('#leaflet-map');
 const g = svg.append("g").attr("class", "leaflet-zoom-hide");
-const rows = 17;
+const rows = 15;
 const cols = 26;
 
-let windowWidth = window.innerWidth / (cols);
+let windowWidth = window.innerWidth / (cols) - (8);
 let windowHeight = window.innerHeight / (rows);
 let hexagonRadius = Math.sqrt(Math.pow(windowWidth / 2, 2) + Math.pow(windowHeight / 2, 2));
 let hexagonWidth = hexagonRadius * Math.sqrt(3);
@@ -95,6 +95,7 @@ function createHexagon(hexagonGroup, isBlack)
             .style("display", "flex")
             .style("justify-content","space-evenly")
             .style("flex-direction","column")
+            .html("<button id='hide'><img src='../photos/map/x-button.png' alt='Hide'></button>");
             ;
 
             let hoveredImagePath = d3.select(this).select("image").attr("xlink:href");
@@ -115,6 +116,7 @@ function createHexagon(hexagonGroup, isBlack)
 
                 overlayDiv.html
                 (
+                    "<button id='hide'><img src='../photos/map/x-button.png' alt='Hide'></button>" +
                     "people on waiting  " + peopleWait + " / " + peopleWaitMax +
                     "<br>" + 
                     "trees needed   " + plantedTrees + " / " + plantedTreesMax + 
@@ -134,6 +136,7 @@ function createHexagon(hexagonGroup, isBlack)
 
                 overlayDiv.html
                 (
+                    "<button id='hide'><img src='../photos/map/x-button.png' alt='Hide'></button>" +
                     "people on waiting  0 / 0 " +
                     "<br>" + 
                     "trees needed   " + plantedTrees + " / " + plantedTrees +
@@ -143,6 +146,11 @@ function createHexagon(hexagonGroup, isBlack)
                     "<button id='applyButton'>APPLY FOR GROUP</button>"
                 );
             }
+
+            document.getElementById('hide').addEventListener('click', function() 
+            {
+                overlayDiv.style("display", "none");
+            });
         })
 
         .on("mouseout", function () 
