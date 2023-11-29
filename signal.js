@@ -7,7 +7,6 @@ let flagPoles =
     { el: document.getElementById("card3"), pos: 0 }
 ];
 
-gsap.to('body', { 'clip-path': 'polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)', duration: 1 });
 gsap.to(flagPoles[1].el, { scale: 1.5, duration: 1 });
 
 function leftFlip() 
@@ -23,7 +22,7 @@ function leftFlip()
     });
     
     lastFlagPole.el.style.zIndex = 0;
-    lastFlagPole.pos -= 30;
+    lastFlagPole.pos -= 40;
     gsap.to(lastFlagPole.el, { opacity: 1, x: `${lastFlagPole.pos}vw`, duration: 1 });
     
     flagPoles.unshift(lastFlagPole);
