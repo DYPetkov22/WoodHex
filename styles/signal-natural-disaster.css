@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap");
-
+body {
+    overflow-y: scroll; /* Добавя скролбар за вертикално скролиране */
+}
 .op-ces{
     position: absolute;
     height: 92vh;
@@ -13,6 +15,52 @@
     width: 100vw;
     height: 100vh;
 }
-.huistartazagora{
-    overflow: hidden !important;
+
+.second2
+{
+    margin-top: 3%;
+    
 }
+input[type="email"]:invalid {
+    border-color: red;
+  }
+  @media (min-width: 780px) {
+    .text1{
+margin-top: 5%;
+    }
+    .text2
+    {
+        margin-top: 4%;
+    }
+    .cap1{
+        margin-top: 5%;
+
+    }
+    .cap2{
+        margin-top: 4%;
+
+    }
+    .logo21{
+        margin-top: 85%;
+width: 35%;
+    }
+    .logo2{
+        margin-top:40%;
+        margin-left: -39%;
+    }
+    .para{
+        width: 60%;
+    }
+    .field:not(.is-grouped) ,
+    .field:not(.is-grouped),
+    .field:not(.is-grouped)  {
+        width: 75%;
+    }
+    .stara{
+        margin-left: 12%;
+    }
+    .brz{
+        margin-left: 15%;
+    }
+    
+  }    
