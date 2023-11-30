@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap");
 body {
-    overflow-y: scroll; /* Добавя скролбар за вертикално скролиране */
+    overflow-y: scroll; 
 }
 .op-ces{
     position: absolute;
@@ -15,7 +15,58 @@ body {
     width: 100vw;
     height: 100vh;
 }
+.nova
+{
+  background-image: url(../photos/signal/Group\ 1.svg);
+  background-repeat: no-repeat;
+  width: 99%;
+  border-radius: 40px;
+  background-size: cover;
+  background: linear-gradient(180deg, #36AC32 0%, #116C06 100%);
+}
+.center-underline {
+    text-decoration: none;
+    display: block;
+    width: max-content;
+    margin: 0 auto;
+    position: relative;
+    color: #FFF;
+    text-align: center;
+    margin-top: 40%;
+  }
+  
+  .center-underline::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    bottom: 0; 
+    left: 0;
+  }
+  
 
+.text11{
+color: #FFF;
+ margin-top: 0%;
+font-family: Comfortaa;
+font-size: 26px;
+letter-spacing: 0.5px;
+
+;
+}
+.text21{
+    color: #FFF;
+    font-family: Comfortaa;
+    font-size: 18px;
+    margin-top: 13%;
+
+   }
+   .text22{
+    color: #FFF;
+    font-family: Comfortaa;
+    font-size: 18px;
+   }
 .second2
 {
     margin-top: 3%;
@@ -41,11 +92,11 @@ margin-top: 5%;
 
     }
     .logo21{
-        margin-top: 85%;
+        margin-top: 25%;
 width: 35%;
     }
     .logo2{
-        margin-top:40%;
+        margin-top:10%;
         margin-left: -39%;
     }
     .para{
@@ -54,7 +105,7 @@ width: 35%;
     .field:not(.is-grouped) ,
     .field:not(.is-grouped),
     .field:not(.is-grouped)  {
-        width: 75%;
+        width: 80%;
     }
     .stara{
         margin-left: 12%;
@@ -62,5 +113,30 @@ width: 35%;
     .brz{
         margin-left: 15%;
     }
+    .text11{
+        color: #FFF;
+     margin-top: 40%;
+    font-family: Comfortaa;
+    font-size: 26px;
+    letter-spacing: 0.5px;
+    
+    ;
+    }
+    .nova
+{
+  background-image: url(../photos/signal/Group\ 1.svg);
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  height: 70vh;
+  width: 200%;
+  border-radius: 40px;
+  background: linear-gradient(180deg, #36AC32 0%, #116C06 100%);
+}
+.text21{
+    color: #FFF;
+    font-family: Comfortaa;
+    font-size: 18px;
+    margin-top: 13%;
+   }
     
   }    
