@@ -47,7 +47,7 @@ function drawPythagorasTree(depth, mouseX)
     const startX = svg.clientWidth / 2; 
     const startY = svg.clientHeight; 
 
-    drawBranch(startX, startY, -Math.PI / 2, 180, depth);
+    drawBranch(startX, startY, -Math.PI / 2, 150, depth);
 }
 
 svg.addEventListener("mousemove", function (event) 
