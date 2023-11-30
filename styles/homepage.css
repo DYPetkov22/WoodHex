@@ -468,55 +468,60 @@ from {
     margin-top: 12%;
     display: unset;
   }
-  .arrow-down
-{
 
-  margin-left: 31%;
-  width: 4%;
-}
-  .sliding-block {
-    height: 15vh;
-}
-
-  .photo11
+  .subtittle_after_effect::after, #line1, #line2, #why-need-you::after
   {
-    width: 10%;
-    height: 10%;
-    height: 25%;
+    display: none;
+  }
+  #air_energy, #benefit
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #sun_energy{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  #container
+  {
+    background-image: none !important;
+    margin-top: 0%;
+    height: 0%;
+
+  }
+  #why-need-you
+  {
+    margin-left: 0;
+  }
+
+  #background-of-the-groups-waiting 
+  {
+    background-image: none; 
+    height: 150vh;
+  }
+
+  #table-of-groups-waiting {
+    width: 70%;
 
   }
 
-.subtittle_after_effect::after, #line1, #line2, #why-need-you::after
-{
-  display: none;
-}
-
-#sun_energy{
-  display: flex;
-  flex-direction: column-reverse;
-}
-
-
-#container
-{
-  background-image: none !important;
-  margin-top: 0%;
-  height: 0%;
-}
-#why-need-you
-{
-  margin-left: 0;
-}
-
-#background-of-the-groups-waiting 
-{
-  background-image: none; 
-}
-
-#table-of-groups-waiting {
-  width: 70%;
-
-}
+  #footer
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+  }
+  #custom-image
+  {
+    display: none;
+  }
 }
 
 @media (max-width: 800px) 
@@ -539,6 +544,58 @@ from {
   }
   #background-of-the-groups-waiting
 {
-  height: 215vh;
+  height: 150vh;
 }
 } 
+
+@media (max-width: 400px)
+{
+  #background-of-the-groups-waiting 
+  {
+    height: 200vh;
+  }
+  #footer
+  {
+    background-image: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 120vh;
+  }
+}
+
+@media (max-width: 1024px)
+{
+  #background-of-the-groups-waiting 
+  {
+    height: 65vh;
+  }
+  #footer
+  {
+    height: 20vh;
+  }
+  #custom-image
+  {
+    display: block;
+  }
+
+}
+@media (max-width: 768px)
+{
+  #background-of-the-groups-waiting 
+  {
+    height: 147vh;
+  }
+  #footer
+  {
+    height: 60vh;
+    background-image: none;
+    margin-top: -40%;
+  }
+  #custom-image
+  {
+    display: none;
+  }
+
+}
