@@ -25,10 +25,10 @@ body.locked {
 {
   display: none;
 } 
-
 #color-of-text-homepage-section-5{
   color: #B8B2B2;
 }
+
 #avf{
   font-family: 'Space Grotesk' !important;
   font-weight: 700;
@@ -366,16 +366,18 @@ box-shadow: 4.70769px 7.53231px 17.46554px -1.88308px rgba(0, 0, 0, 0.25) !impor
   background-color: transparent;
 }
 
-
-#report
-{
-  position: relative;
-  border-radius: 483px;
-  background: linear-gradient(90deg, #15A635 17.47%, rgba(6, 103, 28, 0.79) 105.57%);
-  box-shadow: 3px 3px 6.6px 6px rgba(0, 0, 0, 0.25);
-  color: #555454;
-
+#report {
+  background-color: transparent !important;
+  border: #15A635 3px solid;
+  transition: 0.2s; /* Corrected from 0,2s to 0.2s */
 }
+
+#report:hover {
+  color: #B8B2B2;
+  background: linear-gradient(90deg, #15A635 17.47%, rgba(6, 103, 28, 0.79) 105.57%);
+  box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.25);
+}
+
 
 #footer
 {

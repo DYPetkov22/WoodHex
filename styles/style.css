@@ -9,7 +9,7 @@
 @import url(../styles/signal-diseases\ and\ pests.css);
 @import url(../styles/signal-natural-disaster.css);
 @import url(../styles/signal-poll-ill-log.css);
-
+@import url(../styles/project.css);
 @import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
 
 * {
@@ -43,4 +43,9 @@
 
 ::-webkit-scrollbar-thumb:hover {
   background-color: #2d3950;
+}
+.section-size-all-classes{
+  background: #1B222C  !important;
+  width: 100vw;
+  height: 100vh;
 }

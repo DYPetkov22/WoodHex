@@ -1,0 +1,41 @@
+
+body{
+    overflow-y: scroll;
+}
+.bezhui{
+    position: fixed;
+    height: 94vh;
+    /* width: 27vw; */
+    /* background-size: 100%; */
+    /* right: -20%; */
+    z-index: 0;
+}
+.bezhui-1{
+    position: fixed;
+    height: 164vh;
+    width: 51vw;
+    background-size: 100%;
+    right: 31%;
+    top: -9%;
+    z-index: 0;
+}
+.bezhui-2{
+    position: fixed;
+    height: 138vh;
+    width: 33vw;
+    background-size: 100%;
+    z-index: 0;
+    left: 72%;
+}
+.custom-font-size-project {
+    font-size: 3.9vh !important;
+
+}
+#brgiottuka{
+    color: #b8b2b2;
+}
+.bezhuirad{
+    border: 4px solid;
+    width: 40vw;
+    height: 80vh;
+}
