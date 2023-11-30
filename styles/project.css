@@ -1,4 +1,3 @@
-
 body{
     overflow-y: scroll;
 }
@@ -38,4 +37,14 @@ body{
     border: 4px solid;
     width: 40vw;
     height: 80vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#pythagoras-tree
+{
+    width: 100%;
+    height: 100%;
 }
