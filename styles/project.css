@@ -1,278 +1,97 @@
+/* Set vertical scrollbar for the entire body */
 body {
-    overflow-y: scroll;
+    overflow-y: scroll !important;
 }
 
-@media (min-width: 780px) {
-    .bezhui {
-        position: fixed;
-        height: 94vh;
-        z-index: 0;
-    }
+/* Styles for background pictures */
 
-    .bezhui-1 {
-        position: fixed;
-        height: 164vh;
-        width: 51vw;
-        background-size: 100%;
-        right: 31%;
-        top: -9%;
-        z-index: 0;
-    }
-
-    .bezhui-2 {
-        position: fixed;
-        height: 138vh;
-        width: 33vw;
-        background-size: 100%;
-        z-index: 0;
-        left: 72%;
-    }
-
-    .custom-font-size-project {
-        font-size: 3.9vh !important;
-
-    }
-
-    #brg2 {
-        color: #FFF;
-        font-size: 40px;
-
-    }
-
-    #zdrkp {
-        color: #B8B2B2;
-        font-size: 28.3px;
-
-    }
-
-    .bezhuirad {
-        border: 4px solid;
-        width: 40vw;
-        height: 80vh;
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    #pythagoras-tree {
-        width: 100%;
-        height: 100%;
-    }
-
-    #brg {
-        color: green;
-        font-size: 3rem;
-    }
+/* Positioned background image 1 */
+.back-pic {
+    /* Positioned background image 1 */
+    position: fixed;
+    height: 94vh;
+    z-index: 0;
 }
 
-@media (max-width: 780px) {
-    .bezhui {
-        position: fixed;
-        height: 94vh;
-
-        z-index: 0;
-    }
-
-    .bezhui-1 {
-        position: fixed;
-        height: 164vh;
-        width: 51vw;
-        background-size: 100%;
-        right: 31%;
-        top: -9%;
-        z-index: 0;
-    }
-
-    .bezhui-2 {
-        position: fixed;
-        height: 138vh;
-        width: 33vw;
-        background-size: 100%;
-        z-index: 0;
-        left: 72%;
-    }
-
-    .custom-font-size-project {
-        font-size: 3.9vh !important;
-
-    }
-
-    #brg2 {
-        color: #FFF;
-        font-size: 30px;
-        margin-left: -1%;
-        text-align: center;
-
-    }
-
-    #zdrkp {
-        color: #B8B2B2;
-        font-size: 28.3px;
-        margin-left: -10%;
-        text-align: center;
-
-
-
-    }
-
-    .bezhuirad {
-        border: 4px solid;
-        height: 80vh;
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        margin-left: -7%;
-    }
-
-    #pythagoras-tree {
-        width: 100%;
-        height: 100%;
-    }
-
-    #brg {
-        color: green;
-        font-size: 3rem;
-        margin-left: -5%;
-        margin-top: 20%;
-    }
-
+    /* Positioned background image 2 */
+.back-pic1 {
+    position: fixed;
+    height: 164vh;
+    width: 51vw;
+    background-size: 100%;
+    right: 31%;
+    top: -9%;
+    z-index: 0;
 }
 
-@media (min-width: 600px) and (max-width: 1024px) {
-    .bezhui-1 {
-        height: 120vh;
-        width: 70vw;
-        right: 20%;
-        top: -5%;
-    }
-
-    .bezhui-2 {
-        height: 110vh;
-        width: 45vw;
-        left: 60%;
-    }
-
-    #brg2 {
-        font-size: 30px;
-        margin-left: 0;
-        text-align: center;
-
-    }
-
-    #zdrkp {
-        font-size: 24px;
-        margin-left: -5%;
-        text-align: center;
-
-    }
-
-    .bezhuirad {
-        width: 70%;
-        height: 50vh;
-        margin-left: 10%;
-    }
-
-    #brg {
-        font-size: 2.5rem;
-        margin-left: 0;
-        margin-top: 10%;
-    }
+ /* Positioned background image 3 */
+.back-pic2 {
+    position: fixed;
+    height: 138vh;
+    width: 33vw;
+    background-size: 100%;
+    z-index: 0;
+    left: 72%;
 }
 
+/* Styles for different text elements */
+
+/* Styles for the title text */
+#title-text {
+    color: green;
+    font-size: 3rem;
+}
+
+/* Styles for the text under title */
+#under-title-text {
+    color: #FFF;
+    font-size: 40px;
+}
+
+/* Styles for the big text */
+#big-text {
+    color: #B8B2B2;
+    font-size: 28.3px;
+}
+
+/* Styles for the tree container */
+.tree-box {
+    border: 4px solid;
+    width: 40vw;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Styles for the pythagoras tree SVG */
+#pythagoras-tree {
+    width: 100%;
+    height: 100%;
+}
+
+/* Media queries for responsive design */
+
+/* For screens between 1024px and 1366px width */
 @media (min-width: 1024px) and (max-width: 1366px) {
-    .bezhui-1 {
-        height: 150vh;
-        width: 80vw;
-        right: 15%;
-        top: -3%;
-    }
-
-    .bezhui-2 {
-        height: 130vh;
-        width: 55vw;
-        left: 55%;
-    }
-
-    #brg2 {
-        font-size: 60px;
-        margin-left: 15%;
-
-        width: 150%;
-        text-align: center;
-
-
-    }
-
-    #zdrkp {
-        font-size: 50px;
-        width: 180%;
-        text-align: center;
-
-    }
-
-    .bezhuirad {
+    .tree-box {
         width: 300%;
         height: 100vh;
     }
+}
 
-    #brg {
-        font-size: 5rem;
-        margin-left: 50%;
-
-        width: 150%;
-        margin-top: 8%;
-
-
+/* For screens between 820px and 1180px width */
+@media (min-width: 820px) and (max-width: 1180px) {
+    .tree-box {
+        width: 400%;
+        height: 50vh;
     }
 }
 
-@media (min-width: 820px) and (max-width: 1180px) {
-    .bezhui-1 {
-        height: 150vh;
-        width: 80vw;
-        right: 15%;
-        top: -3%;
-    }
-
-    .bezhui-2 {
-        height: 130vh;
-        width: 55vw;
-        left: 55%;
-    }
-
-    #brg2 {
-        font-size: 50px;
-        margin-left: -5%;
-
-        width: 170%;
-        text-align: center;
-
-
-    }
-
-    #zdrkp {
-        font-size: 30px;
-        width: 170%;
-        text-align: center;
-
-    }
-
-    .bezhuirad {
-        width: 260%;
-        height: 50vh;
-
-    }
-
-    #brg {
-        font-size: 5rem;
-        margin-left: 40%;
-
-        width: 170%;
-        margin-top: 8%;
-
-
+/* For screens up to 780px width */
+@media (max-width: 780px) {
+    .tree-box {
+        width: 100%;
+        height: 80vh;
     }
 }
