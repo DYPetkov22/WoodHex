@@ -32,7 +32,9 @@
     border: none;
 }
 
-@media (max-width: 1500px) {
-    .visibility {}
-
+.custom_button_full-map{
+    background-color: #1b222c;
+    cursor: pointer;
+    border-color: transparent;
+    color: #fff;
 }
