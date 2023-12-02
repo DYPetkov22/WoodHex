@@ -7,9 +7,9 @@
 
 .navbar {
   border-bottom: 1px solid #343E4D !important;
-background: rgba(27, 34, 44, 0.51) !important;
-backdrop-filter: blur(52.54999923706055px) !important;
-height: 11vh;
+  background: rgba(27, 34, 44, 0.51) !important;
+  backdrop-filter: blur(52.54999923706055px) !important;
+  height: 11vh;
 }
 
 .chnage-lung-button-navbar {
@@ -18,15 +18,17 @@ height: 11vh;
   color: white !important;
   outline: none !important;
 }
-.option-custom{
-  background-color: rgba(215, 219, 224, 0.684)!important;
+
+.option-custom {
+  background-color: rgba(215, 219, 224, 0.684) !important;
   color: rgb(73, 68, 68) !important;
 }
 
 
 
 .nav-link {
-  color: rgba(255, 255, 255, 0.703); /* Adjust color to match your design */
+  color: rgba(255, 255, 255, 0.703);
+  /* Adjust color to match your design */
   transition: all 0.4s;
   position: relative;
 }
@@ -49,7 +51,8 @@ height: 11vh;
   content: "";
   height: 1px;
   width: 100%;
-  background: white; /* Adjust color to match your design */
+  background: white;
+  /* Adjust color to match your design */
   position: absolute;
   bottom: 20%;
   left: 0;
@@ -66,7 +69,7 @@ height: 11vh;
 /* Additional styles for logo and navbar items */
 .navbar-item img {
   max-height: 5rem !important;
-margin-left: 3vw;
+  margin-left: 3vw;
   width: auto;
 }
 

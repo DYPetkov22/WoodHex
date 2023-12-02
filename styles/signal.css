@@ -13,21 +13,24 @@
   overflow: hidden !important;
 }
 
-.baibai{
+.baibai {
   position: relative;
   z-index: 1;
 }
-.column-size_signal{
+
+.column-size_signal {
   height: 100vh;
   display: flex;
   justify-content: center;
 }
-#keh{
+
+#keh {
   background-color: transparent !important;
   border: none;
 
 }
- .slider {
+
+.slider {
   position: relative;
   width: 100vw;
   height: 100vh;
@@ -85,9 +88,10 @@
   text-align: center;
   cursor: pointer;
 }
-.style-d-and-p{
+
+.style-d-and-p {
   border-radius: 71px;
-  background:  linear-gradient(270deg, #1C4910 5.61%, #255D16 85.98%);
+  background: linear-gradient(270deg, #1C4910 5.61%, #255D16 85.98%);
   position: relative;
   border: none;
   width: 5.9vw;
@@ -97,7 +101,8 @@
   text-align: center;
   cursor: pointer;
 }
-.style-p-and-l{
+
+.style-p-and-l {
   border-radius: 71px;
   background: linear-gradient(270deg, #4E3926 4.44%, #86603E 96.96%);
   position: relative;

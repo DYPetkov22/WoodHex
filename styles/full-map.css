@@ -1,15 +1,15 @@
 @import url(../styles/style.css);
 
-#leaflet-map 
-{
+#leaflet-map {
     width: 100vw;
     height: 100vh;
 }
-.visibility{
+
+.visibility {
     display: none;
 }
-#applyButton 
-{
+
+#applyButton {
     position: relative;
     bottom: 0;
     left: 13%;
@@ -21,19 +21,18 @@
 
     border-radius: 1vw;
     border: 0px solid rgba(243, 242, 242, 0.53);
-    background: rgba(243, 242, 242, 0.53);  
+    background: rgba(243, 242, 242, 0.53);
 }
 
-#hide
-{
+#hide {
     width: 1vw;
     margin-left: 240px;
 
     background-color: transparent;
     border: none;
 }
-@media (max-width: 1500px){
-    .visibility{
-    }
-    
+
+@media (max-width: 1500px) {
+    .visibility {}
+
 }

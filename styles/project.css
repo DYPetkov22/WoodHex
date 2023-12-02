@@ -1,14 +1,15 @@
-body{
+body {
     overflow-y: scroll;
 }
 
 @media (min-width: 780px) {
-    .bezhui{
+    .bezhui {
         position: fixed;
         height: 94vh;
         z-index: 0;
     }
-    .bezhui-1{
+
+    .bezhui-1 {
         position: fixed;
         height: 164vh;
         width: 51vw;
@@ -17,7 +18,8 @@ body{
         top: -9%;
         z-index: 0;
     }
-    .bezhui-2{
+
+    .bezhui-2 {
         position: fixed;
         height: 138vh;
         width: 33vw;
@@ -25,108 +27,120 @@ body{
         z-index: 0;
         left: 72%;
     }
+
     .custom-font-size-project {
         font-size: 3.9vh !important;
-    
+
     }
-    #brg2{
+
+    #brg2 {
         color: #FFF;
         font-size: 40px;
-        
+
     }
-    #zdrkp{
+
+    #zdrkp {
         color: #B8B2B2;
         font-size: 28.3px;
-    
+
     }
-    .bezhuirad{
+
+    .bezhuirad {
         border: 4px solid;
         width: 40vw;
         height: 80vh;
-    
+
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    
-    #pythagoras-tree
-    {
+
+    #pythagoras-tree {
         width: 100%;
         height: 100%;
     }
-    #brg{
+
+    #brg {
         color: green;
         font-size: 3rem;
     }
-  } 
-  @media (max-width: 780px) {   
-  .bezhui{
-    position: fixed;
-    height: 94vh;
-
-    z-index: 0;
-}
-.bezhui-1{
-    position: fixed;
-    height: 164vh;
-    width: 51vw;
-    background-size: 100%;
-    right: 31%;
-    top: -9%;
-    z-index: 0;
-}
-.bezhui-2{
-    position: fixed;
-    height: 138vh;
-    width: 33vw;
-    background-size: 100%;
-    z-index: 0;
-    left: 72%;
-}
-.custom-font-size-project {
-    font-size: 3.9vh !important;
-
-}
-#brg2{
-    color: #FFF;
-    font-size: 30px;
-    margin-left: -1%;
-    text-align: center;
-
-}
-#zdrkp{
-    color: #B8B2B2;
-    font-size: 28.3px;
-    margin-left: -10%;
-    text-align: center;
-
-   
-
-}
-.bezhuirad{
-    border: 4px solid;
-    height: 80vh;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-margin-left: -7%;
 }
 
-#pythagoras-tree
-{
-    width: 100%;
-    height: 100%;
-}
-#brg{
-    color: green;
-    font-size: 3rem;
-    margin-left: -5%;
-    margin-top: 20%;
+@media (max-width: 780px) {
+    .bezhui {
+        position: fixed;
+        height: 94vh;
+
+        z-index: 0;
+    }
+
+    .bezhui-1 {
+        position: fixed;
+        height: 164vh;
+        width: 51vw;
+        background-size: 100%;
+        right: 31%;
+        top: -9%;
+        z-index: 0;
+    }
+
+    .bezhui-2 {
+        position: fixed;
+        height: 138vh;
+        width: 33vw;
+        background-size: 100%;
+        z-index: 0;
+        left: 72%;
+    }
+
+    .custom-font-size-project {
+        font-size: 3.9vh !important;
+
+    }
+
+    #brg2 {
+        color: #FFF;
+        font-size: 30px;
+        margin-left: -1%;
+        text-align: center;
+
+    }
+
+    #zdrkp {
+        color: #B8B2B2;
+        font-size: 28.3px;
+        margin-left: -10%;
+        text-align: center;
+
+
+
+    }
+
+    .bezhuirad {
+        border: 4px solid;
+        height: 80vh;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-left: -7%;
+    }
+
+    #pythagoras-tree {
+        width: 100%;
+        height: 100%;
+    }
+
+    #brg {
+        color: green;
+        font-size: 3rem;
+        margin-left: -5%;
+        margin-top: 20%;
+    }
+
 }
 
-  } 
 @media (min-width: 600px) and (max-width: 1024px) {
     .bezhui-1 {
         height: 120vh;
@@ -170,7 +184,7 @@ margin-left: -7%;
 
 @media (min-width: 1024px) and (max-width: 1366px) {
     .bezhui-1 {
-        height: 150vh; 
+        height: 150vh;
         width: 80vw;
         right: 15%;
         top: -3%;
@@ -211,12 +225,13 @@ margin-left: -7%;
         width: 150%;
         margin-top: 8%;
 
-        
+
     }
 }
+
 @media (min-width: 820px) and (max-width: 1180px) {
     .bezhui-1 {
-        height: 150vh; 
+        height: 150vh;
         width: 80vw;
         right: 15%;
         top: -3%;
@@ -258,8 +273,6 @@ margin-left: -7%;
         width: 170%;
         margin-top: 8%;
 
-        
+
     }
 }
-
-
