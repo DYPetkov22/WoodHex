@@ -1,37 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap");
 
-.op-ces{
-    position: absolute;
-    height: 92vh;
-    width: 91vw;
-    background-size: 100%;
-    right: -20%;
-    z-index: 0;
+.op-ces {
+  position: absolute;
+  height: 92vh;
+  width: 91vw;
+  background-size: 100%;
+  right: -20%;
+  z-index: 0;
 }
-.huistartazagora{
-    overflow: hidden !important;
+
+.huistartazagora {
+  overflow: hidden !important;
 }
-.slider{
+
+.slider {
   position: relative;
   width: 100vw;
   height: 100vh;
 
   display: flex;
 
- margin-top: 20vh;
+  margin-top: 20vh;
 }
-.card-1{
-background-image: url(../photos/signal/signal-proba-photo.svg);
-display: flex;
-align-items: flex-end;
-justify-content: center;
-background-repeat: no-repeat;
-background-size: cover;
-background-position: center;
-width: 17vw;
-height: 55vh;
-}
-.card-2{
+
+.card-1 {
   background-image: url(../photos/signal/signal-proba-photo.svg);
   display: flex;
   align-items: flex-end;
@@ -42,7 +34,8 @@ height: 55vh;
   width: 17vw;
   height: 55vh;
 }
-.card-3{
+
+.card-2 {
   background-image: url(../photos/signal/signal-proba-photo.svg);
   display: flex;
   align-items: flex-end;
@@ -53,9 +46,22 @@ height: 55vh;
   width: 17vw;
   height: 55vh;
 }
-.linka{
+
+.card-3 {
+  background-image: url(../photos/signal/signal-proba-photo.svg);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 17vw;
+  height: 55vh;
+}
+
+.linka {
   border-radius: 71px;
- background: linear-gradient(270deg, #321804 4.44%, #780B0B 96.96%) !important;
+  background: linear-gradient(270deg, #321804 4.44%, #780B0B 96.96%) !important;
   position: relative;
   border: none;
   width: 5.9vw;
@@ -65,28 +71,32 @@ height: 55vh;
   text-align: center;
   cursor: pointer;
 }
-#next, #prev{
+
+#next,
+#prev {
   position: absolute;
   top: 20vh;
   background-color: transparent;
   border: none;
   left: 12vw;
 }
- #rigth{
-position: absolute;
+
+#rigth {
+  position: absolute;
   right: 9vw;
   top: 49vh;
-} 
-#left{
+}
+
+#left {
   position: relative;
   left: 5vw;
   top: 15vh;
-} 
-.my-button
-{
+}
+
+.my-button {
 
   z-index: 1;
-    border: 0;
-    background-color: transparent;
-    height: 20vh;
-}   
+  border: 0;
+  background-color: transparent;
+  height: 20vh;
+}

@@ -4,7 +4,7 @@
 @import url(../styles/about-us.css);
 @import url(../styles/full-map.css);
 @import url(../styles/signal.css);
-@import url(https://fonts.google.com/specimen/Comfortaa); 
+@import url(https://fonts.google.com/specimen/Comfortaa);
 @import url(https://fonts.google.com/specimen/Comfortaa);
 @import url(../styles/signal-diseases\ and\ pests.css);
 @import url(../styles/signal-natural-disaster.css);
@@ -13,28 +13,30 @@
 @import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-     font-family: Comfortaa;
-     
-  }
-  html
-  {
-    scroll-behavior: smooth;
-  }
-::-webkit-scrollbar{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Comfortaa;
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
   width: 15px;
 
 }
 
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
   background: rgb(44, 42, 42);
 }
 
 ::-webkit-scrollbar {
-  width: 10px; 
+  width: 10px;
 }
+
 ::-webkit-scrollbar-thumb {
   background-color: #5e6c7e;
   border-radius: 45px;
@@ -44,9 +46,10 @@
 ::-webkit-scrollbar-thumb:hover {
   background-color: #2d3950;
 }
-.section-size-all-classes{
+
+.section-size-all-classes {
   overflow: hidden;
-  background: #1B222C  !important;
+  background: #1B222C !important;
   width: 100vw;
   height: 100vh;
 }

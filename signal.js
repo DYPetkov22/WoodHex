@@ -1,53 +1,50 @@
 let left = document.getElementById('left');
 let rigth = document.getElementById('rigth');
-let flagPoles = 
-[
-    { el: document.getElementById("card1"), pos: 0 },
-    { el: document.getElementById("card2"), pos: 0 },
-    { el: document.getElementById("card3"), pos: 0 }
-];
+let flagPoles =
+    [
+        { el: document.getElementById("card1"), pos: 0 },
+        { el: document.getElementById("card2"), pos: 0 },
+        { el: document.getElementById("card3"), pos: 0 }
+    ];
 
 gsap.to(flagPoles[1].el, { scale: 1.5, duration: 1 });
 
-function leftFlip() 
-{
+function leftFlip() {
     gsap.to(flagPoles[1].el, { scale: 1, duration: 1 });
     let lastFlagPole = flagPoles.pop();
-    
-    flagPoles.forEach((flagPole, index) => 
-    {
-        flagPole.pos += 50;
+
+    flagPoles.forEach((flagPole, index) => {
+        flagPole.pos += 120;
         flagPole.el.style.zIndex = index + 1;
         gsap.to(flagPole.el, { opacity: 1, x: `${flagPole.pos}%`, duration: 1 });
     });
-    
+
     lastFlagPole.el.style.zIndex = 0;
-    lastFlagPole.pos -= 100;
+    lastFlagPole.pos -= 240;
     gsap.to(lastFlagPole.el, { opacity: 1, x: `${lastFlagPole.pos}%`, duration: 1 });
-    
+
     flagPoles.unshift(lastFlagPole);
     gsap.to(flagPoles[1].el, { scale: 1.5, duration: 1 });
-    gsap.to(flagPoles[1].el, { zIndex: 5, duration: 0});
+    gsap.to(flagPoles[1].el, { zIndex: 5, duration: 0 });
 }
 
-function rigthFLip() 
-{
+function rigthFLip() {
     gsap.to(flagPoles[1].el, { scale: 1, duration: 1 });
     let firstFlagPole = flagPoles.shift();
-    
+
     flagPoles.forEach((flagPole, index) => {
-        flagPole.pos -= 100;
+        flagPole.pos -= 120;
         flagPole.el.style.zIndex = index + 1;
         gsap.to(flagPole.el, { opacity: 1, x: `${flagPole.pos}%`, duration: 1 });
     });
-    
-    firstFlagPole.el.style.zIndex =0;  
-    firstFlagPole.pos += 100;
+
+    firstFlagPole.el.style.zIndex = 0;
+    firstFlagPole.pos += 240;
     gsap.to(firstFlagPole.el, { opacity: 1, x: `${firstFlagPole.pos}%`, duration: 1 });
-    
+
     flagPoles.push(firstFlagPole);
     gsap.to(flagPoles[1].el, { scale: 1.5, zIndex: 5, duration: 1 });
-    gsap.to(flagPoles[1].el, { zIndex: 5, duration: 0});
+    gsap.to(flagPoles[1].el, { zIndex: 5, duration: 0 });
 }
 
 left.addEventListener('click', leftFlip);
