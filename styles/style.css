@@ -19,6 +19,10 @@
   font-family: Comfortaa;
 
 }
+.overflow_hidden {
+  overflow: hidden !important;
+}
+
 
 html {
   scroll-behavior: smooth;

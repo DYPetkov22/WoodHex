@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap");
 
-.op-ces {
+.bg_img_signal {
   position: absolute;
   height: 92vh;
   width: 91vw;
@@ -9,11 +9,7 @@
   z-index: 0;
 }
 
-.huistartazagora {
-  overflow: hidden !important;
-}
-
-.baibai {
+.foreground_signal {
   position: relative;
   z-index: 1;
 }
@@ -24,10 +20,9 @@
   justify-content: center;
 }
 
-#keh {
+#button_styling {
   background-color: transparent !important;
   border: none;
-
 }
 
 .slider {

@@ -1,11 +1,4 @@
-body {
-    overflow-y: hidden;
-}
 
-.size_of_section {
-    width: 100vw;
-    height: 100vh;
-}
 
 .bg-img-abput-us-1 {
     background-image: url('../photos/1.svg');
