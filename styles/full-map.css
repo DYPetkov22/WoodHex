@@ -5,7 +5,9 @@
     width: 100vw;
     height: 100vh;
 }
-
+.visibility{
+    display: none;
+}
 #applyButton 
 {
     position: relative;
@@ -29,4 +31,9 @@
 
     background-color: transparent;
     border: none;
+}
+@media (max-width: 1500px){
+    .visibility{
+    }
+    
 }

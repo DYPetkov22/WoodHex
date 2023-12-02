@@ -1,5 +1,5 @@
 let left = document.getElementById('left');
-let rigth = document.getElementById('rigth');
+let right = document.getElementById('right');
 let flagPoles =
     [
         { el: document.getElementById("card1"), pos: 0 },
@@ -28,7 +28,7 @@ function leftFlip() {
     gsap.to(flagPoles[1].el, { zIndex: 5, duration: 0 });
 }
 
-function rigthFLip() {
+function rightFLip() {
     gsap.to(flagPoles[1].el, { scale: 1, duration: 1 });
     let firstFlagPole = flagPoles.shift();
 
@@ -48,4 +48,4 @@ function rigthFLip() {
 }
 
 left.addEventListener('click', leftFlip);
-rigth.addEventListener('click', rigthFLip);
+right.addEventListener('click', rightFLip);

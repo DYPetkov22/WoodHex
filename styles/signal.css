@@ -13,7 +13,21 @@
   overflow: hidden !important;
 }
 
-.slider {
+.baibai{
+  position: relative;
+  z-index: 1;
+}
+.column-size_signal{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+#keh{
+  background-color: transparent !important;
+  border: none;
+
+}
+ .slider {
   position: relative;
   width: 100vw;
   height: 100vh;
@@ -31,37 +45,37 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  width: 17vw;
-  height: 55vh;
+  width: 35vh;
+  height: 50vh;
 }
 
 .card-2 {
-  background-image: url(../photos/signal/signal-proba-photo.svg);
+  background-image: url(../photos/signal/p-and-l-signal.svg);
   display: flex;
   align-items: flex-end;
   justify-content: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  width: 17vw;
-  height: 55vh;
+  width: 35vh;
+  height: 50vh;
 }
 
 .card-3 {
-  background-image: url(../photos/signal/signal-proba-photo.svg);
+  background-image: url(../photos/signal/d-and-p-signal.svg);
   display: flex;
   align-items: flex-end;
   justify-content: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  width: 17vw;
-  height: 55vh;
+  width: 35vh;
+  height: 50vh;
 }
 
-.linka {
+.style-n-d {
   border-radius: 71px;
-  background: linear-gradient(270deg, #321804 4.44%, #780B0B 96.96%) !important;
+  background: linear-gradient(270deg, #321804 4.44%, #780B0B 96.96%);
   position: relative;
   border: none;
   width: 5.9vw;
@@ -71,32 +85,27 @@
   text-align: center;
   cursor: pointer;
 }
-
-#next,
-#prev {
-  position: absolute;
-  top: 20vh;
-  background-color: transparent;
-  border: none;
-  left: 12vw;
-}
-
-#rigth {
-  position: absolute;
-  right: 9vw;
-  top: 49vh;
-}
-
-#left {
+.style-d-and-p{
+  border-radius: 71px;
+  background:  linear-gradient(270deg, #1C4910 5.61%, #255D16 85.98%);
   position: relative;
-  left: 5vw;
-  top: 15vh;
+  border: none;
+  width: 5.9vw;
+  color: white;
+  height: 3.4vh;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
 }
-
-.my-button {
-
-  z-index: 1;
-  border: 0;
-  background-color: transparent;
-  height: 20vh;
+.style-p-and-l{
+  border-radius: 71px;
+  background: linear-gradient(270deg, #4E3926 4.44%, #86603E 96.96%);
+  position: relative;
+  border: none;
+  width: 5.9vw;
+  color: white;
+  height: 3.4vh;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
 }
