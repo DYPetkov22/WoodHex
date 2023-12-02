@@ -39,7 +39,7 @@ body.locked {
   height: 100vh;
 }
 .back {
-  background-image: url(../photos/main-land-homepage-background.svg);
+  background-image: url(../photos/home-page/main-land-homepage-background.svg);
   background-size: 65rem; 
   background-position: right top; 
   background-repeat: no-repeat;
@@ -278,7 +278,7 @@ box-shadow: 4.70769px 7.53231px 17.46554px -1.88308px rgba(0, 0, 0, 0.25) !impor
 }
 
 #container {
-  background-image: url(../photos/home\ page/background-of-table.png);
+  background-image: url(../photos/home-page/background-of-table.svg);
   background-size: 96rem;
   background-position: right top;
   background-repeat: no-repeat;
@@ -321,7 +321,7 @@ box-shadow: 4.70769px 7.53231px 17.46554px -1.88308px rgba(0, 0, 0, 0.25) !impor
 
 #background-of-the-groups-waiting
 {
-  background-image: url(../photos/home\ page/background-of-goups-waiting.svg);
+  background-image: url(../photos/home-page/background-of-goups-waiting.svg);
   background-size: 97rem;
   background-position: right top;
   background-repeat: no-repeat;
@@ -377,7 +377,7 @@ box-shadow: 4.70769px 7.53231px 17.46554px -1.88308px rgba(0, 0, 0, 0.25) !impor
 
 #footer
 {
-  background-image: url(../photos/home\ page/footer-background.svg);
+  background-image: url(../photos/home-page/footer-background.svg);
   background-size: 100rem;
   height: 48vh;
   background-position: right top;

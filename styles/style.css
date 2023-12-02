@@ -45,6 +45,7 @@
   background-color: #2d3950;
 }
 .section-size-all-classes{
+  overflow: hidden;
   background: #1B222C  !important;
   width: 100vw;
   height: 100vh;

@@ -16,14 +16,14 @@ function leftFlip()
     
     flagPoles.forEach((flagPole, index) => 
     {
-        flagPole.pos += 15;
+        flagPole.pos += 50;
         flagPole.el.style.zIndex = index + 1;
-        gsap.to(flagPole.el, { opacity: 1, x: `${flagPole.pos}vw`, duration: 1 });
+        gsap.to(flagPole.el, { opacity: 1, x: `${flagPole.pos}%`, duration: 1 });
     });
     
     lastFlagPole.el.style.zIndex = 0;
-    lastFlagPole.pos -= 40;
-    gsap.to(lastFlagPole.el, { opacity: 1, x: `${lastFlagPole.pos}vw`, duration: 1 });
+    lastFlagPole.pos -= 100;
+    gsap.to(lastFlagPole.el, { opacity: 1, x: `${lastFlagPole.pos}%`, duration: 1 });
     
     flagPoles.unshift(lastFlagPole);
     gsap.to(flagPoles[1].el, { scale: 1.5, duration: 1 });
@@ -36,14 +36,14 @@ function rigthFLip()
     let firstFlagPole = flagPoles.shift();
     
     flagPoles.forEach((flagPole, index) => {
-        flagPole.pos -= 15;
+        flagPole.pos -= 100;
         flagPole.el.style.zIndex = index + 1;
-        gsap.to(flagPole.el, { opacity: 1, x: `${flagPole.pos}vw`, duration: 1 });
+        gsap.to(flagPole.el, { opacity: 1, x: `${flagPole.pos}%`, duration: 1 });
     });
     
     firstFlagPole.el.style.zIndex =0;  
-    firstFlagPole.pos += 30;
-    gsap.to(firstFlagPole.el, { opacity: 1, x: `${firstFlagPole.pos}vw`, duration: 1 });
+    firstFlagPole.pos += 100;
+    gsap.to(firstFlagPole.el, { opacity: 1, x: `${firstFlagPole.pos}%`, duration: 1 });
     
     flagPoles.push(firstFlagPole);
     gsap.to(flagPoles[1].el, { scale: 1.5, zIndex: 5, duration: 1 });
