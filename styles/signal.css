@@ -21,7 +21,7 @@
  margin-top: 20vh;
 }
 .card-1{
-background-image: url(../photos/proba-signal-lycho.svg);
+background-image: url(../photos/signal/signal-proba-photo.svg);
 display: flex;
 align-items: flex-end;
 justify-content: center;
@@ -32,7 +32,7 @@ width: 17vw;
 height: 55vh;
 }
 .card-2{
-  background-image: url(../photos/proba-signal-lycho.svg);
+  background-image: url(../photos/signal/signal-proba-photo.svg);
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -43,7 +43,7 @@ height: 55vh;
   height: 55vh;
 }
 .card-3{
-  background-image: url(../photos/proba-signal-lycho.svg);
+  background-image: url(../photos/signal/signal-proba-photo.svg);
   display: flex;
   align-items: flex-end;
   justify-content: center;
