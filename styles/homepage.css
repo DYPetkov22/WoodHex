@@ -84,36 +84,20 @@ body.locked {
   width: 100vw;
 }
 
-#right_side_of_now {
-  padding: 3%;
-}
-
 #custom_now_size {
   font-size: 75px !important;
   padding-top: 7%;
 }
 
 .slideshow-container {
-  position: relative;
-  margin: auto;
   height: 40vh;
   width: 100%;
 }
 
-
-.dots {
-  width: 15%;
-  height: auto;
-
-}
 
 .blocks {
   height: 40vh;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   margin-top: 5%;
 }
 
@@ -135,17 +119,9 @@ body.locked {
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
-  transition: background-color 0.6s ease;
   margin-bottom: 5%;
 }
 
-.active,
-.dot:hover {
-  background-color: #717171;
-}
-
-
-/* Fading animation */
 .fade {
   display: none;
   position: absolute;
@@ -159,7 +135,6 @@ body.locked {
 }
 
 #what-believe-text {
-  line-height: normal;
   color: #44A960;
 }
 
@@ -187,24 +162,9 @@ body.locked {
   margin-bottom: 8%;
 }
 
-#important-things-about-Earth {
-  margin-top: 10%;
-  display: flex;
-  width: 100%;
-  flex-direction: row;
-}
-
 .custom-image {
   width: 70%;
   height: auto;
-}
-
-.icon_and_text {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
 }
 
 #join-revolution {
@@ -310,7 +270,6 @@ body.locked {
 
 #planted-trees-text {
   color: #B8B2B2;
-  line-height: normal;
   letter-spacing: 3.6px;
 }
 
@@ -320,7 +279,6 @@ body.locked {
   background-size: 97rem;
   background-position: right top;
   background-repeat: no-repeat;
-  overflow-x: hidden;
   height: 135vh;
   width: 100%;
 }
@@ -336,7 +294,6 @@ body.locked {
 #table-of-groups-waiting {
   border-radius: 49px;
   background-color: #C8CFD7;
-  box-shadow: drop-shadow(4px 9px 18.200000762939453px rgba(0, 0, 0, 0.25));
   width: 55%;
   margin-left: 0%;
 }
@@ -370,7 +327,7 @@ body.locked {
 #footer {
   background-image: url(../photos/home-page/footer-background.svg);
   background-size: 100rem;
-  height: 48vh;
+  height: 45vh;
   background-position: right top;
   background-repeat: no-repeat;
   overflow-x: hidden;
@@ -587,5 +544,31 @@ body.locked {
   #custom-image {
     display: none;
   }
+
+}
+
+@media (max-width: 540px)
+{
+  #background-of-the-groups-waiting {
+    height: 190vh;
+}
+
+  #footer
+    {
+      margin-top: -35%;
+      height: 85vh;
+    }
+}
+@media (max-width: 393px)
+{
+  #background-of-the-groups-waiting {
+    height: 200vh;
+}
+
+#footer {
+  height: 100vh;
+  background-image: none;
+  margin-top: -40%;
+}
 
 }
