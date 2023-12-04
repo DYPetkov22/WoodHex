@@ -30,8 +30,8 @@ function drawPythagorasTree(depth, mouseX, size) {
         svg.appendChild(line);
 
         const newLength = length * 0.7;
-        const newAngle1 = angle - Math.sin(mouseX * Math.PI);
-        const newAngle2 = angle + Math.sin(mouseX * Math.PI);
+        const newAngle1 = angle - Math.cos(mouseX * Math.PI);
+        const newAngle2 = angle + Math.cos(mouseX * Math.PI);
 
         drawBranch(x2, y2, newAngle1, newLength, depth - 1);
         drawBranch(x2, y2, newAngle2, newLength, depth - 1);
