@@ -1,7 +1,7 @@
-/* Set vertical scrollbar for the entire body */
+
 body {
     overflow-y: scroll !important;
-}
+} 
 
 /* Styles for background pictures */
 
@@ -78,17 +78,17 @@ body {
     .tree-box {
         width: 300%;
         height: 100vh;
+        
     }
 }
-
 /* For screens between 820px and 1180px width */
 @media (min-width: 820px) and (max-width: 1180px) {
     .tree-box {
         width: 400%;
         height: 50vh;
     }
-}
 
+}
 /* For screens up to 780px width */
 @media (max-width: 780px) {
     .tree-box {
