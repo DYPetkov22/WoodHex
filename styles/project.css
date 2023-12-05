@@ -6,37 +6,35 @@ body {
 /* Styles for background pictures */
 
 /* Positioned background image 1 */
-.back-pic {
-    /* Positioned background image 1 */
+.bg-img-position{
     position: fixed;
-    height: 94vh;
     z-index: 0;
+}
+.back-pic {
+    height: 94vh;
 }
 
     /* Positioned background image 2 */
 .back-pic1 {
-    position: fixed;
     height: 164vh;
     width: 51vw;
     background-size: 100%;
     right: 31%;
     top: -9%;
-    z-index: 0;
 }
 
  /* Positioned background image 3 */
 .back-pic2 {
-    position: fixed;
     height: 138vh;
     width: 33vw;
     background-size: 100%;
-    z-index: 0;
     left: 72%;
 }
 
-/* Styles for different text elements */
-
-/* Styles for the title text */
+.text-position-project{
+    position: relative;
+    z-index: 1;
+}
 #title-text {
     color: green;
     font-size: 3rem;
@@ -56,12 +54,15 @@ body {
 
 /* Styles for the tree container */
 .tree-box {
-    border: 4px solid;
+
+    border: #cac3c3 2px solid;
+    border-radius: 5px;
     width: 40vw;
     height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    backdrop-filter: blur(5px);
 }
 
 /* Styles for the pythagoras tree SVG */
