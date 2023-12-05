@@ -125,7 +125,35 @@
                             <button class="button is-link" onclick="cum()">Submit</button>
                         </div>
                     </div>
+                    <script>
+                        document.addEventListener("DOMContentLoaded", function () {
+                            const emailInput = document.querySelector('input[type="email"]');
+                            const helpText = document.querySelector('.help.is-danger');
 
+                            emailInput.addEventListener("input", function (event) {
+                                if (!emailInput.validity.valid) {
+                                    helpText.style.display = 'block';
+                                } else {
+                                    helpText.style.display = 'none';
+                                }
+                            });
+                        });
+
+
+                        let cummer = document.getElementById("SubmitText");
+
+                        function SubmitFunction() {
+                            const html =
+                                '<div class="column nova second2 is-6" id="SubmitText">' +
+                                '<p class="text11">THANKS FOR YOUR SUBMISSION.</p>' +
+                                '<p class="text21">We\'ll be in touch.</p>' +
+                                '<p class="text22">Shortly!</p>' +
+                                '<a href="../index.html" class="center-underline">back to home</a>' +
+                                '</div>';
+                            cummer.innerHTML = html;
+                        }
+
+                    </script>
     </section>
 </body>
 
