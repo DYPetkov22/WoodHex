@@ -18,15 +18,9 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Comfortaa;
-
-}
-
-.overflow_hidden {
-  overflow: hidden !important;
 }
 body {
-  background-color: #080E09;
-  overflow-x: hidden;
+  background-color: #0B110C !important;
 }
 
 .color-of-main-text
@@ -62,8 +56,13 @@ html {
 }
 
 .section-size-all-classes {
-  overflow: hidden;
-  background: #1B222C !important;
+overflow: hidden;
   width: 100vw;
   height: 100vh;
 }
+.overflow_hidden_x {
+  overflow-x: hidden !important;
+}
+.overflow_hidden_y {
+  overflow-y: hidden !important;
+} 

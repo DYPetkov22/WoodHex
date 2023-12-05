@@ -13,12 +13,6 @@ body {
     z-index: 0;
 }
 
-.cl_of_body_signal {
-    background: #1B222C !important;
-    width: 100vw;
-    height: 100vh;
-}
-
 .nova {
     background-image: url(../photos/signal/Group\ 1.svg);
     background-repeat: no-repeat;

@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap");
 
-body {
-    overflow-y: scroll;
-}
-
 .op-ces {
     position: absolute;
     height: 92vh;
@@ -12,13 +8,6 @@ body {
     right: -20%;
     z-index: 0;
 }
-
-.cl_of_body_signal {
-    background: #1B222C !important;
-    width: 100vw;
-    height: 100vh;
-}
-
 .nova {
     background-image: url(../photos/signal/Group\ 1.svg);
     background-repeat: no-repeat;

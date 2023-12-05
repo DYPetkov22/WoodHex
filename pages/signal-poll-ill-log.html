@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="huistartazagora" lang="en">
+<html class="is-clipped" lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="../styles/style.css">
 </head>
 
-<body class="cl_of_body_signal">
-    <section class="cl_of_body_signal">
+<body class="is-clipped">
+    <section class="section-size-all-classes">
         <nav class="navbar" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
                 <a class="navbar-item py-0" href="#">
@@ -71,7 +71,7 @@
                     </div>
 
                 </div>
-                <div class="column stara second2 is-6" id="cumman">
+                <div class="column stara second2 is-6" id="SubmitText">
 
                     <div class="field">
                         <label class="label has-text-light"> FIRST NAME</label>
@@ -124,12 +124,40 @@
 
                     <div class="field is-grouped">
                         <div class="control">
-                            <button class="button is-link" onclick="cum()">Submit</button>
+                            <button class="button is-link" onclick="SubmitFunction()">Submit</button>
                         </div>
 
                     </div>
     </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const emailInput = document.querySelector('input[type="email"]');
+            const helpText = document.querySelector('.help.is-danger');
 
+            emailInput.addEventListener("input", function (event) {
+                if (!emailInput.validity.valid) {
+                    helpText.style.display = 'block';
+                } else {
+                    helpText.style.display = 'none';
+                }
+            });
+        });
+
+
+        let cummer = document.getElementById("SubmitText");
+
+        function SubmitFunction() {
+            const html =
+                '<div class="column nova second2 is-6" id="SubmitText">' +
+                '<p class="text11">THANKS FOR YOUR SUBMISSION.</p>' +
+                '<p class="text21">We\'ll be in touch.</p>' +
+                '<p class="text22">Shortly!</p>' +
+                '<a href="../index.html" class="center-underline">back to home</a>' +
+                '</div>';
+            cummer.innerHTML = html;
+        }
+
+    </script>
 </body>
 
 </html>
