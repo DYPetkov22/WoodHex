@@ -53,7 +53,7 @@ html {
 }
 
 .section-size-all-classes {
-  overflow: hidden;
+  overflow: hidden !important;
   background: #1B222C !important;
   width: 100vw;
   height: 100vh;
