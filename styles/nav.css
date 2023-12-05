@@ -92,18 +92,8 @@
 }
 
 @media (max-width: 1500px) {
-  .hambur-menu-text {
-    color: #000000 !important;
-  }
-
-
-
   #logo_img {
     height: 136%;
     width: auto;
-  }
-
-  .logo {
-    color: black;
   }
 }

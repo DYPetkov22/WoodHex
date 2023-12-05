@@ -20,10 +20,19 @@
   font-family: Comfortaa;
 
 }
+
 .overflow_hidden {
   overflow: hidden !important;
 }
+body {
+  background-color: #080E09;
+  overflow-x: hidden;
+}
 
+.color-of-main-text
+{
+  color:#cac3c3 !important;
+}
 
 html {
   scroll-behavior: smooth;
