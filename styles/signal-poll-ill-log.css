@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap");
+
 body {
   overflow-y: scroll;
 }
+
 .op-ces {
   position: absolute;
   height: 92vh;
@@ -10,11 +12,13 @@ body {
   right: -20%;
   z-index: 0;
 }
+
 .cl_of_body_signal {
   background: #1b222c !important;
   width: 100vw;
   height: 100vh;
 }
+
 .nova {
   background-image: url(../photos/signal/Group\ 1.svg);
   background-repeat: no-repeat;
@@ -23,6 +27,7 @@ body {
   background-size: cover;
   background: linear-gradient(180deg, #36ac32 0%, #116c06 100%);
 }
+
 .center-underline {
   text-decoration: none;
   display: block;
@@ -51,58 +56,73 @@ body {
   font-size: 26px;
   letter-spacing: 0.5px;
 }
+
 .text21 {
   color: #fff;
   font-family: Comfortaa;
   font-size: 18px;
   margin-top: 13%;
 }
+
 .text22 {
   color: #fff;
   font-family: Comfortaa;
   font-size: 18px;
 }
+
 .second2 {
   margin-top: 3%;
 }
+
 input[type="email"]:invalid {
   border-color: red;
 }
+
 @media (min-width: 780px) {
   .text1 {
     margin-top: 5%;
   }
+
   .text2 {
     margin-top: 4%;
   }
+
   .cap1 {
     margin-top: 5%;
   }
+
   .cap2 {
     margin-top: 4%;
   }
+
   .logo21 {
     margin-top: 25%;
     width: 35%;
   }
+
   .logo2 {
     margin-top: 10%;
     margin-left: -39%;
   }
+
   .para {
     width: 60%;
   }
+
   .field:not(.is-grouped),
   .field:not(.is-grouped),
   .field:not(.is-grouped) {
     width: 80%;
   }
+
   .stara {
     margin-left: 12%;
   }
+
   .brz {
     margin-left: 15%;
   }
+
   .text11 {
     color: #fff;
     margin-top: 40%;
@@ -110,6 +130,7 @@ input[type="email"]:invalid {
     font-size: 26px;
     letter-spacing: 0.5px;
   }
+
   .nova {
     background-image: url(../photos/signal/Group\ 1.svg);
     background-repeat: no-repeat;
@@ -119,6 +140,7 @@ input[type="email"]:invalid {
     border-radius: 40px;
     background: linear-gradient(180deg, #36ac32 0%, #116c06 100%);
   }
+
   .text21 {
     color: #fff;
     font-family: Comfortaa;
