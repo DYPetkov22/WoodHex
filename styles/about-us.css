@@ -1,5 +1,4 @@
 
-
 .bg-img-abput-us-1 {
     background-image: url('../photos/1.svg');
     background-repeat: no-repeat;
@@ -14,12 +13,14 @@
     background-image: url('../photos/2.svg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    background-size: cover;
 }
 
 .bg-img-abput-us-3 {
     background-image: url('../photos/3.svg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
+
 }
 
 .bg-img-abput-us-4 {

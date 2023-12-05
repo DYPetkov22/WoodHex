@@ -33,7 +33,7 @@ const axesHelper = new THREE.AxesHelper(100);
 scene.add(cube, cube1, cube2, cube3, axesHelper);
 
 camera.position.z = 10;
-camera.position.y = 10;
+camera.position.y = 8;
 
 let radius = 10;
 let angle = 20;
@@ -46,7 +46,7 @@ function animate() {
 
 	camera.lookAt(scene.position);
 
-	angle += 0.01;
+	angle += 0.005;
 	renderer.render(scene, camera);
 }
 
