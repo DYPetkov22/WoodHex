@@ -3,7 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Caveat&family=Comfortaa:wght@300;500&display=swap');
 
 .stop-scrolling {
-  height: 100wh;
   position: fixed;
 }
 
@@ -16,7 +15,7 @@
   color:#44A960 !important;
 }
 
-.kubche {
+#kubche {
   margin-right: -2% !important;
 }
 
