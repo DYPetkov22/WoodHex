@@ -161,15 +161,17 @@ body.locked {
   background-color: transparent;
   height: 9vh; 
   border-color: #00b628;
-  box-shadow: 0 0 40px 40px #00b628 inset, 0 0 0 0 #00b628;
-  transition: all 0.2s ease-in-out;
-  color: #1b222c !important;
+  box-shadow: 0 0 10px 0 #00b628 inset, 0 0 10px 4px #00b628;
+  color: #cac3c3  !important;
 }
 #join-revolution:hover {
   box-shadow: 0 0 10px 0 #00b628 inset, 0 0 10px 4px #00b628;
   color: #cac3c3  !important;
+  box-shadow: 0 0 40px 40px #00b628 inset, 0 0 0 0 #00b628;
+  transition: all 0.2s ease-in-out;
+  color: #1b222c !important;
 }
- 
+
 .subtittle_after_effect {
   position: relative;
 }
@@ -299,24 +301,34 @@ body.locked {
   margin-bottom: 0% !important;
 }
  
-#join-group {
-  border-radius: 49px !important;
-  border: 2px solid #00FF38 !important;
-  box-shadow: 10px 16px 57.4px -4px rgba(0, 0, 0, 0.25) !important;
-  color: #555454;
-  background-color: transparent;
-}
- 
-#report {
+.join-group {
   background-color: transparent !important;
-  border: #15A635 3px solid;
-  transition: 0.2s;
+  border: 3px solid;
+  border-color: #00b628 !important;
+  background-image: linear-gradient(45deg, #00b628 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  transition: 0.8s ease-in-out;
+}
+.join-group:hover {
+  color: #cac3c3  !important;
+  background-position: 0;
 }
  
-#report:hover {
-  color: #B8B2B2;
-  background: linear-gradient(90deg, #15A635 17.47%, rgba(6, 103, 28, 0.79) 105.57%);
-  box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.25);
+.report_button {
+  border-radius: 49px !important;
+  border: none !important;
+  background-color: transparent !important;
+  outline: 2px solid; 
+  color: rgb(75, 72, 72) !important;
+    outline-color: #0b110c;
+    outline-offset: -0.3vw;
+    transition: all 600ms cubic-bezier(0.2, 0, 0, 0.8);
+}
+.report_button:hover{
+  color: #000000 !important;
+  outline-color: rgba(244, 5, 5, 0);
+  outline-offset: 1vw;
 }
  
  
@@ -378,6 +390,10 @@ body.locked {
 }
  
 @media (max-width: 1500px) {
+  .stop-scrolling {
+    position: relative;
+  }
+
   body {
     overflow-x: hidden;
   }
@@ -430,7 +446,9 @@ body.locked {
     margin-top: 0%;
     height: 0%;
   }
- 
+ #table{
+  margin-right: 0%;
+ }
   #why-need-you {
     margin-left: 0;
   }
@@ -497,7 +515,7 @@ body.locked {
   }
  
   #footer {
-    height: 20vh;
+    height: 10vh;
   }
  
   #custom-image {
