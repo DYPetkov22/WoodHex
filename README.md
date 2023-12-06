@@ -4,7 +4,14 @@
   <img width="70%" src="/photos/readme/readme-dark.png#gh-dark-mode-only"/>
   <img width="70%" src="/photos/readme/readme-white.png#gh-light-mode-only"/>
   <br>
-  <img src="/photos/readme/information.png" />
+  <img width="50%" src="/photos/readme/information.png" />
+</p>
+<br>
+
+## 📋 Description
+  
+<p align="start">
+A tree planting website fosters global reforestation by providing educational resources, interactive tools, and community engagement for individuals and organizations to plant and track trees.
 </p>
 <br>
 
