@@ -3,6 +3,8 @@
 <p align="center">
   <img width="70%" src="/photos/readme/readme-dark.png#gh-dark-mode-only"/>
   <img width="70%" src="/photos/readme/readme-white.png#gh-light-mode-only"/>
+  <br>
+  <img src="/photos/readme/information.png" />
 </p>
 <br>
 
@@ -11,7 +13,7 @@
    - ***GitHub profile***: [***DYPetkov22***](https://github.com/DYPetkov22)	
  
 > 2. **LRRashkov22** - **Developer Frontend**	
-   - ***GitHub profile***: [***LRRashkov22***](https://github.com/LRRashkov22)	
+   - ***GitHub profile***: [***LRRashkov22***](https://github.com/luchezar123)	
 
 > 3. **ATKabakov22** - **Developer Frontend and Backend**	
    - ***GitHub profile***: [***ATKabakov22***](https://github.com/ATKabakov22)
@@ -26,7 +28,7 @@
     <a href="https://www.figma.com/"><img src="https://img.icons8.com/fluency/48/null/figma.png"/></a>
    <a href="https://www.microsoft.com/en-ww/microsoft-365/word"><img src="https://img.icons8.com/fluency/48/000000/microsoft-word-2019.png" alt="MS Word logo" width=48px /></a>
     <a href="https://www.microsoft.com/en-us/microsoft-365/powerpoint"><img src="https://img.icons8.com/fluency/48/000000/microsoft-powerpoint-2019.png" alt="MS PowerPoint logo" width=48px />
-    <a href="https://discord.com/company"><img src="https://seeklogo.com/images/D/discord-logo-B02E5FBA04-seeklogo.com.png" alt="Discord logo" width=60px></a>
+    <a href="https://www.microsoft.com/bg-bg/microsoft-teams/log-in"><img src="https://admin.kuleuven.be/icts/services/teams/images/Teamslogo/image" alt="Teams logo" width=54px></a>
     <a href="https://www.adobe.com/products/photoshop.html"><img src="https://logolook.net/wp-content/uploads/2023/10/Photoshop-Logo-2015.png" alt="Abode Photoshop logo" width=80px></a>
     <a href="https://git-scm.com/"><img src="https://avatars.githubusercontent.com/u/18133?s=200&v=4" alt="Git logo" width=48px></a>
     <a href="https://github.com/"><img src="https://developer.sas.com/github-resources/_jcr_content/par/styledcontainer_480618029/par/image.img.png/1558449533927.png" alt="GitHub logo" width=48px></a>
@@ -42,9 +44,13 @@
 
 ## 📚 Libraries
    <p align="left"> 
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Leaflet_logo.svg/1200px-Leaflet_logo.svg.png" width=144px>
+      <img src="https://raw.githubusercontent.com/d3/d3-logo/master/d3.png " width=77px>
       &nbsp
-      <img src="https://raw.githubusercontent.com/d3/d3-logo/master/d3.png" width=48px>
+      <img src="https://askboon.com/wp-content/uploads/2022/01/bulma-logo.jpg" width=144px>
+      &nbsp
+      <img src="https://images.squarespace-cdn.com/content/v1/5d8a1e60e969b660d8e95d26/1571112375928-KP0A4IB6ZRZDOJNA8J20/GSAP_Logo_Small-19-19.png" width=144px>
+      &nbsp
+      <img src="https://user-images.githubusercontent.com/234804/38454097-6d04038a-3a9b-11e8-981a-9ae97ea9246a.png" width=77px>
    </p>
 <br>
 

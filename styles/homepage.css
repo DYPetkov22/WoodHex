@@ -38,9 +38,9 @@ body.locked {
   height: 100vh;
 }
 
-#back-color
+.back-color
 {
-  background: linear-gradient(180deg, #1F1F1F 0%, #0B110C 60%);
+  background: linear-gradient(180deg, #1F1F1F 0%, #0B110C 100%);
   position: relative;
   z-index: 0;
 }
@@ -49,6 +49,8 @@ body.locked {
   background-image: url(../photos/home-page/main-land-homepage-background.svg);
   background-size: 65rem;
   margin-right: -2%;
+  position: relative;
+  z-index: 1;
 }
 
 .custom-margin-on-text-hm-1 {
@@ -295,6 +297,7 @@ body.locked {
   background-color: #C8CFD7;
   width: 55%;
   margin-left: 0%;
+  margin-top: 0;
 }
  
 .polluted_nature {
