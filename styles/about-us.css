@@ -1,12 +1,7 @@
-
 .bg-img-abput-us-1 {
     background-image: url('../photos/1.svg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
-}
-
-.space-nav-about-us:not(:last-child) {
-    margin-right: 20%;
 }
 
 .bg-img-abput-us-2 {
@@ -27,10 +22,68 @@
     background-image: url('../photos/4.svg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    background-size: cover;
+        background-size: cover;
 
 }
 
+.column-box2
+{
+    margin-top: 10%; padding: 0;
+}
+
+.space-nav-about-us:not(:last-child) {
+    margin-right: 20% !important;
+}
+
+.container
+{
+    background: none !important;
+}
+
+.title-column{
+    margin-top: 4vw !important;
+}
+
+.card
+{
+    background: none !important;
+    border: none !important;
+}
+
+.card-content
+{
+    background: none !important;
+}
+
+.title{
+    font-size: 3em; 
+    margin-bottom: 0;
+}
+
+ .image1{
+    height: 80%;
+}
+
+.column-box{
+    height: 80%;
+}
+
+.box{
+    width: 95%;
+     border: 2px solid black; 
+     overflow: hidden;
+}
+.box1{
+    width: 95%;
+    border: 2px solid black;
+    overflow: hidden;
+    position: relative;
+}
+
+.image2
+{
+    height: 80%;
+}
 .side_nav_about_us4 {
     display: flex;
     align-items: center;
@@ -42,6 +95,10 @@
     position: absolute;
     top: 17%;
     z-index: 2;
+}
+.github-link
+{
+    color:rgb(48, 48, 48);
 }
 
 @media (max-width: 1500px) {
@@ -62,12 +119,6 @@
         background-image: none;
     }
 
-    .qwvert {
-        margin-left: 24%;
-
-
-    }
-
     .box {
         width: 110% !important;
         text-align: center;
@@ -80,11 +131,14 @@
 
 @media (min-width: 780px) {
     .box {
-        margin-left: -26%;
+        margin-top: 25%;
+        margin-left: -30%;
+        
     }
 
     .box1 {
-        margin-left: 17%;
+        margin-left: 18%;
+        margin-top:10% ;
     }
 
 
@@ -92,19 +146,19 @@
 
 @media (max-width: 780px) {
 
-    .pleven,
-    .plovdiv {
+    .phone-column2,
+    .phone-column {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    .plovdiv {
+    .phone-column {
         flex-direction: column-reverse;
     }
 
-    .burgas {
+    .Person-image {
 
         width: 125%;
         margin-left: 22%;
