@@ -1,4 +1,9 @@
-.size_donate{
+.size_donate {
     width: 50vw;
     height: 100vh;
+}
+
+.position {
+    height: 2vw;
+    width: 1vw;
 }
