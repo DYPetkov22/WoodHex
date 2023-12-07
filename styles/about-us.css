@@ -1,28 +1,28 @@
 .bg-img-abput-us-1 {
-    background-image: url('../photos/1.svg');
+    background-image: url('../photos/About-us/first-section-about-us.svg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 
 .bg-img-abput-us-2 {
-    background-image: url('../photos/2.svg');
+    background-image: url('../photos/About-us/second-section-about-us.svg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-size: cover;
 }
 
 .bg-img-abput-us-3 {
-    background-image: url('../photos/3.svg');
+    background-image: url('../photos/About-us/third-section-about-us.svg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
 
 }
 
 .bg-img-abput-us-4 {
-    background-image: url('../photos/4.svg');
+    background-image: url('../photos/About-us/fourth-section-about-us.svg');
     background-repeat: no-repeat;
     background-size: 100% 100%;
-        background-size: cover;
+    background-size: cover;
 
 }
 
