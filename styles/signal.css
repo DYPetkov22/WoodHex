@@ -20,15 +20,13 @@
   border: none;
 }
 
-
-
 .card-1 {
-  background-image: url(../photos/signal/signal-proba-photo.svg);
+  background-image: url(../photos/signal/n-d.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  width: 35vh;
-  height: 50vh;
+  width: 34vh;
+  height: 49vh;
 }
 
 .card-2 {
@@ -36,8 +34,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  width: 35vh;
-  height: 50vh;
+  width: 34vh;
+  height: 49vh;
 }
 
 .card-3 {
@@ -45,42 +43,20 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  width: 35vh;
-  height: 50vh;
+  width: 34vh;
+  height: 49vh;
 }
 
-.style-n-d {
-  border-radius: 70px;
-  background: linear-gradient(270deg, #321804 4.44%, #780B0B 96.96%);
+.style-report-btn-signal {
+  background: transparent !important;
   position: relative;
-  border: none;
-  cursor: pointer;
-}
-
-.style-p-and-l {
+  color: #CAC3C3;
+  border: 2px solid #CAC3C3;
   border-radius: 70px;
-  background: linear-gradient(270deg, #4E3926 4.44%, #86603E 96.96%);
-  position: relative;
-  border: none;
   cursor: pointer;
+  transition: 0.2s;
 }
-
-.style-d-and-p {
-  border-radius: 70px;
-  background: linear-gradient(270deg, #1C4910 5.61%, #255D16 85.98%);
-  position: relative;
-  border: none;
-  cursor: pointer;
+.style-report-btn-signal:hover{
+  background: #CAC3C3 !important;
+  color: #02030A !important;
 }
-.bezbe{
-  width: 100vw !important;
-  height: 100vh;
-}
-/* .weridas{
-  overflow: hidden !important;
-}
-@media (max-width: 1200px){
- .weridas{
-  overflow: auto !important;
- }
-} */

@@ -18,10 +18,6 @@
 #kubche {
   margin-right: -2% !important;
 }
-
-/* body.locked {
-  overflow: hidden;
-} */
  
 #img_for_smaller_screens {
   display: none;
@@ -396,10 +392,6 @@
   .stop-scrolling {
     position: relative;
   }
-
-  /* body {
-    overflow-x: hidden;
-  } */
   .back,  #background-of-the-groups-waiting
   {
     background-image: none;
