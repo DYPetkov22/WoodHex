@@ -19,7 +19,7 @@
                 <img id="logo_img" src="../photos/logo 1.png" alt="WoodHex Logo">
                 <span class="logo ">WoodHex</span>
             </a>
-            <div role="button" class="navbar-burger" id="burger" aria-label="menu" aria-expanded="false"
+            <div role="button" class="navbar-burger has-text-white" id="burger" aria-label="menu" aria-expanded="false"
                 data-target="navbarBasicExample" onclick="toggle()">
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
@@ -29,23 +29,31 @@
         <div id="navbarBasicExample" class="navbar-menu is-active:false space-nav">
             <div class="navbar-end space-nav">
                 <a href="../index.html"
-                    class="navbar-item  space-nav nav-link py-0 is-hidden-desktop-only hambur-menu-text">HOME</a>
+                    class="navbar-item  space-nav nav-link py-0 is-hidden-desktop-only text-on-mobile">HOME</a>
                 <a href="../pages/map.html"
-                    class="navbar-item space-nav nav-link py-0 is-hidden-desktop-only hambur-menu-text">MAP</a>
+                    class="navbar-item space-nav nav-link py-0 is-hidden-desktop-only text-on-mobile">MAP</a>
                 <a href="../pages/signal.html"
-                    class="navbar-item space-nav nav-link py-0 is-hidden-desktop-only hambur-menu-text">SIGNAL</a>
+                    class="navbar-item space-nav nav-link py-0 is-hidden-desktop-only text-on-mobile">SIGNAL</a>
                 <a href="../pages/donate.html"
-                    class="navbar-item space-nav nav-link py-0 is-hidden-desktop-only hambur-menu-text">DONATE</a>
+                    class="navbar-item space-nav nav-link py-0 is-hidden-desktop-only text-on-mobile">DONATE</a>
                 <a href="../pages/project.html"
-                    class="navbar-item space-nav nav-link py-0 is-hidden-desktop-only hambur-menu-text">PROJECT</a>
-                <div class="navbar-item">
+                    class="navbar-item space-nav nav-link py-0 is-hidden-desktop-only text-on-mobile">PROJECT</a>
+                <div class="navbar-item is-hidden-touch is-hidden-desktop-only">
                     <div class="select  mr-6  navbar-item">
-                        <select class="chnage-lung-button-navbar">
+                        <select class="chnage-lung-button-navbar text-on-mobile">
                             <option class="option-custom">BG</option>
                             <option class="option-custom">EN</option>
                         </select>
                     </div>
                 </div>
+                <div class="navbar-dropdown is-hidden-widescreen ">
+                    <a class="navbar-item">
+                      BG
+                    </a>
+                    <a class="navbar-item">
+                      EN
+                    </a>
+                  </div> 
             </div>
     </nav>
 
