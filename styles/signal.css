@@ -20,12 +20,7 @@
   border: none;
 }
 
-.slider {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  margin-top: 20vh;
-}
+
 
 .card-1 {
   background-image: url(../photos/signal/signal-proba-photo.svg);
@@ -77,3 +72,15 @@
   border: none;
   cursor: pointer;
 }
+.bezbe{
+  width: 100vw !important;
+  height: 100vh;
+}
+/* .weridas{
+  overflow: hidden !important;
+}
+@media (max-width: 1200px){
+ .weridas{
+  overflow: auto !important;
+ }
+} */

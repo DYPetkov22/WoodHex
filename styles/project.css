@@ -1,7 +1,7 @@
 
-body {
+/* body {
     overflow-y: scroll !important;
-} 
+}  */
 
 /* Styles for background pictures */
 
@@ -74,11 +74,26 @@ body {
 /* Media queries for responsive design */
 
 /* For screens between 1024px and 1366px width */
+/* .weridas{
+    overflow: hidden !important;
+  }
+  @media (max-width: 1200px){
+   .weridas{
+    overflow: auto !important;
+   }
+  } */
+  .kolit{
+    overflow: hidden !important;
+  }
+
+  
 @media (min-width: 1024px) and (max-width: 1366px) {
     .tree-box {
         width: 300%;
         height: 100vh;
-        
+    }
+    .kolit{
+        overflow-y: auto !important;
     }
 }
 /* For screens between 820px and 1180px width */
@@ -87,6 +102,9 @@ body {
         width: 400%;
         height: 50vh;
     }
+    .kolit{
+        overflow-y: auto !important;
+    }
 
 }
 /* For screens up to 780px width */
@@ -94,5 +112,8 @@ body {
     .tree-box {
         width: 100%;
         height: 80vh;
+    }
+    .kolit{
+        overflow-y: auto !important;
     }
 }

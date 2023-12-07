@@ -19,9 +19,9 @@
   margin-right: -2% !important;
 }
 
-body.locked {
+/* body.locked {
   overflow: hidden;
-}
+} */
  
 #img_for_smaller_screens {
   display: none;
@@ -397,9 +397,9 @@ body.locked {
     position: relative;
   }
 
-  body {
+  /* body {
     overflow-x: hidden;
-  }
+  } */
   .back,  #background-of-the-groups-waiting
   {
     background-image: none;
