@@ -11,6 +11,8 @@ const renderer = new THREE.WebGLRenderer({
 	alpha: true,
 });
 
+let line, line1, line2, line3;
+
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / 2 / window.innerHeight, 0.1, 1000);
 renderer.setPixelRatio(window.devicePixelRatio);
 renderer.setSize(window.innerWidth / 2, window.innerHeight);
@@ -30,11 +32,11 @@ cube.position.y = 3;
 
 function edge() {
 	const edges = new THREE.EdgesGeometry(geometry);
-	const line = new THREE.LineSegments(edges, new THREE.LineBasicMaterial({ color: 0xffffff }));
+	line = new THREE.LineSegments(edges, new THREE.LineBasicMaterial({ color: 0xffffff }));
 	line.position.y = 3;
 	scene.add(line);
+	scene.remove(line1, line2, line3);
 }
-button1.addEventListener('click', edge);
 
 const geometry1 = new THREE.BoxGeometry(2, 6, 2);
 const material1 = new THREE.MeshBasicMaterial({ color: "rgb(31, 135, 0)" });
@@ -44,14 +46,12 @@ cube1.position.y = 2;
 
 function edge1() {
 	const edges1 = new THREE.EdgesGeometry(geometry1);
-	const line1 = new THREE.LineSegments(edges1, new THREE.LineBasicMaterial({ color: 0xffffff }));
+	line1 = new THREE.LineSegments(edges1, new THREE.LineBasicMaterial({ color: 0xffffff }));
 	line1.position.x = 2;
 	line1.position.y = 2;
-
 	scene.add(line1);
+	scene.remove(line, line2, line3);
 }
-button2.addEventListener('click', edge1);
-
 
 const geometry2 = new THREE.BoxGeometry(2, 4, 2);
 const material2 = new THREE.MeshBasicMaterial({ color: "rgb(31, 0, 216)" });
@@ -62,13 +62,13 @@ cube2.position.y = 1;
 
 function edge2() {
 	const edges = new THREE.EdgesGeometry(geometry2);
-	const line2 = new THREE.LineSegments(edges, new THREE.LineBasicMaterial({ color: 0xffffff }));
+	line2 = new THREE.LineSegments(edges, new THREE.LineBasicMaterial({ color: 0xffffff }));
 	line2.position.x = 2;
 	line2.position.z = 2;
 	line2.position.y = 1;
 	scene.add(line2);
+	scene.remove(line1, line, line3);
 }
-button3.addEventListener('click', edge2)
 
 const geometry3 = new THREE.BoxGeometry(2, 2, 2);
 const material3 = new THREE.MeshBasicMaterial({ color: "rgb(200, 135, 216)" });
@@ -78,12 +78,12 @@ cube3.position.z = 2;
 
 function edge3() {
 	const edges = new THREE.EdgesGeometry(geometry3);
-	const line3 = new THREE.LineSegments(edges, new THREE.LineBasicMaterial({ color: 0xffffff }));
+	line3 = new THREE.LineSegments(edges, new THREE.LineBasicMaterial({ color: 0xffffff }));
 	line3.position.y = 0;
 	line3.position.z = 2;
 	scene.add(line3);
+	scene.remove(line1, line2, line);
 }
-button4.addEventListener('click', edge3)
 
 const axesHelper = new THREE.AxesHelper(100);
 
@@ -94,7 +94,6 @@ camera.position.y = 8;
 
 let radius = 10;
 let angle = 20;
-
 
 function animate() {
 	requestAnimationFrame(animate);
@@ -108,4 +107,8 @@ function animate() {
 	renderer.render(scene, camera);
 }
 
+button1.addEventListener('click', edge);
+button2.addEventListener('click', edge1);
+button3.addEventListener('click', edge2);
+button4.addEventListener('click', edge3);
 animate();

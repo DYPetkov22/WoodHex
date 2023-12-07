@@ -15,8 +15,8 @@ gsap.to(flagPoles[0].el, {rotationX: 10,rotationY: 20,})
 gsap.to(flagPoles[2].el, {rotationX: 10,rotationY: -20,})
 
 document.addEventListener('mousemove', (event) => {
-  const tiltX = (event.clientX / window.innerWidth - 0.5) * 60;
-  const tiltY = (event.clientY / window.innerHeight - 0.5) * 60;
+  const tiltX = (event.clientX / window.innerWidth - 0.5) * 40;
+  const tiltY = (event.clientY / window.innerHeight - 0.5) * 40;
   gsap.to(flagPoles[1].el, {
     duration: 0.5,
     ease: 'power2.out',
@@ -31,13 +31,13 @@ function leftFlip() {
   let lastFlagPole = flagPoles.pop();
 
   flagPoles.forEach((flagPole, index) => {
-    flagPole.pos += 115;
+    flagPole.pos += 118;
     flagPole.el.style.zIndex = index + 1;
     gsap.to(flagPole.el, { opacity: 1, x: `${flagPole.pos}%`, duration: 1 });
   });
 
   lastFlagPole.el.style.zIndex = 0;
-  lastFlagPole.pos -= 230;
+  lastFlagPole.pos -= 236;
   gsap.to(lastFlagPole.el, { opacity: 1, x: `${lastFlagPole.pos}%`, duration: 1 });
 
   flagPoles.unshift(lastFlagPole);
@@ -51,13 +51,13 @@ function rightFLip() {
   let firstFlagPole = flagPoles.shift();
 
   flagPoles.forEach((flagPole, index) => {
-    flagPole.pos -= 115;
+    flagPole.pos -= 118;
     flagPole.el.style.zIndex = index + 1;
     gsap.to(flagPole.el, { opacity: 1, x: `${flagPole.pos}%`, duration: 1 });
   });
 
   firstFlagPole.el.style.zIndex = 0;
-  firstFlagPole.pos += 230;
+  firstFlagPole.pos += 236;
   gsap.to(firstFlagPole.el, { opacity: 1, x: `${firstFlagPole.pos}%`, duration: 1 });
 
   flagPoles.push(firstFlagPole);
