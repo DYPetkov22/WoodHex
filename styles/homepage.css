@@ -260,55 +260,37 @@
   width: 100%;
 }
 
-.number_of_group {
-  width: 10% !important;
-}
-
 .inside-table-of-groups-waiting {
   border-bottom: 1px solid #000 !important;
 }
 
 #table-of-groups-waiting {
   border-radius: 49px;
-  background-color: #c8cfd7;
-  width: 55%;
+  background:  linear-gradient(108deg, #DEE8DF -3.21%, rgba(200, 207, 215, 0.92) 98.29%);
+  height: 60%;
+  width: 60%;
 }
 
-.polluted_nature {
-  margin-bottom: 0% !important;
-}
-.grotesk_font {
-  font-family: "Space Grotesk" !important;
+#groups_waiting
+{
+  letter-spacing: 10.5px;
 }
 
-.join-group {
+.join_now
+{
+  border: 1px solid !important;
+  border-color: #0C5B1E !important;
+  border-radius: 20px !important; 
+  width: 110%;
   background-color: transparent !important;
-  border: 3px solid;
-  border-color: #00b628 !important;
-  background-image: linear-gradient(45deg, #00b628 50%, transparent 50%);
-  background-position: 100%;
-  background-size: 400%;
-  transition: 0.8s ease-in-out;
-}
-.join-group:hover {
-  color: #cac3c3 !important;
-  background-position: 0;
+  color: #0C5B1E !important;
 }
 
 .report_button {
   border-radius: 49px !important;
   border: none !important;
-  background-color: transparent !important;
-  outline: 2px solid;
-  color: rgb(75, 72, 72) !important;
-  outline-color: #0b110c;
-  outline-offset: -0.3vw;
-  transition: all 600ms cubic-bezier(0.2, 0, 0, 0.8);
-}
-.report_button:hover {
-  color: #000000 !important;
-  outline-color: rgba(244, 5, 5, 0);
-  outline-offset: 1vw;
+  background: linear-gradient(90deg, #15A635 17.47%, rgba(6, 103, 28, 0.79) 105.57%) !important;
+  color: #CAC3C3 !important;
 }
 
 #footer {
@@ -409,9 +391,9 @@
     margin-top: 0%;
     height: 100%;
   }
-  #table, #why-need-you, #information_for_the_table {
-    margin-right: 0%;
-    margin-left: 0;
+  #table, #why-need-you, #information_for_the_table{
+    margin-right: 0% !important;
+    margin-left: 0% !important;
   }
 
   #background-of-the-groups-waiting {
@@ -467,13 +449,18 @@
 
 @media (max-width: 768px) {
 
-  #footer {
+  #footer,  .row-of-the-table{
     background-image: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .reporter-margin {
+    margin-right: 0% !important;
+    margin-left: 0% !important;
   }
 
   #custom-image {
