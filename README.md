@@ -64,7 +64,7 @@ A tree planting website fosters global reforestation by providing educational re
 ## 🎬 Demo of the project 
   
   <p align="center">
-  <img src="/photos/readme/demo-project.png" width = "900px" height="auto" >
+  <img src="/photos/readme/demo-project.svg" width = "900px" height="auto" >
   </p>
 <br>
 

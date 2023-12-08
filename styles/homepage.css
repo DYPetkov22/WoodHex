@@ -208,8 +208,8 @@
   margin-left: 37%;
   margin-top: -13%;
 }
-
-#container {
+ 
+#planted_trees-section {
   background-image: url(../photos/home-page/background-of-table.svg);
   background-size: 100%;
   height: 155vh;
@@ -377,7 +377,9 @@
   .stop-scrolling {
     position: relative;
   }
-  #background-of-the-groups-waiting {
+
+  .back,  #background-of-the-groups-waiting
+  {
     background-image: none;
   }
   .custom-margin-on-button-hm-1 {
@@ -387,12 +389,9 @@
   #join-revolution {
     color: #ffffff !important;
     background-color: #068321;
-  }
-
-  .subtittle_after_effect::after,
-  #line1,
-  #line2,
-  #why-need-you::after {
+    }
+ 
+  .subtittle_after_effect::after, #line1, #line2, #why-need-you::after, #production_effect::after {
     display: none;
   }
 
@@ -409,8 +408,8 @@
     margin-top: 5%;
     flex-direction: column-reverse;
   }
-
-  #container {
+ 
+  #planted_trees-section {
     background-image: none;
     margin-top: 0%;
     height: 0%;
@@ -435,7 +434,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    height: 100vh;
+    height: 100% !important;
   }
 
   #custom-image {
