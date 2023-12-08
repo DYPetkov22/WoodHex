@@ -2,9 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=ABeeZee&family=Comfortaa:wght@300;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=ABeeZee&family=Caveat&family=Comfortaa:wght@300;500&display=swap");
 
-.stop-scrolling {
+/* .stop-scrolling {
   position: fixed;
-}
+} */
 
 .position-for_every-section {
   background-position: right top;
@@ -256,7 +256,7 @@
 #background-of-the-groups-waiting {
   background-image: url(../photos/home-page/background-of-goups-waiting.svg);
   background-size: 100%;
-  height: 135vh;
+  height: 126vh;
   width: 100%;
 }
 
@@ -272,8 +272,6 @@
   border-radius: 49px;
   background-color: #c8cfd7;
   width: 55%;
-  margin-left: 0%;
-  margin-top: 0;
 }
 
 .polluted_nature {
@@ -316,7 +314,7 @@
 #footer {
   background-image: url(../photos/home-page/footer-background.svg);
   background-size: 100%;
-  height: 42vh;
+  height: 100%;
   width: 100%;
   overflow: hidden;
 }
@@ -377,8 +375,7 @@
   .stop-scrolling {
     position: relative;
   }
-
-  .back,  #background-of-the-groups-waiting
+  .back, #background-of-the-groups-waiting
   {
     background-image: none;
   }
@@ -395,9 +392,7 @@
     display: none;
   }
 
-  #air_energy,
-  #benefit,
-  #sun_energy {
+  #air_energy, #benefit, #sun_energy, #green_revolution {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -412,41 +407,29 @@
   #planted_trees-section {
     background-image: none;
     margin-top: 0%;
-    height: 0%;
+    height: 100%;
   }
-  #table {
+  #table, #why-need-you, #information_for_the_table {
     margin-right: 0%;
-  }
-  #why-need-you {
     margin-left: 0;
   }
 
   #background-of-the-groups-waiting {
-    height: 150vh;
+    height: 100%;
   }
 
-  #table-of-groups-waiting {
-    width: 70%;
-  }
-
-  #footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    height: 100% !important;
-  }
-
-  #custom-image {
-    display: none;
+  #table-of-groups-waiting{
+    width: 80%;
+    height: 100%;
   }
 }
+ 
 @media (max-width: 1215px) {
   .img_for_smaller_screens {
     display: unset;
   }
   .back {
-    background-color: #080e09;
+    background-color: #0b110c;
     background-image: none;
   }
   .position_for_text_on_phone {
@@ -456,78 +439,44 @@
     align-items: center;
   }
 }
+
+@media (max-width: 1280px) {
+  #clean_air{
+    width: 200%;
+  }
+}
+
+@media (max-width: 912px)
+{
+  #footer
+  {
+    margin-bottom: -6%;
+  }
+}
+
 @media (max-width: 800px) {
   .custom-margin-on-button-hm-1 {
     width: auto;
   }
 
-  #background-of-the-groups-waiting {
-    height: 150vh;
-  }
-}
-@media (max-width: 400px) {
-  #background-of-the-groups-waiting {
-    height: 200vh;
-  }
-
-  #footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    height: 120vh;
-  }
-}
-
-@media (max-width: 1024px) {
-  #background-of-the-groups-waiting {
-    height: 65vh;
-  }
-
-  #footer {
-    height: 10vh;
-  }
-
-  #custom-image {
-    display: block;
+  #footer
+  {
+    margin-bottom: 0%;
   }
 }
 
 @media (max-width: 768px) {
-  #background-of-the-groups-waiting {
-    height: 147vh;
-  }
 
   #footer {
-    height: 60vh;
     background-image: none;
-    margin-top: -40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 
   #custom-image {
     display: none;
-  }
-}
-
-@media (max-width: 540px) {
-  #background-of-the-groups-waiting {
-    height: 190vh;
-  }
-
-  #footer {
-    margin-top: -35%;
-    height: 85vh;
-  }
-}
-
-@media (max-width: 393px) {
-  #background-of-the-groups-waiting {
-    height: 200vh;
-  }
-
-  #footer {
-    height: 100vh;
-
-    margin-top: -40%;
   }
 }
