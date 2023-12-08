@@ -128,7 +128,7 @@ function createHexagon(hexagonGroup, isBlack) {
                         "<button id='hide'><img src='../photos/map/x-button.png' alt='Hide'></button>" +
                         "people on waiting  0 / 0 " +
                         "<br>" +
-                        "trees needed   " + plantedTrees + " / " + plantedTrees +
+                        "trees needed     0  /  0 " +
                         "<br>" +
                         "kind of tree none" +
                         "<br>" + "<br>" +

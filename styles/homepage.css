@@ -49,10 +49,13 @@
   border-radius: 17px !important;
   background: #00ff38 !important;
   box-shadow: 4.70769px 7.53231px 17.46554px -1.88308px rgba(0, 0, 0, 0.25) !important;
+  transition: 0.3s;
+}
+.custom-margin-on-button-hm-1:hover{
+  opacity: 0.7;
 }
 
 .bugar {
-  font-size: 16px !important;
   font-family: "Montserrat" !important;
   color: #1b222c !important;
 }
@@ -146,12 +149,10 @@
   border-color: #00b628;
   box-shadow: 0 0 10px 0 #00b628 inset, 0 0 10px 4px #00b628;
   color: #cac3c3 !important;
+  transition: all 0.2s ease-in-out;
 }
 #join-revolution:hover {
-  box-shadow: 0 0 10px 0 #00b628 inset, 0 0 10px 4px #00b628;
-  color: #cac3c3 !important;
   box-shadow: 0 0 40px 40px #00b628 inset, 0 0 0 0 #00b628;
-  transition: all 0.2s ease-in-out;
   color: #1b222c !important;
 }
 
@@ -297,7 +298,7 @@
   background-position: 0;
 }
 
-.report_button {
+/* .report_button {
   border-radius: 49px !important;
   border: none !important;
   background-color: transparent !important;
@@ -311,6 +312,15 @@
   color: #000000 !important;
   outline-color: rgba(244, 5, 5, 0);
   outline-offset: 1vw;
+} */
+.report_button{
+  background-color: #00b628 !important;
+  border-radius: 49px !important;
+  border: none !important;
+  transition: 0.3s !important;
+}
+.report_button:hover{
+  opacity: 0.7 !important;
 }
 
 #footer {
