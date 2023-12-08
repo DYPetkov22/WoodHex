@@ -62,14 +62,10 @@
   opacity: 1;
 }
 
-.navbar-item img {
+.navbar-item #logo_img {
   max-height: 5rem !important;
   margin-left: 3vw;
   width: auto;
-}
-
-.navbar-brand {
-  padding: 0rem;
 }
 
 .logo {
@@ -93,3 +89,15 @@
     color: black !important;
   }
 }
+/* @media (max-width: 1214px) and (min-width: 200px){
+  #burger{
+    visibility: visible !important;
+  }
+ } */
+
+
+ /* @media screen and (min-width: 1024px) and (max-width: 1213px) {
+  .navbar-menu .navbar-menu-custom .navbar-burger {
+    visibility: visible !important;
+  }
+} */

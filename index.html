@@ -2,13 +2,11 @@
 <html>
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Document</title>
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <script src="./script/main.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
     <link href='https://fonts.googleapis.com/css?family=Space Grotesk' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link rel="stylesheet" href="https://fonts.google.com/specimen/Comfortaa">
@@ -17,12 +15,12 @@
     <div class="back-color">
     <section class="back size_of_every_section position-for_every-section">
         <nav class="navbar" role="navigation" aria-label="main navigation">
-            <div class="navbar-brand">
+            <div class="navbar-brand px-0 py-0">
                 <a class="navbar-item py-0" href="#">
                     <img id="logo_img" src="./photos/logo 1.png" alt="WoodHex Logo">
                     <span class="logo ">WoodHex</span>
                 </a>
-                <div role="button" class="navbar-burger has-text-white" id="burger" aria-label="menu" aria-expanded="false"
+                <div role="button" class="navbar-burger navbar-menu-custom has-text-white"  id="burger" aria-label="menu" aria-expanded="false"
                     data-target="navbarBasicExample" onclick="toggle()">
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
@@ -59,30 +57,29 @@
                       </div> 
                 </div>
         </nav>
-        <img id="img_for_smaller_screens" src="./photos/home-page/image-for-smaller-screen.svg">
-        <div class="container">
-            <div class="columns is-multiline">
-                <div class="column has-text-centered-touch has-text-centered-desktop-only is-full">
-                    <h1 id="avf"
-                        class="is-size-1 is-size-3-touch is-size-1-desktop-only custom-margin-on-text-hm-1 title text-green">
-                        The World's Biggest <br> Company for Green <br> Revolution
-                    </h1>
-                    <p class="alababa pl-6-touch color-of-main-text">Lorem ipsum dolor sit amet
-                    <span class="is-hidden-desktop"><br></span> consectetur adipisicing elit.<span
-                    class="is-hidden-desktop"><br></span> <br class="is-hidden-touch"> Totam voluptates eum ipsam!</p>
-                </div>
-                <div
-                    class="column mt-5 mb-6-touch  has-text-centered-touch has-text-centered-desktop-only is-12-tablet-only is-5-fullhd">
-                    <button class="button custom-margin-on-button-hm-1">
-                        <a href="./pages/ApplyForGroup.html" class="title  has-text-weight-bold bugar">APPLY FOR
-                            GROUP</a>
+        <img  class="is-hidden-widescreen img_for_smaller_screens" src="./photos/home-page/image-for-smaller-screen.svg">
+           <div class="position_for_text_on_phone">
+        <div class="columns  is-multiline ml-6 mr-6">
+         
+                    <div class="column has-text-centered-touch has-text-centered-desktop-only is-12">
+                
+                     
+                            <h1  class="is-size-1 is-size-3-touch is-size-1-desktop-only mt-5 title text-green has-text-weight-bold  grotesk_font">
+                                The World's Biggest <br> Company for Green <br> Revolution
+                            </h1>
+                            <p class="alababa pl-6-touch color-of-main-text">Lorem ipsum dolor sit amet<br class="is-hidden-desktop"> consectetur adipisicing elit.<br class="is-hidden-desktop"> <br class="is-hidden-touch"> Totam voluptates eum ipsam!</p>
+                    
+                    </div>
+                    <div
+                            class="column mt-5 mb-6-touch  has-text-centered-touch has-text-centered-desktop-only is-12-tablet-only is-5-fullhd">
+                            <button class="button custom-margin-on-button-hm-1">
+                            <a href="./pages/ApplyForGroup.html" class="title  has-text-weight-bold bugar">APPLY FORGROUP</a>
                     </button>
-                </div>
-
-
+                    </div>
 
                 <div class="columns ">
-                    <div class="column mt-6 ml-6  is-hidden-touch  is-hidden-desktop-only  is-size-1">
+                    <!-- is-hidden-touch  is-hidden-desktop-only -->
+                    <div class="column mt-6 ml-6  arrow-down   is-size-1">
                         <a onclick="enableScroll()" href="#scroll-point-homepage"><img
                                 src="./photos/home-page/arrow-dowm.png"></a>
                     </div>
@@ -444,6 +441,8 @@
         </div>
 
     </section>
+    <script src="./script/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
