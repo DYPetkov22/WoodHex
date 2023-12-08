@@ -4,26 +4,99 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSS Cards</title>
+    <title>WoodHex</title>
     <link rel="stylesheet" href="../styles/style.css">
+    <script src="https://threejs.org/build/three.js"></script>
 </head>
 
 <body>
-    <div class="columns is-multiline">
-        <div class="column is-6">
-        <canvas id="threejs-canvas"></canvas>
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item py-0" href="#">
+                    <img id="logo_img" src="../photos/logo 1.png" alt="WoodHex Logo">
+                    <span class="logo ">WoodHex</span>
+                </a>
+                <div role="button" class="navbar-burger has-text-white" id="burger" aria-label="menu" aria-expanded="false"
+                    data-target="navbarBasicExample" onclick="toggle()">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </div>
+            </div>
+            <div id="navbarBasicExample" class="navbar-menu is-active:false space-nav">
+                <div class="navbar-end space-nav">
+                    <a href="../index.html"
+                        class="navbar-item  space-nav nav-link py-0 is-hidden-desktop-only text-on-mobile">HOME</a>
+                    <a href="./map.html"
+                        class="navbar-item space-nav nav-link py-0 is-hidden-desktop-only text-on-mobile">MAP</a>
+                    <a href="./aboutus.html"
+                        class="navbar-item space-nav nav-link py-0 is-hidden-desktop-only text-on-mobile">ABOUT US</a>
+                    <a href="./signal.html"
+                        class="navbar-item space-nav nav-link py-0 is-hidden-desktop-only text-on-mobile">SIGNAL</a>
+                    <a href="./project.html"
+                        class="navbar-item space-nav nav-link py-0 is-hidden-desktop-only text-on-mobile">PROJECT</a>
+                    <div class="navbar-item is-hidden-touch is-hidden-desktop-only">
+                        <div class="select mr-6 navbar-item">
+                            <select class="chnage-lung-button-navbar text-on-mobile" >
+                                <option class="option-custom">BG</option>
+                                <option class="option-custom">EN</option>
+                            </select>
+                        </div>
+                    </div>
+                     <div class="navbar-dropdown is-hidden-widescreen ">
+                        <a class="navbar-item">
+                          BG
+                        </a>
+                        <a class="navbar-item">
+                          EN
+                        </a>
+                      </div> 
+                </div>
+        </nav>
+    <section class="size-of-donate columns is-multiline is-clipped">
+        <div class="column is-4 is-flex is-flex-direction-column">
+            <div class="is-justify-content-center pt-5 pb-5 pl-5 ml-2 has-text-white mb-5  section"><h1 class="is-size-1">Object</h1></div>
+            <div class="columns is-multiline">
+                <div class="column is-1"></div>
+                <div class="column is-4 is-flex is-flex-direction-column is-align-items-center">
+                    <button id="3d-position1" class="customm-button button py-5 px-5 mb-5 is-size-4">pine</button>
+                    <button id="3d-position3" class="customm-button button py-5 px-5 is-size-4">pine</button>
+                </div>
+                <div class="column is-4 is-flex is-flex-direction-column is-align-items-center">
+                    <button id="3d-position2" class="customm-button button py-5 px-5 mb-5 is-size-4">pine</button>
+                    <button id="3d-position4" class="customm-button button py-5 px-5 is-size-4">pine</button>
+                </div>
+            </div>
+            <div class="mt-5 ml-6 ml-1 is-flex-touch is-align-content-center is-justify-content-center is-align-items-center is-flex-direction-column">
+                <p class="has-text-white  is-size-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet,</p> 
+            </div>
+            <div>
+                <form class="ml-6 is-flex-touch is-align-content-center is-justify-content-center is-align-items-center is-flex-direction-column">
+                    <input class="email-donate mt-6 p-3" type="email" id="email" name="email" placeholder="Your email">
+                    <input class="submit-donate mt-4 button" type="submit" value="Submit">
+                  </form>
+            </div>
+        </div>
+        <div class="column is-1 is-hidden-touch"></div>
+        <div class="section-size-all-classes column is-7 is-hidden-touch">
+             <div class="columns is-multiline">
+        <div class="column is-7">
+         <canvas id="threejs-canvas"></canvas>
     </div>
-    <div class="column is-6">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga ratione officia cupiditate ab est maiores ipsum vitae quam iste hic provident nemo numquam adipisci non distinctio cumque asperiores, pariatur debitis!</p>
-    </div>
-    <button id="3d-position1" class="position"></button>
-    <button id="3d-position2" class="position"></button>
-    <button id="3d-position3" class="position"></button>
-    <button id="3d-position4" class="position"></button>
 </div>
 
-    <script src="https://threejs.org/build/three.js"></script>
-    <script src="../script/donate.js"></script>
+    
+    <script src="../script/donate.js"></script> 
+        </div>
+    </section>
+
 </body>
 
 </html>
+
+
+
+
+
+
+

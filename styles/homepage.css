@@ -2,9 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=ABeeZee&family=Comfortaa:wght@300;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=ABeeZee&family=Caveat&family=Comfortaa:wght@300;500&display=swap");
 
-.stop-scrolling {
+/* .stop-scrolling {
   position: fixed;
-}
+} */
 
 .position-for_every-section {
   background-position: right top;
@@ -209,8 +209,8 @@
   margin-left: 37%;
   margin-top: -13%;
 }
-
-#container {
+ 
+#planted_trees-section {
   background-image: url(../photos/home-page/background-of-table.svg);
   background-size: 100%;
   height: 155vh;
@@ -257,12 +257,8 @@
 #background-of-the-groups-waiting {
   background-image: url(../photos/home-page/background-of-goups-waiting.svg);
   background-size: 100%;
-  height: 135vh;
+  height: 126vh;
   width: 100%;
-}
-
-.number_of_group {
-  width: 10% !important;
 }
 
 .inside-table-of-groups-waiting {
@@ -271,36 +267,30 @@
 
 #table-of-groups-waiting {
   border-radius: 49px;
-  background-color: #c8cfd7;
-  width: 55%;
-  margin-left: 0%;
-  margin-top: 0;
+  background:  linear-gradient(108deg, #DEE8DF -3.21%, rgba(200, 207, 215, 0.92) 98.29%);
+  height: 60%;
+  width: 60%;
 }
 
-.polluted_nature {
-  margin-bottom: 0% !important;
-}
-.grotesk_font {
-  font-family: "Space Grotesk" !important;
+#groups_waiting
+{
+  letter-spacing: 10.5px;
 }
 
-.join-group {
+.join_now
+{
+  border: 1px solid !important;
+  border-color: #0C5B1E !important;
+  border-radius: 20px !important; 
+  width: 110%;
   background-color: transparent !important;
-  border: 3px solid;
-  border-color: #00b628 !important;
-  background-image: linear-gradient(45deg, #00b628 50%, transparent 50%);
-  background-position: 100%;
-  background-size: 400%;
-  transition: 0.8s ease-in-out;
-}
-.join-group:hover {
-  color: #cac3c3 !important;
-  background-position: 0;
+  color: #0C5B1E !important;
 }
 
 /* .report_button {
   border-radius: 49px !important;
   border: none !important;
+<<<<<<< HEAD
   background-color: transparent !important;
   outline: 2px solid;
   color: rgb(75, 72, 72) !important;
@@ -321,12 +311,16 @@
 }
 .report_button:hover{
   opacity: 0.7 !important;
+=======
+  background: linear-gradient(90deg, #15A635 17.47%, rgba(6, 103, 28, 0.79) 105.57%) !important;
+  color: #CAC3C3 !important;
+>>>>>>> 3532fc7e9a3688e6b1a397cb8afc0505d17e2f4d
 }
 
 #footer {
   background-image: url(../photos/home-page/footer-background.svg);
   background-size: 100%;
-  height: 42vh;
+  height: 100%;
   width: 100%;
   overflow: hidden;
 }
@@ -387,7 +381,8 @@
   .stop-scrolling {
     position: relative;
   }
-  #background-of-the-groups-waiting {
+  .back, #background-of-the-groups-waiting
+  {
     background-image: none;
   }
   .custom-margin-on-button-hm-1 {
@@ -397,18 +392,13 @@
   #join-revolution {
     color: #ffffff !important;
     background-color: #068321;
-  }
-
-  .subtittle_after_effect::after,
-  #line1,
-  #line2,
-  #why-need-you::after {
+    }
+ 
+  .subtittle_after_effect::after, #line1, #line2, #why-need-you::after, #production_effect::after {
     display: none;
   }
 
-  #air_energy,
-  #benefit,
-  #sun_energy {
+  #air_energy, #benefit, #sun_energy, #green_revolution {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -419,45 +409,33 @@
     margin-top: 5%;
     flex-direction: column-reverse;
   }
-
-  #container {
+ 
+  #planted_trees-section {
     background-image: none;
     margin-top: 0%;
-    height: 0%;
+    height: 100%;
   }
-  #table {
-    margin-right: 0%;
-  }
-  #why-need-you {
-    margin-left: 0;
+  #table, #why-need-you, #information_for_the_table{
+    margin-right: 0% !important;
+    margin-left: 0% !important;
   }
 
   #background-of-the-groups-waiting {
-    height: 150vh;
+    height: 100%;
   }
 
-  #table-of-groups-waiting {
-    width: 70%;
-  }
-
-  #footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    height: 100vh;
-  }
-
-  #custom-image {
-    display: none;
+  #table-of-groups-waiting{
+    width: 80%;
+    height: 100%;
   }
 }
+ 
 @media (max-width: 1215px) {
   .img_for_smaller_screens {
     display: unset;
   }
   .back {
-    background-color: #080e09;
+    background-color: #0b110c;
     background-image: none;
   }
   .position_for_text_on_phone {
@@ -467,78 +445,49 @@
     align-items: center;
   }
 }
+
+@media (max-width: 1280px) {
+  #clean_air{
+    width: 200%;
+  }
+}
+
+@media (max-width: 912px)
+{
+  #footer
+  {
+    margin-bottom: -6%;
+  }
+}
+
 @media (max-width: 800px) {
   .custom-margin-on-button-hm-1 {
     width: auto;
   }
 
-  #background-of-the-groups-waiting {
-    height: 150vh;
-  }
-}
-@media (max-width: 400px) {
-  #background-of-the-groups-waiting {
-    height: 200vh;
-  }
-
-  #footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    height: 120vh;
-  }
-}
-
-@media (max-width: 1024px) {
-  #background-of-the-groups-waiting {
-    height: 65vh;
-  }
-
-  #footer {
-    height: 10vh;
-  }
-
-  #custom-image {
-    display: block;
+  #footer
+  {
+    margin-bottom: 0%;
   }
 }
 
 @media (max-width: 768px) {
-  #background-of-the-groups-waiting {
-    height: 147vh;
+
+  #footer,  .row-of-the-table{
+    background-image: none;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
   }
 
-  #footer {
-    height: 60vh;
-    background-image: none;
-    margin-top: -40%;
+  .reporter-margin {
+    margin-right: 0% !important;
+    margin-left: 0% !important;
   }
 
   #custom-image {
     display: none;
-  }
-}
-
-@media (max-width: 540px) {
-  #background-of-the-groups-waiting {
-    height: 190vh;
-  }
-
-  #footer {
-    margin-top: -35%;
-    height: 85vh;
-  }
-}
-
-@media (max-width: 393px) {
-  #background-of-the-groups-waiting {
-    height: 200vh;
-  }
-
-  #footer {
-    height: 100vh;
-
-    margin-top: -40%;
   }
 }

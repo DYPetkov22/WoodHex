@@ -11,8 +11,6 @@ const renderer = new THREE.WebGLRenderer({
 	alpha: true,
 });
 
-let line, line1, line2, line3;
-
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / 2 / window.innerHeight, 0.1, 1000);
 renderer.setPixelRatio(window.devicePixelRatio);
 renderer.setSize(window.innerWidth / 2, window.innerHeight);
@@ -25,69 +23,164 @@ function onWindowResize() {
 	renderer.setSize(window.innerWidth / 2, window.innerHeight);
 }
 
+let line, line1, line2, line3, base = -2;
+
+const animationState = {
+	isRunning: true
+};
+
+function animateCamera(camera, scene, renderer, startPosition, targetPosition, duration, callback) {
+	const startTime = Date.now();
+
+	function animate() {
+		const currentTime = Date.now();
+		const elapsed = currentTime - startTime;
+		const t = Math.min(1, elapsed / 5000);
+		const easingT = t * (2 - t);
+
+		camera.position.lerpVectors(startPosition, targetPosition, easingT);
+		camera.lookAt(scene.position);
+		renderer.render(scene, camera);
+
+		if (t < 1) {
+			requestAnimationFrame(animate);
+		} else {
+			if (callback && typeof callback === 'function') {
+				callback();
+			}
+		}
+	}
+
+	animate();
+}
+
 const geometry = new THREE.BoxGeometry(2, 8, 2);
 const material = new THREE.MeshBasicMaterial({ color: "rgb(31, 135, 216)" });
 const cube = new THREE.Mesh(geometry, material);
-cube.position.y = 3;
-
-function edge() {
-	const edges = new THREE.EdgesGeometry(geometry);
-	line = new THREE.LineSegments(edges, new THREE.LineBasicMaterial({ color: 0xffffff }));
-	line.position.y = 3;
-	scene.add(line);
-	scene.remove(line1, line2, line3);
-}
+cube.position.y = base + 3;
+scene.add(cube);
 
 const geometry1 = new THREE.BoxGeometry(2, 6, 2);
 const material1 = new THREE.MeshBasicMaterial({ color: "rgb(31, 135, 0)" });
 const cube1 = new THREE.Mesh(geometry1, material1);
 cube1.position.x = 2;
-cube1.position.y = 2;
-
-function edge1() {
-	const edges1 = new THREE.EdgesGeometry(geometry1);
-	line1 = new THREE.LineSegments(edges1, new THREE.LineBasicMaterial({ color: 0xffffff }));
-	line1.position.x = 2;
-	line1.position.y = 2;
-	scene.add(line1);
-	scene.remove(line, line2, line3);
-}
+cube1.position.y = base + 2;
+scene.add(cube1);
 
 const geometry2 = new THREE.BoxGeometry(2, 4, 2);
 const material2 = new THREE.MeshBasicMaterial({ color: "rgb(31, 0, 216)" });
 const cube2 = new THREE.Mesh(geometry2, material2);
 cube2.position.x = 2;
 cube2.position.z = 2;
-cube2.position.y = 1;
+cube2.position.y = base + 1;
+scene.add(cube2);
+
+const geometry3 = new THREE.BoxGeometry(2, 2, 2);
+const material3 = new THREE.MeshBasicMaterial({ color: "rgb(200, 135, 216)" });
+const cube3 = new THREE.Mesh(geometry3, material3);
+cube3.position.y = base;
+cube3.position.z = 2;
+scene.add(cube3);
+
+function edge() {
+	const edges = new THREE.EdgesGeometry(geometry);
+	line = new THREE.LineSegments(edges, new THREE.LineBasicMaterial({ color: 0xffffff }));
+	line.position.y = base + 3;
+	scene.add(line);
+	scene.remove(line1, line2, line3);
+
+	button1.disabled = true;
+	button2.disabled = false;
+	button3.disabled = false;
+	button4.disabled = false;
+
+	animationState.isRunning = false;
+
+	const startPosition = camera.position.clone();
+	const targetPosition = new THREE.Vector3(Math.cos(angle) * radius, 8, 10);
+	const duration = 5000;
+
+	animateCamera(camera, scene, renderer, startPosition, targetPosition, duration, function () {
+		animationState.isRunning = true;
+		animate();
+	});
+}
+
+function edge1() {
+	const edges1 = new THREE.EdgesGeometry(geometry1);
+	line1 = new THREE.LineSegments(edges1, new THREE.LineBasicMaterial({ color: 0xffffff }));
+	line1.position.x = 2;
+	line1.position.y = base + 2;
+	scene.add(line1);
+	scene.remove(line, line2, line3);
+
+	button1.disabled = false;
+	button2.disabled = true;
+	button3.disabled = false;
+	button4.disabled = false;
+
+	animationState.isRunning = false;
+
+	const startPosition = camera.position.clone();
+	const targetPosition = new THREE.Vector3(Math.cos(angle) * radius, 8, 10);
+	const duration = 5000;
+
+	animateCamera(camera, scene, renderer, startPosition, targetPosition, duration, function () {
+		animationState.isRunning = true;
+		animate();
+	});
+}
 
 function edge2() {
 	const edges = new THREE.EdgesGeometry(geometry2);
 	line2 = new THREE.LineSegments(edges, new THREE.LineBasicMaterial({ color: 0xffffff }));
 	line2.position.x = 2;
 	line2.position.z = 2;
-	line2.position.y = 1;
+	line2.position.y = base + 1;
 	scene.add(line2);
 	scene.remove(line1, line, line3);
-}
 
-const geometry3 = new THREE.BoxGeometry(2, 2, 2);
-const material3 = new THREE.MeshBasicMaterial({ color: "rgb(200, 135, 216)" });
-const cube3 = new THREE.Mesh(geometry3, material3);
-cube3.position.y = 0;
-cube3.position.z = 2;
+	button1.disabled = false;
+	button2.disabled = false;
+	button3.disabled = true;
+	button4.disabled = false;
+
+	animationState.isRunning = false;
+
+	const startPosition = camera.position.clone();
+	const targetPosition = new THREE.Vector3(Math.cos(angle) * radius, 8, 10);
+	const duration = 5000;
+
+	animateCamera(camera, scene, renderer, startPosition, targetPosition, duration, function () {
+		animationState.isRunning = true;
+		animate();
+	});
+}
 
 function edge3() {
 	const edges = new THREE.EdgesGeometry(geometry3);
 	line3 = new THREE.LineSegments(edges, new THREE.LineBasicMaterial({ color: 0xffffff }));
-	line3.position.y = 0;
+	line3.position.y = base;
 	line3.position.z = 2;
 	scene.add(line3);
 	scene.remove(line1, line2, line);
+
+	button1.disabled = false;
+	button2.disabled = false;
+	button3.disabled = false;
+	button4.disabled = true;
+
+	animationState.isRunning = false;
+
+	const startPosition = camera.position.clone();
+	const targetPosition = new THREE.Vector3(Math.cos(angle) * radius, 8, 10);
+	const duration = 5000;
+
+	animateCamera(camera, scene, renderer, startPosition, targetPosition, duration, function () {
+		animationState.isRunning = true;
+		animate();
+	});
 }
-
-const axesHelper = new THREE.AxesHelper(100);
-
-scene.add(cube, cube1, cube2, cube3, axesHelper);
 
 camera.position.z = 10;
 camera.position.y = 8;
@@ -96,6 +189,7 @@ let radius = 10;
 let angle = 20;
 
 function animate() {
+	if (animationState.isRunning == false) return;
 	requestAnimationFrame(animate);
 
 	camera.position.x = Math.cos(angle) * radius;
