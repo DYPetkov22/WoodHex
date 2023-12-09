@@ -49,10 +49,13 @@
   border-radius: 17px !important;
   background: #00ff38 !important;
   box-shadow: 4.70769px 7.53231px 17.46554px -1.88308px rgba(0, 0, 0, 0.25) !important;
+  transition: 0.3s;
+}
+.custom-margin-on-button-hm-1:hover{
+  opacity: 0.7;
 }
 
 .bugar {
-  font-size: 16px !important;
   font-family: "Montserrat" !important;
   color: #1b222c !important;
 }
@@ -145,12 +148,10 @@
   border-color: #00b628;
   box-shadow: 0 0 10px 0 #00b628 inset, 0 0 10px 4px #00b628;
   color: #cac3c3 !important;
+  transition: all 0.2s ease-in-out;
 }
 #join-revolution:hover {
-  box-shadow: 0 0 10px 0 #00b628 inset, 0 0 10px 4px #00b628;
-  color: #cac3c3 !important;
   box-shadow: 0 0 40px 40px #00b628 inset, 0 0 0 0 #00b628;
-  transition: all 0.2s ease-in-out;
   color: #1b222c !important;
 }
 
@@ -278,11 +279,34 @@
   color: #0C5B1E !important;
 }
 
-.report_button {
+/* .report_button {
   border-radius: 49px !important;
   border: none !important;
+<<<<<<< HEAD
+  background-color: transparent !important;
+  outline: 2px solid;
+  color: rgb(75, 72, 72) !important;
+  outline-color: #0b110c;
+  outline-offset: -0.3vw;
+  transition: all 600ms cubic-bezier(0.2, 0, 0, 0.8);
+}
+.report_button:hover {
+  color: #000000 !important;
+  outline-color: rgba(244, 5, 5, 0);
+  outline-offset: 1vw;
+} */
+.report_button{
+  background-color: #00b628 !important;
+  border-radius: 49px !important;
+  border: none !important;
+  transition: 0.3s !important;
+}
+.report_button:hover{
+  opacity: 0.7 !important;
+=======
   background: linear-gradient(90deg, #15A635 17.47%, rgba(6, 103, 28, 0.79) 105.57%) !important;
   color: #CAC3C3 !important;
+>>>>>>> 3532fc7e9a3688e6b1a397cb8afc0505d17e2f4d
 }
 
 #footer {

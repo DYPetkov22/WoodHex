@@ -1,171 +1,141 @@
+/* Section 1 */
 .bg-img-abput-us-1 {
-    background-image: url('../photos/About-us/first-section-about-us.svg');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-image: url('../photos/About-us/first-section-about-us.svg'); /* Background image URL */
+    background-repeat: no-repeat; /* Prevent image from repeating */
+    background-size: 100% 100%; /* Set background size */
 }
 
+/* Section 2 */
 .bg-img-abput-us-2 {
     background-image: url('../photos/About-us/second-section-about-us.svg');
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-size: cover;
+    background-size: 100% 100%; /* Initially set background size */
+    background-size: cover; /* Update background size to cover */
 }
 
+/* Section 3 */
 .bg-img-abput-us-3 {
     background-image: url('../photos/About-us/third-section-about-us.svg');
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-
+    background-size: 100% 100%; /* Set background size */
 }
 
+/* Section 4 */
 .bg-img-abput-us-4 {
     background-image: url('../photos/About-us/fourth-section-about-us.svg');
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-size: cover;
-
+    background-size: 100% 100%; /* Initially set background size */
+    background-size: cover; /* Update background size to cover */
 }
 
-.column-box2
-{
-    margin-top: 10%; padding: 0;
-}
+/* Styling for specific elements */
 
+/* Adjustments for layout and spacing */
+.column-box2 {
+    margin-top: 10%;
+    padding: 0;
+}
+/* Adjustments for layout and spacing */
 .space-nav-about-us:not(:last-child) {
     margin-right: 20% !important;
 }
-
-.container
-{
-    background: none !important;
-}
-
-.title-column{
+/* Adjustments for layout and spacing */
+.title-column {
     margin-top: 4vw !important;
 }
 
-.card
-{
+/* Styles for cards and their content */
+.about-card {
     background: none !important;
     border: none !important;
 }
-
-.card-content
-{
+/* Styles for cards and their content */
+.card-content {
     background: none !important;
 }
 
-.title{
-    font-size: 3em; 
+/* Typography */
+.title1 {
+    font-size: 3em;
     margin-bottom: 0;
 }
 
- .image1{
+/* Layout adjustments */
+.column-box {
     height: 80%;
 }
 
-.column-box{
-    height: 80%;
+/* Box styles */
+.box1 {
+    width: 90%;
+    border: 2px solid black;
+    overflow: hidden;
 }
-
-.box{
-    width: 95%;
-     border: 2px solid black; 
-     overflow: hidden;
-}
-.box1{
-    width: 95%;
+/* Box styles */
+.box2 {
+    width: 90%;
     border: 2px solid black;
     overflow: hidden;
     position: relative;
 }
 
-.image2
-{
-    height: 80%;
-}
-.side_nav_about_us4 {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-around;
-    height: unset;
-    width: 100px;
-    margin-left: 2%;
-    position: absolute;
-    top: 17%;
-    z-index: 2;
-}
-.github-link
-{
-    color:rgb(48, 48, 48);
+/* Image specific styles */
+.image2 {
+    height: 78%;
+    margin-left: -15%;
 }
 
+/* Link styles */
+.github-link {
+    color: rgb(48, 48, 48);
+}
+
+/* Adjustments for screens larger than 1500px */
 @media (max-width: 1500px) {
-
-    .bg-img-abput-us-1 {
-        background-image: none;
-    }
-
-    .bg-img-abput-us-2 {
-        background-image: none;
-    }
-
-    .bg-img-abput-us-3 {
-        background-image: none;
-    }
-
+    /* Hide background images */
+    .bg-img-abput-us-1,
+    .bg-img-abput-us-2,
+    .bg-img-abput-us-3,
     .bg-img-abput-us-4 {
         background-image: none;
     }
-
-    .box {
-        width: 110% !important;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-
-    }
-
-}
-
-@media (min-width: 780px) {
-    .box {
-        margin-top: 25%;
-        margin-left: -30%;
-        
-    }
-
     .box1 {
-        margin-left: 18%;
-        margin-top:10% ;
+        width: 110% !important;
     }
-
-
+    .big-container,
+    .big-container1,
+    .big-container2 {
+        margin-bottom: -50%;
+    }
 }
 
-@media (max-width: 780px) {
-
-    .phone-column2,
-    .phone-column {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+/* Adjustments for screens between 780px and 1500px */
+@media (min-width: 780px) {
+    .box1 {
+        margin-top: 25%;
+        margin-left: -10%;
     }
+    .box2 {
+        margin-left: 25%;
+        margin-top: 20%;
+    }
+}
 
+/* Adjustments for screens below 780px */
+@media (max-width: 780px) {
+    .phone-column2 {
+        flex-direction: column;
+    }
     .phone-column {
         flex-direction: column-reverse;
     }
-
-    .Person-image {
-
-        width: 125%;
-        margin-left: 22%;
-
+    .image1 {
+        height: 95%;
     }
-
-    .box {
-        margin-top: -40%;
+    .image2 {
+        height: 95%;
+    }
+    .box2 {
+        width: 110%;
     }
 }
