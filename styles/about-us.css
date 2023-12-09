@@ -1,135 +1,141 @@
+/* Section 1 */
 .bg-img-abput-us-1 {
-    background-image: url('../photos/About-us/first-section-about-us.svg');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-image: url('../photos/About-us/first-section-about-us.svg'); /* Background image URL */
+    background-repeat: no-repeat; /* Prevent image from repeating */
+    background-size: 100% 100%; /* Set background size */
 }
 
+/* Section 2 */
 .bg-img-abput-us-2 {
     background-image: url('../photos/About-us/second-section-about-us.svg');
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-size: cover;
+    background-size: 100% 100%; /* Initially set background size */
+    background-size: cover; /* Update background size to cover */
 }
 
+/* Section 3 */
 .bg-img-abput-us-3 {
     background-image: url('../photos/About-us/third-section-about-us.svg');
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-
+    background-size: 100% 100%; /* Set background size */
 }
 
+/* Section 4 */
 .bg-img-abput-us-4 {
     background-image: url('../photos/About-us/fourth-section-about-us.svg');
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-size: cover;
-
+    background-size: 100% 100%; /* Initially set background size */
+    background-size: cover; /* Update background size to cover */
 }
 
-.column-box2
-{
-    margin-top: 10%; padding: 0;
-}
+/* Styling for specific elements */
 
+/* Adjustments for layout and spacing */
+.column-box2 {
+    margin-top: 10%;
+    padding: 0;
+}
+/* Adjustments for layout and spacing */
 .space-nav-about-us:not(:last-child) {
     margin-right: 20% !important;
 }
-
-.title-column{
+/* Adjustments for layout and spacing */
+.title-column {
     margin-top: 4vw !important;
 }
 
-.about-card
-{
+/* Styles for cards and their content */
+.about-card {
     background: none !important;
     border: none !important;
 }
-
-.card-content
-{
+/* Styles for cards and their content */
+.card-content {
     background: none !important;
 }
 
-.title1{
-    font-size: 3em; 
+/* Typography */
+.title1 {
+    font-size: 3em;
     margin-bottom: 0;
 }
 
-
-.column-box{
+/* Layout adjustments */
+.column-box {
     height: 80%;
 }
 
-.box1{
+/* Box styles */
+.box1 {
     width: 90%;
-     border: 2px solid black; 
-     overflow: hidden;
+    border: 2px solid black;
+    overflow: hidden;
 }
-.box2{
+/* Box styles */
+.box2 {
     width: 90%;
     border: 2px solid black;
     overflow: hidden;
     position: relative;
 }
 
-.image2
-{
+/* Image specific styles */
+.image2 {
     height: 78%;
     margin-left: -15%;
 }
-.github-link
-{
-    color:rgb(48, 48, 48);
+
+/* Link styles */
+.github-link {
+    color: rgb(48, 48, 48);
 }
+
+/* Adjustments for screens larger than 1500px */
 @media (max-width: 1500px) {
+    /* Hide background images */
     .bg-img-abput-us-1,
     .bg-img-abput-us-2,
     .bg-img-abput-us-3,
     .bg-img-abput-us-4 {
-      background-image: none;
+        background-image: none;
     }
     .box1 {
         width: 110% !important;
     }
-    .big-container
-{
-margin-bottom: -50%;
+    .big-container,
+    .big-container1,
+    .big-container2 {
+        margin-bottom: -50%;
+    }
 }
-.big-container1
-{
-    margin-bottom: -50%;
-}
-.big-container2
-{
-    margin-bottom: -50%;
-}
-}
+
+/* Adjustments for screens between 780px and 1500px */
 @media (min-width: 780px) {
     .box1 {
         margin-top: 25%;
         margin-left: -10%;
     }
     .box2 {
-        margin-left: 31%;
-        margin-top:20% ;
+        margin-left: 25%;
+        margin-top: 20%;
     }
 }
+
+/* Adjustments for screens below 780px */
 @media (max-width: 780px) {
-    .phone-column2{
+    .phone-column2 {
         flex-direction: column;
     }
-    .phone-column
-    {
-        flex-direction: column-reverse ;
+    .phone-column {
+        flex-direction: column-reverse;
     }
-     .image1{
+    .image1 {
         height: 95%;
     }
-    .image2
-    {
+    .image2 {
         height: 95%;
     }
-    .box2{
+    .box2 {
         width: 110%;
     }
 }
