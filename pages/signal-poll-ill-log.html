@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="is-clipped" lang="en">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="../styles/style.css">
 </head>
 
-<body class="is-clipped">
-    <section class="section-size-all-classes">
+<body>
+    <section class="section-size-all-classes1 is-clipped">
         <nav class="navbar" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
                 <a class="navbar-item py-0" href="#">
@@ -59,27 +59,20 @@
 
         <div class="container">
             <div class="columns is-centered">
-                <div class="column brz is-6">
+                <div class="column brz is-5 ">
                     <div class="para">
-                        <p class="cap1 is-size-3 has-text-light">Illegal cutting and dumping of trees:</p>
-                        <p class="text1 has-text-light">Report cases of illegal felling and unauthorized disposal of
+                        <p class="cap2  is-size-2 has-text-light ">Report problem about:</p>
+                        <p class="cap1 is-size-4 has-text-light">Illegal cutting and dumping of trees:</p>
+                        <p class="text1 is-size-6 has-text-light">Report cases of illegal felling and unauthorized disposal of
                             trees. Your report through our website is crucial to combating these practices and
                             preserving green areas.</p>
                         <p class="cap2 is-size-3 has-text-light">Environmental pollution:</p>
                         <p class="text2 has-text-light">Report pollution in areas around trees. Your report helps take
                             the necessary action to protect nature and combat the loss of valuable green spaces.</p>
                     </div>
-                    <div class="columns is-vcentered">
-                        <div class="column is-narrow">
-                            <img class="logo21" src="../photos/logo 1.png" alt="WoodHex Logo">
-                        </div>
-                        <div class="column">
-                            <p class="logo2 has-text-light">WOODHEX</p>
-                        </div>
-                    </div>
 
                 </div>
-                <div class="column stara second2 is-6" id="SubmitText">
+                <div class="column stara second2 is-5" id="SubmitText">
 
                     <div class="field">
                         <label class="label has-text-light"> FIRST NAME</label>
@@ -105,12 +98,9 @@
                             <span class="icon is-small is-left">
                                 <i class="fas fa-envelope"></i>
                             </span>
-                        </div>
-                        <p class="help is-danger">This email is invalid</p>
-                    </div>
 
                     <div class="field loc">
-                        <label class="label has-text-light">LOCATION</label>
+                        <label class="label loc-text has-text-light">LOCATION</label>
                         <div class="control has-icons-left">
                             <input class="input " type="text" placeholder="Text input">
                             <span class="icon is-small is-left">
@@ -132,39 +122,11 @@
 
                     <div class="field is-grouped">
                         <div class="control">
-                            <button class="button is-link" onclick="SubmitFunction()">Submit</button>
+                            <button class="button is-link mb-6" onclick="SubmitFunction()">Submit</button>
                         </div>
 
                     </div>
-    </section>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const emailInput = document.querySelector('input[type="email"]');
-            const helpText = document.querySelector('.help.is-danger');
-
-            emailInput.addEventListener("input", function (event) {
-                if (!emailInput.validity.valid) {
-                    helpText.style.display = 'block';
-                } else {
-                    helpText.style.display = 'none';
-                }
-            });
-        });
-
-
-        let cummer = document.getElementById("SubmitText");
-
-        function SubmitFunction() {
-            const html =
-                '<div class="column nova second2 is-6" id="SubmitText">' +
-                '<p class="text11">THANKS FOR YOUR SUBMISSION.</p>' +
-                '<p class="text21">We\'ll be in touch.</p>' +
-                '<p class="text22">Shortly!</p>' +
-                '<a href="../index.html" class="center-underline">back to home</a>' +
-                '</div>';
-            cummer.innerHTML = html;
-        }
-
+                    <script src="../script/signal-pages.js"></script>
     </script>
 </body>
 
