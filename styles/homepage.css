@@ -15,9 +15,6 @@
   color: #44a960 !important;
 }
 
-#kubche {
-  margin-right: -2% !important;
-}
 .size_of_every_section {
   width: 100vw;
   height: 100vh;
@@ -282,7 +279,6 @@
 /* .report_button {
   border-radius: 49px !important;
   border: none !important;
-<<<<<<< HEAD
   background-color: transparent !important;
   outline: 2px solid;
   color: rgb(75, 72, 72) !important;
@@ -303,10 +299,6 @@
 }
 .report_button:hover{
   opacity: 0.7 !important;
-=======
-  background: linear-gradient(90deg, #15A635 17.47%, rgba(6, 103, 28, 0.79) 105.57%) !important;
-  color: #CAC3C3 !important;
->>>>>>> 3532fc7e9a3688e6b1a397cb8afc0505d17e2f4d
 }
 
 #footer {
@@ -382,7 +374,7 @@
     color: #ffffff !important;
     background-color: #068321;
     }
- 
+
   .subtittle_after_effect::after, #line1, #line2, #why-need-you::after, #production_effect::after {
     display: none;
   }
