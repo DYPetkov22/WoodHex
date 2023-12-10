@@ -39,21 +39,12 @@ function startSlideshow() {
     intervalId = setInterval(showSlides, 3000);
 }
 
-// Check if the element with class "mySlides" is in the viewport
-function isElementInViewport(el) {
-    let rect = el.getBoundingClientRect();
-    return (
-        rect.top >= 0 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
-    );
-}
-
 // Check if the element is in the viewport when the page is scrolled
 function checkSlidesInView() {
     let slides = document.getElementsByClassName("mySlides");
 
     // If the first slide is in the viewport, start the slideshow
-    if (slides.length > 0 && isElementInViewport(slides[0])) {
+    if (slides.length > 0) {
         startSlideshow();
         // Remove the event listener to avoid starting the slideshow multiple times
         window.removeEventListener('scroll', checkSlidesInView);

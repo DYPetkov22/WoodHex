@@ -6,7 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WoodHex</title>
     <link rel="stylesheet" href="../styles/style.css">
-    <script src="https://threejs.org/build/three.js"></script>
+    <script type="importmap">
+        {
+          "imports": {
+            "three": "https://unpkg.com/three@0.159.0/build/three.module.js",
+            "three/addons/": "https://unpkg.com/three@0.159.0/examples/jsm/"
+          }
+        }
+      </script>
 </head>
 
 <body class="is-clipped">
@@ -74,7 +81,7 @@
 </div>
 
     
-    <script src="../script/donate.js"></script> 
+    <script type="module" src="../script/donate.js"></script> 
         </div>
     </section>
 

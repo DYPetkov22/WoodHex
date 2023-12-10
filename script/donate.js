@@ -1,8 +1,19 @@
+import * as THREE from 'three';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 const canvas = document.getElementById("threejs-canvas");
 const button1 = document.getElementById("3d-position1");
 const button2 = document.getElementById("3d-position2");
 const button3 = document.getElementById("3d-position3");
 const button4 = document.getElementById("3d-position4");
+const animationState = { isRunning: true };
+const loader = new GLTFLoader();
+const tree1 = new URL('../photos/donate/stylized_tree.glb', import.meta.url);
+const tree2 = new URL('../photos/donate/Birch-Tree.glb', import.meta.url);
+const tree3 = new URL('../photos/donate/Evergreen-Tree.glb', import.meta.url);
+const tree4 = new URL('../photos/donate/realistic_tree_models_for_games.glb', import.meta.url);
+const directionalLight = new THREE.DirectionalLight(0xffffff, 3);
+const directionalLight1 = new THREE.DirectionalLight(0xffffff, 3);
+let line, line1, line2, line3, base = -3;
 
 const scene = new THREE.Scene();
 const renderer = new THREE.WebGLRenderer({
@@ -19,15 +30,53 @@ window.addEventListener("resize", onWindowResize, false);
 function onWindowResize() {
 	camera.aspect = window.innerWidth / 2 / window.innerHeight;
 	camera.updateProjectionMatrix();
-
 	renderer.setSize(window.innerWidth / 2, window.innerHeight);
 }
 
-let line, line1, line2, line3, base = -2;
+directionalLight.position.set(5, 5, 5);
+directionalLight1.position.set(-5, 5, -5);
+scene.add(directionalLight, directionalLight1);
 
-const animationState = {
-	isRunning: true
-};
+
+loader.load(tree1.href, (gltf) => {
+	const modele1 = gltf.scene;
+	modele1.scale.set(5, 5, 5);
+	modele1.position.set(0, base + 7, 0);
+
+	scene.add(modele1);
+}, undefined, (error) => {
+	console.error(error);
+});
+
+loader.load(tree2.href, (gltf) => {
+	const modele2 = gltf.scene;
+	modele2.scale.set(5, 5, 5);
+	modele2.position.set(2, base + 5, 0);
+
+	scene.add(modele2);
+}, undefined, (error) => {
+	console.error(error);
+});
+
+loader.load(tree3.href, (gltf) => {
+	const modele3 = gltf.scene;
+	modele3.scale.set(2.5, 2.5, 2.5);
+	modele3.position.set(2, base + 3, 2);
+
+	scene.add(modele3);
+}, undefined, (error) => {
+	console.error(error);
+});
+
+loader.load(tree4.href, (gltf) => {
+	const modele4 = gltf.scene;
+	modele4.scale.set(0.15, 0.15, 0.15);
+	modele4.position.set(0, base + 1, 2)
+
+	scene.add(modele4);
+}, undefined, (error) => {
+	console.error(error);
+});
 
 function animateCamera(camera, scene, renderer, startPosition, targetPosition, duration, callback) {
 	const startTime = Date.now();
@@ -111,7 +160,10 @@ function edge1() {
 	line1 = new THREE.LineSegments(edges1, new THREE.LineBasicMaterial({ color: 0xffffff }));
 	line1.position.x = 2;
 	line1.position.y = base + 2;
-	scene.add(line1);
+
+	directionalLight.position.set(2, base + 3.1, 2);
+
+	scene.add(line1, directionalLight);
 	scene.remove(line, line2, line3);
 
 	button1.disabled = false;
