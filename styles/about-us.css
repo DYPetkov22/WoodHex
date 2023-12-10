@@ -119,6 +119,9 @@
         margin-left: 25%;
         margin-top: 20%;
     }
+    .image1{
+        border: 2px solid black;
+    }
 }
 
 /* Adjustments for screens below 780px */
