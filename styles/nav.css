@@ -47,7 +47,7 @@
 .nav-link::after {
   content: "";
   height: 1px;
-  width: 100%;
+  width: 70%;
   background: white;
   position: absolute;
   bottom: 20%;
@@ -84,6 +84,18 @@
     width: auto;
   }
 }
+
+@media (max-width: 1212px) and (min-width: 1024px)
+{
+  #logo_img
+  {
+    margin-left: -10% !important;
+  }
+   .item-navbar{
+    margin-right: 4% !important;
+   }
+}
+
 @media (max-width: 1025px) {
   .text-on-mobile{
     color: black !important;

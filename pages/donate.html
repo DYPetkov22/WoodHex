@@ -26,31 +26,16 @@
             <div id="navbarBasicExample" class="navbar-menu is-active:false space-nav">
                 <div class="navbar-end space-nav">
                     <a href="../index.html"
-                        class="navbar-item  space-nav nav-link py-0 is-hidden-desktop-only text-on-mobile">HOME</a>
+                        class="navbar-item  space-nav nav-link item-navbar py-0 pr-6  text-on-mobile">HOME</a>
                     <a href="./map.html"
-                        class="navbar-item space-nav nav-link py-0 is-hidden-desktop-only text-on-mobile">MAP</a>
+                        class="navbar-item  space-nav item-navbar nav-link py-0 pr-6  text-on-mobile">MAP</a>
                     <a href="./aboutus.html"
-                        class="navbar-item space-nav nav-link py-0 is-hidden-desktop-only text-on-mobile">ABOUT US</a>
+                        class="navbar-item item-navbar space-nav nav-link py-0 pr-6  text-on-mobile">ABOUT US</a>
                     <a href="./signal.html"
-                        class="navbar-item space-nav nav-link py-0 is-hidden-desktop-only text-on-mobile">SIGNAL</a>
+                        class="navbar-item  space-nav nav-link py-0 pr-6 item-navbar text-on-mobile">SIGNAL</a>
                     <a href="./project.html"
-                        class="navbar-item space-nav nav-link py-0 is-hidden-desktop-only text-on-mobile">PROJECT</a>
-                    <div class="navbar-item is-hidden-touch is-hidden-desktop-only">
-                        <div class="select mr-6 navbar-item">
-                            <select class="chnage-lung-button-navbar text-on-mobile" >
-                                <option class="option-custom">BG</option>
-                                <option class="option-custom">EN</option>
-                            </select>
-                        </div>
-                    </div>
-                     <div class="navbar-dropdown is-hidden-widescreen ">
-                        <a class="navbar-item">
-                          BG
-                        </a>
-                        <a class="navbar-item">
-                          EN
-                        </a>
-                      </div>
+                        class="navbar-item space-nav nav-link py-0 mr-1 item-navbar pr-6 text-on-mobile">PROJECT</a>
+                    <div class="navbar-item is-hidden-touch is-hidden-desktop-only"></div>
                 </div>
         </nav>
     <section class="size-of-donate columns is-multiline is-clipped is-hidden-touch">
@@ -59,16 +44,19 @@
             <div class="columns is-multiline">
                 <div class="column is-1"></div>
                 <div class="column is-4 is-flex is-flex-direction-column is-align-items-center">
-                    <button id="3d-position1" class="customm-button button py-5 px-5 mb-5 is-size-4">pine</button>
-                    <button id="3d-position3" class="customm-button button py-5 px-5 is-size-4">pine</button>
+                    <button id="3d-position1" onclick="showText('linden')" class="customm-button button py-5 px-5 mb-5 is-size-4">LINDEN</button>
+                    <button id="3d-position3" onclick="showText('birch')" class="customm-button button py-5 px-5 is-size-4">BIRCH</button>
                 </div>
                 <div class="column is-4 is-flex is-flex-direction-column is-align-items-center">
-                    <button id="3d-position2" class="customm-button button py-5 px-5 mb-5 is-size-4">pine</button>
-                    <button id="3d-position4" class="customm-button button py-5 px-5 is-size-4">pine</button>
+                    <button id="3d-position2" onclick="showText('pine')" class="customm-button button py-5 px-5 mb-5 is-size-4">PINE</button>
+                    <button id="3d-position4" onclick="showText('oak')" class="customm-button button py-5 px-5 is-size-4">OAK</button>
                 </div>
             </div>
             <div class="mt-5 ml-6 ml-1 is-flex-touch is-align-content-center is-justify-content-center is-align-items-center is-flex-direction-column">
-                <p class="has-text-white  is-size-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet,</p> 
+                <p class="has-text-white  is-size-6 is-hidden" id="linden">Linden has a variety of uses, including making furniture, tools, and woodwork. A tea is also made from the flowers of the linden, which is used in folk medicine for relaxation and calming.</p> 
+                <p class="has-text-white  is-size-6 is-hidden" id="birch">Birch is a tree with white bark and toothed leaves, common in northern regions, traditionally used for the production of writing bark and in landscape design due to its decorative characteristics.</p> 
+                <p class="has-text-white  is-size-6 is-hidden" id="pine">Pine wood is used for construction, furniture and paper. Pine resin is also used in industry. The essential oil extracted from the needles is used in aromatherapy and cosmetics.</p> 
+                <p class="has-text-white  is-size-6 is-hidden" id="oak">Oak is known for its strong and hard wood. It is used to make furniture, flooring and cooperage.  Oak acorns are food for a variety of animals, and oak forests are often valued recreational areas.</p> 
             </div>
             <div>
                 <form class="ml-6 is-flex-touch is-align-content-center is-justify-content-center is-align-items-center is-flex-direction-column">
@@ -92,16 +80,17 @@
 
     <section class=" is-flex is-justify-content-center is-align-items-center is-hidden-desktop is-flex-direction-column is-align-content-center trees-card">
         <div class="card card-design mt-6">
-            <div class="card-image mb-5 mt-2">
-              <figure class="image is-2by5">
-                <img src="../photos/donate-page/tree.svg" alt="Placeholder image">
+            <div class="card-image">
+              <figure class="image ">
+                <img src="../photos/donate-page/lind.svg" alt="Placeholder image">
               </figure>
             </div>
             <div class="card-content back-color-card">
               <div class="media is-flex is-justify-content-center is-hidden-desktop is-flex-direction-column is-align-items-start">
-                <div class="is-size-4 has-text-weight-bold main-color-of-card">PINE</div>
+                <div class="is-size-4 has-text-weight-bold main-color-of-card">LINDEN</div>
                 <div class="main-color-of-card content is-size-6 has-text-start is-size-7-mobile">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris
+                    Linden has a variety of uses, including making furniture, tools, and woodwork. 
+                    A tea is also made from the flowers of the linden, which is used in folk medicine for relaxation and 
                 </div>
                 <div class="content">
                     <form class="is-flex-touch is-align-content-center is-justify-content-center is-align-items-start is-flex-direction-column">
@@ -112,16 +101,17 @@
             </div>
         </div>
         <div class="card card-design mt-6">
-            <div class="card-image mb-5 mt-2">
-              <figure class="image is-2by5">
-                <img src="../photos/donate-page/tree.svg" alt="Placeholder image">
+            <div class="card-image">
+              <figure class="image ">
+                <img src="../photos/donate-page/birch.svg" alt="Placeholder image">
               </figure>
             </div>
             <div class="card-content back-color-card">
               <div class="media is-flex is-justify-content-center is-hidden-desktop is-flex-direction-column is-align-items-start">
-                <div class="is-size-4 has-text-weight-bold main-color-of-card">PINE</div>
+                <div class="is-size-4 has-text-weight-bold main-color-of-card">BIRCH</div>
                 <div class="main-color-of-card content is-size-6 has-text-start is-size-7-mobile">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris
+                    Birch is a tree with white bark and toothed leaves, common in northern regions,
+                    traditionally used for the production of writing bark and in landscape design due to its decorative characteristics.
                 </div>
                 <div class="content">
                     <form class="is-flex-touch is-align-content-center is-justify-content-center is-align-items-start is-flex-direction-column">
@@ -132,16 +122,17 @@
             </div>
         </div>
         <div class="card card-design mt-6">
-            <div class="card-image mb-5 mt-2">
-              <figure class="image is-2by5">
-                <img src="../photos/donate-page/tree.svg" alt="Placeholder image">
+            <div class="card-image">
+              <figure class="image">
+                <img src="../photos/donate-page/pine.svg" alt="Placeholder image">
               </figure>
             </div>
             <div class="card-content back-color-card">
               <div class="media is-flex is-justify-content-center is-hidden-desktop is-flex-direction-column is-align-items-start">
                 <div class="is-size-4 has-text-weight-bold main-color-of-card">PINE</div>
                 <div class="main-color-of-card content is-size-6 has-text-start is-size-7-mobile">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris
+                    Pine wood is used for construction, furniture and paper. Pine resin is also used in industry.
+                    The essential oil extracted from the needles is used in aromatherapy and cosmetics.
                 </div>
                 <div class="content">
                     <form class="is-flex-touch is-align-content-center is-justify-content-center is-align-items-start is-flex-direction-column">
@@ -152,16 +143,17 @@
             </div>
         </div>
         <div class="card card-design mt-6 mb-4">
-            <div class="card-image mb-5 mt-2">
-              <figure class="image is-2by5">
-                <img src="../photos/donate-page/tree.svg" alt="Placeholder image">
+            <div class="card-image">
+              <figure class="image">
+                <img src="../photos/donate-page/oak.svg" alt="Placeholder image">
               </figure>
             </div>
             <div class="card-content back-color-card">
               <div class="media is-flex is-justify-content-center is-hidden-desktop is-flex-direction-column is-align-items-start">
-                <div class="is-size-4 has-text-weight-bold main-color-of-card">PINE</div>
+                <div class="is-size-4 has-text-weight-bold main-color-of-card">OAK</div>
                 <div class="main-color-of-card content is-size-6 has-text-start is-size-7-mobile">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris
+                    Oak is known for its strong and hard wood. It is used to make furniture, flooring and cooperage. 
+                    Oak acorns are food for a variety of animals, and oak forests are often valued recreational areas.
                 </div>
                 <div class="content">
                     <form class="is-flex-touch is-align-content-center is-justify-content-center is-align-items-start is-flex-direction-column">
