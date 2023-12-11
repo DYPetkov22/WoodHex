@@ -102,13 +102,6 @@ function createHexagon(hexagonGroup, isBlack) {
                         "<br>" + "<br>" +
                         "<button id='applyButton'>APPLY FOR GROUP</button>" +
                         "</div>"
-                        // "<button id='hide'><img src='../photos/map/x-button.png' alt='Hide'></button>" +
-                        // "people on waiting  " + peopleWait + " / " + peopleWaitMax +
-                        // "<br>" +
-                        // "trees needed   " + plantedTrees + " / " + plantedTreesMax +
-                        // "<br>" +
-                        // "kind of tree " + randomTree +
-                        // "<button id='applyButton'>APPLY FOR GROUP</button>"
                     );
 
                 document.getElementById('applyButton').addEventListener('click', function () {

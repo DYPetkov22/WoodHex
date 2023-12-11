@@ -13,16 +13,21 @@
     position: relative;
     bottom: 0;
     left: 13%;
+    margin-top: 3vh;
     width: 8vw;
     height: 2vw;
     font-size: 0.8vw;
     border-radius: 1vw;
-    border: 0px solid rgba(243, 242, 242, 0.53);
+    border: 0px solid #cac3c3;
+    background: #cac3c3;
+    transition: 0.2s ease-in-out;
+}
+#applyButton:hover{
     background: rgba(243, 242, 242, 0.53);
+    border: 0px solid rgba(243, 242, 242, 0.53);
 }
 #abdiii{
     display: flex;
-    
 }
 
 .custom_button_full-map{
@@ -35,8 +40,8 @@
   position: fixed;
   width: 20vw;
   height: 17vw;
-  top: 25%;
-  left: 2%;
+  top: 35%;
+  left: 1%;
   border-radius: 20px;
   padding-left: 1%;
   font-size: 1.3vw;
@@ -98,7 +103,7 @@ Lorem ipsum dolor sit.</p>
 
   } */
   .d{
-    margin-top: 7vh;
+    margin-top: 5vh;
     color: white;
     margin-left: 1vw;
     display: flex;

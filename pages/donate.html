@@ -7,7 +7,14 @@
     <script src="https://threejs.org/build/three.js"></script>
     <title>WoodHex</title>
     <link rel="stylesheet" href="../styles/style.css">
-    <script src="https://threejs.org/build/three.js"></script>
+    <script type="importmap">
+        {
+          "imports": {
+            "three": "https://unpkg.com/three@0.159.0/build/three.module.js",
+            "three/addons/": "https://unpkg.com/three@0.159.0/examples/jsm/"
+          }
+        }
+      </script>
 </head>
 
 <body class="is-clipped">
@@ -62,7 +69,7 @@
             <div>
                 <form class="ml-6 is-flex-touch is-align-content-center is-justify-content-center is-align-items-center is-flex-direction-column">
                     <input class="email-donate mt-6 p-3" type="email" id="email" name="email" placeholder="Your email">
-                    <input class="submit-donate is-rounded mt-4 button" type="submit" value="Submit">
+                    <input class="submit-donate is-rounded mt-4 py-0 button" type="submit" value="Submit">
                   </form>
             </div>
         </div>
@@ -165,7 +172,7 @@
             </div>
         </div>
     </section>
-
+    <script src="../script/main.js"></script>
 </body>
 
 </html>
