@@ -175,176 +175,91 @@ for (let row = 0; row < rows; row++) {
         let hexagonGroup = g.append("g")
             .attr("transform", "translate(" + x + "," + y + ")");
 
-        if (row === 0) {
-            if (col < 24) {
-                createHexagon(hexagonGroup, true);
-            }
-            else {
-                hexagonSea(hexagonGroup);
-            }
+        switch (row) {
+            case 0:
+                createHexagon(hexagonGroup, col < 24);
+                break;
+
+            case 1:
+                if (col === 5 || (col > 16 && col < 20)) {
+                    createHexagon(hexagonGroup, false);
+                } else if (col > 22) {
+                    hexagonSea(hexagonGroup);
+                } else {
+                    createHexagon(hexagonGroup, true);
+                }
+                break;
+
+            case 2:
+                if (col === 5 || col === 6 || (col > 15 && col < 21)) {
+                    createHexagon(hexagonGroup, false);
+                } else if (col > 21) {
+                    hexagonSea(hexagonGroup);
+                } else {
+                    createHexagon(hexagonGroup, true);
+                }
+                break;
+
+            case 3:
+            case 4:
+                if ((col > 4 && col < 22) && !(col > 21)) {
+                    createHexagon(hexagonGroup, false);
+                } else if (col > 20) {
+                    hexagonSea(hexagonGroup);
+                } else {
+                    createHexagon(hexagonGroup, true);
+                }
+                break;
+
+            case 5:
+            case 6:
+            case 7:
+            case 8:
+            case 9:
+            case 10:
+            case 11:
+                if ((col > 5 && col < 21) && !(col > 20)) {
+                    createHexagon(hexagonGroup, false);
+                } else if (col > 19) {
+                    hexagonSea(hexagonGroup);
+                } else {
+                    createHexagon(hexagonGroup, true);
+                }
+                break;
+
+            case 12:
+                if (((col > 5 && col < 17) || (col < 21 && col > 18)) && !(col > 20)) {
+                    createHexagon(hexagonGroup, false);
+                }
+                else if (col > 20) {
+                    hexagonSea(hexagonGroup);
+                }
+                else {
+                    createHexagon(hexagonGroup, true);
+                }
+                break;
+
+            case 13:
+                if (((col > 5 && col < 10) || (col > 11 && col < 15)) && !(col > 20)) {
+                    createHexagon(hexagonGroup, false);
+                } else if (col > 20) {
+                    hexagonSea(hexagonGroup);
+                } else {
+                    createHexagon(hexagonGroup, true);
+                }
+                break;
+
+            case 14:
+                if (col > 20) {
+                    hexagonSea(hexagonGroup);
+                } else {
+                    createHexagon(hexagonGroup, true);
+                }
+                break;
+
+            default:
+                break;
         }
-        else if (row === 1) {
-            if (col === 5) {
-                createHexagon(hexagonGroup, false);
-            }
-            else if (col > 16 && col < 20) {
-                createHexagon(hexagonGroup, false);
-            }
-            else if (col > 22) {
-                hexagonSea(hexagonGroup);
-            }
-            else {
-                createHexagon(hexagonGroup, true);
-            }
-        }
-        else if (row === 2) {
-            if (col === 5 || col === 6) {
-                createHexagon(hexagonGroup, false);
-            }
-            else if (col > 15 && col < 21) {
-                createHexagon(hexagonGroup, false);
-            }
-            else if (col > 21) {
-                hexagonSea(hexagonGroup);
-            }
-            else {
-                createHexagon(hexagonGroup, true);
-            }
-        }
-        else if (row === 3) {
-            if (col > 4 && col < 22) {
-                createHexagon(hexagonGroup, false);
-            }
-            else if (col > 21) {
-                hexagonSea(hexagonGroup);
-            }
-            else {
-                createHexagon(hexagonGroup, true);
-            }
-        }
-        else if (row === 4) {
-            if (col > 5 && col < 22) {
-                createHexagon(hexagonGroup, false);
-            }
-            else if (col > 20) {
-                hexagonSea(hexagonGroup);
-            }
-            else {
-                createHexagon(hexagonGroup, true);
-            }
-        }
-        else if (row === 5) {
-            if (col > 5 && col < 21) {
-                createHexagon(hexagonGroup, false);
-            }
-            else if (col > 20) {
-                hexagonSea(hexagonGroup);
-            }
-            else {
-                createHexagon(hexagonGroup, true);
-            }
-        }
-        else if (row === 6) {
-            if (col > 5 && col < 20) {
-                createHexagon(hexagonGroup, false);
-            }
-            else if (col > 19) {
-                hexagonSea(hexagonGroup);
-            }
-            else {
-                createHexagon(hexagonGroup, true);
-            }
-        }
-        else if (row === 7) {
-            if (col > 5 && col < 20) {
-                createHexagon(hexagonGroup, false);
-            }
-            else if (col > 19) {
-                hexagonSea(hexagonGroup);
-            }
-            else {
-                createHexagon(hexagonGroup, true);
-            }
-        }
-        else if (row === 8) {
-            if (col > 5 && col < 20) {
-                createHexagon(hexagonGroup, false);
-            }
-            else if (col > 18) {
-                hexagonSea(hexagonGroup);
-            }
-            else {
-                createHexagon(hexagonGroup, true);
-            }
-        }
-        else if (row === 9) {
-            if (col > 4 && col < 20) {
-                createHexagon(hexagonGroup, false);
-            }
-            else if (col > 19) {
-                hexagonSea(hexagonGroup);
-            }
-            else {
-                createHexagon(hexagonGroup, true);
-            }
-        }
-        else if (row === 10) {
-            if (col > 4 && col < 21) {
-                createHexagon(hexagonGroup, false);
-            }
-            else if (col > 19) {
-                hexagonSea(hexagonGroup);
-            }
-            else {
-                createHexagon(hexagonGroup, true);
-            }
-        }
-        else if (row === 11) {
-            if (col > 4 && col < 21) {
-                createHexagon(hexagonGroup, false);
-            }
-            else if (col > 20) {
-                hexagonSea(hexagonGroup);
-            }
-            else {
-                createHexagon(hexagonGroup, true);
-            }
-        }
-        else if (row === 12) {
-            if (col > 5 && col < 17) {
-                createHexagon(hexagonGroup, false);
-            }
-            else if (col < 21 && col > 18) {
-                createHexagon(hexagonGroup, false);
-            }
-            else if (col > 20) {
-                hexagonSea(hexagonGroup);
-            }
-            else {
-                createHexagon(hexagonGroup, true);
-            }
-        }
-        else if (row === 13) {
-            if (col > 5 && col < 10) {
-                createHexagon(hexagonGroup, false);
-            }
-            else if (col > 11 && col < 15) {
-                createHexagon(hexagonGroup, false);
-            }
-            else if (col > 20) {
-                hexagonSea(hexagonGroup);
-            }
-            else {
-                createHexagon(hexagonGroup, true);
-            }
-        }
-        else if (row === 14) {
-            if (col > 20) {
-                hexagonSea(hexagonGroup);
-            }
-            else {
-                createHexagon(hexagonGroup, true);
-            }
-        }
+
     }
 }
