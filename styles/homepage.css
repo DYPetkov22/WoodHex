@@ -2,9 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=ABeeZee&family=Comfortaa:wght@300;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=ABeeZee&family=Caveat&family=Comfortaa:wght@300;500&display=swap");
 
-/* .stop-scrolling {
+.stop-scrolling {
   position: fixed;
-} */
+} 
 
 .position-for_every-section {
   background-position: right top;

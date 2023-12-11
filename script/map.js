@@ -1,6 +1,6 @@
 const randomImagePaths = ["../photos/map/green.svg", "../photos/map/red.svg"];
 const alternativeImagePaths = ["../photos/map/green-glow.svg", "../photos/map/red-glow.svg"];
-const randomTrees = ["Cherry plum", "Norway maple", "Horse Chestnut", "Common lilac"];
+const randomTrees = ["LINDEN", "BIRCH", "PINE", "OAK"];
 
 const svg = d3.select('#leaflet-map');
 const g = svg.append("g").attr("class", "leaflet-zoom-hide");
@@ -70,23 +70,6 @@ function createHexagon(hexagonGroup, isBlack) {
 
             const overlayDiv = d3.select("body").append("div")
                 .attr("id", "overlay-div")
-                .style("position", "fixed")
-
-                .style("width", "16vw")
-                .style("height", "15vw")
-
-                .style("top", "25%")
-                .style("left", "2%")
-
-                .style("padding-left", "1%")
-
-                .style("font-size", "1.3vw")
-                .style("background-color", "rgba(26, 25, 25, 0.67)")
-                .style("color", "white")
-
-                .style("display", "flex")
-                .style("justify-content", "space-evenly")
-                .style("flex-direction", "column")
                 .html("<button id='hide'><img src='../photos/map/x-button.png' alt='Hide'></button>");
             ;
 
@@ -107,13 +90,25 @@ function createHexagon(hexagonGroup, isBlack) {
 
                 overlayDiv.html
                     (
+                        "<div class='a'>" +
                         "<button id='hide'><img src='../photos/map/x-button.png' alt='Hide'></button>" +
+                        "</div>" +
+                        "<div class='d'>" +
                         "people on waiting  " + peopleWait + " / " + peopleWaitMax +
                         "<br>" +
                         "trees needed   " + plantedTrees + " / " + plantedTreesMax +
                         "<br>" +
                         "kind of tree " + randomTree +
-                        "<button id='applyButton'>APPLY FOR GROUP</button>"
+                        "<br>" + "<br>" +
+                        "<button id='applyButton'>APPLY FOR GROUP</button>" +
+                        "</div>"
+                        // "<button id='hide'><img src='../photos/map/x-button.png' alt='Hide'></button>" +
+                        // "people on waiting  " + peopleWait + " / " + peopleWaitMax +
+                        // "<br>" +
+                        // "trees needed   " + plantedTrees + " / " + plantedTreesMax +
+                        // "<br>" +
+                        // "kind of tree " + randomTree +
+                        // "<button id='applyButton'>APPLY FOR GROUP</button>"
                     );
 
                 document.getElementById('applyButton').addEventListener('click', function () {
@@ -123,17 +118,21 @@ function createHexagon(hexagonGroup, isBlack) {
             else {
                 let plantedTrees = 100 + Math.floor(Math.random() * 100);
 
-                overlayDiv.html
+                 overlayDiv.html
                     (
-                        "<button id='hide'><img src='../photos/map/x-button.png' alt='Hide'></button>" +
-                        "people on waiting  0 / 0 " +
-                        "<br>" +
-                        "trees needed     0  /  0 " +
-                        "<br>" +
-                        "kind of tree none" +
-                        "<br>" + "<br>" +
-                        "<button id='applyButton'>APPLY FOR GROUP</button>"
-                    );
+                    "<div class='a'>" +
+                    "<button id='hide'><img src='../photos/map/x-button.png' alt='Hide'></button>" +
+                    "</div>" +
+                    "<div class='d'>" +
+                    "people on waiting  0 / 0 " +
+                    "<br>" +
+                    "trees needed     0  /  0 " +
+                    "<br>" +
+                    "kind of tree: none" +
+                    "<br>" + "<br>" +
+                    "<button id='applyButton'>APPLY FOR GROUP</button>" +
+                    "</div>"
+                     );
             }
 
             document.getElementById('hide').addEventListener('click', function () {

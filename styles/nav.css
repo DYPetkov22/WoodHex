@@ -96,7 +96,7 @@
    }
 }
 
-@media (max-width: 1025px) {
+@media (max-width: 1023px) {
   .text-on-mobile{
     color: black !important;
   }

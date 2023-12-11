@@ -13,22 +13,16 @@
     position: relative;
     bottom: 0;
     left: 13%;
-
     width: 8vw;
     height: 2vw;
-
     font-size: 0.8vw;
-
     border-radius: 1vw;
     border: 0px solid rgba(243, 242, 242, 0.53);
     background: rgba(243, 242, 242, 0.53);
 }
-
-#hide {
-    width: 1vw;
-    margin-left: 240px;
-    background-color: transparent;
-    border: none;
+#abdiii{
+    display: flex;
+    
 }
 
 .custom_button_full-map{
@@ -37,3 +31,76 @@
     border-color: transparent;
     color: #fff;
 }
+#overlay-div{
+  position: fixed;
+  width: 20vw;
+  height: 17vw;
+  top: 25%;
+  left: 2%;
+  border-radius: 20px;
+  padding-left: 1%;
+  font-size: 1.3vw;
+  background-color: rgba(26, 25, 25, 0.599);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  
+}
+.a {
+    display: flex;
+    justify-content: flex-end;
+
+}
+#hide{
+    width: 1vw;
+    margin-top: 2vh;
+    margin-right: 2vw;
+
+   background-color: transparent;
+   border: none;
+}
+/* <div class="pan">
+<div class="a">
+<img src="./x-button.png" alt="">
+</div>
+<div class="d">
+<div class="b">
+<p>Lorem ipsum dolor sit.<br>                           
+Lorem ipsum dolor sit.<br>
+Lorem ipsum dolor sit.</p>
+</div>
+<div class="c">
+    <button>aply for group</button>
+</div>
+</div>
+</div> */
+
+/* .pan{
+    margin: 200px;
+    background-color: black;
+    display: flex;
+    width: 17vw;
+    height: 30vh;
+    flex-direction: column;
+  }
+  .a{
+    margin-top: 2vh;
+    margin-right: 2vw;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .d{
+  margin-top: 3vh;
+  color: white;
+  margin-left: 1vw;
+  display: flex;
+  flex-direction: column;
+
+  } */
+  .d{
+    margin-top: 7vh;
+    color: white;
+    margin-left: 1vw;
+    display: flex;
+    flex-direction: column;
+  }
