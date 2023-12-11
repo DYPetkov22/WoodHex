@@ -20,11 +20,6 @@ input[type="email"]:invalid {
     font-size: 16px;
     margin-top: 10%;
 }
-
-/* Media query for screens with minimum width of 780px */
-@media (min-width: 780px) {
-    /* Styling for elements within this media query */
-
     .section-size-all-classes1 {
         height: 100vh;
         overflow-y: scroll !important;
@@ -32,17 +27,15 @@ input[type="email"]:invalid {
     .nova {
         background-image: url(../photos/signal/Group\ 1.svg);
         background-repeat: no-repeat;
-        height: 70vh;
+        height: 70%;
         border-radius: 40px;
         background: linear-gradient(180deg, #36AC32 0%, #116C06 100%);
     }
     .center-underline {
-        margin-top: 120%;
+        align-items: end;
         display: flex;
-        align-items: center;
         justify-content: center;
-        color: #FFF;
-    }
+        }
     .para {
         margin-top: 20%;
     }
@@ -50,7 +43,7 @@ input[type="email"]:invalid {
         margin-top: 3%;
         margin-left: 10%;
     }
-}
+
 
 /* Media query for screens with maximum width of 780px */
 @media (max-width: 780px) {
@@ -63,19 +56,23 @@ input[type="email"]:invalid {
     .nova {
         background-image: url(../photos/signal/Group\ 1.svg);
         background-repeat: no-repeat;
-        height: 70vh;
+        height: 70%;
         width: 100%;
         border-radius: 40px;
         background: linear-gradient(180deg, #36AC32 0%, #116C06 100%);
     }
     .center-underline {
-        margin-top: 80%;
         display: flex;
-        align-items: center;
+        align-items: end;
         justify-content: center;
     }
     .para {
         margin-top: 20%;
         margin-left: 3%;
     }
+}
+.commit-div{
+    display: flex;
+    align-items: end;
+    justify-content: center;
 }
