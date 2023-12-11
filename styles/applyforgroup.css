@@ -1,0 +1,14 @@
+.size-of-apply-group{
+    height: 89  vh;
+}
+
+.form {
+    margin-top: 3%;
+}
+
+@media(max-width: 1214px)
+{
+    .size-of-apply-group{
+        height: 100%;
+    }
+}

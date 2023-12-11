@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body class="kolit">
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item py-0" href="#">
+                    <img id="logo_img" src="../photos/logo 1.png" alt="WoodHex Logo">
+                    <span class="logo ">WoodHex</span>
+                </a>
+                <div role="button" class="navbar-burger has-text-white" id="burger" aria-label="menu" aria-expanded="false"
+                    data-target="navbarBasicExample" onclick="toggle()">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </div>
+            </div>
+            <div id="navbarBasicExample" class="navbar-menu is-active:false space-nav">
+                <div class="navbar-end space-nav">
+                    <a href="./map.html"
+                        class="navbar-item  space-nav nav-link py-0 pr-6 item-navbar text-on-mobile">MAP</a>
+                    <a href="../pages/aboutus.html"
+                        class="navbar-item  space-nav nav-link py-0 pr-6 item-navbar text-on-mobile">ABOUT US</a>
+                    <a href="../pages/signal.html"
+                        class="navbar-item  space-nav nav-link py-0 pr-6 item-navbar text-on-mobile">SIGNAL</a>
+                    <a href="../pages/donate.html"
+                        class="navbar-item  space-nav nav-link py-0 pr-6 item-navbar text-on-mobile">DONATE</a>
+                    <a href="../pages/project.html"
+                        class="navbar-item space-nav nav-link py-0 mr-1 pr-6 item-navbar text-on-mobile">PROJECT</a>
+                    <div class="navbar-item is-hidden-touch is-hidden-desktop-only">
+                      </div> 
+                </div>
+        </nav>
+        <div class="is-flex is-flex-direction-column size-of-apply-group">
+            <h1 class="title is-2 color-of-main-text has-text-centered mt-6">FILL OUT THIS FORM <br> TO JOIN A GROUP</h1>
+
+                <form class="mt-6 form columns is-multiline" id="SubmitText">
+                    <section class="column is-1"></section>
+                    <section class="column is-4 is-12-touch is-flex-touch is-flex-direction-column is-justify-content-center is-align-items-center">
+                        <div class="field">
+                            <label class="label has-text-light">FIRST NAME</label>
+                            <div class="control has-icons-left">
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-user"></i>
+                                </span>
+                                <input class="input" type="text" placeholder="Text input">
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label class="label has-text-light">LAST NAME</label>
+                            <div class="control has-icons-left">
+                                <input class="input " type="text" placeholder="Text input">
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-user"></i>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label class="label has-text-light">EMAIL</label>
+                            <div class="control has-icons-left">
+                                <input class="input" type="email" placeholder="Email input">
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-envelope"></i>
+                                </span>
+
+                        <div class="field mt-3  ">
+                            <label class="label loc-text has-text-light">LOCATION</label>
+                            <div class="control has-icons-left">
+                                <input class="input " type="text" placeholder="Text input">
+                                <span class="icon is-small is-left">
+                                    <i class="fas fa-map"></i>
+                                </span>
+                            </div>
+                        </div>
+                </section>
+                <section class="column is-1"></section>
+                <section class="column is-5 is-12-touch  is-flex-touch is-flex-direction-column is-justify-content-center is-align-items-center">
+                    <div class="field">
+                        <label class="label has-text-light">DESCRIBE THE PROBLEM</label>
+                        <div class="control">
+                            <textarea class="textarea condu" placeholder="Text area"></textarea>
+                        </div>
+                    </div>
+                    
+                    <div class="field is-grouped is-flex is-justify-content-right">
+                        <div class="control">
+                            <button class="button is-link mb-6">Submit</button>
+                        </div>
+                    </div>
+                </section>
+                </form>
+
+        </div>
+                    <script src="../script/signal-pages.js"></script>
+</body>
+
+</html>

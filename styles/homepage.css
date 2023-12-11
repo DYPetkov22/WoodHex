@@ -118,6 +118,18 @@
   height: 100%;
 }
 
+.stagees_tree
+{
+  margin-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.stages_tree
+{
+  margin-top: 3rem;
+  padding-top: 6rem;
+}
+
 .revolution-img {
   width: 70%;
   height: auto;
@@ -382,9 +394,7 @@
   #background-of-the-groups-waiting, #table-of-groups-waiting {
     height: 100%;
   }
-}
- 
-@media (max-width: 1214px) {
+
   .img_for_smaller_screens {
     display: unset;
   }
@@ -404,6 +414,20 @@
 @media (max-width: 1280px) {
   #clean_air{
     width: 200%;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 1024px)
+{
+  .first-stage-tree{
+    padding-top: 100%;
+  }
+
+  .second-stage-tree{
+    margin-top: -300%;
+  }
+  .stages_tree{
+    margin-top: 0%;
   }
 }
 
