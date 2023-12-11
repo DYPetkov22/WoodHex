@@ -111,21 +111,21 @@ function createHexagon(hexagonGroup, isBlack) {
             else {
                 let plantedTrees = 100 + Math.floor(Math.random() * 100);
 
-                 overlayDiv.html
+                overlayDiv.html
                     (
-                    "<div class='a'>" +
-                    "<button id='hide'><img src='../photos/map/x-button.png' alt='Hide'></button>" +
-                    "</div>" +
-                    "<div class='d'>" +
-                    "people on waiting  0 / 0 " +
-                    "<br>" +
-                    "trees needed     0  /  0 " +
-                    "<br>" +
-                    "kind of tree: none" +
-                    "<br>" + "<br>" +
-                    "<button id='applyButton'>APPLY FOR GROUP</button>" +
-                    "</div>"
-                     );
+                        "<div class='a'>" +
+                        "<button id='hide'><img src='../photos/map/x-button.png' alt='Hide'></button>" +
+                        "</div>" +
+                        "<div class='d'>" +
+                        "people on waiting  0 / 0 " +
+                        "<br>" +
+                        "trees needed     0  /  0 " +
+                        "<br>" +
+                        "kind of tree: none" +
+                        "<br>" + "<br>" +
+                        "<button id='applyButton'>APPLY FOR GROUP</button>" +
+                        "</div>"
+                    );
             }
 
             document.getElementById('hide').addEventListener('click', function () {
@@ -169,7 +169,7 @@ for (let row = 0; row < rows; row++) {
 
         switch (row) {
             case 0:
-                createHexagon(hexagonGroup, col < 24);
+                createHexagon(hexagonGroup, true);
                 break;
 
             case 1:
@@ -193,8 +193,16 @@ for (let row = 0; row < rows; row++) {
                 break;
 
             case 3:
-            case 4:
                 if ((col > 4 && col < 22) && !(col > 21)) {
+                    createHexagon(hexagonGroup, false);
+                } else if (col > 20) {
+                    hexagonSea(hexagonGroup);
+                } else {
+                    createHexagon(hexagonGroup, true);
+                }
+                break;
+            case 4:
+                if ((col > 5 && col < 22) && !(col > 21)) {
                     createHexagon(hexagonGroup, false);
                 } else if (col > 20) {
                     hexagonSea(hexagonGroup);
@@ -207,10 +215,18 @@ for (let row = 0; row < rows; row++) {
             case 6:
             case 7:
             case 8:
+                if ((col > 5 && col < 21) && !(col > 20)) {
+                    createHexagon(hexagonGroup, false);
+                } else if (col > 19) {
+                    hexagonSea(hexagonGroup);
+                } else {
+                    createHexagon(hexagonGroup, true);
+                }
+                break;
             case 9:
             case 10:
             case 11:
-                if ((col > 5 && col < 21) && !(col > 20)) {
+                if ((col > 4 && col < 21) && !(col > 20)) {
                     createHexagon(hexagonGroup, false);
                 } else if (col > 19) {
                     hexagonSea(hexagonGroup);

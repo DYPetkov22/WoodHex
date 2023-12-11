@@ -24,6 +24,7 @@
     background-color: transparent !important;
     border: 2px solid #cac3c3 ;
     color: #cac3c3;
+    width: 20%;
     background-position: 100%;
     background-size: 400%;
     border-radius: 40px !important;
@@ -43,6 +44,26 @@
 {
     
     color: #0B110C;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.submit-donate[type="submit"] {
+  background-color: transparent !important;
+  border: 2px solid #cac3c3 ;
+  color: #cac3c3;
+  background-position: 100%;
+  background-size: 400%;
+  border-radius: 40px !important;
+  transition: 0.2s ease-in-out;
+}
+.submit-donate:hover[type="submit"]{
+  background-color: #cac3c3  !important;
+  background-position: 0;
+  color: #0B110C;
 }
 
 .card-design

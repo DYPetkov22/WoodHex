@@ -1,5 +1,6 @@
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+import { RoundedBoxGeometry } from 'three/addons/geometries/RoundedBoxGeometry.js';
 const canvas = document.getElementById("threejs-canvas");
 const button1 = document.getElementById("3d-position1");
 const button2 = document.getElementById("3d-position2");
@@ -11,9 +12,9 @@ const tree1 = new URL('../photos/donate/stylized_tree.glb', import.meta.url);
 const tree2 = new URL('../photos/donate/Birch-Tree.glb', import.meta.url);
 const tree3 = new URL('../photos/donate/Evergreen-Tree.glb', import.meta.url);
 const tree4 = new URL('../photos/donate/realistic_tree_models_for_games.glb', import.meta.url);
-const directionalLight = new THREE.DirectionalLight(0xffffff, 3);
-const directionalLight1 = new THREE.DirectionalLight(0xffffff, 3);
-let line, line1, line2, line3, base = -3;
+const AmbientLight = new THREE.AmbientLight(0xffffff);
+const base = -3, radius0 = 4, smoothness = 0.2;
+let line, line1, line2, line3;
 
 const scene = new THREE.Scene();
 const renderer = new THREE.WebGLRenderer({
@@ -33,17 +34,12 @@ function onWindowResize() {
 	renderer.setSize(window.innerWidth / 2, window.innerHeight);
 }
 
-directionalLight.position.set(5, 5, 5);
-directionalLight1.position.set(-5, 5, -5);
-scene.add(directionalLight, directionalLight1);
-
-
 loader.load(tree1.href, (gltf) => {
 	const modele1 = gltf.scene;
 	modele1.scale.set(5, 5, 5);
 	modele1.position.set(0, base + 7, 0);
 
-	scene.add(modele1);
+	scene.add(modele1, AmbientLight);
 }, undefined, (error) => {
 	console.error(error);
 });
@@ -53,7 +49,7 @@ loader.load(tree2.href, (gltf) => {
 	modele2.scale.set(5, 5, 5);
 	modele2.position.set(2, base + 5, 0);
 
-	scene.add(modele2);
+	scene.add(modele2, AmbientLight);
 }, undefined, (error) => {
 	console.error(error);
 });
@@ -63,7 +59,7 @@ loader.load(tree3.href, (gltf) => {
 	modele3.scale.set(2.5, 2.5, 2.5);
 	modele3.position.set(2, base + 3, 2);
 
-	scene.add(modele3);
+	scene.add(modele3, AmbientLight);
 }, undefined, (error) => {
 	console.error(error);
 });
@@ -73,7 +69,7 @@ loader.load(tree4.href, (gltf) => {
 	modele4.scale.set(0.15, 0.15, 0.15);
 	modele4.position.set(0, base + 1, 2)
 
-	scene.add(modele4);
+	scene.add(modele4, AmbientLight);
 }, undefined, (error) => {
 	console.error(error);
 });
@@ -103,29 +99,29 @@ function animateCamera(camera, scene, renderer, startPosition, targetPosition, d
 	animate();
 }
 
-const geometry = new THREE.BoxGeometry(2, 8, 2);
+const geometry = new RoundedBoxGeometry(2, 8, 2, radius0, smoothness);
 const material = new THREE.MeshBasicMaterial({ color: "rgb(31, 135, 216)" });
 const cube = new THREE.Mesh(geometry, material);
 cube.position.y = base + 3;
 scene.add(cube);
 
-const geometry1 = new THREE.BoxGeometry(2, 6, 2);
-const material1 = new THREE.MeshBasicMaterial({ color: "rgb(31, 135, 0)" });
+const geometry1 = new RoundedBoxGeometry(2, 6, 2, radius0, smoothness);
+const material1 = new THREE.MeshBasicMaterial({ color: "rgb(31, 135, 216)" });
 const cube1 = new THREE.Mesh(geometry1, material1);
 cube1.position.x = 2;
 cube1.position.y = base + 2;
 scene.add(cube1);
 
-const geometry2 = new THREE.BoxGeometry(2, 4, 2);
-const material2 = new THREE.MeshBasicMaterial({ color: "rgb(31, 0, 216)" });
+const geometry2 = new RoundedBoxGeometry(2, 4, 2, radius0, smoothness);
+const material2 = new THREE.MeshBasicMaterial({ color: "rgb(31, 135, 216)" });
 const cube2 = new THREE.Mesh(geometry2, material2);
 cube2.position.x = 2;
 cube2.position.z = 2;
 cube2.position.y = base + 1;
 scene.add(cube2);
 
-const geometry3 = new THREE.BoxGeometry(2, 2, 2);
-const material3 = new THREE.MeshBasicMaterial({ color: "rgb(200, 135, 216)" });
+const geometry3 = new RoundedBoxGeometry(2, 2, 2, radius0, smoothness);
+const material3 = new THREE.MeshBasicMaterial({ color: "rgb(31, 135, 216)" });
 const cube3 = new THREE.Mesh(geometry3, material3);
 cube3.position.y = base;
 cube3.position.z = 2;
