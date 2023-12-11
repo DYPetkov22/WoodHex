@@ -78,7 +78,4 @@ Open your **CMD** and paste this code:
 ````
 
 
-<h3>Enjoy the project!</h3>
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer&&color=808080" width="1200px"/>
-</p>
+<h1>Enjoy the project!</h1>
