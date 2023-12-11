@@ -19,19 +19,19 @@
   box-sizing: border-box;
   font-family: Comfortaa;
 }
+
 body {
   background-color: #0B110C !important;
 }
 
 
-.color-of-main-text
-{
-  color:#cac3c3 !important;
+.color-of-main-text {
+  color: #cac3c3 !important;
 }
 
 html {
   scroll-behavior: smooth;
-  
+
 }
 
 ::-webkit-scrollbar {

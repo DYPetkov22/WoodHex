@@ -1,79 +1,92 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"/>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link href='https://fonts.googleapis.com/css?family=Space Grotesk' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link rel="stylesheet" href="https://fonts.google.com/specimen/Comfortaa">
 </head>
+
 <body class="stop-scrolling is-clipped">
     <a href="#top" id="scrollToTopButton"> <!-- Anchor tag for scrolling to top -->
         <img src="./photos/scroll-on-top.svg" alt="Scroll to Top"/> <!-- Image for scroll to top button -->    </a>
     <div class="back-color is-relative">
-    <section class="back size_of_every_section position-for_every-section is-relative">
-        <nav class="navbar" role="navigation" aria-label="main navigation">
-            <div class="navbar-brand px-0 py-0">
-                <a class="navbar-item py-0" href="#">
-                    <img id="logo_img" src="./photos/logo 1.png" alt="WoodHex Logo">
-                    <span class="logo ">WoodHex</span>
-                </a>
-                <div role="button" class="navbar-burger navbar-menu-custom has-text-white" id="burger" aria-label="menu" aria-expanded="false"
-                    data-target="navbarBasicExample" onclick="toggle()">
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
+        <section class="back size_of_every_section position-for_every-section is-relative">
+            <nav class="navbar" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand px-0 py-0">
+                    <a class="navbar-item py-0" href="#">
+                        <img id="logo_img" src="./photos/logo 1.png" alt="WoodHex Logo">
+                        <span class="logo ">WoodHex</span>
+                    </a>
+                    <div role="button" class="navbar-burger navbar-menu-custom has-text-white" id="burger"
+                        aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" onclick="toggle()">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </div>
                 </div>
-            </div>
-            <div id="navbarBasicExample" class="navbar-menu is-active:false space-nav"> 
-                <div class="navbar-end space-nav">
-                    <a href="./pages/map.html" class="navbar-item item-navbar  space-nav nav-link py-0 pr-6  text-on-mobile">MAP</a>
-                    <a href="./pages/aboutus.html" class="navbar-item item-navbar space-nav nav-link py-0 pr-6  text-on-mobile">ABOUT US</a>
-                    <a href="./pages/signal.html" class="navbar-item item-navbar space-nav nav-link py-0 pr-6  text-on-mobile">SIGNAL</a>
-                    <a href="./pages/donate.html" class="navbar-item item-navbar space-nav nav-link py-0 pr-6  text-on-mobile">DONATE</a>
-                    <a href="./pages/project.html" class="navbar-item item-navbar space-nav nav-link py-0 mr-1 pr-6 text-on-mobile">PROJECT</a>
-                    <div class="navbar-item is-hidden-touch is-hidden-desktop-only">
-                </div>
-        </nav>
-        <img  class="is-hidden-widescreen img_for_smaller_screens" src="./photos/home-page/image-for-smaller-screen.svg">
-           <div class="position_for_text_on_phone">
-        <div class="columns  is-multiline ml-6 mr-6">
-         
+                <div id="navbarBasicExample" class="navbar-menu is-active:false space-nav">
+                    <div class="navbar-end space-nav">
+                        <a href="./pages/map.html"
+                            class="navbar-item item-navbar  space-nav nav-link py-0 pr-6  text-on-mobile">MAP</a>
+                        <a href="./pages/aboutus.html"
+                            class="navbar-item item-navbar space-nav nav-link py-0 pr-6  text-on-mobile">ABOUT US</a>
+                        <a href="./pages/signal.html"
+                            class="navbar-item item-navbar space-nav nav-link py-0 pr-6  text-on-mobile">SIGNAL</a>
+                        <a href="./pages/donate.html"
+                            class="navbar-item item-navbar space-nav nav-link py-0 pr-6  text-on-mobile">DONATE</a>
+                        <a href="./pages/project.html"
+                            class="navbar-item item-navbar space-nav nav-link py-0 mr-1 pr-6 text-on-mobile">PROJECT</a>
+                        <div class="navbar-item is-hidden-touch is-hidden-desktop-only">
+                        </div>
+            </nav>
+            <img class="is-hidden-widescreen img_for_smaller_screens"
+                src="./photos/home-page/image-for-smaller-screen.svg">
+            <div class="position_for_text_on_phone">
+                <div class="columns  is-multiline ml-6 mr-6">
+
                     <div class="column has-text-centered-touch has-text-centered-desktop-only is-12">
-                
-                     
-                            <h1  class="is-size-1 is-size-3-touch is-size-1-desktop-only mt-5 title text-green has-text-weight-bold  grotesk_font">
-                                The World's Biggest <br> Company for Green <br> Revolution
-                            </h1>
-                            <p class="alababa pl-6-touch color-of-main-text">Lorem ipsum dolor sit amet<br class="is-hidden-desktop"> consectetur adipisicing elit.<br class="is-hidden-desktop"> <br class="is-hidden-touch"> Totam voluptates eum ipsam!</p>
-                    
+
+
+                        <h1
+                            class="is-size-1 is-size-3-touch is-size-1-desktop-only mt-5 title text-green has-text-weight-bold  grotesk_font">
+                            The World's Biggest <br> Company for Green <br> Revolution
+                        </h1>
+                        <p class="alababa pl-6-touch color-of-main-text">Lorem ipsum dolor sit amet<br
+                                class="is-hidden-desktop"> consectetur adipisicing elit.<br class="is-hidden-desktop">
+                            <br class="is-hidden-touch"> Totam voluptates eum ipsam!
+                        </p>
+
                     </div>
                     <div
-                            class="column mt-5 mb-6-touch  has-text-centered-touch has-text-centered-desktop-only is-12-tablet-only is-5-fullhd">
-                            <button class="button custom-margin-on-button-hm-1">
-                            <a href="./pages/ApplyForGroup.html" class="title  has-text-weight-bold bugar is-size-6">APPLY FOR GROUP</a>
-                    </button>
+                        class="column mt-5 mb-6-touch  has-text-centered-touch has-text-centered-desktop-only is-12-tablet-only is-5-fullhd">
+                        <button class="button custom-margin-on-button-hm-1">
+                            <a href="./pages/ApplyForGroup.html"
+                                class="title  has-text-weight-bold bugar is-size-6">APPLY FOR GROUP</a>
+                        </button>
                     </div>
 
-                <div class="columns ">
-                    <div class="column mt-6 ml-6  arrow-down   is-size-1 is-hidden-touch is-hidden-desktop-only" >
-                        <a onclick="enableScroll()" href="#scroll-point-homepage"><img
-                                src="./photos/home-page/arrow-dowm.png"></a>
+                    <div class="columns ">
+                        <div class="column mt-6 ml-6  arrow-down   is-size-1 is-hidden-touch is-hidden-desktop-only">
+                            <a onclick="enableScroll()" href="#scroll-point-homepage"><img
+                                    src="./photos/home-page/arrow-dowm.png"></a>
+                        </div>
+                        <div class="column is-4"></div>
                     </div>
-                    <div class="column is-4"></div>
                 </div>
             </div>
-        </div> 
-    </section>
+        </section>
     </div>
 
-    <section class="size_of_every_section is-flex is-flex-direction-column" >
+    <section class="size_of_every_section is-flex is-flex-direction-column">
         <div class="columns is-multiline we_need_you_right">
-            <div class="column is-1 is-flex is-justify-content-end is-align-items-end">
+            <div class="column is-1 is-flex is-justify-content-end is-align-items-end" id="scroll-point-homepage">
                 <img class="image is-32x32 is-hidden-touch is-hidden-desktop-only"
                     src="./photos/home-page/one-exclamation-mark.svg" alt="exclamation mark">
             </div>
@@ -120,8 +133,8 @@
                     alt="arrow pointing the text">
             </div>
             <div class="column is-4" data-aos="fade-up">
-                <div class="block" id="scroll-point-homepage"></div>
-                <div class="is-flex is-justify-content-center" >
+                <div class="block"></div>
+                <div class="is-flex is-justify-content-center">
                     <p class="has-text-white" id="custom_now_size">NOW!</p>
                 </div>
                 <div class="is-flex is-justify-content-center is-hidden-touch is-hidden-desktop-only">
@@ -137,7 +150,8 @@
                 </div>
             </div>
             <div class="column is-1 p-2 is-hidden-touch is-hidden-desktop-only"></div>
-            <img id="right_side_of_now" class="is-hidden-touch is-hidden-desktop-only  pl-6" src="./photos/home-page/right-img.svg" alt="">
+            <img id="right_side_of_now" class="is-hidden-touch is-hidden-desktop-only  pl-6"
+                src="./photos/home-page/right-img.svg" alt="">
         </div>
     </section>
 
@@ -150,7 +164,7 @@
             <p class="textttt color-of-main-text">Let’s take a look, shall we?</p>
         </div>
     </section>
-    <div style="text-align:center" >
+    <div style="text-align:center">
         <span class="dot"></span>
         <span class="dot"></span>
         <span class="dot"></span>
@@ -199,7 +213,8 @@
         <section class=" columns is-centered" id="green_revolution">
             <div class="column is-2"></div>
             <div class="column is-2 is-flex is-flex-direction-column is-align-items-center ">
-                <div class="is-flex is-flex-direction-column has-text-centered is-align-items-center is-justify-content-center">
+                <div
+                    class="is-flex is-flex-direction-column has-text-centered is-align-items-center is-justify-content-center">
                     <figure class="image revolution-img mb-5">
                         <img src="./photos/home-page/drobove.png" alt="Clean Air">
                     </figure>
@@ -208,7 +223,8 @@
             </div>
             <div class="column is-1"></div>
             <div class="column is-2 is-flex is-flex-direction-column is-align-items-center ">
-                <div class="is-flex is-flex-direction-column has-text-centered is-align-items-center is-justify-content-center">
+                <div
+                    class="is-flex is-flex-direction-column has-text-centered is-align-items-center is-justify-content-center">
                     <figure class="image revolution-img mb-5">
                         <img src="./photos/home-page/hand-with-heart.png" alt="Clean Earth">
                     </figure>
@@ -217,7 +233,8 @@
             </div>
             <div class="column is-1"></div>
             <div class="column is-2 is-flex is-flex-direction-column is-align-items-center ">
-                <div class="is-flex is-flex-direction-column has-text-centered is-align-items-center is-justify-content-center">
+                <div
+                    class="is-flex is-flex-direction-column has-text-centered is-align-items-center is-justify-content-center">
                     <figure class="image revolution-img mb-5">
                         <img src="./photos/home-page/recycle-img.png" alt="Easier Recycling">
                     </figure>
@@ -230,7 +247,8 @@
 
         <section class="column is-flex is-flex-direction-column is-align-items-center">
 
-            <button href="./pages/project.html" class="button is-rounded is-medium" id="join-revolution">GREEN REVOLUTION</button>
+            <button href="./pages/project.html" class="button is-rounded is-medium" id="join-revolution">GREEN
+                REVOLUTION</button>
         </section>
     </section>
 
@@ -239,13 +257,18 @@
             <div class="is-flex is-justify-content-center is-align-items-center column is-6 mt-4 ml-1">
                 <img id="table" src="./photos/home-page/table.svg" alt="Table Image">
             </div>
-            <div id="information_for_the_table" class="is-flex is-flex-direction-column is-justify-content-center  is-align-items-center has-text-right-desktop has-text-centered-tablet has-text-centered-touch column is-6">
+            <div id="information_for_the_table"
+                class="is-flex is-flex-direction-column is-justify-content-center  is-align-items-center has-text-right-desktop has-text-centered-tablet has-text-centered-touch column is-6">
                 <p id="planted-trees" class="title is-3 color-of-main-text ">PLANTED TREES AND RESULTS</p>
                 <div class="block"></div>
                 <p id="why-need-you" class="title is-5 is-flex is-justify-content-end is-relative">WHY WE NEED YOU</p>
                 <div class="block"></div>
                 <div class="block"></div>
-                <p id="planted-trees-text" class="subtitle is-5 color-of-main-text ">The chart illustrates our company's commendable environmental commitment, showcasing the successful planting of over 160,000 trees in the last three years. This significant effort reflects our strong dedication to sustainability, contributing positively to global reforestation and reinforcing our commitment to a greener future.</p>
+                <p id="planted-trees-text" class="subtitle is-5 color-of-main-text ">The chart illustrates our company's
+                    commendable environmental commitment, showcasing the successful planting of over 160,000 trees in
+                    the last three years. This significant effort reflects our strong dedication to sustainability,
+                    contributing positively to global reforestation and reinforcing our commitment to a greener future.
+                </p>
             </div>
     </section>
 
@@ -307,84 +330,86 @@
         </section>
     </section>
 
-    <section id="background-of-the-groups-waiting" class="is-flex is-justify-content-center is-align-items-center position-for_every-section">
+    <section id="background-of-the-groups-waiting"
+        class="is-flex is-justify-content-center is-align-items-center position-for_every-section">
         <div class="box mt-6  ml-0 mr-0" id="table-of-groups-waiting">
             <p class="title is-4 has-text-centered" id="groups_waiting">GROUPS ON WAITING</p>
             <div class="inside-table-of-groups-waiting">
                 <article class="media row-of-the-table">
-                  <div class="media-left reporter-margin">
-                    <figure class="image is-64x64 mt-3">
-                      <img src="./photos/home-page/reporter.svg" alt="Image">
-                    </figure>
-                  </div>
-                  <div class="media-content">
-                       <p class="is-size-5 is-size-6-touch has-text-weight-semibold is-justify-content-start-tablet has-text-left-tablet">Polluted nature around the Vitosha. in Vitosha<br> Nature Park.</p>
-                       <p class="is-justify-content-start-tablet has-text-left-tablet">by Daniel Iordanov</p>
-                  </div>
-                  <div class="media-right is-flex is-flex-direction-column is-align-items-center reporter-margin">
+
+                    <div class="media-left reporter-margin">
+                        <figure class="image is-64x64 mt-3">
+                          <img src="./photos/home-page/reporter.svg" alt="Image">
+                        </figure>
+                      </div>
+                      <div class="media-content">
+                           <p class="is-size-5 is-size-6-touch has-text-weight-semibold is-justify-content-start-tablet has-text-left-tablet">Polluted nature around the Vitosha. in Vitosha<br> Nature Park.</p>
+                           <p class="is-justify-content-start-tablet has-text-left-tablet">by Daniel Iordanov</p>
+                      </div>
+                      <div class="media-right is-flex is-flex-direction-column is-align-items-center reporter-margin">
+                          <p>64/80</p>
+                          <a href="#">
+                          <button class="button join_now mt-3 pt-3"><p class="is-size-7">JOIN NOW</p></button>
+                        </a>
+                      </div>
+                    </article>
+                </div>
+                <div class="inside-table-of-groups-waiting mt-3">
+                  <article class="media row-of-the-table">
+                    <div class="media-left reporter-margin">
+                      <figure class="image is-64x64 mt-3">
+                        <img src="./photos/home-page/reporter.svg" alt="Image">
+                      </figure>
+                    </div>
+                    <div class="media-content">
+                        <p class="is-size-5 is-size-6-touch has-text-weight-semibold is-justify-content-start-tablet has-text-left-tablet">Polluted nature around the Vitosha. in Vitosha<br> Nature Park.</p>
+                        <p class="is-justify-content-start-tablet has-text-left-tablet">by Daniel Iordanov</p>
+                    </div>
+                    <div class="media-right is-flex is-flex-direction-column is-align-items-center reporter-margin">
                       <p>64/80</p>
                       <a href="#">
                         <button class="button join_now mt-3 pt-3"><p class="is-size-7">JOIN NOW</p></button>
                       </a>
                   </div>
-                </article>
-            </div>
-            <div class="inside-table-of-groups-waiting mt-3">
-              <article class="media row-of-the-table">
-                <div class="media-left reporter-margin">
-                  <figure class="image is-64x64 mt-3">
-                    <img src="./photos/home-page/reporter.svg" alt="Image">
-                  </figure>
+                  </article>
                 </div>
-                <div class="media-content">
-                    <p class="is-size-5 is-size-6-touch has-text-weight-semibold is-justify-content-start-tablet has-text-left-tablet">Polluted nature around the Vitosha. in Vitosha<br> Nature Park.</p>
-                    <p class="is-justify-content-start-tablet has-text-left-tablet">by Daniel Iordanov</p>
+                <div class="inside-table-of-groups-waiting mt-3">
+                    <article class="media row-of-the-table">
+                      <div class="media-left reporter-margin">
+                        <figure class="image is-64x64 mt-3">
+                            <img src="./photos/home-page/reporter.svg" alt="Image">
+                        </figure>
+                      </div>
+                      <div class="media-content">
+                          <p class="is-size-5 is-size-6-touch has-text-weight-semibold is-justify-content-start-tablet has-text-left-tablet">Polluted nature around the Vitosha. in Vitosha<br> Nature Park.</p>
+                          <p class="is-justify-content-start-tablet has-text-left-tablet">by Daniel Iordanov</p>
+                      </div>
+                      <div class="media-right is-flex is-flex-direction-column is-align-items-center reporter-margin">
+                        <p>64/80</p>
+                        <a href="#">
+                            <button class="button join_now mt-3 pt-3"><p class="is-size-7">JOIN NOW</p></button>
+                          </a>
+                    </div>
+                    </article>
                 </div>
-                <div class="media-right is-flex is-flex-direction-column is-align-items-center reporter-margin">
-                  <p>64/80</p>
-                  <a href="#">
-                    <button class="button join_now mt-3 pt-3"><p class="is-size-7">JOIN NOW</p></button>
-                  </a>
-              </div>
-              </article>
-            </div>
-            <div class="inside-table-of-groups-waiting mt-3">
-                <article class="media row-of-the-table">
-                  <div class="media-left reporter-margin">
-                    <figure class="image is-64x64 mt-3">
+                <div class="inside-table-of-groups-waiting mt-3">
+                  <article class="media row-of-the-table">
+                    <div class="media-left reporter-margin">
+                      <figure class="image is-64x64 mt-3">
                         <img src="./photos/home-page/reporter.svg" alt="Image">
-                    </figure>
-                  </div>
-                  <div class="media-content">
-                      <p class="is-size-5 is-size-6-touch has-text-weight-semibold is-justify-content-start-tablet has-text-left-tablet">Polluted nature around the Vitosha. in Vitosha<br> Nature Park.</p>
-                      <p class="is-justify-content-start-tablet has-text-left-tablet">by Daniel Iordanov</p>
-                  </div>
-                  <div class="media-right is-flex is-flex-direction-column is-align-items-center reporter-margin">
-                    <p>64/80</p>
-                    <a href="#">
+                      </figure>
+                    </div>
+                    <div class="media-content">
+                        <p class="is-size-5 is-size-6-touch has-text-weight-semibold is-justify-content-start-tablet has-text-left-tablet">Polluted nature around the Vitosha. in Vitosha<br> Nature Park.</p>
+                        <p class="is-justify-content-start-tablet has-text-left-tablet">by Daniel Iordanov</p>
+                    </div>
+                    <div class="media-right is-flex is-flex-direction-column is-align-items-center reporter-margin">
+                      <p>64/80</p>
+                      <a href="#">
                         <button class="button join_now mt-3 pt-3"><p class="is-size-7">JOIN NOW</p></button>
                       </a>
-                </div>
-                </article>
-            </div>
-            <div class="inside-table-of-groups-waiting mt-3">
-              <article class="media row-of-the-table">
-                <div class="media-left reporter-margin">
-                  <figure class="image is-64x64 mt-3">
-                    <img src="./photos/home-page/reporter.svg" alt="Image">
-                  </figure>
-                </div>
-                <div class="media-content">
-                    <p class="is-size-5 is-size-6-touch has-text-weight-semibold is-justify-content-start-tablet has-text-left-tablet">Polluted nature around the Vitosha. in Vitosha<br> Nature Park.</p>
-                    <p class="is-justify-content-start-tablet has-text-left-tablet">by Daniel Iordanov</p>
-                </div>
-                <div class="media-right is-flex is-flex-direction-column is-align-items-center reporter-margin">
-                  <p>64/80</p>
-                  <a href="#">
-                    <button class="button join_now mt-3 pt-3"><p class="is-size-7">JOIN NOW</p></button>
-                  </a>
-              </div>
-              </article>
+                  </div>
+                  </article>
             </div>
             <div class="has-text-centered mt-3">
                 <button class="button report_button p-5 ">OR GIVE SIGNAL</button>
@@ -397,7 +422,8 @@
     <section id="footer" class="position-for_every-section">
         <div class="columns">
             <div class="column is-3 ml-5 mt-5">
-                <img src="./photos/home-page/logo_footer.svg" alt="logo of WoodHex" id="footer-logo" class="is-hidden-mobile">
+                <img src="./photos/home-page/logo_footer.svg" alt="logo of WoodHex" id="footer-logo"
+                    class="is-hidden-mobile">
             </div>
             <div class="column is-3  is-flex is-flex-direction-column is-justify-content-center">
                 <p class="mt-6 mb-3  is-size-3-fullhd has-text-white">ABOUT US</p>
