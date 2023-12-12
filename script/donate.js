@@ -252,7 +252,7 @@ function edge1() {
 	animationState.isRunning = false;
 
 	const startPosition = camera.position.clone();
-	const targetPosition = new THREE.Vector3(Math.cos(angle) * radius, 8, 10);
+	const targetPosition = new THREE.Vector3(Math.sin(angle) * radius, 8, 10);
 	const duration = 5000;
 
 	animateCamera(camera, scene, renderer, startPosition, targetPosition, duration, function () {
@@ -287,7 +287,7 @@ function edge2() {
 	animationState.isRunning = false;
 
 	const startPosition = camera.position.clone();
-	const targetPosition = new THREE.Vector3(Math.cos(angle) * radius, 8, 10);
+	const targetPosition = new THREE.Vector3(Math.sin(angle) * radius, 8, 10);
 	const duration = 5000;
 
 	animateCamera(camera, scene, renderer, startPosition, targetPosition, duration, function () {
@@ -322,7 +322,7 @@ function edge3() {
 	animationState.isRunning = false;
 
 	const startPosition = camera.position.clone();
-	const targetPosition = new THREE.Vector3(Math.cos(angle) * radius, 8, 10);
+	const targetPosition = new THREE.Vector3(Math.sin(angle) * radius, 8, 10);
 	const duration = 5000;
 
 	animateCamera(camera, scene, renderer, startPosition, targetPosition, duration, function () {
