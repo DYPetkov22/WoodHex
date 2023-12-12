@@ -113,69 +113,23 @@
   animation: fade1 1.5s ease-in-out;
 }
 
-@keyframes slide {
-  from {
-    transform: translateX(150%);
-  }
-  to {
-    transform: translateX(-170%);
-  }
-}
-
-@keyframes slide2 {
-  from {
-    transform: translateX(150%);
-  }
-  to {
-    transform: translateX(-170%);
-  }
-}
-
-.logos {
-  padding: 60px 0;
-  white-space: nowrap;
-  position: relative;
-}
-
-.logos:before,
-.logos:after {
-  position: absolute;
-  top: 0;
-  height: 100%;
-  content: "";
-  z-index: 2;
-}
-
-.logos:before {
-  left: 0;
-}
-
-.logos:after {
-  right: 0;
-}
-
-.logos-slide {
-  display: inline-block;
-  animation: slide 11s infinite linear;
-}
-
-.logos-slide2 {
-  display: inline-block;
-  animation: slide2 11s infinite linear;
-  animation-delay: 0.3s;
-}
-
-.logos-slide3 {
-  display: inline-block;
-  animation: slide2 11s infinite linear;
-  animation-delay: 0.5s;
-}
-
 .revolution-img {
-  width: 150px;
-  height: 150px;
+  width: 70%;
+  height: auto;
 }
 
+#join-revolution {
+  background-color: transparent;
+  height: 9vh;
+  border-color: #00b628;
+  box-shadow: 0 0 10px 0 #00b628 inset, 0 0 10px 4px #00b628;
+  color: #cac3c3 !important;
+  transition: all 0.2s ease-in-out;
+}
+#join-revolution:hover {
+  box-shadow: 0 0 40px 40px #00b628 inset, 0 0 0 0 #00b628;
+  color: #1b222c !important;
+}
 
 .size_of_every_seection
 {
@@ -194,19 +148,6 @@
   padding-top: 6rem;
 }
 
-
-#join-revolution {
-  background-color: transparent;
-  height: 9vh;
-  border-color: #00b628;
-  box-shadow: 0 0 10px 0 #00b628 inset, 0 0 10px 4px #00b628;
-  color: #cac3c3 !important;
-  transition: all 0.2s ease-in-out;
-}
-#join-revolution:hover {
-  box-shadow: 0 0 40px 40px #00b628 inset, 0 0 0 0 #00b628;
-  color: #1b222c !important;
-}
 
 #planted_trees-section {
   background-image: url(../photos/home-page/background-of-table.svg);

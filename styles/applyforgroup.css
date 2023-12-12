@@ -1,10 +1,12 @@
+/* Apply a margin-top of 3% to elements with the class "form" */
 .form {
     margin-top: 3%;
 }
 
-@media(max-width: 1214px)
-{
-    .size-of-apply-group{
+/* Media query for screens with a maximum width of 1214px */
+@media (max-width: 1214px) {
+    /* Apply styles to elements with the class "size-of-apply-group" within the media query */
+    .size-of-apply-group {
         height: 100%;
     }
 }
