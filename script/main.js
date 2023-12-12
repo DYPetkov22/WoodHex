@@ -1,55 +1,69 @@
+// Selecting DOM elements
+const slideshowElement = document.querySelector('.slideshow-container');
+const slides = document.getElementsByClassName("mySlides");
+const dropdown = document.getElementById('navbarBasicExample');
+const icon = document.getElementById('burger');
+let slideIndex = 1, intervalId;
+
+// Function to toggle the active state of the dropdown menu and burger icon
 const toggle = () => {
-    let icon = document.getElementById('burger')
-    let dropdown = document.getElementById('navbarBasicExample')
-    icon.classList.toggle('is-active')
-    dropdown.classList.toggle('is-active')
+    icon.classList.toggle('is-active');
+    dropdown.classList.toggle('is-active');
 }
 
+// Function to enable scrolling
 function enableScroll() {
     document.body.classList.remove("stop-scrolling");
 }
 
-let slideIndex = 1;
-let intervalId;
-
+// Function to show slides in the slideshow
 function showSlides() {
-    let i;
-    let slides = document.getElementsByClassName("mySlides");
-
+    // Clear the interval if the slideIndex is greater than the total number of slides
     if (slideIndex > slides.length) {
-        clearInterval(intervalId); // Clear the interval when all slides are shown
+        clearInterval(intervalId);
         return;
     }
 
+    // Reset the slideIndex if it is less than 1
     if (slideIndex < 1) {
-        slideIndex = slides.length; // Loop back to the last slide if needed
+        slideIndex = slides.length;
     }
 
-    for (i = 0; i < slides.length; i++) {
+    // Hide all slides
+    for (let i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
 
+    // Display the current slide
     slides[slideIndex - 1].style.display = "block";
     slideIndex++;
 }
 
 // Function to start the slideshow
 function startSlideshow() {
-    // Start the slideshow and store the interval ID in the variable
-    intervalId = setInterval(showSlides, 3000);
-}
-
-// Check if the element is in the viewport when the page is scrolled
-function checkSlidesInView() {
-    let slides = document.getElementsByClassName("mySlides");
-
-    // If the first slide is in the viewport, start the slideshow
-    if (slides.length > 0) {
-        startSlideshow();
-        // Remove the event listener to avoid starting the slideshow multiple times
-        window.removeEventListener('scroll', checkSlidesInView);
+    // Start the slideshow only if it is not already running
+    if (!intervalId) {
+        showSlides();
+        // Set an interval to show slides every 2000 milliseconds (2 seconds)
+        intervalId = setInterval(showSlides, 2000);
     }
 }
 
-// Attach the event listener
-window.addEventListener('scroll', checkSlidesInView);
+// Function to check if the slideshow element is in view and start the slideshow
+function checkSlidesInView(entries, observer) {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            startSlideshow();
+            // Stop observing the element once it is in view
+            observer.unobserve(entry.target);
+        }
+    });
+}
+
+// Check if the slideshow element exists
+if (slideshowElement) {
+    // Create an IntersectionObserver to check when the slideshow element is in view
+    const observer = new IntersectionObserver(checkSlidesInView, { threshold: 0.5 });
+    // Start observing the slideshow element
+    observer.observe(slideshowElement);
+}
