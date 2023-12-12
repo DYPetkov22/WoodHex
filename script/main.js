@@ -1,5 +1,5 @@
 // Selecting DOM elements
-const slideshowElement = document.querySelector('.slideshow-container');
+const slideTextbox = document.querySelector('.slideshow-container');
 const slides = document.getElementsByClassName("mySlides");
 const dropdown = document.getElementById('navbarBasicExample');
 const icon = document.getElementById('burger');
@@ -61,9 +61,9 @@ function checkSlidesInView(entries, observer) {
 }
 
 // Check if the slideshow element exists
-if (slideshowElement) {
+if (slideTextbox) {
     // Create an IntersectionObserver to check when the slideshow element is in view
     const observer = new IntersectionObserver(checkSlidesInView, { threshold: 0.5 });
     // Start observing the slideshow element
-    observer.observe(slideshowElement);
+    observer.observe(slideTextbox);
 }
