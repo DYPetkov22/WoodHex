@@ -1,12 +1,15 @@
+// Define paths for random and alternative images, as well as types of random trees
 const randomImagePaths = ["../photos/map/green.svg", "../photos/map/red.svg"];
 const alternativeImagePaths = ["../photos/map/green-glow.svg", "../photos/map/red-glow.svg"];
 const randomTrees = ["LINDEN", "BIRCH", "PINE", "OAK"];
 
+// Select the SVG element and create a group element for rendering hexagons
 const svg = d3.select('#leaflet-map');
 const g = svg.append("g").attr("class", "leaflet-zoom-hide");
 const rows = 15;
 const cols = 26;
 
+// Calculate dimensions for hexagons
 let windowWidth = window.innerWidth / (cols) - (8);
 let windowHeight = window.innerHeight / (rows);
 let hexagonRadius = Math.sqrt(Math.pow(windowWidth / 2, 2) + Math.pow(windowHeight / 2, 2));
@@ -14,7 +17,7 @@ let hexagonWidth = hexagonRadius * Math.sqrt(3);
 let hexagonHeight = hexagonRadius * 2;
 let hoveredColor = "";
 
-
+// Function to generate hexagon vertices based on radius and center coordinates
 function hexagonPoints(radius, centerX, centerY) {
     return Array.from({ length: 6 }, (_, i) => {
         const angle = (2 * Math.PI / 6) * i;
@@ -24,14 +27,17 @@ function hexagonPoints(radius, centerX, centerY) {
     });
 }
 
+// Function to get a random number between min and max (inclusive)
 function getRandomMax(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+// Function to create a hexagon based on whether it's black or not
 function createHexagon(hexagonGroup, isBlack) {
     if (isBlack) {
+        // Create black hexagon with a ground image
         let hexagon = hexagonGroup.append("polygon")
             .attr("points", hexagonPoints(hexagonRadius, 0, 0).join(" "));
 
@@ -43,8 +49,8 @@ function createHexagon(hexagonGroup, isBlack) {
             .attr("height", hexagonRadius * 2.1);
 
         return hexagon;
-    }
-    else {
+    } else {
+        // Create colored hexagon with a random image
         let hexagon = hexagonGroup.append("polygon")
             .attr("points", hexagonPoints(hexagonRadius, 0, 0).join(" "));
 
@@ -57,15 +63,17 @@ function createHexagon(hexagonGroup, isBlack) {
             .attr("width", hexagonRadius * 2)
             .attr("height", hexagonRadius * 2.1);
 
+        // Add interactivity for mouseover, click, and mouseout events
         hexagonGroup.on("mouseover", function () {
             let hoveredImagePath = d3.select(this).select("image").attr("xlink:href");
             hoveredColor = hoveredImagePath.includes("green") ? "green" : "red";
 
             let alternativeImagePath = hoveredColor === "red" ? "../photos/map/red-glow.svg" : "../photos/map/green-glow.svg";
             d3.select(this).select("image").attr("xlink:href", alternativeImagePath);
-        })
+        });
 
         hexagonGroup.on("click", function () {
+            // Handle click event to show an overlay with information
             d3.select("#overlay-div").remove();
 
             const overlayDiv = d3.select("body").append("div")
@@ -76,6 +84,7 @@ function createHexagon(hexagonGroup, isBlack) {
             let hoveredImagePath = d3.select(this).select("image").attr("xlink:href");
             hoveredColor = hoveredImagePath.includes("green") ? "green" : "red";
 
+            // Add the glow effect
             let alternativeImagePath = hoveredColor === "red" ? "../photos/map/red-glow.svg" : "../photos/map/green-glow.svg";
             d3.select(this).select("image").attr("xlink:href", alternativeImagePath);
 
@@ -109,7 +118,6 @@ function createHexagon(hexagonGroup, isBlack) {
                 })
             }
             else {
-                let plantedTrees = 100 + Math.floor(Math.random() * 100);
 
                 overlayDiv.html
                     (
@@ -134,6 +142,7 @@ function createHexagon(hexagonGroup, isBlack) {
         })
 
             .on("mouseout", function () {
+                // Handle mouseout event to revert to the original image
                 let alternativeImagePath = hoveredColor === "red" ? "../photos/map/red.svg" : "../photos/map/green.svg";
                 d3.select(this).select("image").attr("xlink:href", alternativeImagePath);
                 d3.select(this).select("polygon").attr("transform", "scale(1)");
@@ -143,6 +152,7 @@ function createHexagon(hexagonGroup, isBlack) {
     }
 }
 
+// Function to create a sea hexagon
 function hexagonSea(hexagonGroup) {
     hexagon = hexagonGroup.append("polygon")
         .attr("points", hexagonPoints(hexagonRadius, 0, 0).join(" "))
@@ -159,14 +169,17 @@ function hexagonSea(hexagonGroup) {
     return hexagon;
 }
 
+// Loop to create hexagons based on rows and columns
 for (let row = 0; row < rows; row++) {
     for (let col = 0; col < cols; col++) {
+        // Calculate coordinates for each hexagon
         let x = col * hexagonWidth + (row % 2 === 1 ? hexagonWidth / 2 : 0);
         let y = row * (hexagonHeight * 0.75);
 
+        // Create a group for each hexagon and determine its type based on row and column
         let hexagonGroup = g.append("g")
             .attr("transform", "translate(" + x + "," + y + ")");
-
+        //Cases for different rows and columns, creating hexagons and sea hexagons
         switch (row) {
             case 0:
                 createHexagon(hexagonGroup, true);

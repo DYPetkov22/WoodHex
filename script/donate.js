@@ -33,6 +33,7 @@ function onWindowResize() {
 	camera.updateProjectionMatrix();
 	renderer.setSize(window.innerWidth / 2, window.innerHeight);
 }
+//scene.background = new THREE.Color(0xcac3c3);
 
 loader.load(tree1.href, (gltf) => {
 	const modele1 = gltf.scene;
@@ -103,14 +104,23 @@ const geometry = new RoundedBoxGeometry(2, 8, 2, radius0, smoothness);
 const material = new THREE.MeshBasicMaterial({ color: "rgb(31, 135, 216)" });
 const cube = new THREE.Mesh(geometry, material);
 cube.position.y = base + 3;
-scene.add(cube);
+
+const edges = new THREE.EdgesGeometry(geometry);
+line = new THREE.LineSegments(edges, new THREE.LineBasicMaterial({ color: 0xffffff }));
+line.position.y = base + 3;
+scene.add(cube,line)
 
 const geometry1 = new RoundedBoxGeometry(2, 6, 2, radius0, smoothness);
 const material1 = new THREE.MeshBasicMaterial({ color: "rgb(31, 135, 216)" });
 const cube1 = new THREE.Mesh(geometry1, material1);
 cube1.position.x = 2;
 cube1.position.y = base + 2;
-scene.add(cube1);
+
+const edges1 = new THREE.EdgesGeometry(geometry1);
+line1 = new THREE.LineSegments(edges1, new THREE.LineBasicMaterial({ color: 0xffffff }));
+line1.position.x = 2;
+line1.position.y = base + 2;
+scene.add(cube1, line1);
 
 const geometry2 = new RoundedBoxGeometry(2, 4, 2, radius0, smoothness);
 const material2 = new THREE.MeshBasicMaterial({ color: "rgb(31, 135, 216)" });
@@ -118,21 +128,37 @@ const cube2 = new THREE.Mesh(geometry2, material2);
 cube2.position.x = 2;
 cube2.position.z = 2;
 cube2.position.y = base + 1;
-scene.add(cube2);
+
+const edges2 = new THREE.EdgesGeometry(geometry2);
+line2 = new THREE.LineSegments(edges2, new THREE.LineBasicMaterial({ color: 0xffffff }));
+line2.position.x = 2;
+line2.position.z = 2;
+line2.position.y = base + 1;
+scene.add(cube2, line2);
 
 const geometry3 = new RoundedBoxGeometry(2, 2, 2, radius0, smoothness);
 const material3 = new THREE.MeshBasicMaterial({ color: "rgb(31, 135, 216)" });
 const cube3 = new THREE.Mesh(geometry3, material3);
 cube3.position.y = base;
 cube3.position.z = 2;
-scene.add(cube3);
+
+const edges3 = new THREE.EdgesGeometry(geometry3);
+line3 = new THREE.LineSegments(edges3, new THREE.LineBasicMaterial({ color: 0xffffff }));
+line3.position.y = base;
+line3.position.z = 2;
+scene.add(cube3, line3);
 
 function edge() {
-	const edges = new THREE.EdgesGeometry(geometry);
-	line = new THREE.LineSegments(edges, new THREE.LineBasicMaterial({ color: 0xffffff }));
-	line.position.y = base + 3;
-	scene.add(line);
-	scene.remove(line1, line2, line3);
+	// const edges = new THREE.EdgesGeometry(geometry);
+	// line = new THREE.LineSegments(edges, new THREE.LineBasicMaterial({ color: 0xffffff }));
+	// line.position.y = base + 3;
+	// scen`e.add(line);
+	// scene.remove(line1, line2, line3);
+
+	document.getElementById("linden").classList.remove('is-hidden');
+	document.getElementById("pine").classList.add('is-hidden');
+	document.getElementById("birch").classList.add('is-hidden');
+	document.getElementById("oak").classList.add('is-hidden');
 
 	button1.disabled = true;
 	button2.disabled = false;
@@ -152,15 +178,17 @@ function edge() {
 }
 
 function edge1() {
-	const edges1 = new THREE.EdgesGeometry(geometry1);
-	line1 = new THREE.LineSegments(edges1, new THREE.LineBasicMaterial({ color: 0xffffff }));
-	line1.position.x = 2;
-	line1.position.y = base + 2;
+	// const edges1 = new THREE.EdgesGeometry(geometry1);
+	// line1 = new THREE.LineSegments(edges1, new THREE.LineBasicMaterial({ color: 0xffffff }));
+	// line1.position.x = 2;
+	// line1.position.y = base + 2;
+	// scene.add(line1);
+	// scene.remove(line, line2, line3);
 
-	directionalLight.position.set(2, base + 3.1, 2);
-
-	scene.add(line1, directionalLight);
-	scene.remove(line, line2, line3);
+	document.getElementById("linden").classList.add('is-hidden');
+	document.getElementById("pine").classList.remove('is-hidden');
+	document.getElementById("birch").classList.add('is-hidden');
+	document.getElementById("oak").classList.add('is-hidden');
 
 	button1.disabled = false;
 	button2.disabled = true;
@@ -180,13 +208,18 @@ function edge1() {
 }
 
 function edge2() {
-	const edges = new THREE.EdgesGeometry(geometry2);
-	line2 = new THREE.LineSegments(edges, new THREE.LineBasicMaterial({ color: 0xffffff }));
-	line2.position.x = 2;
-	line2.position.z = 2;
-	line2.position.y = base + 1;
-	scene.add(line2);
-	scene.remove(line1, line, line3);
+	// const edge2 = new THREE.EdgesGeometry(geometry2);
+	// line2 = new THREE.LineSegments(edges, new THREE.LineBasicMaterial({ color: 0xffffff }));
+	// line2.position.x = 2;
+	// line2.position.z = 2;
+	// line2.position.y = base + 1;
+	// scene.add(line2);
+	// scene.remove(line1, line, line3);
+
+	document.getElementById("linden").classList.add('is-hidden');
+	document.getElementById("pine").classList.add('is-hidden');
+	document.getElementById("birch").classList.remove('is-hidden');
+	document.getElementById("oak").classList.add('is-hidden');
 
 	button1.disabled = false;
 	button2.disabled = false;
@@ -206,12 +239,18 @@ function edge2() {
 }
 
 function edge3() {
-	const edges = new THREE.EdgesGeometry(geometry3);
-	line3 = new THREE.LineSegments(edges, new THREE.LineBasicMaterial({ color: 0xffffff }));
-	line3.position.y = base;
-	line3.position.z = 2;
-	scene.add(line3);
-	scene.remove(line1, line2, line);
+	// const edge3 = new THREE.EdgesGeometry(geometry3);
+	// line3 = new THREE.LineSegments(edges, new THREE.LineBasicMaterial({ color: 0xffffff }));
+	// line3.position.y = base;
+	// line3.position.z = 2;
+	// scene.add(line3);
+	// scene.remove(line1, line2, line);
+
+	document.getElementById("linden").classList.add('is-hidden');
+	document.getElementById("pine").classList.add('is-hidden');
+	document.getElementById("birch").classList.add('is-hidden');
+	document.getElementById("oak").classList.remove('is-hidden');
+
 
 	button1.disabled = false;
 	button2.disabled = false;

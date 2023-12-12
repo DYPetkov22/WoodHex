@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://threejs.org/build/three.js"></script>
     <title>WoodHex</title>
     <link rel="stylesheet" href="../styles/style.css">
     <script type="importmap">
@@ -51,12 +52,12 @@
             <div class="columns is-multiline">
                 <div class="column is-1"></div>
                 <div class="column is-4 is-flex is-flex-direction-column is-align-items-center">
-                    <button id="3d-position1" onclick="showText('linden')" class="customm-button button py-5 px-5 mb-5 is-size-4">LINDEN</button>
-                    <button id="3d-position3" onclick="showText('birch')" class="customm-button button py-5 px-5 is-size-4">BIRCH</button>
+                    <button id="3d-position1" class="customm-button button py-5 px-5 mb-5 is-size-4">LINDEN</button>
+                    <button id="3d-position3" class="customm-button button py-5 px-5 is-size-4">BIRCH</button>
                 </div>
                 <div class="column is-4 is-flex is-flex-direction-column is-align-items-center">
-                    <button id="3d-position2" onclick="showText('pine')" class="customm-button button py-5 px-5 mb-5 is-size-4">PINE</button>
-                    <button id="3d-position4" onclick="showText('oak')" class="customm-button button py-5 px-5 is-size-4">OAK</button>
+                    <button id="3d-position2" class="customm-button button py-5 px-5 mb-5 is-size-4">PINE</button>
+                    <button id="3d-position4" class="customm-button button py-5 px-5 is-size-4">OAK</button>
                 </div>
             </div>
             <div class="mt-5 ml-6 ml-1 is-flex-touch is-align-content-center is-justify-content-center is-align-items-center is-flex-direction-column">
@@ -66,11 +67,10 @@
                 <p class="has-text-white  is-size-6 is-hidden" id="oak">Oak is known for its strong and hard wood. It is used to make furniture, flooring and cooperage.  Oak acorns are food for a variety of animals, and oak forests are often valued recreational areas.</p> 
             </div>
             <div>
-              <form class="ml-6 is-flex is-flex-direction-column">
-                <input class="email-donate mt-6 p-3" type="email" id="email" name="email" placeholder="Your email">
-                <input class="submit-donate is-rounded mt-4 py-0 button" type="submit" value="Submit">
-              </form>
-            
+                <form class="ml-6 is-flex-touch is-align-content-center is-justify-content-center is-align-items-center is-flex-direction-column">
+                    <input class="email-donate mt-6 p-3" type="email" id="email" name="email" placeholder="Your email">
+                    <input class="submit-donate is-rounded mt-4 py-0 button" type="submit" value="Submit">
+                  </form>
             </div>
         </div>
         <div class="column is-1 is-hidden-touch"></div>
