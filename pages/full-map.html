@@ -14,7 +14,7 @@
 </head>
 
 <body class="is-clipped">
-  
+                                     <!-- CARD FOR SMALLER DEVICES -->
      <div class="box is-centered mt-6 mx-0 is-hidden-desktop">
         <article class="media">
           <div class="media-left">
@@ -54,44 +54,62 @@
         <button class="button custom_button_full-map is-centered">APPLY</button>
       </div>
 
-      <div class="box is-centered mt-6 mx-0 is-hidden-desktop">
-        <article class="media">
-          <div class="media-left">
-            <figure class="image is-64x64">
-              <img src="../photos/map/card-img-2.jpg" alt="Image">
-            </figure>
-          </div>
-          <div class="media-content">
-            <div class="content has-text-left">
-              <p class="mr-6">
-                <strong class="pr-2">Dimitar Ivanov</strong> <small class="has-text-weight-bold pr-1">Pirin National Park, Bansko</small> <small>6h</small>
-                <br>
-                Delve into forest challenges posed by pests, revealing how trees resist invaders and local initiatives maintain woodland health.
-              </p>
-            </div>
-            <nav class="level is-mobile">
-              <div class="level-left">
-                <a class="level-item" aria-label="reply">
-                  <span class="icon is-small">
-                    <i class="fas fa-reply" aria-hidden="true"></i>
-                  </span>
-                </a>
-                <a class="level-item" aria-label="retweet">
-                  <span class="icon is-small">
-                    <i class="fas fa-retweet" aria-hidden="true"></i>
-                  </span>
-                </a>
-                <a class="level-item" aria-label="like">
-                  <span class="icon is-small">
-                    <i class="fas fa-heart" aria-hidden="true"></i>
-                  </span>
-                </a>
-              </div>
-            </nav>
-          </div>
-        </article>
-        <button class="button custom_button_full-map is-centered">APPLY</button>
+<!-- This div contains a Bulma box that is centered on the page, with some top margin and hidden on small screens -->
+<div class="box is-centered mt-6 mx-0 is-hidden-desktop">
+  <!-- Media object to display content along with an image -->
+  <article class="media">
+    <!-- Media left section for the user's profile image -->
+    <div class="media-left">
+      <!-- Image container with a fixed size of 64x64 pixels -->
+      <figure class="image is-64x64">
+        <!-- Image source from the specified path -->
+        <img src="../photos/map/card-img-2.jpg" alt="Image">
+      </figure>
+    </div>
+    <!-- Media content section for the main content of the tweet -->
+    <div class="media-content">
+      <div class="content has-text-left">
+        <!-- User's name, location, and time posted, along with the tweet content -->
+        <p class="mr-6">
+          <!-- Strong tag for strong emphasis on the user's name -->
+          <strong class="pr-2">Dimitar Ivanov</strong>
+          <!-- Small tags for location and time information -->
+          <small class="has-text-weight-bold pr-1">Pirin National Park, Bansko</small>
+          <small>6h</small>
+          <br>
+          <!-- Tweet content -->
+          Delve into forest challenges posed by pests, revealing how trees resist invaders and local initiatives maintain woodland health.
+        </p>
       </div>
+      <!-- Level (horizontal) navigation for tweet actions -->
+      <nav class="level is-mobile">
+        <!-- Level left section for reply, retweet, and like icons -->
+        <div class="level-left">
+          <!-- Level item for reply icon -->
+          <a class="level-item" aria-label="reply">
+            <span class="icon is-small">
+              <i class="fas fa-reply" aria-hidden="true"></i>
+            </span>
+          </a>
+          <!-- Level item for retweet icon -->
+          <a class="level-item" aria-label="retweet">
+            <span class="icon is-small">
+              <i class="fas fa-retweet" aria-hidden="true"></i>
+            </span>
+          </a>
+          <!-- Level item for like icon -->
+          <a class="level-item" aria-label="like">
+            <span class="icon is-small">
+              <i class="fas fa-heart" aria-hidden="true"></i>
+            </span>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </article>
+  <!-- Button for applying, styled with a custom class and taking up the full width -->
+  <button class="button custom_button_full-map is-centered">APPLY</button>
+</div>
       <div class="box is-centered mt-6 mx-0 is-hidden-desktop">
         <article class="media">
           <div class="media-left">
@@ -284,7 +302,7 @@
       </div>
     <svg class="is-hidden-touch" id="leaflet-map"></svg>
     <script class="is-hidden-touch" src="../script/map.js"></script>
-    <div class="container is-hidden-touch visibility"></div>
+    <div class="container is-hidden-touch visibility-container-fullmap"></div>
 </body>
 
 </html>

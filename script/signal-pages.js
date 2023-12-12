@@ -24,13 +24,13 @@ let rim = document.getElementById("SubmitText");
 function SubmitFunction() {
     // HTML content to replace the existing content with a submission message
     const html =
-        '<div class="nova jui" id="SubmitText">' +
-        '<div class="kui">' +
-        '<p class="text11 has-text-light is-size-5 is-size-7-touch is-size-7-desktop-only">THANKS FOR YOUR <br> SUBMISSION.</p>' +
-        '<p class="text21 has-text-light">We will be in touch. <br> Shortly!</p>' +
+        '<div class="style-green-box flex-for-green-box" id="SubmitText">' +
+        '<div class="aligns-for-upper-text-greenbox">' +
+        '<p class="upper-text-one has-text-light is-size-5 is-size-7-touch is-size-7-desktop-only">THANKS FOR YOUR <br> SUBMISSION.</p>' +
+        '<p class="upper-text-two has-text-light">We will be in touch. <br> Shortly!</p>' +
         '</div>' +
-        '<div class="gui">' +
-        '<a href="../index.html" class="center-underline abrr has-text-light">Back to home</a>' +
+        '<div class="button-position">' +
+        '<a href="../index.html" class="center-underline button-after-effect has-text-light">Back to home</a>' +
         '</div>' +
         '</div>';
 

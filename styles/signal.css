@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap");
 
+/* Styling for the background image with a signal */
 .bg_img_signal {
   position: absolute;
   height: 92vh;
@@ -7,19 +8,22 @@
   background-size: 100%;
   right: -20%;
   z-index: 0;
-  overflow: hidden !important;
+  overflow: hidden !important; /* Hides overflowing content */
 }
 
+/* Styling for the foreground of the signal */
 .foreground_signal {
   position: relative;
   z-index: 1;
 }
 
+/* Styling for a button with id "button_styling" */
 #button_styling {
-  background-color: transparent !important;
-  border: none;
+  background-color: transparent !important; /* Transparent background */
+  border: none; /* No border */
 }
 
+/* Styling for a card with class "card-1" */
 .card-1 {
   background-image: url(../photos/signal/n-d.svg);
   background-repeat: no-repeat;
@@ -29,6 +33,7 @@
   height: 49vh;
 }
 
+/* Styling for a card with class "card-2" */
 .card-2 {
   background-image: url(../photos/signal/p-and-l-signal.svg);
   background-repeat: no-repeat;
@@ -38,6 +43,7 @@
   height: 49vh;
 }
 
+/* Styling for a card with class "card-3" */
 .card-3 {
   background-image: url(../photos/signal/d-and-p-signal-1.svg);
   background-repeat: no-repeat;
@@ -47,16 +53,19 @@
   height: 49vh;
 }
 
+/* Styling for a button with class "style-report-btn-signal" */
 .style-report-btn-signal {
-  background: transparent !important;
+  background: transparent !important; /* Transparent background */
   position: relative;
-  color: #CAC3C3;
-  border: 2px solid #CAC3C3;
-  border-radius: 70px;
-  cursor: pointer;
-  transition: 0.2s;
+  color: #CAC3C3; /* Text color */
+  border: 2px solid #CAC3C3; /* Border with color */
+  border-radius: 70px; /* Rounded border */
+  cursor: pointer; /* Cursor style */
+  transition: 0.2s; /* Smooth transition effect */
 }
-.style-report-btn-signal:hover{
-  background: #CAC3C3 !important;
-  color: #02030A !important;
+
+/* Hover effect for the button with class "style-report-btn-signal" */
+.style-report-btn-signal:hover {
+  background: #CAC3C3 !important; /* Background color on hover */
+  color: #02030A !important; /* Text color on hover */
 }

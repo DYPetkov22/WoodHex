@@ -127,10 +127,10 @@ function createHexagon(hexagonGroup, isBlack) {
 
           // Disply the overlayDiv
           overlayDiv.html(
-            "<div class='a'>" +
+            "<div class='container-flex-alignment'>" +
               "<button id='hide'><img src='../photos/map/x-button.png' alt='Hide'></button>" +
               "</div>" +
-              "<div class='d'>" +
+              "<div class='styling-text-container-full-map'>" +
               "people on waiting  " +
               peopleWait +
               " / " +
@@ -158,10 +158,10 @@ function createHexagon(hexagonGroup, isBlack) {
         } else {
           // Disply the overlayDiv
           overlayDiv.html(
-            "<div class='a'>" +
+            "<div class='container-flex-alignment'>" +
               "<button id='hide'><img src='../photos/map/x-button.png' alt='Hide'></button>" +
               "</div>" +
-              "<div class='d'>" +
+              "<div class='styling-text-container-full-map'>" +
               "people on waiting  0 / 0 " +
               "<br>" +
               "trees needed     0  /  0 " +
@@ -169,7 +169,7 @@ function createHexagon(hexagonGroup, isBlack) {
               "kind of tree: none" +
               "<br>" +
               "<br>" +
-              "<a href='../pages/applyforgroup.html'><button id='applyButton'>APPLY FOR GROUP</button></a>" +
+              "<a href='#'><button id='applyButton'>APPLY FOR GROUP</button></a>" +
               "</div>"
           );
         }

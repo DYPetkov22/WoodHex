@@ -1,98 +1,111 @@
-.size-of-donate
-{
-    height: 89vh;
+/* Set the height of elements with class "size-of-donate" to 89% of the viewport height */
+.size-of-donate {
+  height: 89vh;
 }
 
+/* Styling for a custom button with class "customm-button" */
 .customm-button {
-    background-color: #cac3c3 !important;
-    width: 100%;
-    color: #0B110C;
-    border-radius: 10px !important;
-    transition: 0.2s;
-}
-.customm-button:hover{
-    opacity: 0.7;
+  background-color: #cac3c3 !important; /* Background color with important rule */
+  width: 100%; /* Full width */
+  color: #0B110C; /* Text color */
+  border-radius: 10px !important; /* Border radius with important rule */
+  transition: 0.2s; /* Smooth transition effect */
 }
 
+/* Hover effect for the custom button */
+.customm-button:hover {
+  opacity: 0.7; /* Reduce opacity on hover */
+}
+
+/* Styling for an email input with type "email" */
 .email-donate[type="email"] {
-    border: none !important;
-    border-radius: 15px !important;
-    width: 80%;
+  border: none !important; /* No border with important rule */
+  border-radius: 15px !important; /* Border radius with important rule */
+  width: 80%; /* 80% width */
 }
 
-  .submit-donate[type="submit"] {
-    background-color: transparent !important;
-    border: 2px solid #cac3c3 ;
-    color: #cac3c3;
-    width: 20%;
-    background-position: 100%;
-    background-size: 400%;
-    border-radius: 40px !important;
-    transition: 0.2s ease-in-out;
-  }
-  .submit-donate:hover[type="submit"]{
-    background-color: #cac3c3  !important;
-    background-position: 0;
-    color: #0B110C;
-  }
-  .back-color-card
-{
-    background-color:#CAC3C3 !important;
+/* Styling for a submit button with type "submit" for donation form */
+.submit-donate[type="submit"] {
+  background-color: transparent !important; /* Transparent background with important rule */
+  border: 2px solid #cac3c3; /* Border with color */
+  color: #cac3c3; /* Text color */
+  width: 20%; /* 20% width */
+  background-position: 100%; /* Background position */
+  background-size: 400%; /* Background size */
+  border-radius: 40px !important; /* Border radius with important rule */
+  transition: 0.2s ease-in-out; /* Smooth transition effect */
 }
 
-.main-color-of-card
-{
-    
-    color: #0B110C;
+/* Hover effect for the donation form submit button */
+.submit-donate:hover[type="submit"] {
+  background-color: #cac3c3 !important; /* Background color on hover with important rule */
+  background-position: 0; /* Reset background position on hover */
+  color: #0B110C; /* Text color on hover */
 }
 
+/* Styling for elements with class "back-color-card" */
+.back-color-card {
+  background-color: #CAC3C3 !important; /* Background color with important rule */
+}
+
+/* Styling for elements with class "main-color-of-card" */
+.main-color-of-card {
+  color: #0B110C; /* Text color */
+}
+
+/* Styling for elements with class "input-group" */
 .input-group {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* Set the flex direction to column */
 }
 
+/* Duplicate styling for the donation form submit button within a media query */
 .submit-donate[type="submit"] {
   background-color: transparent !important;
-  border: 2px solid #cac3c3 ;
+  border: 2px solid #cac3c3;
   color: #cac3c3;
   background-position: 100%;
   background-size: 400%;
   border-radius: 40px !important;
   transition: 0.2s ease-in-out;
 }
-.submit-donate:hover[type="submit"]{
-  background-color: #cac3c3  !important;
+
+/* Duplicate hover effect styling for the donation form submit button within a media query */
+.submit-donate:hover[type="submit"] {
+  background-color: #cac3c3 !important;
   background-position: 0;
   color: #0B110C;
 }
 
-.card-design
-{
-  background-color: #0B110C !important;
-  border: 1px white solid;
-  width: 60%;
+/* Styling for elements with class "card-design" */
+.card-design {
+  background-color: #0B110C !important; /* Background color with important rule */
+  border: 1px white solid; /* Border with color */
+  width: 60%; /* 60% width */
 }
 
-  .submit-button-card {
-    background-color: #0B110C !important;
-    border-radius: 10px;
-    transition: 0.3s; 
+/* Styling for a submit button with class "submit-button-card" */
+.submit-button-card {
+  background-color: #0B110C !important; /* Background color with important rule */
+  border-radius: 10px; /* Border radius */
+  transition: 0.3s; /* Smooth transition effect */
 }
 
+/* Hover effect for the submit button with class "submit-button-card" */
 .submit-button-card:hover {
-    opacity: 0.7s !important;
+  opacity: 0.7s !important; /* Reduce opacity on hover with important rule */
 }
 
-@media(max-width: 1024px)
-{
- .size-of-donate{
-    height: 100%;
+/* Media query for screens with a maximum width of 1024px */
+@media (max-width: 1024px) {
+  .size-of-donate {
+      height: 100%; /* Set the height to 100% of the viewport height */
+  }
 }
-}
-  
-@media (max-width: 1023px)
-{
-    .customm-button {
-        width: 45%;
-    }
+
+/* Media query for screens with a maximum width of 1023px */
+@media (max-width: 1023px) {
+  .customm-button {
+      width: 45%; /* Reduce width to 45% */
+  }
 }

@@ -5,7 +5,7 @@
 input[type="email"]:invalid {
     border-color: red;
 }
-.jui{
+.flex-for-green-box{
     position: relative;
     display: flex;
     align-items: center;
@@ -13,16 +13,16 @@ input[type="email"]:invalid {
     justify-content: flex-end;
 
 }
-.gui{
+.button-position{
     margin-bottom: 5%;
 }
-.kui{
+.aligns-for-upper-text-greenbox{
     position: absolute;
     width: 100%;
     top: 2%;
     left: 4%;
 }
-.abrr::after{
+.button-after-effect::after{
     content: "";
     height: 1px;
     width: 50%;
@@ -33,14 +33,14 @@ input[type="email"]:invalid {
 
 }
 /* Styling for text with class .text11 */
-.text11 {
+.upper-text-one {
     font-family: Comfortaa;
     font-size: 20px;
     letter-spacing: 0.5px;
 }
 
 /* Styling for text with class .text21 */
-.text21 {
+.upper-text-two {
     font-family: Comfortaa;
     font-size: 16px;
     margin-top: 10%;
@@ -50,7 +50,7 @@ input[type="email"]:invalid {
         height: 100vh;
         overflow-y: scroll !important;
     }
-    .nova {
+    .style-green-box {
         background-image: url(../photos/signal/after-submit.svg);
         background-repeat: no-repeat;
         height: 65vh;
@@ -60,7 +60,7 @@ input[type="email"]:invalid {
 
 @media (max-width: 1200px) 
 {
-.oia{
+.aligns-small-device-sp{
 display: flex;
 flex-direction: column;
 }    

@@ -5,7 +5,7 @@
     height: 100vh;
 }
 
-.visibility {
+.visibility-container-fullmap {
     display: none;
 }
 
@@ -25,9 +25,6 @@
 #applyButton:hover{
     background: rgba(243, 242, 242, 0.53);
     border: 0px solid rgba(243, 242, 242, 0.53);
-}
-#abdiii{
-    display: flex;
 }
 
 .custom_button_full-map{
@@ -51,7 +48,7 @@
   flex-direction: column;
   
 }
-.a {
+.container-flex-alignment {
     display: flex;
     justify-content: flex-end;
 
@@ -64,45 +61,7 @@
    background-color: transparent;
    border: none;
 }
-/* <div class="pan">
-<div class="a">
-<img src="./x-button.png" alt="">
-</div>
-<div class="d">
-<div class="b">
-<p>Lorem ipsum dolor sit.<br>                           
-Lorem ipsum dolor sit.<br>
-Lorem ipsum dolor sit.</p>
-</div>
-<div class="c">
-    <button>aply for group</button>
-</div>
-</div>
-</div> */
-
-/* .pan{
-    margin: 200px;
-    background-color: black;
-    display: flex;
-    width: 17vw;
-    height: 30vh;
-    flex-direction: column;
-  }
-  .a{
-    margin-top: 2vh;
-    margin-right: 2vw;
-    display: flex;
-    justify-content: flex-end;
-  }
-  .d{
-  margin-top: 3vh;
-  color: white;
-  margin-left: 1vw;
-  display: flex;
-  flex-direction: column;
-
-  } */
-  .d{
+  .styling-text-container-full-map{
     margin-top: 5vh;
     color: white;
     margin-left: 1vw;
