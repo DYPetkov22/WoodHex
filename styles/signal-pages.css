@@ -1,0 +1,77 @@
+/* Importing the Montserrat font from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap");
+
+/* Styling for invalid input[type="email"] */
+input[type="email"]:invalid {
+    border-color: red;
+}
+.jui{
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+
+}
+.gui{
+    margin-bottom: 5%;
+}
+.kui{
+    position: absolute;
+    width: 100%;
+    top: 2%;
+    left: 4%;
+}
+.abrr::after{
+    content: "";
+    height: 1px;
+    width: 50%;
+    background: white;
+    position: absolute;
+    bottom: 2%;
+    left: 25%;
+
+}
+/* Styling for text with class .text11 */
+.text11 {
+    font-family: Comfortaa;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+}
+
+/* Styling for text with class .text21 */
+.text21 {
+    font-family: Comfortaa;
+    font-size: 16px;
+    margin-top: 10%;
+}
+
+    .section-size-all-classes1 {
+        height: 100vh;
+        overflow-y: scroll !important;
+    }
+    .nova {
+        background-image: url(../photos/signal/after-submit.svg);
+        background-repeat: no-repeat;
+        height: 65vh;
+        background-size: contain;
+        width: 17vw !important;
+    }
+
+@media (max-width: 1200px) 
+{
+.oia{
+display: flex;
+flex-direction: column;
+}    
+}
+/* Media query for screens with maximum width of 780px */
+@media (max-width: 780px) {
+    /* Styling for elements within this media query */
+
+    .section-size-all-classes1 {
+        height: auto;
+        overflow-y: scroll !important;
+    }
+
+}
