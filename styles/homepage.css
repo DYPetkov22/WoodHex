@@ -131,14 +131,14 @@
   }
 }
 
-.logos {
+.planting-tree-benefits {
   padding: 60px 0;
   white-space: nowrap;
   position: relative;
 }
 
-.logos:before,
-.logos:after {
+.planting-tree-benefits:before,
+.planting-tree-benefits:after {
   position: absolute;
   top: 0;
   height: 100%;
@@ -146,26 +146,26 @@
   z-index: 2;
 }
 
-.logos:before {
+.planting-tree-benefits:before {
   left: 0;
 }
 
-.logos:after {
+.planting-tree-benefits:after {
   right: 0;
 }
 
-.logos-slide {
+.planting-tree-benefits-slide {
   display: inline-block;
   animation: slide 11s infinite linear;
 }
 
-.logos-slide2 {
+.planting-tree-benefits-slide2 {
   display: inline-block;
   animation: slide2 11s infinite linear;
   animation-delay: 0.3s;
 }
 
-.logos-slide3 {
+.planting-tree-benefits-slide3 {
   display: inline-block;
   animation: slide2 11s infinite linear;
   animation-delay: 0.5s;

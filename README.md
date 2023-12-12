@@ -64,7 +64,7 @@ A tree planting website fosters global reforestation by providing educational re
 ## 🎬 Demo of the project 
   
   <p align="center">
-  <img src="/photos/readme/demo-project.png" width = "450px" height="auto" >
+  <img src="/photos/readme/demo-project.png" width = "350px" height="auto" >
   </p>
 <br>
 
@@ -76,6 +76,11 @@ Open your **CMD** and paste this code:
 2. git clone https://github.com/DYPetkov22/WoodHex.git
 3. Open your C: and find the folder named: WoodHex
 ````
+Or you can paste this link into your browser:
+````
+https://dypetkov22.github.io/WoodHex/
+````
+
 
 
 <h1>Enjoy the project!</h1>
