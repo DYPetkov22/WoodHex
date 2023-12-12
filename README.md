@@ -19,10 +19,10 @@ A tree planting website fosters global reforestation by providing educational re
 > 1. **DYPetkov22** - **Scrum trainer**	
    - ***GitHub profile***: [***DYPetkov22***](https://github.com/DYPetkov22)	
  
-> 2. **LRRashkov22** - **Developer Frontend**	
+> 2. **LRRashkov22** - **Developer Front-end**	
    - ***GitHub profile***: [***LRRashkov22***](https://github.com/luchezar123)	
 
-> 3. **ATKabakov22** - **Developer Frontend and Backend**	
+> 3. **ATKabakov22** - **Developer Front-end**	
    - ***GitHub profile***: [***ATKabakov22***](https://github.com/ATKabakov22)
 
 > 4. **RVParvanov22** - **Designer**	
@@ -64,7 +64,7 @@ A tree planting website fosters global reforestation by providing educational re
 ## 🎬 Demo of the project 
   
   <p align="center">
-  <img src="/photos/readme/demo-project.png" width = "900px" height="auto" >
+  <img src="/photos/readme/demo-project.png" width = "450px" height="auto" >
   </p>
 <br>
 
@@ -76,11 +76,6 @@ Open your **CMD** and paste this code:
 2. git clone https://github.com/DYPetkov22/WoodHex.git
 3. Open your C: and find the folder named: WoodHex
 ````
-Or you can paste this link into your browser:
-````	
-https://dypetkov22.github.io/WoodHex/
-````
-
 
 
 <h1>Enjoy the project!</h1>

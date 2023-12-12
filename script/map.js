@@ -113,7 +113,7 @@ function createHexagon(hexagonGroup, isBlack) {
                         "<br>" +
                         "kind of tree " + randomTree +
                         "<br>" + "<br>" +
-                        "<button id='applyButton'>APPLY FOR GROUP</button>" +
+                        "<a href='../pages/applyforgroup.html'><button id='applyButton'>APPLY FOR GROUP</button></a>" +
                         "</div>"
                     );
 
@@ -137,7 +137,7 @@ function createHexagon(hexagonGroup, isBlack) {
                         "<br>" +
                         "kind of tree: none" +
                         "<br>" + "<br>" +
-                        "<button id='applyButton'>APPLY FOR GROUP</button>" +
+                        "<a href='../pages/applyforgroup.html'><button id='applyButton'>APPLY FOR GROUP</button></a>" +
                         "</div>"
                     );
             }
