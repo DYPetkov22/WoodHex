@@ -253,7 +253,7 @@
 #table-of-groups-waiting {
   border-radius: 49px;
   background:  linear-gradient(108deg, #DEE8DF -3.21%, rgba(200, 207, 215, 0.92) 98.29%);
-  height: 60%;
+  height: auto;
   width: 60%;
 }
 
