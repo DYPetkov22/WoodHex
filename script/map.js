@@ -81,6 +81,7 @@ function createHexagon(hexagonGroup, isBlack) {
                 .html("<button id='hide'><img src='../photos/map/x-button.png' alt='Hide'></button>");
             ;
 
+            // Find if the the clicked hexagon is red of green
             let hoveredImagePath = d3.select(this).select("image").attr("xlink:href");
             hoveredColor = hoveredImagePath.includes("green") ? "green" : "red";
 
@@ -89,14 +90,17 @@ function createHexagon(hexagonGroup, isBlack) {
             d3.select(this).select("image").attr("xlink:href", alternativeImagePath);
 
             if (hoveredColor === "red") {
+                // Find a random value for the plantedTrees
                 let plantedTrees = Math.floor(Math.random() * 100);
                 let plantedTreesMax = Math.floor(Math.random() * 100) + 100;
-
+                
+                // Find a random value for the peopleWait
                 let peopleWait = Math.floor(Math.random() * 100);
                 let peopleWaitMax = getRandomMax(peopleWait, 100);
 
                 let randomTree = randomTrees[Math.floor(Math.random() * randomTrees.length)];
 
+                // Disply the overlayDiv
                 overlayDiv.html
                     (
                         "<div class='a'>" +
@@ -109,16 +113,18 @@ function createHexagon(hexagonGroup, isBlack) {
                         "<br>" +
                         "kind of tree " + randomTree +
                         "<br>" + "<br>" +
-                        "<button id='applyButton'>APPLY FOR GROUP</button>" +
+                        "<a href='../pages/applyforgroup.html'><button id='applyButton'>APPLY FOR GROUP</button></a>" +
                         "</div>"
                     );
 
+                // Links the applyforgroup button to the site
                 document.getElementById('applyButton').addEventListener('click', function () {
-                    window.location.href = 'pages/ApplyForGroup.html';
+                    window.location.href = '../pages/applyforgroup.html';
                 })
             }
             else {
 
+                // Disply the overlayDiv
                 overlayDiv.html
                     (
                         "<div class='a'>" +
@@ -131,11 +137,12 @@ function createHexagon(hexagonGroup, isBlack) {
                         "<br>" +
                         "kind of tree: none" +
                         "<br>" + "<br>" +
-                        "<button id='applyButton'>APPLY FOR GROUP</button>" +
+                        "<a href='../pages/applyforgroup.html'><button id='applyButton'>APPLY FOR GROUP</button></a>" +
                         "</div>"
                     );
             }
-
+        
+            // Hide the overlayDiv if the 'x' button is clicked
             document.getElementById('hide').addEventListener('click', function () {
                 overlayDiv.style("display", "none");
             });
@@ -172,6 +179,7 @@ function hexagonSea(hexagonGroup) {
 // Loop to create hexagons based on rows and columns
 for (let row = 0; row < rows; row++) {
     for (let col = 0; col < cols; col++) {
+
         // Calculate coordinates for each hexagon
         let x = col * hexagonWidth + (row % 2 === 1 ? hexagonWidth / 2 : 0);
         let y = row * (hexagonHeight * 0.75);
@@ -179,6 +187,7 @@ for (let row = 0; row < rows; row++) {
         // Create a group for each hexagon and determine its type based on row and column
         let hexagonGroup = g.append("g")
             .attr("transform", "translate(" + x + "," + y + ")");
+
         //Cases for different rows and columns, creating hexagons and sea hexagons
         switch (row) {
             case 0:

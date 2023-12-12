@@ -4,7 +4,7 @@
 
  .stop-scrolling {
   position: fixed;
-} 
+}
 
 .position-for_every-section {
   background-position: right top;
@@ -113,6 +113,70 @@
   animation: fade1 1.5s ease-in-out;
 }
 
+@keyframes slide {
+  from {
+    transform: translateX(150%);
+  }
+  to {
+    transform: translateX(-170%);
+  }
+}
+
+@keyframes slide2 {
+  from {
+    transform: translateX(150%);
+  }
+  to {
+    transform: translateX(-170%);
+  }
+}
+
+.logos {
+  padding: 60px 0;
+  white-space: nowrap;
+  position: relative;
+}
+
+.logos:before,
+.logos:after {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.logos:before {
+  left: 0;
+}
+
+.logos:after {
+  right: 0;
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: slide 11s infinite linear;
+}
+
+.logos-slide2 {
+  display: inline-block;
+  animation: slide2 11s infinite linear;
+  animation-delay: 0.3s;
+}
+
+.logos-slide3 {
+  display: inline-block;
+  animation: slide2 11s infinite linear;
+  animation-delay: 0.5s;
+}
+
+.revolution-img {
+  width: 150px;
+  height: 150px;
+}
+
+
 .size_of_every_seection
 {
   height: 100%;
@@ -130,10 +194,6 @@
   padding-top: 6rem;
 }
 
-.revolution-img {
-  width: 70%;
-  height: auto;
-}
 
 #join-revolution {
   background-color: transparent;
