@@ -2,29 +2,47 @@
 <html>
 
 <head>
+    <!-- Meta tags for character set and viewport -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Link to external CSS files -->
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Link to Google Fonts for 'Space Grotesk' and 'Montserrat' -->
     <link href='https://fonts.googleapis.com/css?family=Space Grotesk' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link rel="stylesheet" href="https://fonts.google.com/specimen/Comfortaa">
+
+    <!-- Favicon for the website -->
     <link rel="icon" href="./photos/logo 1.png" type="image/x-icon">
+
+    <!-- Title of the webpage -->
     <title>WoodHex</title>
 </head>
 
 <body class="stop-scrolling is-clipped">
-    <a href="#top" id="scrollToTopButton"> <!-- Anchor tag for scrolling to top -->
-        <img src="./photos/scroll-on-top.svg" alt="Scroll to Top"/> <!-- Image for scroll to top button -->    </a>
+    <!-- Anchor tag for scrolling to top -->
+    <a href="#top" id="scrollToTopButton">
+        <!-- Image for scroll to top button -->
+        <img src="./photos/scroll-on-top.svg" alt="Scroll to Top"/>
+    </a>
+
+    <!-- Main container div with background color and relative positioning -->
     <div class="back-color is-relative">
+        <!-- Section for the main content -->
         <section class="back size_of_every_section position-for_every-section is-relative">
+            <!-- Navigation bar -->
             <nav class="navbar" role="navigation" aria-label="main navigation">
                 <div class="navbar-brand px-0 py-0">
+                    <!-- Logo and brand name -->
                     <a class="navbar-item py-0" href="#">
                         <img id="logo_img" src="./photos/logo 1.png" alt="WoodHex Logo">
                         <span class="logo ">WoodHex</span>
                     </a>
+                    <!-- Navbar burger for mobile -->
                     <div role="button" class="navbar-burger navbar-menu-custom has-text-white" id="burger"
                         aria-label="menu" aria-expanded="false" data-target="navbarBasicExample" onclick="toggle()">
                         <span aria-hidden="true"></span>
@@ -32,8 +50,10 @@
                         <span aria-hidden="true"></span>
                     </div>
                 </div>
+                <!-- Navbar menu -->
                 <div id="navbarBasicExample" class="navbar-menu is-active:false space-nav">
                     <div class="navbar-end space-nav">
+                        <!-- Navbar items -->
                         <a href="./pages/map.html"
                             class="navbar-item item-navbar  space-nav nav-link py-0 pr-6  text-on-mobile">MAP</a>
                         <a href="./pages/aboutus.html"
@@ -45,23 +65,29 @@
                         <a href="./pages/project.html"
                             class="navbar-item item-navbar space-nav nav-link py-0 mr-1 pr-6 text-on-mobile">PROJECT</a>
                         <div class="navbar-item is-hidden-touch is-hidden-desktop-only"></div>
-                        </div>
+                    </div>
+                </div>
             </nav>
+
+            <!-- Image for smaller screens -->
             <img class="is-hidden-widescreen img_for_smaller_screens"
                 src="./photos/home-page/image-for-smaller-screen.svg">
+
+            <!-- Text content for larger screens -->
             <div class="position_for_text_on_phone">
                 <div class="columns  is-multiline ml-6 mr-6">
-
                     <div class="column has-text-centered-touch has-text-centered-desktop-only is-12">
-
-
+                        <!-- Main title -->
                         <h1
                             class="is-size-1-fullhd is-size-3-touch  is-size-2-desktop mt-5 title text-green has-text-weight-bold  grotesk_font">
                             The World's Biggest <br> Company for Green <br> Revolution
                         </h1>
-                        <p class="color-of-main-text ">Planting a Sustainable Future with Our Foremost <br class="is-hidden-fullhd">Leading <br class="is-hidden-touch is-hidden-desktop-only is-hidden-widescreen-only is-">Tree Company.
-
+                        <!-- Subtitle -->
+                        <p class="color-of-main-text ">Planting a Sustainable Future with Our Foremost
+                            <br class="is-hidden-fullhd">Leading <br class="is-hidden-touch is-hidden-desktop-only is-hidden-widescreen-only is-">Tree Company.
+                        </p>
                     </div>
+                    <!-- Button for applying -->
                     <div
                         class="column mt-5  has-text-centered-touch has-text-centered-desktop-only is-12-tablet-only is-5-fullhd">
                         <button class="button custom-margin-on-button-hm-1">
@@ -70,6 +96,7 @@
                         </button>
                     </div>
 
+                    <!-- Arrow for scrolling down on larger screens -->
                     <div class="columns ">
                         <div class="column mt-6 ml-6  arrow-down   is-size-1 is-hidden-touch is-hidden-desktop-only">
                             <a onclick="enableScroll()" href="#scroll-point-homepage"><img
@@ -82,227 +109,256 @@
         </section>
     </div>
 
-    <section class="size_of_every_section is-flex is-flex-direction-column">
-        <div class="columns is-multiline we_need_you_right">
-            <div class="column is-1 is-flex is-justify-content-end is-align-items-end" id="scroll-point-homepage">
-                <img class="image is-32x32 is-hidden-touch is-hidden-desktop-only"
-                    src="./photos/home-page/one-exclamation-mark.svg" alt="exclamation mark">
-            </div>
-            <div class="column is-3 is-flex is-justify-content-center is-align-items-center" data-aos="fade-right">
-                <p class="has-text-white is-size-1">We need you...</p>
-            </div>
-            <div class="column is-1  ">
-                <img class="image is-32x32 is-fullhd is-hidden-touch is-hidden-desktop-only"
-                    src="./photos/home-page/two-exclamation-marks.svg" alt="exclamations marks">
-            </div>
-        </div>
-        <div class="columns we_need_you_right">
-            <div class="column is-7"></div>
-            <div class="column is-1 is-flex is-justify-content-end is-align-items-end">
-                <img class="image is-64x64 is-hidden-touch is-hidden-desktop-only" src="./photos/home-page/face-one.svg"
-                    alt="">
-            </div>
-            <div class="column is-3">
-                <div class="is-flex is-justify-content-start">
-                    <img class="image is-32x32 is-hidden-touch is-hidden-desktop-only"
-                        src="./photos/home-page/timer.svg" alt="sand clock">
-                </div>
-                <div class="is-flex is-justify-content-center ">
-                    <p class="is-size-1 has-text-white" data-aos="fade-left">...right</p>
-                    <img class="image is-64x64 ml-6 is-hidden-touch is-hidden-desktop-only"
-                        src="./photos/home-page/face-two.svg" alt="">
-                </div>
-            </div>
-        </div>
-        <div class="columns" id="now">
-            <div class="column is-flex is-justify-content-center is-1 is-clipped">
-                <img class="is-hidden-touch is-hidden-desktop-only" src="./photos/home-page/left-img.svg" alt="">
-            </div>
-            <div class="column is-2"></div>
-            <div class="column is-1 ">
-                <div class="column is-12">
-                    <img class="is-hidden-touch is-hidden-desktop-only" src="./photos/home-page/square.svg" alt="romb">
-                </div>
-                <div class="column is-12 is-hidden-touch is-hidden-desktop-only"></div>
-                <div class="column is-12 is-hidden-touch is-hidden-desktop-only"></div>
-                <div class="column is-12 is-hidden-touch is-hidden-desktop-only"></div>
-                <div class="column is-12 is-hidden-touch is-hidden-desktop-only"></div>
-                <img class="is-hidden-touch is-hidden-desktop-only" src="./photos/home-page/arrow-one.svg"
-                    alt="arrow pointing the text">
-            </div>
-            <div class="column is-4" data-aos="fade-up">
-                <div class="block"></div>
-                <div class="is-flex is-justify-content-center">
-                    <p class="has-text-white" id="custom_now_size">NOW!</p>
-                </div>
-                <div class="is-flex is-justify-content-center is-hidden-touch is-hidden-desktop-only">
-                    <img src="./photos/home-page/underline.svg" alt="underline">
-                </div>
-            </div>
-            <div class="column is-2">
-                <div class="block is-hidden-touch "></div>
-                <img class="is-hidden-touch is-hidden-desktop-only" src="./photos/home-page/arrow-two.svg"
-                    alt="arrow pointing the text">
-                <div class="is-flex is-justify-content-end is-align-items-end">
-                    <img class="is-hidden-touch is-hidden-desktop-only" src="./photos/home-page/square.svg" alt="romb">
-                </div>
-            </div>
-            <div class="column is-1 p-2 is-hidden-touch is-hidden-desktop-only"></div>
-            <img id="right_side_of_now" class="is-hidden-touch is-hidden-desktop-only  pl-6"
-                src="./photos/home-page/right-img.svg" alt="">
-        </div>
-    </section>
+    <!-- Section for the "We need you..." content -->
+<section class="size_of_every_section is-flex is-flex-direction-column">
 
-    <section class="slideshow-container">
-        <div class="mySlides fade blocks">
-            <p class="textttt color-of-main-text">So what now?</p>
+    <!-- Columns for the first part of the content -->
+    <div class="columns is-multiline we_need_you_right">
+
+        <!-- Column 1 - Exclamation mark (Hidden on touch devices and desktop) -->
+        <div class="column is-1 is-flex is-justify-content-end is-align-items-end" id="scroll-point-homepage">
+            <img class="image is-32x32 is-hidden-touch is-hidden-desktop-only" src="./photos/home-page/one-exclamation-mark.svg" alt="exclamation mark">
         </div>
 
-        <div class="mySlides fade1 blocks">
-            <p class="textttt color-of-main-text">Let’s take a look, shall we?</p>
+        <!-- Column 2 - Main text "We need you..." -->
+        <div class="column is-3 is-flex is-justify-content-center is-align-items-center" data-aos="fade-right">
+            <p class="has-text-white is-size-1">We need you...</p>
         </div>
-    </section>
-    <div style="text-align:center">
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
+
+        <!-- Column 3 - Exclamation marks (Hidden on touch devices) -->
+        <div class="column is-1">
+            <img class="image is-32x32 is-fullhd is-hidden-touch is-hidden-desktop-only" src="./photos/home-page/two-exclamation-marks.svg" alt="exclamation marks">
+        </div>
     </div>
 
-    <section class="columns section size_of_every_seection is-multiline  ">
-        <div class="column is-7 is-12-touch is-flex-touch has-text-centered-touch is-flex-direction-column">
-            <p class="title is-1 has-text-weight-bold ml-1 text-green ">What we believe in...</p>
+    <!-- Columns for the second part of the content -->
+    <div class="columns we_need_you_right">
 
-            <p  class="is-size-4 has-text-weight-normal color-of-main-text pb-4 mb-6 mt-6 ml-4" data-aos="fade-right">
-                We hold the firm belief that every individual is born with a unique and special mission. </p>
+        <!-- Column 1 - Empty space -->
+        <div class="column is-7"></div>
 
-            <p  class="is-size-4 has-text-weight-normal color-of-main-text pb-4 mb-6 ml-4" data-aos="fade-right">
-                At the same time, we recognize a common obligation that unites us all.</p>
-
-            <p class="is-size-4 has-text-weight-normal color-of-main-text ml-4  pb-4 mb-6" data-aos="fade-right">The obligation involves a resolute commitment to enhance and protect our planet.</p>
-            <p class="is-size-4 has-text-weight-normal color-of-main-text ml-4" data-aos="fade-right">This is aimed at creating a better and more prosperous place for all to live.</p>
+        <!-- Column 2 - Face one (Hidden on touch devices) -->
+        <div class="column is-1 is-flex is-justify-content-end is-align-items-end">
+            <img class="image is-64x64 is-hidden-touch is-hidden-desktop-only" src="./photos/home-page/face-one.svg" alt="">
         </div>
-        <div class="column is-5 is-hidden-desktop"></div>
-        <div class="is-flex is-align-items-center is-flex-direction-column column is-12 is-hidden-desktop">
-        <img class="  is-hidden-desktop" data-aos="fade-up" src="./photos/home-page/first-stage-tree.png" alt= "first stage tree">
-        <img class=" is-hidden-desktop   " data-aos="fade-up" src="./photos/home-page/second-stage-tree.png" alt="second stage tree">
+
+        <!-- Column 3 - Timer and text "right" -->
+        <div class="column is-3">
+            <div class="is-flex is-justify-content-start">
+                <img class="image is-32x32 is-hidden-touch is-hidden-desktop-only" src="./photos/home-page/timer.svg" alt="sand clock">
+            </div>
+            <div class="is-flex is-justify-content-center">
+                <p class="is-size-1 has-text-white" data-aos="fade-left">...right</p>
+                <!-- Face two (Hidden on touch devices) -->
+                <img class="image is-64x64 ml-6 is-hidden-touch is-hidden-desktop-only" src="./photos/home-page/face-two.svg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- Columns for the third part of the content -->
+    <div class="columns" id="now">
+
+        <!-- Column 1 - Left image (Hidden on touch devices) -->
+        <div class="column is-flex is-justify-content-center is-1 is-clipped">
+            <img class="is-hidden-touch is-hidden-desktop-only" src="./photos/home-page/left-img.svg" alt="">
+        </div>
+
+        <!-- Column 2 - Empty space -->
+        <div class="column is-2"></div>
+
+        <!-- Column 3 - Square and arrow (Hidden on touch devices and desktop) -->
+        <div class="column is-1">
+            <div class="column is-12">
+                <img class="is-hidden-touch is-hidden-desktop-only" src="./photos/home-page/square.svg" alt="romb">
+            </div>
+            <!-- Placeholder blocks for spacing -->
+            <div class="column is-12 is-hidden-touch is-hidden-desktop-only"></div>
+            <div class="column is-12 is-hidden-touch is-hidden-desktop-only"></div>
+            <div class="column is-12 is-hidden-touch is-hidden-desktop-only"></div>
+            <div class="column is-12 is-hidden-touch is-hidden-desktop-only"></div>
+            <!-- Arrow pointing the text (Hidden on touch devices and desktop) -->
+            <img class="is-hidden-touch is-hidden-desktop-only" src="./photos/home-page/arrow-one.svg" alt="arrow pointing the text">
+        </div>
+
+        <!-- Column 4 - Text "NOW!" -->
+        <div class="column is-4" data-aos="fade-up">
+            <!-- Placeholder block for spacing -->
+            <div class="block"></div>
+            <div class="is-flex is-justify-content-center">
+                <p class="has-text-white" id="custom_now_size">NOW!</p>
+            </div>
+            <!-- Underline (Hidden on touch devices and desktop) -->
+            <div class="is-flex is-justify-content-center is-hidden-touch is-hidden-desktop-only">
+                <img src="./photos/home-page/underline.svg" alt="underline">
+            </div>
+        </div>
+
+        <!-- Column 5 - Arrow and square (Hidden on touch devices and desktop) -->
+        <div class="column is-2">
+            <!-- Placeholder block for spacing -->
+            <div class="block is-hidden-touch"></div>
+            <!-- Arrow pointing the text (Hidden on touch devices and desktop) -->
+            <img class="is-hidden-touch is-hidden-desktop-only" src="./photos/home-page/arrow-two.svg" alt="arrow pointing the text">
+            <!-- Square (Hidden on touch devices and desktop) -->
+            <div class="is-flex is-justify-content-end is-align-items-end">
+                <img class="is-hidden-touch is-hidden-desktop-only" src="./photos/home-page/square.svg" alt="romb">
+            </div>
+        </div>
+
+        <!-- Column 6 - Empty space -->
+        <div class="column is-1 p-2 is-hidden-touch is-hidden-desktop-only"></div>
+
+        <!-- Right image (Hidden on touch devices and desktop) -->
+        <img id="right_side_of_now" class="is-hidden-touch is-hidden-desktop-only pl-6" src="./photos/home-page/right-img.svg" alt="">
+    </div>
+</section>
+
+<!-- Section for the slideshow -->
+<section class="slideshow-container">
+
+    <!-- Slide 1 - "So what now?" -->
+    <div class="mySlides fade blocks">
+        <p class="textttt color-of-main-text">So what now?</p>
+    </div>
+
+    <!-- Slide 2 - "Let’s take a look, shall we?" -->
+    <div class="mySlides fade1 blocks">
+        <p class="textttt color-of-main-text">Let’s take a look, shall we?</p>
+    </div>
+</section>
+
+
+    <!-- Main container section with columns, section size, and multi-line layout -->
+<section class="columns section size_of_every_seection is-multiline">
+
+    <!-- Column 1 - Text Content -->
+    <div class="column is-7 is-12-touch is-flex-touch has-text-centered-touch is-flex-direction-column">
+        <!-- Title -->
+        <p class="title is-1 has-text-weight-bold ml-1 text-green">What we believe in...</p>
+
+        <!-- Paragraph 1 -->
+        <p class="is-size-4 has-text-weight-normal color-of-main-text pb-4 mb-6 mt-6 ml-4" data-aos="fade-right">
+            We hold the firm belief that every individual is born with a unique and special mission.
+        </p>
+
+        <!-- Paragraph 2 -->
+        <p class="is-size-4 has-text-weight-normal color-of-main-text pb-4 mb-6 ml-4" data-aos="fade-right">
+            At the same time, we recognize a common obligation that unites us all.
+        </p>
+
+        <!-- Paragraph 3 and 4 -->
+        <p class="is-size-4 has-text-weight-normal color-of-main-text ml-4 pb-4 mb-6" data-aos="fade-right">
+            The obligation involves a resolute commitment to enhance and protect our planet.
+        </p>
+        <p class="is-size-4 has-text-weight-normal color-of-main-text ml-4" data-aos="fade-right">
+            This is aimed at creating a better and more prosperous place for all to live.
+        </p>
+    </div>
+
+    <!-- Column 2 - Hidden on Desktop -->
+    <div class="column is-5 is-hidden-desktop"></div>
+
+    <!-- Column 3 - Images (Hidden on Desktop) -->
+    <div class="is-flex is-align-items-center is-flex-direction-column column is-12 is-hidden-desktop">
+        <img class=" is-hidden-desktop" data-aos="fade-up" src="./photos/home-page/first-stage-tree.png" alt="first stage tree">
+        <img class=" is-hidden-desktop" data-aos="fade-up" src="./photos/home-page/second-stage-tree.png" alt="second stage tree">
         <img class="is-hidden-desktop" data-aos="fade-up" src="./photos/home-page/last-stage-tree.png" alt="last stage tree">
-        </div>
-        <div class="column is-1 is-flex is-flex-direction-column is-align-items-center is-justify-content-center">
-                <img class=" is-hidden-touch second-stage-tree" data-aos="fade-up" src="./photos/home-page/second-stage-tree.png" alt="second stage tree">
-                
-        </div>
-        <div class="column is-2 is-hidden-touch">
-                <img class=" mt-6 pt-6" data-aos="fade-up" src="./photos/home-page/curved-arrow-1.png" alt=" curved arrow">
-                <img class=" mt-4 pl-5 ml-3" data-aos="fade-up" src="./photos/home-page/curved-arrow-2.png" alt="curved arrow">
-            </div>
-            <div class="column is-1 is-flex is-flex-direction-column is-align-items-center">
-                <img class=" is-hidden-touch first-stage-tree" data-aos="fade-up" src="./photos/home-page/first-stage-tree.png" alt= "first stage tree">
-                <div class="block is-hidden-touch"></div><div class="block is-hidden-touch"></div> 
-                <div class="block is-hidden-touch"></div><div class="block is-hidden-touch"></div>
-                <div class="block is-hidden-touch"></div><div class="block is-hidden-touch"></div>
-                <div class="block is-hidden-touch"></div><div class="block is-hidden-touch"></div> 
-                <img class="stages_tree  is-hidden-touch" data-aos="fade-up" src="./photos/home-page/last-stage-tree.png" alt="last stage tree">
-            </div>
-    </section>
+    </div>
+
+    <!-- Column 4 - Arrow and Hidden on Touch Devices -->
+    <div class="column is-1 is-flex is-flex-direction-column is-align-items-center is-justify-content-center">
+        <img class=" is-hidden-touch second-stage-tree" data-aos="fade-up" src="./photos/home-page/second-stage-tree.png" alt="second stage tree">
+    </div>
+
+    <!-- Column 5 - Arrow and Hidden on Touch Devices -->
+    <div class="column is-2 is-hidden-touch">
+        <img class=" mt-6 pt-6" data-aos="fade-up" src="./photos/home-page/curved-arrow-1.png" alt="curved arrow">
+        <img class=" mt-4 pl-5 ml-3" data-aos="fade-up" src="./photos/home-page/curved-arrow-2.png" alt="curved arrow">
+    </div>
+
+    <!-- Column 6 - Images (Hidden on Touch Devices) -->
+    <div class="column is-1 is-flex is-flex-direction-column is-align-items-center">
+        <img class=" is-hidden-touch first-stage-tree" data-aos="fade-up" src="./photos/home-page/first-stage-tree.png" alt="first stage tree">
+        <!-- Placeholder blocks for spacing -->
+        <div class="block is-hidden-touch"></div>
+        <div class="block is-hidden-touch"></div>
+        <div class="block is-hidden-touch"></div>
+        <div class="block is-hidden-touch"></div>
+        <div class="block is-hidden-touch"></div>
+        <div class="block is-hidden-touch"></div>
+        <div class="block is-hidden-touch"></div>
+        <div class="block is-hidden-touch"></div>
+        <!-- Last stage tree image -->
+        <img class="stages_tree is-hidden-touch" data-aos="fade-up" src="./photos/home-page/last-stage-tree.png" alt="last stage tree">
+    </div>
+
+</section>
 
 
-    <section class="columns is-flex is-flex-direction-column is-align-items-center">
-        <div class="logos is-flex is-flex-direction-row custom_overflow">
-            <div class="logos-slide is-flex is-flex-direction-row">
-                <div class=" pr-6 is-flex is-flex-direction-column is-justify-content-center is-align-items-center">
-                <img src="./photos/home-page/drobove.png" class="revolution-img">
-                <p class="is-size-2  has-text-weight-regular color-of-main-text has-text-centered">CLEAN AIR</p>
-                </div>
-                <div class=" pr-6 is-flex is-flex-direction-column is-justify-content-center is-align-items-center">
-                <img src="./photos/home-page/hand-with-heart.png" class="revolution-img">
-                <p class="is-size-2  has-text-weight-regular color-of-main-text">CLEANLINESS</p>
-                </div>
-                <div class=" pr-6 is-flex is-flex-direction-column is-justify-content-center is-align-items-center">
-                <img src="./photos/home-page/recycle-img.png" class="revolution-img">
-                <p class="is-size-2  has-text-weight-regular color-of-main-text">RECYCLING</p>
-                </div>
-                <div class=" pr-6 is-flex is-flex-direction-column is-justify-content-center is-align-items-center">
-                <img src="./photos/home-page/tree.png" class="revolution-img">
-                <p class="is-size-2  has-text-weight-regular color-of-main-text">GRACEFULL</p>
-                </div>
-                <div class=" pr-6 is-flex is-flex-direction-column is-justify-content-center is-align-items-center">
-                <img src="./photos/home-page/windmil.png" class="revolution-img" >
-                <p class="is-size-2  has-text-weight-regular color-of-main-text">RENEWABILITY</p>
-                </div>
-            </div>
-            <div class="planting-tree-benefits-slide2 is-flex is-flex-direction-row">
-                <div class=" pr-6 is-flex is-flex-direction-column is-justify-content-center is-align-items-center">
-                <img src="./photos/home-page/drobove.png" class="revolution-img">
-                <p class="is-size-2  has-text-weight-regular color-of-main-text has-text-centered">CLEAN AIR</p>
-                </div>
-                <div class=" pr-6 is-flex is-flex-direction-column is-justify-content-center is-align-items-center">
-                <img src="./photos/home-page/hand-with-heart.png" class="revolution-img">
-                <p class="is-size-2  has-text-weight-regular color-of-main-text">CLEANLINESS</p>
-                </div>
-                <div class=" pr-6 is-flex is-flex-direction-column is-justify-content-center is-align-items-center">
-                <img src="./photos/home-page/recycle-img.png" class="revolution-img">
-                <p class="is-size-2  has-text-weight-regular color-of-main-text">RECYCLING</p>
-                </div>
-                <div class=" pr-6 is-flex is-flex-direction-column is-justify-content-center is-align-items-center">
-                <img src="./photos/home-page/tree.png" class="revolution-img">
-                <p class="is-size-2  has-text-weight-regular color-of-main-text">GRACEFULL</p>
-                </div>
-                <div class=" pr-6 is-flex is-flex-direction-column is-justify-content-center is-align-items-center">
-                <img src="./photos/home-page/windmil.png" class="revolution-img" >
-                <p class="is-size-2  has-text-weight-regular color-of-main-text">RENEWABILITY</p>
-                </div>
-            </div>
-            <div class="planting-tree-benefits-slide3 is-flex is-flex-direction-row">
-                <div class=" pr-6 is-flex is-flex-direction-column is-justify-content-center is-align-items-center">
-                <img src="./photos/home-page/drobove.png" class="revolution-img">
-                <p class="is-size-2  has-text-weight-regular color-of-main-text has-text-centered">CLEAN AIR</p>
-                </div>
-                <div class=" pr-6 is-flex is-flex-direction-column is-justify-content-center is-align-items-center">
-                <img src="./photos/home-page/hand-with-heart.png" class="revolution-img">
-                <p class="is-size-2  has-text-weight-regular color-of-main-text">CLEANLINESS</p>
-                </div>
-                <div class=" pr-6 is-flex is-flex-direction-column is-justify-content-center is-align-items-center">
-                <img src="./photos/home-page/recycle-img.png" class="revolution-img">
-                <p class="is-size-2  has-text-weight-regular color-of-main-text">RECYCLING</p>
-                </div>
-                <div class=" pr-6 is-flex is-flex-direction-column is-justify-content-center is-align-items-center">
-                <img src="./photos/home-page/tree.png" class="revolution-img">
-                <p class="is-size-2  has-text-weight-regular color-of-main-text">GRACEFULL</p>
-                </div>
-                <div class=" pr-6 is-flex is-flex-direction-column is-justify-content-center is-align-items-center">
-                <img src="./photos/home-page/windmil.png" class="revolution-img" >
-                <p class="is-size-2  has-text-weight-regular color-of-main-text">RENEWABILITY</p>
-                </div>
+
+   <!-- This is the main container section with flex and alignment properties -->
+<section class="columns is-flex is-flex-direction-column is-align-items-center mt-6">
+
+    <!-- Green Revolution Section -->
+    <section class="columns is-centered" id="green_revolution">
+        <!-- Spacer column -->
+        <div class="column is-2"></div>
+
+        <!-- Column 1 - Clean Air -->
+        <div class="column is-2 is-flex is-flex-direction-column is-align-items-center">
+            <div class="is-flex is-flex-direction-column has-text-centered is-align-items-center is-justify-content-center">
+                <!-- Image for Clean Air -->
+                <figure class="image revolution-img mb-5">
+                    <img src="./photos/home-page/drobove.png" alt="Clean Air">
+                </figure>
+                <!-- Text for Clean Air -->
+                <p id="clean_air" class="is-size-2 has-text-weight-regular color-of-main-text">CLEAN AIR</p>
             </div>
         </div>
 
-        <section class="column is-flex is-flex-direction-column is-align-items-center">
-            <a href="./pages/project.html">
-            <button class="button is-rounded is-medium" id="join-revolution">GREEN
-                REVOLUTION</button>
-            </a>
-        </section>
+        <!-- Spacer column -->
+        <div class="column is-1"></div>
+
+        <!-- Column 2 - Cleanliness -->
+        <div class="column is-2 is-flex is-flex-direction-column is-align-items-center">
+            <div class="is-flex is-flex-direction-column has-text-centered is-align-items-center is-justify-content-center">
+                <!-- Image for Cleanliness -->
+                <figure class="image revolution-img mb-5">
+                    <img src="./photos/home-page/hand-with-heart.png" alt="Clean Earth">
+                </figure>
+                <!-- Text for Cleanliness -->
+                <p class="is-size-2 has-text-weight-regular color-of-main-text">CLEANLINESS</p>
+            </div>
+        </div>
+
+        <!-- Spacer column -->
+        <div class="column is-1"></div>
+
+        <!-- Column 3 - Recycling -->
+        <div class="column is-2 is-flex is-flex-direction-column is-align-items-center">
+            <div class="is-flex is-flex-direction-column has-text-centered is-align-items-center is-justify-content-center">
+                <!-- Image for Recycling -->
+                <figure class="image revolution-img mb-5">
+                    <img src="./photos/home-page/recycle-img.png" alt="Easier Recycling">
+                </figure>
+                <!-- Text for Recycling -->
+                <p class="is-size-2 has-text-weight-regular color-of-main-text">RECYCLING</p>
+            </div>
+        </div>
+
+        <!-- Spacer column -->
+        <div class="column is-2"></div>
     </section>
 
-    <section id="planted_trees-section" class="is-flex position-for_every-section is-clipped">
-        <div class="columns mt-6">
-            <div class="is-flex is-justify-content-center is-align-items-center column is-6 mt-4 ml-1">
-                <img id="table" src="./photos/home-page/table.svg" alt="Table Image">
-            </div>
-            <div id="information_for_the_table"
-                class="is-flex is-flex-direction-column is-justify-content-center  is-align-items-center has-text-right-desktop has-text-centered-tablet has-text-centered-touch column is-6">
-                <p id="planted-trees" class="title is-3 color-of-main-text ">PLANTED TREES AND RESULTS</p>
-                <div class="block"></div>
-                <p id="why-need-you" class="title is-5 is-flex is-justify-content-end is-relative">WHY WE NEED YOU</p>
-                <div class="block"></div>
-                <div class="block"></div>
-                <p id="planted-trees-text" class="subtitle is-5 color-of-main-text ">The chart illustrates our company's
-                    commendable environmental commitment, showcasing the successful planting of over 160,000 trees in
-                    the last three years. This significant effort reflects our strong dedication to sustainability,
-                    contributing positively to global reforestation and reinforcing our commitment to a greener future.
-                </p>
-            </div>
+    <!-- Join Revolution Section -->
+    <section class="column is-flex is-flex-direction-column is-align-items-center">
+        <!-- Link to the project page with a button -->
+        <a href="./pages/project.html">
+            <button class="button is-rounded is-medium" id="join-revolution">GREEN REVOLUTION</button>
+        </a>
     </section>
+</section>
+
 
     <!-- Main section containing three sub-sections: Air Energy, Sun Energy, and Benefits -->
 <section class="section">
@@ -365,83 +421,146 @@
 </section>
 
 
-<!-- Section containing groups waiting information -->
+
+<!-- Section containing information about groups waiting -->
 <section id="background-of-the-groups-waiting"
         class="is-flex is-justify-content-center is-align-items-center position-for_every-section">
-    <!-- Box for the table of groups waiting -->
-    <div class="box mt-6  ml-0 mr-0" id="table-of-groups-waiting">
-        <!-- Title for the groups waiting section -->
-        <p class="title is-4 has-text-centered" id="groups_waiting">GROUPS ON WAITING</p>
-        
-        <!-- First group waiting entry -->
-        <div class="inside-table-of-groups-waiting">
-            <article class="media row-of-the-table">
-                <!-- Left section with image -->
-                <div class="media-left reporter-margin">
-                    <figure class="image is-64x64 is-5by3 mt-3">
-                        <img src="./photos/map/card-img-2.jpg" alt="Image">
-                    </figure>
+         <!-- Box containing the list of groups waiting -->
+        <div class="box mt-6  ml-0 mr-0" id="table-of-groups-waiting">
+            <p class="title is-4 has-text-centered" id="groups_waiting">GROUPS ON WAITING</p>
+            <div class="inside-table-of-groups-waiting">
+                <article class="media row-of-the-table">
+
+                    <div class="media-left reporter-margin">
+                        <figure class="image is-64x64 is-5by3 mt-3">
+                          <img src="./photos/map/card-img-2.jpg" alt="Image">
+                        </figure>
+                      </div>
+                      <div class="media-content">
+                           <p class="is-size-5 is-size-6-touch has-text-weight-semibold is-justify-content-start-tablet has-text-left-tablet">Clean the ocean near <br>Nessebar.</p>
+                           <p class="is-justify-content-start-tablet has-text-left-tablet">by Dimitar Ivanov</p>
+                      </div>
+                      <div class="media-right is-flex is-flex-direction-column is-align-items-center reporter-margin">
+                          <p>64/80</p>
+                          <a href="./pages/applyforgroup.html">
+                          <button class="button join_now mt-3 pt-3"><p class="is-size-7">JOIN NOW</p></button>
+                        </a>
+                      </div>
+                    </article>
                 </div>
-                <!-- Middle section with group details -->
-                <div class="media-content">
-                    <p class="is-size-5 is-size-6-touch has-text-weight-semibold is-justify-content-start-tablet has-text-left-tablet">Clean the ocean near <br>Nessebar.</p>
-                    <p class="is-justify-content-start-tablet has-text-left-tablet">by Dimitar Ivanov</p>
-                </div>
-                <!-- Right section with group status and join button -->
-                <div class="media-right is-flex is-flex-direction-column is-align-items-center reporter-margin">
-                    <p>64/80</p>
-                    <a href="./pages/applyforgroup.html">
+                 <!-- Box containing the list of groups waiting -->
+                <div class="inside-table-of-groups-waiting mt-3">
+                  <article class="media row-of-the-table">
+                    <div class="media-left reporter-margin">
+                      <figure class="image is-64x64 is-5by3 mt-3">
+                        <img src="./photos/map/card-img-3.jpg" alt="Image">
+                      </figure>
+                    </div>
+                    <div class="media-content">
+                        <p class="is-size-5 is-size-6-touch has-text-weight-semibold is-justify-content-start-tablet has-text-left-tablet">Polluted nature around the <br>Vitosha Nature Park.</p>
+                        <p class="is-justify-content-start-tablet has-text-left-tablet">by Todor Kostov</p>
+                    </div>
+                    <div class="media-right is-flex is-flex-direction-column is-align-items-center reporter-margin">
+                      <p>64/80</p>
+                      <a href="./pages/applyforgroup.html">
                         <button class="button join_now mt-3 pt-3"><p class="is-size-7">JOIN NOW</p></button>
-                    </a>
+                      </a>
+                  </div>
+                  </article>
                 </div>
-            </article>
+                 <!-- Box containing the list of groups waiting -->
+                <div class="inside-table-of-groups-waiting mt-3">
+                    <article class="media row-of-the-table">
+                      <div class="media-left reporter-margin">
+                        <figure class="image is-64x64 is-5by3 mt-3">
+                            <img src="./photos/map/card-img-4.jpg" alt="Image">
+                        </figure>
+                      </div>
+                      <div class="media-content">
+                          <p class="is-size-5 is-size-6-touch has-text-weight-semibold is-justify-content-start-tablet has-text-left-tablet">Dirty lake around<br> the Plovdiv.</p>
+                          <p class="is-justify-content-start-tablet has-text-left-tablet">by Petar Georgiev</p>
+                      </div>
+                      <div class="media-right is-flex is-flex-direction-column is-align-items-center reporter-margin">
+                        <p>64/80</p>
+                        <a href="./pages/applyforgroup.html">
+                            <button class="button join_now mt-3 pt-3"><p class="is-size-7">JOIN NOW</p></button>
+                          </a>
+                    </div>
+                    </article>
+                </div>
+                 <!-- Box containing the list of groups waiting -->
+                <div class="inside-table-of-groups-waiting mt-3">
+                  <article class="media row-of-the-table">
+                    <div class="media-left reporter-margin">
+                      <figure class="image is-64x64 is-5by3 mt-3">
+                        <img src="./photos/map/card-img-1.jpg" alt="Image">
+                      </figure>
+                    </div>
+                    <div class="media-content">
+                        <p class="is-size-5 is-size-6-touch has-text-weight-semibold is-justify-content-start-tablet has-text-left-tablet">Polluted nature in<br> Izgrev, Burgas.</p>
+                        <p class="is-justify-content-start-tablet has-text-left-tablet">by Ivan Bojistoqnov</p>
+                    </div>
+                    <div class="media-right is-flex is-flex-direction-column is-align-items-center reporter-margin">
+                      <p>64/80</p>
+                      <a href="./pages/applyforgroup.html">
+                        <button class="button join_now mt-3 pt-3"><p class="is-size-7">JOIN NOW</p></button>
+                      </a>
+                  </div>
+                  </article>
+            </div>
+            <div class="has-text-centered mt-4">
+                <a href="./pages/signal.html">
+                <button class="button report_button p-5 ">OR GIVE SIGNAL</button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Section for the footer -->
+<section id="footer" class="position-for_every-section">
+
+    <!-- Columns in the footer section -->
+    <div class="columns">
+
+        <!-- Column 1 - Logo -->
+        <div class="column is-3 ml-5 mt-5">
+            <img src="./photos/home-page/logo_footer.svg" alt="logo of WoodHex" id="footer-logo"
+                class="is-hidden-mobile">
         </div>
 
-        <!-- Similar entries for other groups waiting -->
-        <!-- ... -->
+        <!-- Column 2 - About Us -->
+        <div class="column is-3 is-flex is-flex-direction-column is-justify-content-center">
+            <p class="mt-6 mb-3  is-size-3-fullhd has-text-white">ABOUT US</p>
+            <p class="is-size-5-fullhd has-text-white ">Project:<br>"GREEN REVOLUTION"</p>
+        </div>
 
-        <!-- "Give Signal" button at the bottom -->
-        <div class="has-text-centered mt-4">
-            <a href="./pages/signal.html">
-                <button class="button report_button p-5 ">OR GIVE SIGNAL</button>
+        <!-- Column 3 - Contact Us -->
+        <div class="column is-3 is-flex is-flex-direction-column is-justify-content-center mt-2">
+            <p class="mt-6 mb-1 is-size-4-fullhd  has-text-white ">CONTACT US</p>
+            <a href="mailto:greenrevolution@gmail.com">
+                <p class="mb-4 is-size-5-fullhd has-text-white ">greenrevolution@gmail.com</p>
             </a>
+            <p class="mb-3 is-size-4-fullhd has-text-white ">+350 876 239 1093</p>
+        </div>
+
+        <!-- Column 4 - Receive Email Form -->
+        <div class="column is-3 is-flex is-flex-direction-column is-justify-content-center section">
+            <form class="mt-6 pt-2" action="#submit_button">
+                <label class=" is-size-5-fullhd has-text-white mb-4 ">RECEIVE EMAIL</label>
+                <input class="input mb-1" id="input_box" type="email" placeholder="EMAIL">
+                <div class="control mt-2">
+                    <button class="button" id="submit_button" type="submit">
+                        <p class="has-text-black is-size-6-fullhd">SEND</p>
+                    </button>
+                </div>
+            </form>
         </div>
     </div>
 </section>
 
-
-
-    <section id="footer" class="position-for_every-section"><!-- Section fot the footer -->
-        <div class="columns">
-            <div class="column is-3 ml-5 mt-5">
-                <img src="./photos/home-page/logo_footer.svg" alt="logo of WoodHex" id="footer-logo"
-                    class="is-hidden-mobile">
-            </div>
-            <div class="column is-3  is-flex is-flex-direction-column is-justify-content-center">
-                <p class="mt-6 mb-3  is-size-3-fullhd has-text-white">ABOUT US</p>
-                <p class=" is-size-5-fullhd has-text-white ">Project:<br>"GREEN REVOLUTION"</p>
-            </div>
-            <div class="column is-3 is-flex is-flex-direction-column is-justify-content-center mt-2">
-                <p class="mt-6 mb-1 is-size-4-fullhd  has-text-white ">CONTACT US</p>
-                <a href="mailto:greenrevolution@gmail.com">
-                    <p class="mb-4 is-size-5-fullhd has-text-white ">greenrevolution@gmail.com</p>
-                </a>
-                <p class="mb-3 is-size-4-fullhd has-text-white ">+350 876 239 1093</p>
-            </div>
-            <div class="column is-3 is-flex is-flex-direction-column is-justify-content-center section">
-                <form class="mt-6 pt-2" action="#submit_button">
-                    <label class=" is-size-5-fullhd has-text-white mb-4 ">RECEIVE EMAIL</label>
-                    <input class="input mb-1" id="input_box" type="email" placeholder="EMAIL">
-                    <div class="control mt-2">
-                        <button class="button" id="submit_button" type="submit">
-                            <p class="has-text-black is-size-6-fullhd">SEND</p>
-                        </button>
-                    </div>
-                </form>
-            </div>
-        </div>
-
-    </section>
     <script src="./script/main.js"></script> <!-- Links js for navbar -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <!-- Add librarie for animations -->
     <script> AOS.init(); </script>

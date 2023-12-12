@@ -28,17 +28,6 @@
     background-size: cover; /* Update background size to cover */
 }
 
-/* Styling for specific elements */
-
-/* Adjustments for layout and spacing */
-.column-box2 {
-    margin-top: 10%;
-    padding: 0;
-}
-/* Adjustments for layout and spacing */
-.space-nav-about-us:not(:last-child) {
-    margin-right: 20% !important;
-}
 /* Adjustments for layout and spacing */
 .title-column {
     margin-top: 4vw !important;
@@ -55,7 +44,7 @@
 }
 
 /* Typography */
-.title1 {
+.title-name {
     font-size: 3em;
     margin-bottom: 0;
 }
@@ -119,7 +108,7 @@
         margin-left: 25%;
         margin-top: 20%;
     }
-    .image1{
+    .image-of-person{
         border: 2px solid black;
     }
 }
@@ -132,7 +121,7 @@
     .phone-column {
         flex-direction: column-reverse;
     }
-    .image1 {
+    .image-of-person {
         height: 95%;
     }
     .image2 {

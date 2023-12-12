@@ -3,29 +3,42 @@
 <html>
 
 <head>
+    <!-- Meta tags for character set and viewport -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Favicon and title for the webpage -->
     <link rel="icon" href="../photos/logo 1.png" type="image/x-icon">
     <title>WoodHex</title>
+    
+    <!-- Link to external stylesheet -->
     <link rel="stylesheet" href="../styles/style.css">
+    
+    <!-- Link to Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet" />
+    
+    <!-- External JavaScript files -->
     <script src="../script/main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- AOS library stylesheet for animations -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
 
 <body class="is-clipped">
-    <a href="#top" id="scrollToTopButton"> <!-- Anchor tag for scrolling to top -->
-        <img src="../photos/scroll-on-top.svg" alt="Scroll to Top"/> <!-- Image for scroll to top button -->    </a>
+    <!-- Anchor tag for scrolling to top with scroll-to-top image -->
+    <a href="#top" id="scrollToTopButton">
+        <img src="../photos/scroll-on-top.svg" alt="Scroll to Top"/>
+    </a>
+    
+    <!-- Navigation bar with WoodHex logo and menu items -->
     <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
             <a class="navbar-item py-0" href="../index.html">
                 <img id="logo_img" src="../photos/logo 1.png" alt="WoodHex Logo">
                 <span class="logo ">WoodHex</span>
             </a>
+            <!-- Navbar burger for mobile view menu -->
             <div role="button" class="navbar-burger has-text-white" id="burger" aria-label="menu" aria-expanded="false"
                 data-target="navbarBasicExample" onclick="toggle()">
                 <span aria-hidden="true"></span>
@@ -33,6 +46,8 @@
                 <span aria-hidden="true"></span>
             </div>
         </div>
+        
+        <!-- Navbar menu items -->
         <div id="navbarBasicExample" class="navbar-menu is-active:false space-nav">
             <div class="navbar-end space-nav">
                 <a href="../index.html"
@@ -45,187 +60,242 @@
                     class="navbar-item  space-nav nav-link py-0 pr-6 item-navbar text-on-mobile">DONATE</a>
                 <a href="../pages/project.html"
                     class="navbar-item space-nav item-navbar nav-link py-0 mr-1 pr-6  text-on-mobile">PROJECT</a>
+                <!-- Placeholder for hiding on touch devices -->
                 <div class="navbar-item is-hidden-touch is-hidden-desktop-only"></div>
             </div>
+        </div>
     </nav>
 
-    <div data-aos="flip-left" class="container is-flex is-justify-content-center">
-        <div class="columns title-column is-multiline">
-            <div class="column">
-                <div class="card about-card">
-                    <div class="card-content mb-5 px-0 py-0">
-                        <div class="content">
-                            <h1 class="title is-1 has-text-light mb-5">About
-                            </h1>
-                        </div>
+   <!-- Section with flip-left animation -->
+<div data-aos="flip-left" class="container is-flex is-justify-content-center">
+    <div class="columns title-column is-multiline">
+        <div class="column">
+            <div class="card about-card">
+                <div class="card-content mb-5 px-0 py-0">
+                    <div class="content">
+                        <!-- Title for the About section -->
+                        <h1 class="title is-1 has-text-light mb-5">About</h1>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
-    <div class="hero is-fullheight bg-img-abput-us-1 is-bold">
-        <div class="container">
-            <div class="columns phone-column2 is-centered is-flex is-justify-content-center ">
-                <div class="column Person-image is-5 is-centered is-flex is-justify-content-center ">
-                    <img class="image1" src="../photos/About-us/Rumen P.svg">
-                </div>
-                <div data-aos="zoom-in-right" class="column column-box is-6 py-1 ml-3 mr-6">
-                    <div class="box box1 has-text-centered p-0">
-                        <div class="content has-background-grey-light px-6 py-6">
-                            <h2 class="title title1 is-size-3 has-text-black">RUMEN PARVANOV</h2>
-                            <p class="subtitle is-4 has-text-black mt-4">Role: Designer</p>
-                            <p class="is-size-5 has-text-black">
-                                Rumen Parvanov is a skilled designer who creates beautiful and user-friendly designs.
-                                He's great at making things look good and easy to use. Rumen understands what people
-                                like and turns ideas into amazing visuals that help companies look their best. <br>
+<!-- Hero section with full height and background image -->
+<div class="hero is-fullheight bg-img-abput-us-1">
+    <div class="container">
+        <!-- Columns for layout, centered and justified on phone screens -->
+        <div class="columns phone-column2 is-centered is-flex is-justify-content-center ">
+            
+            <!-- Column for person's image -->
+            <div class="column Person-image is-5 is-centered is-flex is-justify-content-center ">
+                <img class="image-of-person" src="../photos/About-us/Rumen P.svg">
+            </div>
+
+            <!-- Column for person details with zoom-in-right animation -->
+            <div data-aos="zoom-in-right" class="column column-box is-6 py-1 ml-3 mr-6">
+                <div class="box box1 has-text-centered p-0">
+                    <div class="content has-background-grey-light px-6 py-6">
+                        <!-- Person's name -->
+                        <h2 class="title title-name is-size-3 has-text-black">RUMEN PARVANOV</h2>
+                        <!-- Person's role -->
+                        <p class="subtitle is-4 has-text-black mt-4">Role: Designer</p>
+                        <!-- Person's description -->
+                        <p class="is-size-5 has-text-black">
+                            Rumen Parvanov is a skilled designer who creates beautiful and user-friendly designs.
+                            He's great at making things look good and easy to use. Rumen understands what people
+                            like and turns ideas into amazing visuals that help companies look their best. <br>
+                            <!-- Spacer -->
                             <div class="block"></div>
+                            <!-- GitHub link -->
                             <span class="mt-5">
                                 <a href="https://github.com/RVParvanov22" target="_blank" class="has-text-black ml-5 ">GITHUB:
                                     github.com/RVParvanov22</a>
                             </span>
-                            </p>
-                        </div>
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
-    <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" class="container is-flex is-justify-content-center">
-        <div class="columns title-column is-multiline">
-            <div class="column">
-                <div class="card about-card">
-                    <div class="card-content mb-5 px-0 py-0">
-                        <div class="content">
-                            <h1 class="title is-1 has-text-light mb-5">About
-                            </h1>
-                        </div>
+<!-- Section with fade-down animation, linear easing, and duration of 1500ms -->
+<div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" class="container is-flex is-justify-content-center">
+    <div class="columns title-column is-multiline">
+        <div class="column">
+            <div class="card about-card">
+                <div class="card-content mb-5 px-0 py-0">
+                    <div class="content">
+                        <!-- Title for the About section -->
+                        <h1 class="title is-1 has-text-light mb-5">About</h1>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
-    <div class="hero is-fullheight bg-img-abput-us-1 is-bold">
-        <div class="container">
-            <div class="columns phone-column is-centered is-flex is-justify-content-center ">
-                <div data-aos="zoom-in-right" class="column column-box is-6 py-1 ml-3 mr-6">
-                    <div class="box box2 has-text-centered p-0">
-                        <div class="content has-background-grey-light px-6 py-6">
-                            <h2 class="title title1 is-size-3 has-text-black">LUCHEZAR RASHKOV</h2>
-                            <p class="subtitle is-4 has-text-black mt-4">Role: Front-end</p>
-                            <p class="is-size-5 has-text-black">
-                                Luchezar Rashkov is a tech person who makes websites look nice and work well. He uses
-                                his skills to bring designs to life on the internet. Luchezar focuses on making websites
-                                easy to use and good-looking for people who visit them. <br>
+
+    <!-- Hero section with full height and background image -->
+<div class="hero is-fullheight bg-img-abput-us-1">
+    <div class="container">
+        <!-- Columns for layout, centered and justified on phone screens -->
+        <div class="columns phone-column is-centered is-flex is-justify-content-center ">
+            
+            <!-- Column for person details with zoom-in-right animation -->
+            <div data-aos="zoom-in-right" class="column column-box is-6 py-1 ml-3 mr-6">
+                <div class="box box2 has-text-centered p-0">
+                    <div class="content has-background-grey-light px-6 py-6">
+                        <!-- Person's name -->
+                        <h2 class="title title-name is-size-3 has-text-black">LUCHEZAR RASHKOV</h2>
+                        <!-- Person's role -->
+                        <p class="subtitle is-4 has-text-black mt-4">Role: Front-end</p>
+                        <!-- Person's description -->
+                        <p class="is-size-5 has-text-black">
+                            Luchezar Rashkov is a tech person who makes websites look nice and work well. He uses
+                            his skills to bring designs to life on the internet. Luchezar focuses on making websites
+                            easy to use and good-looking for people who visit them. <br>
+                            <!-- Spacer -->
                             <div class="block"></div>
+                            <!-- GitHub link -->
                             <span class="mt-5 Person-image ">
                                 <a href="https://github.com/luchezar123" target="_blank" class="has-text-black ml-5 ">GITHUB:
                                     github.com/luchezar123</a>
                             </span>
-                            </p>
-                        </div>
+                        </p>
                     </div>
                 </div>
-                <div class="column Person-image is-5-desktop is-centered is-flex is-justify-content-center  ">
-                    <img class="image1" src="../photos/About-us/Luchezar R.svg">
+            </div>
+
+            <!-- Column for person's image -->
+            <div class="column Person-image is-5-desktop is-centered is-flex is-justify-content-center  ">
+                <img class="image-of-person" src="../photos/About-us/Luchezar R.svg">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Section with a fade-down animation -->
+<div data-aos="fade-down" class="container is-flex is-justify-content-center">
+    <div class="columns title-column is-multiline">
+        <div class="column">
+            <div class="card about-card">
+                <div class="card-content mb-5 px-0 py-0">
+                    <div class="content">
+                        <!-- Title for the About section -->
+                        <h1 class="title is-1 has-text-light mb-5">About</h1>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
-    <div data-aos="fade-down" class="container is-flex is-justify-content-center">
-        <div class="columns title-column is-multiline">
-            <div class="column">
-                <div class="card about-card">
-                    <div class="card-content mb-5 px-0 py-0">
-                        <div class="content">
-                            <h1 class="title is-1 has-text-light mb-5">About
-                            </h1>
-                        </div>
-                    </div>
-                </div>
+
+   <!-- Hero section with full height and background image -->
+<div class="hero is-fullheight bg-img-abput-us-1">
+    <div class="container">
+        <!-- Columns for layout, centered and justified on phone screens -->
+        <div class="columns phone-column2 is-centered is-flex is-justify-content-center ">
+            
+            <!-- Column for person's image -->
+            <div class="column Person-image is-5 is-centered is-flex is-justify-content-center ">
+                <img class="image-of-person" src="../photos/About-us/Anton K.svg">
             </div>
-        </div>
-    </div>
 
-    <div class="hero is-fullheight bg-img-abput-us-1 is-bold">
-        <div class="container">
-            <div class="columns phone-column2 is-centered is-flex is-justify-content-center ">
-                <div class="column Person-image is-5 is-centered is-flex is-justify-content-center ">
-                    <img class="image1" src="../photos/About-us/Anton K.svg">
-                </div>
-                <div data-aos="zoom-in-right" class="column column-box is-6 py-1 ml-3 mr-6">
-                    <div class="box box1 has-text-centered p-0">
-                        <div class="content has-background-grey-light px-6 py-6">
-                            <h2 class="title title1 is-size-3 has-text-black">ANTON KABAKOV</h2>
-                            <p class="subtitle is-4 has-text-black mt-4">Role: Back-end</p>
-                            <p class="is-size-5 has-text-black">
-                                Anton Kabakov is a computer expert who builds the part of websites you can't see. He
-                                makes sure websites run smoothly behind the scenes. Anton likes to make sure everything
-                                is safe, works fast, and can handle a lot of information. <br>
+            <!-- Column for person details with zoom-in-right animation -->
+            <div data-aos="zoom-in-right" class="column column-box is-6 py-1 ml-3 mr-6">
+                <div class="box box1 has-text-centered p-0">
+                    <div class="content has-background-grey-light px-6 py-6">
+                        <!-- Person's name -->
+                        <h2 class="title title-name is-size-3 has-text-black">ANTON KABAKOV</h2>
+                        <!-- Person's role -->
+                        <p class="subtitle is-4 has-text-black mt-4">Role: Back-end</p>
+                        <!-- Person's description -->
+                        <p class="is-size-5 has-text-black">
+                            Anton Kabakov is a computer expert who builds the part of websites you can't see. He
+                            makes sure websites run smoothly behind the scenes. Anton likes to make sure everything
+                            is safe, works fast, and can handle a lot of information. <br>
+                            <!-- Spacer -->
                             <div class="block"></div>
+                            <!-- GitHub link -->
                             <span class="mt-5">
                                 <a href="https://github.com/ATKabakov22" target="_blank" class="has-text-black ml-5 ">GITHUB:
                                     github.com/ATKabakov22</a>
                             </span>
-                            </p>
-                        </div>
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
-    <div data-aos="fade-down-right" class="container is-flex is-justify-content-center">
-        <div class="columns title-column is-multiline">
-            <div class="column">
-                <div class="card about-card">
-                    <div class="card-content mb-5 px-0 py-0">
-                        <div class="content">
-                            <h1 class="title is-1 has-text-light mb-5">About
-                            </h1>
-                        </div>
+<!-- Section with a fade-down-right animation -->
+<div data-aos="fade-down-right" class="container is-flex is-justify-content-center">
+    <div class="columns title-column is-multiline">
+        <div class="column">
+            <div class="card about-card">
+                <div class="card-content mb-5 px-0 py-0">
+                    <div class="content">
+                        <!-- Title for the About section -->
+                        <h1 class="title is-1 has-text-light mb-5">About</h1>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
-    <div class="hero is-fullheight bg-img-abput-us-1 is-bold">
-        <div class="container">
-            <div class="columns phone-column is-centered is-flex is-justify-content-center ">
-                <div data-aos="zoom-in-right" class="column column-box is-6 py-1 ml-3 mr-6">
-                    <div class="box box2 has-text-centered p-0">
-                        <div class="content has-background-grey-light px-6 py-6">
-                            <h2 class="title title1 is-size-3 has-text-black">DEAN PETKOV</h2>
-                            <p class="subtitle is-4 has-text-black mt-4">Role: Scrum trainer</p>
-                            <p class="is-size-5 has-text-black">
-                                Dean Petkov is a teacher who helps teams work together better. He knows a lot about a
-                                way of working called Scrum. Dean teaches teams how to improve their work, talk to each
-                                other, and make things faster. <br>
+
+    <!-- Hero section with full height and background image -->
+<div class="hero is-fullheight bg-img-abput-us-1">
+    <div class="container">
+        <!-- Columns for layout, centered and justified on phone screens -->
+        <div class="columns phone-column is-centered is-flex is-justify-content-center ">
+            
+            <!-- Column for person details with zoom-in-right animation -->
+            <div data-aos="zoom-in-right" class="column column-box is-6 py-1 ml-3 mr-6">
+                <div class="box box2 has-text-centered p-0">
+                    <div class="content has-background-grey-light px-6 py-6">
+                        <!-- Person's name -->
+                        <h2 class="title title-name is-size-3 has-text-black">DEAN PETKOV</h2>
+                        <!-- Person's role -->
+                        <p class="subtitle is-4 has-text-black mt-4">Role: Scrum trainer</p>
+                        <!-- Person's description -->
+                        <p class="is-size-5 has-text-black">
+                            Dean Petkov is a teacher who helps teams work together better. He knows a lot about a
+                            way of working called Scrum. Dean teaches teams how to improve their work, talk to each
+                            other, and make things faster. <br>
+                            <!-- Spacer -->
                             <div class="block"></div>
+                            <!-- GitHub link -->
                             <span class="mt-5">
                                 <a href="https://github.com/DYPetkov22" target="_blank" class="has-text-black ml-5 ">GITHUB:
                                     github.com/DYPetkov22</a>
                             </span>
-                            </p>
-                        </div>
+                        </p>
                     </div>
                 </div>
-                <div class="column Person-image is-5-desktop is-centered is-flex is-justify-content-center  ">
-                    <img class="image1" src="../photos/About-us/Dean P.svg">
-                </div>
+            </div>
+
+            <!-- Column for person's image -->
+            <div class="column Person-image is-5-desktop is-centered is-flex is-justify-content-center  ">
+                <img class="image-of-person" src="../photos/About-us/Dean P.svg">
             </div>
         </div>
     </div>
+</div>
 
+<!-- Initialization of AOS (Animate On Scroll) library -->
+<script>
+    AOS.init();
+</script>
 
-    <script>
-        AOS.init();
-    </script>
-    <script src="../script/main.js"></script>
+<!-- Script tag for the main JavaScript file -->
+<script src="../script/main.js"></script>
 </body>
 
 </html>
