@@ -76,6 +76,11 @@ Open your **CMD** and paste this code:
 2. git clone https://github.com/DYPetkov22/WoodHex.git
 3. Open your C: and find the folder named: WoodHex
 ````
+Or you can paste this link into your browser:
+````	
+https://dypetkov22.github.io/WoodHex/
+````
+
 
 
 <h1>Enjoy the project!</h1>
